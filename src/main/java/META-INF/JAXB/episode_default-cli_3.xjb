@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="3.0" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.12.03 a las 10:29:37 PM CET 
+
+  -->
+  <jaxb:bindings scd="x-schema::tns" xmlns:tns="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="com.picoto"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings scd="~tns:InvoiceLineType">
+      <jaxb:class ref="com.picoto.InvoiceLineType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceType">
+      <jaxb:class ref="com.picoto.InvoiceType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="tns:Facturae">
+      <jaxb:class ref="com.picoto.Facturae"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:FileHeaderType">
+      <jaxb:class ref="com.picoto.FileHeaderType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PartiesType">
+      <jaxb:class ref="com.picoto.PartiesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoicesType">
+      <jaxb:class ref="com.picoto.InvoicesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ExtensionsType">
+      <jaxb:class ref="com.picoto.ExtensionsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ThirdPartyType">
+      <jaxb:class ref="com.picoto.ThirdPartyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:BatchType">
+      <jaxb:class ref="com.picoto.BatchType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:FactoringAssignmentDataType">
+      <jaxb:class ref="com.picoto.FactoringAssignmentDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AssigneeType">
+      <jaxb:class ref="com.picoto.AssigneeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:BusinessType">
+      <jaxb:class ref="com.picoto.BusinessType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceHeaderType">
+      <jaxb:class ref="com.picoto.InvoiceHeaderType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceIssueDataType">
+      <jaxb:class ref="com.picoto.InvoiceIssueDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ItemsType">
+      <jaxb:class ref="com.picoto.ItemsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ExchangeRateDetailsType">
+      <jaxb:class ref="com.picoto.ExchangeRateDetailsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:CorrectiveType">
+      <jaxb:class ref="com.picoto.CorrectiveType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PlaceOfIssueType">
+      <jaxb:class ref="com.picoto.PlaceOfIssueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DeliveryNotesReferencesType">
+      <jaxb:class ref="com.picoto.DeliveryNotesReferencesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DeliveryNoteType">
+      <jaxb:class ref="com.picoto.DeliveryNoteType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SpecialTaxableEventType">
+      <jaxb:class ref="com.picoto.SpecialTaxableEventType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceTotalsType">
+      <jaxb:class ref="com.picoto.InvoiceTotalsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SubsidiesType">
+      <jaxb:class ref="com.picoto.SubsidiesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SubsidyType">
+      <jaxb:class ref="com.picoto.SubsidyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PaymentsOnAccountType">
+      <jaxb:class ref="com.picoto.PaymentsOnAccountType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PaymentOnAccountType">
+      <jaxb:class ref="com.picoto.PaymentOnAccountType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AmountsWithheldType">
+      <jaxb:class ref="com.picoto.AmountsWithheldType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ReimbursableExpenses">
+      <jaxb:class ref="com.picoto.ReimbursableExpenses"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ReimbursableExpensesType">
+      <jaxb:class ref="com.picoto.ReimbursableExpensesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InstallmentsType">
+      <jaxb:class ref="com.picoto.InstallmentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InstallmentType">
+      <jaxb:class ref="com.picoto.InstallmentType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:LegalLiteralsType">
+      <jaxb:class ref="com.picoto.LegalLiteralsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AdditionalDataType">
+      <jaxb:class ref="com.picoto.AdditionalDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AttachedDocumentsType">
+      <jaxb:class ref="com.picoto.AttachedDocumentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AttachmentType">
+      <jaxb:class ref="com.picoto.AttachmentType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TaxIdentificationType">
+      <jaxb:class ref="com.picoto.TaxIdentificationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:LegalEntityType">
+      <jaxb:class ref="com.picoto.LegalEntityType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:IndividualType">
+      <jaxb:class ref="com.picoto.IndividualType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:RegistrationDataType">
+      <jaxb:class ref="com.picoto.RegistrationDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AddressType">
+      <jaxb:class ref="com.picoto.AddressType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:OverseasAddressType">
+      <jaxb:class ref="com.picoto.OverseasAddressType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ContactDetailsType">
+      <jaxb:class ref="com.picoto.ContactDetailsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AdministrativeCentresType">
+      <jaxb:class ref="com.picoto.AdministrativeCentresType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AdministrativeCentreType">
+      <jaxb:class ref="com.picoto.AdministrativeCentreType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DiscountsAndRebatesType">
+      <jaxb:class ref="com.picoto.DiscountsAndRebatesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DiscountType">
+      <jaxb:class ref="com.picoto.DiscountType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ChargesType">
+      <jaxb:class ref="com.picoto.ChargesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ChargeType">
+      <jaxb:class ref="com.picoto.ChargeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TaxesType">
+      <jaxb:class ref="com.picoto.TaxesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TaxType">
+      <jaxb:class ref="com.picoto.TaxType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TaxOutputType">
+      <jaxb:class ref="com.picoto.TaxOutputType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AmountType">
+      <jaxb:class ref="com.picoto.AmountType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AccountType">
+      <jaxb:class ref="com.picoto.AccountType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PeriodDates">
+      <jaxb:class ref="com.picoto.PeriodDates"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:FactoringAssignmentDocumentType">
+      <jaxb:class ref="com.picoto.FactoringAssignmentDocumentType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:RepositoryType">
+      <jaxb:class ref="com.picoto.RepositoryType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PaymentInKindType">
+      <jaxb:class ref="com.picoto.PaymentInKindType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AttachmentCompressionAlgorithmType">
+      <jaxb:typesafeEnumClass ref="com.picoto.AttachmentCompressionAlgorithmType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AttachmentEncodingType">
+      <jaxb:typesafeEnumClass ref="com.picoto.AttachmentEncodingType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:AttachmentFormatType">
+      <jaxb:typesafeEnumClass ref="com.picoto.AttachmentFormatType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PersonTypeCodeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.PersonTypeCodeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ResidenceTypeCodeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.ResidenceTypeCodeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceIssuerTypeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.InvoiceIssuerTypeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceDocumentTypeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.InvoiceDocumentTypeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:InvoiceClassType">
+      <jaxb:typesafeEnumClass ref="com.picoto.InvoiceClassType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ReasonDescriptionType">
+      <jaxb:typesafeEnumClass ref="com.picoto.ReasonDescriptionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:CorrectionMethodDescriptionType">
+      <jaxb:typesafeEnumClass ref="com.picoto.CorrectionMethodDescriptionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:CountryType">
+      <jaxb:typesafeEnumClass ref="com.picoto.CountryType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:CurrencyCodeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.CurrencyCodeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ModalityType">
+      <jaxb:typesafeEnumClass ref="com.picoto.ModalityType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:LanguageCodeType">
+      <jaxb:typesafeEnumClass ref="com.picoto.LanguageCodeType"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+  <jaxb:bindings scd="x-schema::tns" xmlns:tns="http://www.w3.org/2000/09/xmldsig#">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="com.picoto"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings scd="~tns:SignatureType">
+      <jaxb:class ref="com.picoto.SignatureType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SignatureValueType">
+      <jaxb:class ref="com.picoto.SignatureValueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SignedInfoType">
+      <jaxb:class ref="com.picoto.SignedInfoType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:CanonicalizationMethodType">
+      <jaxb:class ref="com.picoto.CanonicalizationMethodType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SignatureMethodType">
+      <jaxb:class ref="com.picoto.SignatureMethodType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ReferenceType">
+      <jaxb:class ref="com.picoto.ReferenceType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TransformsType">
+      <jaxb:class ref="com.picoto.TransformsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:TransformType">
+      <jaxb:class ref="com.picoto.TransformType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DigestMethodType">
+      <jaxb:class ref="com.picoto.DigestMethodType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:KeyInfoType">
+      <jaxb:class ref="com.picoto.KeyInfoType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:KeyValueType">
+      <jaxb:class ref="com.picoto.KeyValueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:RetrievalMethodType">
+      <jaxb:class ref="com.picoto.RetrievalMethodType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:X509DataType">
+      <jaxb:class ref="com.picoto.X509DataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:PGPDataType">
+      <jaxb:class ref="com.picoto.PGPDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SPKIDataType">
+      <jaxb:class ref="com.picoto.SPKIDataType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ObjectType">
+      <jaxb:class ref="com.picoto.ObjectType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:ManifestType">
+      <jaxb:class ref="com.picoto.ManifestType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SignaturePropertiesType">
+      <jaxb:class ref="com.picoto.SignaturePropertiesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:SignaturePropertyType">
+      <jaxb:class ref="com.picoto.SignaturePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:DSAKeyValueType">
+      <jaxb:class ref="com.picoto.DSAKeyValueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:RSAKeyValueType">
+      <jaxb:class ref="com.picoto.RSAKeyValueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~tns:X509IssuerSerialType">
+      <jaxb:class ref="com.picoto.X509IssuerSerialType"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+  <jaxb:bindings scd="x-schema::">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="com.picoto"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings scd="remesa">
+      <jaxb:class ref="com.picoto.Remesa"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>
+
