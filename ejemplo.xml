@@ -182,7 +182,7 @@
 					<TotalGrossAmountBeforeTaxes>1163.52</TotalGrossAmountBeforeTaxes>
 					<TotalTaxOutputs>279.24</TotalTaxOutputs>
 					<TotalTaxesWithheld>58.18</TotalTaxesWithheld>
-					<InvoiceTotal>1384.58</InvoiceTotal>
+					<InvoiceTotal>2345.45</InvoiceTotal>
 					<TotalOutstandingAmount>1384.58</TotalOutstandingAmount>
 					<TotalExecutableAmount>1384.58</TotalExecutableAmount>
 				</InvoiceTotals>
@@ -4262,7 +4262,7 @@
 					<TotalGrossAmountBeforeTaxes>1163.52</TotalGrossAmountBeforeTaxes>
 					<TotalTaxOutputs>279.24</TotalTaxOutputs>
 					<TotalTaxesWithheld>58.18</TotalTaxesWithheld>
-					<InvoiceTotal>1384.58</InvoiceTotal>
+					<InvoiceTotal>434534.67</InvoiceTotal>
 					<TotalOutstandingAmount>1384.58</TotalOutstandingAmount>
 					<TotalExecutableAmount>1384.58</TotalExecutableAmount>
 				</InvoiceTotals>

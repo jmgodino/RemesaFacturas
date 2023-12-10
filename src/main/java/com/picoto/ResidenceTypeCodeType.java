@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2023.12.09 a las 05:34:13 PM CET 
+// Generado el: 2023.12.10 a las 12:29:54 PM CET 
 //
 
 
@@ -33,19 +33,22 @@ public enum ResidenceTypeCodeType {
 
 
     /**
-     * Extranjero (Fuera Unión Europea).
+     * Extranjero (Fuera Unión
+     * 						Europea).
      * 
      */
     E,
 
     /**
      * Residente (en España).
+     * 					
      * 
      */
     R,
 
     /**
-     * Residente en la Unión Europea (excepto España).
+     * Residente en la Unión
+     * 						Europea (excepto España).
      * 
      */
     U;

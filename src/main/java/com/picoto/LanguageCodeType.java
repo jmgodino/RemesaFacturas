@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2023.12.09 a las 05:34:13 PM CET 
+// Generado el: 2023.12.10 a las 12:29:54 PM CET 
 //
 
 
@@ -69,6 +69,7 @@ public enum LanguageCodeType {
 
     /**
      * Arabe
+     * 					
      * 
      */
     @XmlEnumValue("ar")
@@ -76,6 +77,7 @@ public enum LanguageCodeType {
 
     /**
      * Bielorruso
+     * 					
      * 
      */
     @XmlEnumValue("be")
@@ -83,6 +85,7 @@ public enum LanguageCodeType {
 
     /**
      * Búlgaro
+     * 					
      * 
      */
     @XmlEnumValue("bg")
@@ -90,6 +93,7 @@ public enum LanguageCodeType {
 
     /**
      * Catalán
+     * 					
      * 
      */
     @XmlEnumValue("ca")
@@ -97,6 +101,7 @@ public enum LanguageCodeType {
 
     /**
      * Checo
+     * 					
      * 
      */
     @XmlEnumValue("cs")
@@ -104,6 +109,7 @@ public enum LanguageCodeType {
 
     /**
      * Danés
+     * 					
      * 
      */
     @XmlEnumValue("da")
@@ -111,6 +117,7 @@ public enum LanguageCodeType {
 
     /**
      * Alemán
+     * 					
      * 
      */
     @XmlEnumValue("de")
@@ -118,6 +125,7 @@ public enum LanguageCodeType {
 
     /**
      * Griego moderno
+     * 					
      * 
      */
     @XmlEnumValue("el")
@@ -125,6 +133,7 @@ public enum LanguageCodeType {
 
     /**
      * Inglés
+     * 					
      * 
      */
     @XmlEnumValue("en")
@@ -132,6 +141,7 @@ public enum LanguageCodeType {
 
     /**
      * Español
+     * 					
      * 
      */
     @XmlEnumValue("es")
@@ -139,6 +149,7 @@ public enum LanguageCodeType {
 
     /**
      * Estonio
+     * 					
      * 
      */
     @XmlEnumValue("et")
@@ -146,6 +157,7 @@ public enum LanguageCodeType {
 
     /**
      * Vascuence
+     * 					
      * 
      */
     @XmlEnumValue("eu")
@@ -153,6 +165,7 @@ public enum LanguageCodeType {
 
     /**
      * Finlandés
+     * 					
      * 
      */
     @XmlEnumValue("fi")
@@ -160,6 +173,7 @@ public enum LanguageCodeType {
 
     /**
      * Francés
+     * 					
      * 
      */
     @XmlEnumValue("fr")
@@ -167,6 +181,7 @@ public enum LanguageCodeType {
 
     /**
      * Gaélico de Irlanda
+     * 					
      * 
      */
     @XmlEnumValue("ga")
@@ -174,6 +189,7 @@ public enum LanguageCodeType {
 
     /**
      * Gallego
+     * 					
      * 
      */
     @XmlEnumValue("gl")
@@ -181,6 +197,7 @@ public enum LanguageCodeType {
 
     /**
      * Croata
+     * 					
      * 
      */
     @XmlEnumValue("hr")
@@ -188,6 +205,7 @@ public enum LanguageCodeType {
 
     /**
      * Húngaro
+     * 					
      * 
      */
     @XmlEnumValue("hu")
@@ -195,6 +213,7 @@ public enum LanguageCodeType {
 
     /**
      * Islandés
+     * 					
      * 
      */
     @XmlEnumValue("is")
@@ -202,6 +221,7 @@ public enum LanguageCodeType {
 
     /**
      * Italiano
+     * 					
      * 
      */
     @XmlEnumValue("it")
@@ -209,6 +229,7 @@ public enum LanguageCodeType {
 
     /**
      * Letón
+     * 					
      * 
      */
     @XmlEnumValue("lv")
@@ -216,6 +237,7 @@ public enum LanguageCodeType {
 
     /**
      * Lituano
+     * 					
      * 
      */
     @XmlEnumValue("lt")
@@ -223,6 +245,7 @@ public enum LanguageCodeType {
 
     /**
      * Macedonio
+     * 					
      * 
      */
     @XmlEnumValue("mk")
@@ -230,6 +253,7 @@ public enum LanguageCodeType {
 
     /**
      * Maltés
+     * 					
      * 
      */
     @XmlEnumValue("mt")
@@ -237,6 +261,7 @@ public enum LanguageCodeType {
 
     /**
      * Neerlandés
+     * 					
      * 
      */
     @XmlEnumValue("nl")
@@ -244,6 +269,7 @@ public enum LanguageCodeType {
 
     /**
      * Noruego
+     * 					
      * 
      */
     @XmlEnumValue("no")
@@ -251,6 +277,7 @@ public enum LanguageCodeType {
 
     /**
      * Polaco
+     * 					
      * 
      */
     @XmlEnumValue("pl")
@@ -258,6 +285,7 @@ public enum LanguageCodeType {
 
     /**
      * Portugués
+     * 					
      * 
      */
     @XmlEnumValue("pt")
@@ -265,6 +293,7 @@ public enum LanguageCodeType {
 
     /**
      * Rumano
+     * 					
      * 
      */
     @XmlEnumValue("ro")
@@ -279,6 +308,7 @@ public enum LanguageCodeType {
 
     /**
      * Eslovaco
+     * 					
      * 
      */
     @XmlEnumValue("sk")
@@ -286,6 +316,7 @@ public enum LanguageCodeType {
 
     /**
      * Esloveno
+     * 					
      * 
      */
     @XmlEnumValue("sl")
@@ -293,6 +324,7 @@ public enum LanguageCodeType {
 
     /**
      * Albanés
+     * 					
      * 
      */
     @XmlEnumValue("sq")
@@ -300,6 +332,7 @@ public enum LanguageCodeType {
 
     /**
      * Serbio
+     * 					
      * 
      */
     @XmlEnumValue("sr")
@@ -307,6 +340,7 @@ public enum LanguageCodeType {
 
     /**
      * Sueco
+     * 					
      * 
      */
     @XmlEnumValue("sv")
@@ -314,6 +348,7 @@ public enum LanguageCodeType {
 
     /**
      * Turco
+     * 					
      * 
      */
     @XmlEnumValue("tr")
@@ -321,6 +356,7 @@ public enum LanguageCodeType {
 
     /**
      * Ucraniano
+     * 					
      * 
      */
     @XmlEnumValue("uk")

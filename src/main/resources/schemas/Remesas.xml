@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
 	targetNamespace="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" 
 	xmlns:fact="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
 	version="1.0.0">
 	<xs:import namespace="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
-		schemaLocation="./src/main/xsd/Facturaev322.xml" />
+		schemaLocation="schemas/Facturaev322.xml" />
 	<xs:element name="remesa">
 		<xs:annotation>
 			<xs:documentation xml:lang="es">Remesa de facturas

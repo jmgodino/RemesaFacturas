@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2023.12.09 a las 05:34:13 PM CET 
+// Generado el: 2023.12.10 a las 12:29:54 PM CET 
 //
 
 
@@ -66,8 +66,8 @@ public class PGPDataType {
      * <p>
      * Ha obtenido esta propiedad que permite capturar todo por el siguiente motivo: 
      * El nombre de campo "PGPKeyPacket" se está utilizando en dos partes diferentes de un esquema. Consulte: 
-     * línea 218 de http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd
-     * línea 213 de http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd
+     * línea 196 de file:/home/elena/eclipse-workspace/RemesaFacturas/src/main/resources/schemas/signature.xml
+     * línea 191 de file:/home/elena/eclipse-workspace/RemesaFacturas/src/main/resources/schemas/signature.xml
      * <p>
      * Para deshacerse de esta propiedad, aplique una personalización de propiedad a una
      * de las dos declaraciones siguientes para cambiarles de nombre: 

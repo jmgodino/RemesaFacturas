@@ -1,10 +1,12 @@
-package com.picoto.test;
+package com.picoto.main;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.nio.charset.Charset;
+import java.util.function.Consumer;
 
 import javax.xml.XMLConstants;
 import javax.xml.stream.XMLInputFactory;
@@ -18,11 +20,14 @@ import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.commons.io.IOUtils;
+import org.jaxen.JaxenException;
+import org.jaxen.XPath;
+import org.jaxen.dom.DOMXPath;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
@@ -39,14 +44,30 @@ public class TestValidator {
 
 	public TestValidator() throws JAXBException {
 		super();
-		ctx = JAXBContext.newInstance("com.picoto");
+		if (ctx == null) {
+			ctx = JAXBContext.newInstance("com.picoto");
+		}
 	}
 
-	private Validator initValidator(String xsdPath) throws SAXException, IOException {
+	private Validator initValidator(Class<?> clazz, String path) throws SAXException, IOException {
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-		Source schemaFile = new StreamSource(getFile(xsdPath));
-		Schema schema = factory.newSchema(schemaFile);
-		return schema.newValidator();
+		CustomResourceResolver cr = new CustomResourceResolver(clazz);
+		factory.setResourceResolver(cr);
+
+		Schema schema = factory.newSchema(getSourceFromPath(clazz, path));
+		Validator val = schema.newValidator();
+		return val;
+	}
+
+	private Source getSourceFromPath(Class<?> clazz, String path) {
+		try {
+			debug("     Cargando schema: "+clazz.getCanonicalName()+" "+path);
+			String xml = IOUtils.resourceToString(path, Charset.defaultCharset());
+			return this.getStaxSource(xml);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new IllegalArgumentException("Error al cargar los schemas:  ", e);
+		}
 	}
 
 	private InputStream getFile(String location) throws IOException {
@@ -55,73 +76,82 @@ public class TestValidator {
 
 	public void validarPorBloques() throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator("./src/main/xsd/Remesas.xml");
+		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		initTimeCalculation();
-		while (reader.hasNext()) {
-			if (reader.isStartElement()) {
-				if (isNodoFactura(reader)) {
-					String nodo = getStringCompleto(reader);
-					// Procesar el String al gusto
-					validator.validate(getStaxSource(nodo));
-				}
+		this.procesarNodos("Facturae", "STR", reader, (r) -> {
+			try {
+				String nodo = getStringCompleto(reader);
+				int pos = nodo.indexOf("<InvoiceTotal>");
+				debug(nodo.substring(pos+14,pos+21));
+				// Procesar el String al gusto
+				validator.validate(getStaxSource(nodo));
+			} catch (Exception e) {
+				throw new RuntimeException("Error al procesar el elemento");
 			}
-			reader.next();
-		}
-		endTimeCalculation("String");
-	}
-
-	private boolean isNodoFactura(XMLStreamReader reader) {
-		return reader.getName().getLocalPart().equals("Facturae");
+		});
 	}
 
 	public void validarPorBloquesConDomAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator("./src/main/xsd/Remesas.xml");
+		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		initTimeCalculation();
-		while (reader.hasNext()) {
-			if (reader.isStartElement()) {
-				if (isNodoFactura(reader)) {
-					Node node = getNodoCompleto(reader);
-					// Procesar al gusto
-					validator.validate(new DOMSource(node));
-				}
+		this.procesarNodos("Facturae", "DOM", reader, (r) -> {
+			try {
+				Node node = getNodoCompleto(reader);
+				debug("Nodo: "+node.getFirstChild().getNodeName());
+				// Procesar al gusto
+				debug("Nodo: "+getNodo("//Facturae/Invoices/Invoice[0]/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
+				validator.validate(new DOMSource(node));
+			} catch (Exception e) {
+				throw new RuntimeException("Error al procesar el elemento");
 			}
-			reader.next();
-		}
-		endTimeCalculation("DOM");
+		});
+	}
+
+	private String getNodo(String xpath, Node node) throws JaxenException {
+		XPath path = new DOMXPath(xpath);
+	    String str = (String)path.selectSingleNode(node);
+	    return str;
 	}
 
 	public void validarPorBloquesConJaxbAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException, JAXBException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
 
-		initTimeCalculation();
-		while (reader.hasNext()) {
-			if (reader.isStartElement()) {
-				if (isNodoFactura(reader)) {
-					Facturae face = getObjetoCompleto(reader);
-					// Aqui ya se ha valida al montar el JAX-B no hace falta validar
-				}
+		this.procesarNodos("Facturae", "JAXB", reader, (r) -> {
+			try {
+				Facturae face = getObjetoCompleto(r);
+				debug("     " + face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
+				// Aqui ya se ha validaDO al montar el JAX-B no hace falta validar
+			} catch (Exception e) {
+				throw new RuntimeException("Error al procesar el elemento");
 			}
-			reader.next();
-		}
-		endTimeCalculation("JAXB");
+		});
 	}
 
 	public void validarCompleto() throws XMLStreamException, SAXException, IOException {
 
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator("./src/main/xsd/Remesas.xml");
+		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		long ini = System.currentTimeMillis();
+		initTimeCalculation();
 		validator.validate(new StAXSource(reader));
+		endTimeCalculation("COMPLETO");
+	}
 
-		long fin = System.currentTimeMillis();
-		debug("Tiempo total validación única: " + (fin - ini) + "ms");
-
+	private void procesarNodos(String elemento, String modo, XMLStreamReader reader, Consumer<XMLStreamReader> c)
+			throws XMLStreamException, TransformerException, SAXException, IOException {
+		initTimeCalculation();
+		while (reader.hasNext()) {
+			if (reader.isStartElement()) {
+				if (isElementNamed(elemento, reader)) {
+					c.accept(reader);
+				}
+			}
+			reader.next();
+		}
+		endTimeCalculation(modo);
 	}
 
 	private static String getStringCompleto(XMLStreamReader reader) throws XMLStreamException, TransformerException {
@@ -155,8 +185,13 @@ public class TestValidator {
 	}
 
 	private StAXSource getStaxSource(String xml) throws XMLStreamException {
+		//debug("************************************************************************");
 		XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
 		return new StAXSource(xmlInputFactory.createXMLStreamReader(new StringReader(xml)));
+	}
+
+	private boolean isElementNamed(String name, XMLStreamReader reader) {
+		return reader.getName().getLocalPart().equals(name);
 	}
 
 	public void debug(String msg) {
@@ -169,15 +204,19 @@ public class TestValidator {
 
 	public void endTimeCalculation(String tipo) {
 		fin = System.currentTimeMillis();
-		debug(String.format("Tiempo total validación %s por bloques:%d ms", tipo, fin-ini));
+		debug(String.format("Tiempo total validación %s por bloques:%d ms", tipo, fin - ini));
 	}
 
 	public static void main(String args[]) throws Exception {
-		TestValidator tv = new TestValidator();
-		tv.validarCompleto();
-		tv.validarPorBloques();
-		tv.validarPorBloquesConDomAuxiliar();
-		tv.validarPorBloquesConJaxbAuxiliar();
+		try {
+			TestValidator tv = new TestValidator();
+			tv.validarCompleto();
+			tv.validarPorBloques();
+			tv.validarPorBloquesConDomAuxiliar();
+			tv.validarPorBloquesConJaxbAuxiliar();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
