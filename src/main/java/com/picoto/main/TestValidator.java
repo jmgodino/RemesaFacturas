@@ -7,6 +7,8 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.util.function.Consumer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.xml.XMLConstants;
 import javax.xml.stream.XMLInputFactory;
@@ -26,6 +28,7 @@ import javax.xml.validation.Validator;
 
 import org.apache.commons.io.IOUtils;
 import org.jaxen.JaxenException;
+import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.XPath;
 import org.jaxen.dom.DOMXPath;
 import org.w3c.dom.Node;
@@ -81,8 +84,12 @@ public class TestValidator {
 		this.procesarNodos("Facturae", "STR", reader, (r) -> {
 			try {
 				String nodo = getStringCompleto(reader);
-				int pos = nodo.indexOf("<InvoiceTotal>");
-				debug(nodo.substring(pos+14,pos+21));
+				Pattern p = Pattern.compile("<InvoiceTotal>(.*)</InvoiceTotal>");
+				 Matcher m = p.matcher(nodo);
+				    // if an occurrence if a pattern was found in a given string...
+				    if (m.find()) {
+				        debug("     Valor de Regex: "+m.group(0));
+				    }
 				// Procesar el String al gusto
 				validator.validate(getStaxSource(nodo));
 			} catch (Exception e) {
@@ -99,19 +106,21 @@ public class TestValidator {
 		this.procesarNodos("Facturae", "DOM", reader, (r) -> {
 			try {
 				Node node = getNodoCompleto(reader);
-				debug("Nodo: "+node.getFirstChild().getNodeName());
 				// Procesar al gusto
-				debug("Nodo: "+getNodo("//Facturae/Invoices/Invoice[0]/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
+				debug("     Valor XPath del DOM: "+getXPath("/fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
 				validator.validate(new DOMSource(node));
 			} catch (Exception e) {
-				throw new RuntimeException("Error al procesar el elemento");
+				throw new RuntimeException("Error al procesar el elemento", e);
 			}
 		});
 	}
 
-	private String getNodo(String xpath, Node node) throws JaxenException {
+	private String getXPath(String xpath, Node node) throws JaxenException {
 		XPath path = new DOMXPath(xpath);
-	    String str = (String)path.selectSingleNode(node);
+		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
+		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
+		path.setNamespaceContext(nsContext);
+	    String str = (String)path.stringValueOf(node);
 	    return str;
 	}
 
@@ -122,7 +131,7 @@ public class TestValidator {
 		this.procesarNodos("Facturae", "JAXB", reader, (r) -> {
 			try {
 				Facturae face = getObjetoCompleto(r);
-				debug("     " + face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
+				debug("     Valor del JAX-B: " + face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
 				// Aqui ya se ha validaDO al montar el JAX-B no hace falta validar
 			} catch (Exception e) {
 				throw new RuntimeException("Error al procesar el elemento");
@@ -135,14 +144,14 @@ public class TestValidator {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
 		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		initTimeCalculation();
+		initTimeCalculation("COMPLETO");
 		validator.validate(new StAXSource(reader));
 		endTimeCalculation("COMPLETO");
 	}
 
 	private void procesarNodos(String elemento, String modo, XMLStreamReader reader, Consumer<XMLStreamReader> c)
 			throws XMLStreamException, TransformerException, SAXException, IOException {
-		initTimeCalculation();
+		initTimeCalculation(modo);
 		while (reader.hasNext()) {
 			if (reader.isStartElement()) {
 				if (isElementNamed(elemento, reader)) {
@@ -198,7 +207,8 @@ public class TestValidator {
 		System.out.println(msg);
 	}
 
-	public void initTimeCalculation() {
+	public void initTimeCalculation(String tipo) {
+		debug(String.format("Iniciando validación %s ", tipo));
 		ini = System.currentTimeMillis();
 	}
 
