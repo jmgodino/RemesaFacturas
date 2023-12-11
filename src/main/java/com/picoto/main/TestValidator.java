@@ -38,7 +38,7 @@ import com.picoto.Facturae;
 
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.util.JAXBResult;
+import jakarta.xml.bind.Unmarshaller;
 
 public class TestValidator {
 
@@ -52,19 +52,24 @@ public class TestValidator {
 		}
 	}
 
-	private Validator initValidator(Class<?> clazz, String path) throws SAXException, IOException {
+	private Validator getValidator(Class<?> clazz, String path) throws SAXException, IOException {
+		Schema schema = getSchema(clazz, path);
+		Validator val = schema.newValidator();
+		return val;
+	}
+
+	private Schema getSchema(Class<?> clazz, String path) throws SAXException, IOException {
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		CustomResourceResolver cr = new CustomResourceResolver(clazz);
 		factory.setResourceResolver(cr);
 
 		Schema schema = factory.newSchema(getSourceFromPath(clazz, path));
-		Validator val = schema.newValidator();
-		return val;
+		return schema;
 	}
 
 	private Source getSourceFromPath(Class<?> clazz, String path) {
 		try {
-			debug("     Cargando schema: "+clazz.getCanonicalName()+" "+path);
+			debug("     Cargando schema: " + clazz.getCanonicalName() + " " + path);
 			String xml = IOUtils.resourceToString(path, Charset.defaultCharset());
 			return this.getStaxSource(xml);
 		} catch (Exception e) {
@@ -79,21 +84,20 @@ public class TestValidator {
 
 	public void validarPorBloques() throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
+		Validator validator = getValidator(Facturae.class, "/schemas/Remesas.xml");
 
 		this.procesarNodos("Facturae", "STR", reader, (r) -> {
 			try {
 				String nodo = getStringCompleto(reader);
-				Pattern p = Pattern.compile("<InvoiceTotal>(.*)</InvoiceTotal>");
-				 Matcher m = p.matcher(nodo);
-				    // if an occurrence if a pattern was found in a given string...
-				    if (m.find()) {
-				        debug("     Valor de Regex: "+m.group(0));
-				    }
-				// Procesar el String al gusto
 				validator.validate(getStaxSource(nodo));
+
+				Pattern p = Pattern.compile("<InvoiceTotal>(.*)</InvoiceTotal>");
+				Matcher m = p.matcher(nodo);
+				if (m.find()) {
+					debug("     Valor de Regex: " + m.group(1));
+				}
 			} catch (Exception e) {
-				throw new RuntimeException("Error al procesar el elemento");
+				throw new RuntimeException("Error al procesar el elemento", e);
 			}
 		});
 	}
@@ -101,40 +105,34 @@ public class TestValidator {
 	public void validarPorBloquesConDomAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
+		Validator validator = getValidator(Facturae.class, "/schemas/Remesas.xml");
 
 		this.procesarNodos("Facturae", "DOM", reader, (r) -> {
 			try {
 				Node node = getNodoCompleto(reader);
-				// Procesar al gusto
-				debug("     Valor XPath del DOM: "+getXPath("/fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
 				validator.validate(new DOMSource(node));
+
+				debug("     Valor XPath del DOM: " + getXPath(
+						"/fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
 			} catch (Exception e) {
 				throw new RuntimeException("Error al procesar el elemento", e);
 			}
 		});
 	}
 
-	private String getXPath(String xpath, Node node) throws JaxenException {
-		XPath path = new DOMXPath(xpath);
-		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
-		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
-		path.setNamespaceContext(nsContext);
-	    String str = (String)path.stringValueOf(node);
-	    return str;
-	}
-
 	public void validarPorBloquesConJaxbAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException, JAXBException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
+		Schema schema = getSchema(Facturae.class, "/schemas/Remesas.xml");
 
 		this.procesarNodos("Facturae", "JAXB", reader, (r) -> {
 			try {
-				Facturae face = getObjetoCompleto(r);
-				debug("     Valor del JAX-B: " + face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
-				// Aqui ya se ha validaDO al montar el JAX-B no hace falta validar
+				Facturae face = getObjetoCompleto(r, schema);
+				debug("     Valor del JAX-B: "
+						+ face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
+				// Aqui ya se ha validado al montar el JAX-B no hace falta validar
 			} catch (Exception e) {
-				throw new RuntimeException("Error al procesar el elemento");
+				throw new RuntimeException("Error al procesar el elemento", e);
 			}
 		});
 	}
@@ -142,11 +140,20 @@ public class TestValidator {
 	public void validarCompleto() throws XMLStreamException, SAXException, IOException {
 
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
-		Validator validator = initValidator(Facturae.class, "/schemas/Remesas.xml");
+		Validator validator = getValidator(Facturae.class, "/schemas/Remesas.xml");
 
 		initTimeCalculation("COMPLETO");
 		validator.validate(new StAXSource(reader));
 		endTimeCalculation("COMPLETO");
+	}
+
+	private String getXPath(String xpath, Node node) throws JaxenException {
+		XPath path = new DOMXPath(xpath);
+		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
+		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
+		path.setNamespaceContext(nsContext);
+		String str = (String) path.stringValueOf(node);
+		return str;
 	}
 
 	private void procesarNodos(String elemento, String modo, XMLStreamReader reader, Consumer<XMLStreamReader> c)
@@ -179,13 +186,12 @@ public class TestValidator {
 		return dr.getNode();
 	}
 
-	private Facturae getObjetoCompleto(XMLStreamReader reader) throws JAXBException, TransformerException {
-		JAXBResult jaxbr = new JAXBResult(ctx);
+	private Facturae getObjetoCompleto(XMLStreamReader reader, Schema schema)
+			throws JAXBException, TransformerException, SAXException, IOException {
 
-		TransformerFactory tf = TransformerFactory.newInstance();
-		Transformer t = tf.newTransformer();
-		t.transform(new StAXSource(reader), jaxbr);
-		return (Facturae) jaxbr.getResult();
+		Unmarshaller unmarshaller = ctx.createUnmarshaller();
+		unmarshaller.setSchema(schema);
+		return unmarshaller.unmarshal(reader, Facturae.class).getValue();
 	}
 
 	private XMLStreamReader getStaxReader(InputStream is) throws XMLStreamException {
@@ -194,7 +200,7 @@ public class TestValidator {
 	}
 
 	private StAXSource getStaxSource(String xml) throws XMLStreamException {
-		//debug("************************************************************************");
+		// debug("************************************************************************");
 		XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
 		return new StAXSource(xmlInputFactory.createXMLStreamReader(new StringReader(xml)));
 	}
