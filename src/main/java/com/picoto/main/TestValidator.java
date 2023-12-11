@@ -9,6 +9,7 @@ import java.nio.charset.Charset;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 import javax.xml.XMLConstants;
 import javax.xml.stream.XMLInputFactory;
@@ -60,7 +61,7 @@ public class TestValidator {
 
 	private Schema getSchema(Class<?> clazz, String path) throws SAXException, IOException {
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-		CustomResourceResolver cr = new CustomResourceResolver(clazz);
+		CustomResourceResolver cr = new CustomResourceResolver(clazz, Charset.forName("ISO-8859-1"));
 		factory.setResourceResolver(cr);
 
 		Schema schema = factory.newSchema(getSourceFromPath(clazz, path));
@@ -209,27 +210,37 @@ public class TestValidator {
 		return reader.getName().getLocalPart().equals(name);
 	}
 
-	public void debug(String msg) {
+	public static void debug(String msg) {
+		// System.out.println(msg);
+	}
+
+	public void log(String msg) {
 		System.out.println(msg);
 	}
 
 	public void initTimeCalculation(String tipo) {
-		debug(String.format("Iniciando validación %s ", tipo));
+		log(String.format("Iniciando validación %s ", tipo));
 		ini = System.currentTimeMillis();
 	}
 
 	public void endTimeCalculation(String tipo) {
 		fin = System.currentTimeMillis();
-		debug(String.format("Tiempo total validación %s por bloques:%d ms", tipo, fin - ini));
+		log(String.format("Tiempo total validación %s por bloques:%d ms", tipo, fin - ini));
 	}
 
 	public static void main(String args[]) throws Exception {
 		try {
 			TestValidator tv = new TestValidator();
-			tv.validarCompleto();
-			tv.validarPorBloques();
-			tv.validarPorBloquesConDomAuxiliar();
-			tv.validarPorBloquesConJaxbAuxiliar();
+			IntStream.range(0, 100).forEach(x -> {
+				try {
+					tv.validarCompleto();
+					tv.validarPorBloques();
+					tv.validarPorBloquesConDomAuxiliar();
+					tv.validarPorBloquesConJaxbAuxiliar();
+				} catch (Exception e) {
+					debug("Error en los test");
+				}
+			});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
