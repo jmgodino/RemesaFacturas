@@ -1,5 +1,6 @@
 package com.picoto.main;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,6 +29,8 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.xml.security.Init;
+import org.apache.xml.security.c14n.Canonicalizer;
 import org.jaxen.JaxenException;
 import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.XPath;
@@ -103,14 +106,14 @@ public class TestValidator {
 		});
 	}
 
-	public void validarPorBloquesConDomAuxiliar()
+	public void validarPorBloquesConDomAuxiliar(boolean  canonical)
 			throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
 		Validator validator = getValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		this.procesarNodos("Facturae", "DOM", reader, (r) -> {
+		this.procesarNodos("Facturae", "DOM canonical("+canonical+")", reader, (r) -> {
 			try {
-				Node node = getNodoCompleto(reader);
+				Node node = getNodoCompleto(reader, canonical);
 				validator.validate(new DOMSource(node));
 
 				debug("     Valor XPath del DOM: " + getXPath(
@@ -179,14 +182,46 @@ public class TestValidator {
 		return sw.toString();
 	}
 
-	private static Node getNodoCompleto(XMLStreamReader reader) throws XMLStreamException, TransformerException {
+	private static byte[] getDatosCompleto(Node nodo) throws XMLStreamException, TransformerException {
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		TransformerFactory tf = TransformerFactory.newInstance();
+		Transformer t = tf.newTransformer();
+		t.transform(new DOMSource(nodo), new StreamResult(bos));
+		return bos.toByteArray();
+	}
+	
+	private static Node getNodoCompleto(XMLStreamReader reader, boolean canonical) throws Exception {
 		DOMResult dr = new DOMResult();
 		TransformerFactory tf = TransformerFactory.newInstance();
 		Transformer t = tf.newTransformer();
 		t.transform(new StAXSource(reader), dr);
+		if (canonical) {
+			String str = normalizeDocument(dr.getNode());
+			debug(str);
+		}
 		return dr.getNode();
 	}
 
+	private static String normalizeDocument(Node node) throws Exception {
+		return new String(canonicalize(getDatosCompleto(node)));
+	}
+
+	public static byte[] canonicalize(byte[] data) throws Exception {
+	    ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length);
+	    try {
+	        Init.init();
+	        //String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#WithComments";
+	        //String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#";
+	        //String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315";
+	        String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments";
+	        Canonicalizer c14n = Canonicalizer.getInstance(metodo);
+	        c14n.canonicalize(data, bos, false);
+	    } catch (Exception e) {
+	        throw new RuntimeException("Error al canonicalizar el documento");
+	    }
+	    return bos.toByteArray();
+	}
+	
 	private Facturae getObjetoCompleto(XMLStreamReader reader, Schema schema)
 			throws JAXBException, TransformerException, SAXException, IOException {
 
@@ -211,7 +246,7 @@ public class TestValidator {
 	}
 
 	public static void debug(String msg) {
-		// System.out.println(msg);
+		//System.out.println(msg);
 	}
 
 	public void log(String msg) {
@@ -231,13 +266,15 @@ public class TestValidator {
 	public static void main(String args[]) throws Exception {
 		try {
 			TestValidator tv = new TestValidator();
-			IntStream.range(0, 100).forEach(x -> {
+			IntStream.range(0, 1).forEach(x -> {
 				try {
 					tv.validarCompleto();
 					tv.validarPorBloques();
-					tv.validarPorBloquesConDomAuxiliar();
+					tv.validarPorBloquesConDomAuxiliar(false);
+					tv.validarPorBloquesConDomAuxiliar(true);
 					tv.validarPorBloquesConJaxbAuxiliar();
 				} catch (Exception e) {
+					e.printStackTrace();
 					debug("Error en los test");
 				}
 			});
