@@ -1,21 +1,28 @@
 package com.picoto.main;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 import javax.xml.XMLConstants;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -28,6 +35,8 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.commons.codec.binary.Base16;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.IOUtils;
 import org.apache.xml.security.Init;
 import org.apache.xml.security.c14n.Canonicalizer;
@@ -35,7 +44,10 @@ import org.jaxen.JaxenException;
 import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.XPath;
 import org.jaxen.dom.DOMXPath;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
 import com.picoto.Facturae;
@@ -106,12 +118,12 @@ public class TestValidator {
 		});
 	}
 
-	public void validarPorBloquesConDomAuxiliar(boolean  canonical)
+	public void validarPorBloquesConDomAuxiliar(boolean canonical)
 			throws XMLStreamException, SAXException, IOException, TransformerException {
 		XMLStreamReader reader = getStaxReader(getFile("./ejemplo.xml"));
 		Validator validator = getValidator(Facturae.class, "/schemas/Remesas.xml");
 
-		this.procesarNodos("Facturae", "DOM canonical("+canonical+")", reader, (r) -> {
+		this.procesarNodos("Facturae", "DOM canonical(" + canonical + ")", reader, (r) -> {
 			try {
 				Node node = getNodoCompleto(reader, canonical);
 				validator.validate(new DOMSource(node));
@@ -160,6 +172,14 @@ public class TestValidator {
 		return str;
 	}
 
+	private static Node getXPathNode(String xpath, Node node) throws JaxenException {
+		XPath path = new DOMXPath(xpath);
+		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
+		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
+		path.setNamespaceContext(nsContext);
+		return (Node) path.selectSingleNode(node);
+	}
+
 	private void procesarNodos(String elemento, String modo, XMLStreamReader reader, Consumer<XMLStreamReader> c)
 			throws XMLStreamException, TransformerException, SAXException, IOException {
 		initTimeCalculation(modo);
@@ -182,14 +202,21 @@ public class TestValidator {
 		return sw.toString();
 	}
 
-	private static byte[] getDatosCompleto(Node nodo) throws XMLStreamException, TransformerException {
+	private static byte[] getDatosCompleto(Node nodo, boolean format) throws XMLStreamException, TransformerException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		TransformerFactory tf = TransformerFactory.newInstance();
 		Transformer t = tf.newTransformer();
+		// Formato. Opcional
+		if (format) {
+			t.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+			t.setOutputProperty(OutputKeys.METHOD, "xml");
+			t.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			t.setOutputProperty(OutputKeys.INDENT, "no");
+		}
 		t.transform(new DOMSource(nodo), new StreamResult(bos));
 		return bos.toByteArray();
 	}
-	
+
 	private static Node getNodoCompleto(XMLStreamReader reader, boolean canonical) throws Exception {
 		DOMResult dr = new DOMResult();
 		TransformerFactory tf = TransformerFactory.newInstance();
@@ -197,31 +224,54 @@ public class TestValidator {
 		t.transform(new StAXSource(reader), dr);
 		if (canonical) {
 			String str = normalizeDocument(dr.getNode());
-			debug(str);
+
+			Document doc = parseDocument(str);
+			// generamos una huella de 64 posiciones 256/8
+			String huellaStr = toHex(digest(str.getBytes(), "SHA-256"));
+			Node extensions = getNodo("Extensions", doc);
+			//String nl = System.lineSeparator();
+			//Text linea1 = doc.createTextNode(nl);
+			//Text linea2 = doc.createTextNode(nl);
+			Element huella = doc.createElement("Huella");
+			Text textoHuella = doc.createTextNode(huellaStr);
+			huella.appendChild(textoHuella);
+			//extensions.appendChild(linea1);
+			extensions.appendChild(huella);
+			//extensions.appendChild(linea2);
+			debug(new String(getDatosCompleto(doc, true)));
 		}
 		return dr.getNode();
 	}
 
+	private static Node getNodo(String nombre, Document doc) {
+		return doc.getElementsByTagName(nombre).item(0);
+	}
+
+	private static Document parseDocument(String str) throws Exception {
+		DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+		return db.parse(new ByteArrayInputStream(str.getBytes("UTF-8")));
+	}
+
 	private static String normalizeDocument(Node node) throws Exception {
-		return new String(canonicalize(getDatosCompleto(node)));
+		return new String(canonicalize(getDatosCompleto(node, false)));
 	}
 
 	public static byte[] canonicalize(byte[] data) throws Exception {
-	    ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length);
-	    try {
-	        Init.init();
-	        //String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#WithComments";
-	        //String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#";
-	        //String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315";
-	        String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments";
-	        Canonicalizer c14n = Canonicalizer.getInstance(metodo);
-	        c14n.canonicalize(data, bos, false);
-	    } catch (Exception e) {
-	        throw new RuntimeException("Error al canonicalizar el documento");
-	    }
-	    return bos.toByteArray();
+		ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length);
+		try {
+			Init.init();
+			// String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#WithComments";
+			// String metodo = "http://www.w3.org/2001/10/xml-exc-c14n#";
+			// String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315";
+			String metodo = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments";
+			Canonicalizer c14n = Canonicalizer.getInstance(metodo);
+			c14n.canonicalize(data, bos, false);
+		} catch (Exception e) {
+			throw new RuntimeException("Error al canonicalizar el documento");
+		}
+		return bos.toByteArray();
 	}
-	
+
 	private Facturae getObjetoCompleto(XMLStreamReader reader, Schema schema)
 			throws JAXBException, TransformerException, SAXException, IOException {
 
@@ -245,11 +295,30 @@ public class TestValidator {
 		return reader.getName().getLocalPart().equals(name);
 	}
 
-	public static void debug(String msg) {
-		//System.out.println(msg);
+	public static byte[] digest(byte[] input, String algorithm) {
+		MessageDigest md;
+		try {
+			md = MessageDigest.getInstance(algorithm);
+		} catch (NoSuchAlgorithmException e) {
+			throw new IllegalArgumentException(e);
+		}
+		byte[] result = md.digest(input);
+		return result;
 	}
 
-	public void log(String msg) {
+	public static String toHex(byte[] bytes) {
+		return new Base16(true).encodeAsString(bytes);
+	}
+
+	public static String toBase64(byte[] bytes) {
+		return new Base64().encodeAsString(bytes);
+	}
+
+	public static void debug(String msg) {
+		// System.out.println(msg);
+	}
+
+	public static void log(String msg) {
 		System.out.println(msg);
 	}
 

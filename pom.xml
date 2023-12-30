@@ -37,6 +37,12 @@
 			<artifactId>xmlsec</artifactId>
 			<version>4.0.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.16.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
