@@ -2,7 +2,6 @@ package com.picoto.main;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -172,14 +171,6 @@ public class TestValidator {
 		return str;
 	}
 
-	private static Node getXPathNode(String xpath, Node node) throws JaxenException {
-		XPath path = new DOMXPath(xpath);
-		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
-		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
-		path.setNamespaceContext(nsContext);
-		return (Node) path.selectSingleNode(node);
-	}
-
 	private void procesarNodos(String elemento, String modo, XMLStreamReader reader, Consumer<XMLStreamReader> c)
 			throws XMLStreamException, TransformerException, SAXException, IOException {
 		initTimeCalculation(modo);
@@ -229,15 +220,10 @@ public class TestValidator {
 			// generamos una huella de 64 posiciones 256/8
 			String huellaStr = toHex(digest(str.getBytes(), "SHA-256"));
 			Node extensions = getNodo("Extensions", doc);
-			//String nl = System.lineSeparator();
-			//Text linea1 = doc.createTextNode(nl);
-			//Text linea2 = doc.createTextNode(nl);
 			Element huella = doc.createElement("Huella");
 			Text textoHuella = doc.createTextNode(huellaStr);
 			huella.appendChild(textoHuella);
-			//extensions.appendChild(linea1);
 			extensions.appendChild(huella);
-			//extensions.appendChild(linea2);
 			debug(new String(getDatosCompleto(doc, true)));
 		}
 		return dr.getNode();
