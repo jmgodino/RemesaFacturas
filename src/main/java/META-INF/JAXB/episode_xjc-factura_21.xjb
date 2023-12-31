@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.12.31 a las 09:17:37 AM CET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+    <schemaBindings map="false">
+      <package name="com.picoto"/>
+    </schemaBindings>
+    <bindings scd="~tns:InvoiceLineType">
+      <class ref="com.picoto.InvoiceLineType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceType">
+      <class ref="com.picoto.InvoiceType"/>
+    </bindings>
+    <bindings scd="tns:Facturae">
+      <class ref="com.picoto.Facturae"/>
+    </bindings>
+    <bindings scd="~tns:FileHeaderType">
+      <class ref="com.picoto.FileHeaderType"/>
+    </bindings>
+    <bindings scd="~tns:PartiesType">
+      <class ref="com.picoto.PartiesType"/>
+    </bindings>
+    <bindings scd="~tns:InvoicesType">
+      <class ref="com.picoto.InvoicesType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionsType">
+      <class ref="com.picoto.ExtensionsType"/>
+    </bindings>
+    <bindings scd="~tns:ThirdPartyType">
+      <class ref="com.picoto.ThirdPartyType"/>
+    </bindings>
+    <bindings scd="~tns:BatchType">
+      <class ref="com.picoto.BatchType"/>
+    </bindings>
+    <bindings scd="~tns:FactoringAssignmentDataType">
+      <class ref="com.picoto.FactoringAssignmentDataType"/>
+    </bindings>
+    <bindings scd="~tns:AssigneeType">
+      <class ref="com.picoto.AssigneeType"/>
+    </bindings>
+    <bindings scd="~tns:BusinessType">
+      <class ref="com.picoto.BusinessType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceHeaderType">
+      <class ref="com.picoto.InvoiceHeaderType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceIssueDataType">
+      <class ref="com.picoto.InvoiceIssueDataType"/>
+    </bindings>
+    <bindings scd="~tns:ItemsType">
+      <class ref="com.picoto.ItemsType"/>
+    </bindings>
+    <bindings scd="~tns:ExchangeRateDetailsType">
+      <class ref="com.picoto.ExchangeRateDetailsType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectiveType">
+      <class ref="com.picoto.CorrectiveType"/>
+    </bindings>
+    <bindings scd="~tns:PlaceOfIssueType">
+      <class ref="com.picoto.PlaceOfIssueType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryNotesReferencesType">
+      <class ref="com.picoto.DeliveryNotesReferencesType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryNoteType">
+      <class ref="com.picoto.DeliveryNoteType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialTaxableEventType">
+      <class ref="com.picoto.SpecialTaxableEventType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceTotalsType">
+      <class ref="com.picoto.InvoiceTotalsType"/>
+    </bindings>
+    <bindings scd="~tns:SubsidiesType">
+      <class ref="com.picoto.SubsidiesType"/>
+    </bindings>
+    <bindings scd="~tns:SubsidyType">
+      <class ref="com.picoto.SubsidyType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentsOnAccountType">
+      <class ref="com.picoto.PaymentsOnAccountType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentOnAccountType">
+      <class ref="com.picoto.PaymentOnAccountType"/>
+    </bindings>
+    <bindings scd="~tns:AmountsWithheldType">
+      <class ref="com.picoto.AmountsWithheldType"/>
+    </bindings>
+    <bindings scd="~tns:ReimbursableExpenses">
+      <class ref="com.picoto.ReimbursableExpenses"/>
+    </bindings>
+    <bindings scd="~tns:ReimbursableExpensesType">
+      <class ref="com.picoto.ReimbursableExpensesType"/>
+    </bindings>
+    <bindings scd="~tns:InstallmentsType">
+      <class ref="com.picoto.InstallmentsType"/>
+    </bindings>
+    <bindings scd="~tns:InstallmentType">
+      <class ref="com.picoto.InstallmentType"/>
+    </bindings>
+    <bindings scd="~tns:LegalLiteralsType">
+      <class ref="com.picoto.LegalLiteralsType"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalDataType">
+      <class ref="com.picoto.AdditionalDataType"/>
+    </bindings>
+    <bindings scd="~tns:AttachedDocumentsType">
+      <class ref="com.picoto.AttachedDocumentsType"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentType">
+      <class ref="com.picoto.AttachmentType"/>
+    </bindings>
+    <bindings scd="~tns:TaxIdentificationType">
+      <class ref="com.picoto.TaxIdentificationType"/>
+    </bindings>
+    <bindings scd="~tns:LegalEntityType">
+      <class ref="com.picoto.LegalEntityType"/>
+    </bindings>
+    <bindings scd="~tns:IndividualType">
+      <class ref="com.picoto.IndividualType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationDataType">
+      <class ref="com.picoto.RegistrationDataType"/>
+    </bindings>
+    <bindings scd="~tns:AddressType">
+      <class ref="com.picoto.AddressType"/>
+    </bindings>
+    <bindings scd="~tns:OverseasAddressType">
+      <class ref="com.picoto.OverseasAddressType"/>
+    </bindings>
+    <bindings scd="~tns:ContactDetailsType">
+      <class ref="com.picoto.ContactDetailsType"/>
+    </bindings>
+    <bindings scd="~tns:AdministrativeCentresType">
+      <class ref="com.picoto.AdministrativeCentresType"/>
+    </bindings>
+    <bindings scd="~tns:AdministrativeCentreType">
+      <class ref="com.picoto.AdministrativeCentreType"/>
+    </bindings>
+    <bindings scd="~tns:DiscountsAndRebatesType">
+      <class ref="com.picoto.DiscountsAndRebatesType"/>
+    </bindings>
+    <bindings scd="~tns:DiscountType">
+      <class ref="com.picoto.DiscountType"/>
+    </bindings>
+    <bindings scd="~tns:ChargesType">
+      <class ref="com.picoto.ChargesType"/>
+    </bindings>
+    <bindings scd="~tns:ChargeType">
+      <class ref="com.picoto.ChargeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxesType">
+      <class ref="com.picoto.TaxesType"/>
+    </bindings>
+    <bindings scd="~tns:TaxType">
+      <class ref="com.picoto.TaxType"/>
+    </bindings>
+    <bindings scd="~tns:TaxOutputType">
+      <class ref="com.picoto.TaxOutputType"/>
+    </bindings>
+    <bindings scd="~tns:AmountType">
+      <class ref="com.picoto.AmountType"/>
+    </bindings>
+    <bindings scd="~tns:AccountType">
+      <class ref="com.picoto.AccountType"/>
+    </bindings>
+    <bindings scd="~tns:PeriodDates">
+      <class ref="com.picoto.PeriodDates"/>
+    </bindings>
+    <bindings scd="~tns:FactoringAssignmentDocumentType">
+      <class ref="com.picoto.FactoringAssignmentDocumentType"/>
+    </bindings>
+    <bindings scd="~tns:RepositoryType">
+      <class ref="com.picoto.RepositoryType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentInKindType">
+      <class ref="com.picoto.PaymentInKindType"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentCompressionAlgorithmType">
+      <typesafeEnumClass ref="com.picoto.AttachmentCompressionAlgorithmType"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentEncodingType">
+      <typesafeEnumClass ref="com.picoto.AttachmentEncodingType"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentFormatType">
+      <typesafeEnumClass ref="com.picoto.AttachmentFormatType"/>
+    </bindings>
+    <bindings scd="~tns:PersonTypeCodeType">
+      <typesafeEnumClass ref="com.picoto.PersonTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ResidenceTypeCodeType">
+      <typesafeEnumClass ref="com.picoto.ResidenceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceIssuerTypeType">
+      <typesafeEnumClass ref="com.picoto.InvoiceIssuerTypeType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceDocumentTypeType">
+      <typesafeEnumClass ref="com.picoto.InvoiceDocumentTypeType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceClassType">
+      <typesafeEnumClass ref="com.picoto.InvoiceClassType"/>
+    </bindings>
+    <bindings scd="~tns:ReasonDescriptionType">
+      <typesafeEnumClass ref="com.picoto.ReasonDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectionMethodDescriptionType">
+      <typesafeEnumClass ref="com.picoto.CorrectionMethodDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:CountryType">
+      <typesafeEnumClass ref="com.picoto.CountryType"/>
+    </bindings>
+    <bindings scd="~tns:CurrencyCodeType">
+      <typesafeEnumClass ref="com.picoto.CurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ModalityType">
+      <typesafeEnumClass ref="com.picoto.ModalityType"/>
+    </bindings>
+    <bindings scd="~tns:LanguageCodeType">
+      <typesafeEnumClass ref="com.picoto.LanguageCodeType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.w3.org/2000/09/xmldsig#">
+    <schemaBindings map="false">
+      <package name="com.picoto"/>
+    </schemaBindings>
+    <bindings scd="~tns:SignatureType">
+      <class ref="com.picoto.SignatureType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureValueType">
+      <class ref="com.picoto.SignatureValueType"/>
+    </bindings>
+    <bindings scd="~tns:SignedInfoType">
+      <class ref="com.picoto.SignedInfoType"/>
+    </bindings>
+    <bindings scd="~tns:CanonicalizationMethodType">
+      <class ref="com.picoto.CanonicalizationMethodType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureMethodType">
+      <class ref="com.picoto.SignatureMethodType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceType">
+      <class ref="com.picoto.ReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:TransformsType">
+      <class ref="com.picoto.TransformsType"/>
+    </bindings>
+    <bindings scd="~tns:TransformType">
+      <class ref="com.picoto.TransformType"/>
+    </bindings>
+    <bindings scd="~tns:DigestMethodType">
+      <class ref="com.picoto.DigestMethodType"/>
+    </bindings>
+    <bindings scd="~tns:KeyInfoType">
+      <class ref="com.picoto.KeyInfoType"/>
+    </bindings>
+    <bindings scd="~tns:KeyValueType">
+      <class ref="com.picoto.KeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:RetrievalMethodType">
+      <class ref="com.picoto.RetrievalMethodType"/>
+    </bindings>
+    <bindings scd="~tns:X509DataType">
+      <class ref="com.picoto.X509DataType"/>
+    </bindings>
+    <bindings scd="~tns:PGPDataType">
+      <class ref="com.picoto.PGPDataType"/>
+    </bindings>
+    <bindings scd="~tns:SPKIDataType">
+      <class ref="com.picoto.SPKIDataType"/>
+    </bindings>
+    <bindings scd="~tns:ObjectType">
+      <class ref="com.picoto.ObjectType"/>
+    </bindings>
+    <bindings scd="~tns:ManifestType">
+      <class ref="com.picoto.ManifestType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePropertiesType">
+      <class ref="com.picoto.SignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePropertyType">
+      <class ref="com.picoto.SignaturePropertyType"/>
+    </bindings>
+    <bindings scd="~tns:DSAKeyValueType">
+      <class ref="com.picoto.DSAKeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:RSAKeyValueType">
+      <class ref="com.picoto.RSAKeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:X509IssuerSerialType">
+      <class ref="com.picoto.X509IssuerSerialType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml">
+    <schemaBindings map="false">
+      <package name="com.picoto"/>
+    </schemaBindings>
+    <bindings scd="tns:remesa">
+      <class ref="com.picoto.Remesa"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://uri.etsi.org/01903/v1.3.2#">
+    <schemaBindings map="false">
+      <package name="com.picoto"/>
+    </schemaBindings>
+    <bindings scd="~tns:AnyType">
+      <class ref="com.picoto.AnyType"/>
+    </bindings>
+    <bindings scd="~tns:ObjectIdentifierType">
+      <class ref="com.picoto.ObjectIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:EncapsulatedPKIDataType">
+      <class ref="com.picoto.EncapsulatedPKIDataType"/>
+    </bindings>
+    <bindings scd="~tns:IncludeType">
+      <class ref="com.picoto.IncludeType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceInfoType">
+      <class ref="com.picoto.ReferenceInfoType"/>
+    </bindings>
+    <bindings scd="~tns:XAdESTimeStampType">
+      <class ref="com.picoto.XAdESTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:OtherTimeStampType">
+      <class ref="com.picoto.OtherTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:QualifyingPropertiesType">
+      <class ref="com.picoto.QualifyingPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedPropertiesType">
+      <class ref="com.picoto.SignedPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedPropertiesType">
+      <class ref="com.picoto.UnsignedPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedSignaturePropertiesType">
+      <class ref="com.picoto.SignedSignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedDataObjectPropertiesType">
+      <class ref="com.picoto.SignedDataObjectPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedSignaturePropertiesType">
+      <class ref="com.picoto.UnsignedSignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedDataObjectPropertiesType">
+      <class ref="com.picoto.UnsignedDataObjectPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:QualifyingPropertiesReferenceType">
+      <class ref="com.picoto.QualifyingPropertiesReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDListType">
+      <class ref="com.picoto.CertIDListType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDListV2Type">
+      <class ref="com.picoto.CertIDListV2Type"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePolicyIdentifierType">
+      <class ref="com.picoto.SignaturePolicyIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:SPUserNoticeType">
+      <class ref="com.picoto.SPUserNoticeType"/>
+    </bindings>
+    <bindings scd="~tns:CounterSignatureType">
+      <class ref="com.picoto.CounterSignatureType"/>
+    </bindings>
+    <bindings scd="~tns:DataObjectFormatType">
+      <class ref="com.picoto.DataObjectFormatType"/>
+    </bindings>
+    <bindings scd="~tns:CommitmentTypeIndicationType">
+      <class ref="com.picoto.CommitmentTypeIndicationType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureProductionPlaceType">
+      <class ref="com.picoto.SignatureProductionPlaceType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureProductionPlaceV2Type">
+      <class ref="com.picoto.SignatureProductionPlaceV2Type"/>
+    </bindings>
+    <bindings scd="~tns:SignerRoleType">
+      <class ref="com.picoto.SignerRoleType"/>
+    </bindings>
+    <bindings scd="~tns:SignerRoleV2Type">
+      <class ref="com.picoto.SignerRoleV2Type"/>
+    </bindings>
+    <bindings scd="~tns:ClaimedRolesListType">
+      <class ref="com.picoto.ClaimedRolesListType"/>
+    </bindings>
+    <bindings scd="~tns:CertifiedRolesListTypeV2">
+      <class ref="com.picoto.CertifiedRolesListTypeV2"/>
+    </bindings>
+    <bindings scd="~tns:SignedAssertionsListType">
+      <class ref="com.picoto.SignedAssertionsListType"/>
+    </bindings>
+    <bindings scd="~tns:CompleteCertificateRefsType">
+      <class ref="com.picoto.CompleteCertificateRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CompleteRevocationRefsType">
+      <class ref="com.picoto.CompleteRevocationRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateValuesType">
+      <class ref="com.picoto.CertificateValuesType"/>
+    </bindings>
+    <bindings scd="~tns:RevocationValuesType">
+      <class ref="com.picoto.RevocationValuesType"/>
+    </bindings>
+    <bindings scd="~tns:IdentifierType">
+      <class ref="com.picoto.IdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentationReferencesType">
+      <class ref="com.picoto.DocumentationReferencesType"/>
+    </bindings>
+    <bindings scd="~tns:GenericTimeStampType">
+      <class ref="com.picoto.GenericTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDType">
+      <class ref="com.picoto.CertIDType"/>
+    </bindings>
+    <bindings scd="~tns:DigestAlgAndValueType">
+      <class ref="com.picoto.DigestAlgAndValueType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDTypeV2">
+      <class ref="com.picoto.CertIDTypeV2"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePolicyIdType">
+      <class ref="com.picoto.SignaturePolicyIdType"/>
+    </bindings>
+    <bindings scd="~tns:SigPolicyQualifiersListType">
+      <class ref="com.picoto.SigPolicyQualifiersListType"/>
+    </bindings>
+    <bindings scd="~tns:NoticeReferenceType">
+      <class ref="com.picoto.NoticeReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:IntegerListType">
+      <class ref="com.picoto.IntegerListType"/>
+    </bindings>
+    <bindings scd="~tns:CommitmentTypeQualifiersListType">
+      <class ref="com.picoto.CommitmentTypeQualifiersListType"/>
+    </bindings>
+    <bindings scd="~tns:CertifiedRolesListType">
+      <class ref="com.picoto.CertifiedRolesListType"/>
+    </bindings>
+    <bindings scd="~tns:CertifiedRoleTypeV2">
+      <class ref="com.picoto.CertifiedRoleTypeV2"/>
+    </bindings>
+    <bindings scd="~tns:CRLRefsType">
+      <class ref="com.picoto.CRLRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CRLRefType">
+      <class ref="com.picoto.CRLRefType"/>
+    </bindings>
+    <bindings scd="~tns:CRLIdentifierType">
+      <class ref="com.picoto.CRLIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPRefsType">
+      <class ref="com.picoto.OCSPRefsType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPRefType">
+      <class ref="com.picoto.OCSPRefType"/>
+    </bindings>
+    <bindings scd="~tns:ResponderIDType">
+      <class ref="com.picoto.ResponderIDType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPIdentifierType">
+      <class ref="com.picoto.OCSPIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:OtherCertStatusRefsType">
+      <class ref="com.picoto.OtherCertStatusRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CRLValuesType">
+      <class ref="com.picoto.CRLValuesType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPValuesType">
+      <class ref="com.picoto.OCSPValuesType"/>
+    </bindings>
+    <bindings scd="~tns:OtherCertStatusValuesType">
+      <class ref="com.picoto.OtherCertStatusValuesType"/>
+    </bindings>
+    <bindings scd="~tns:QualifierType">
+      <typesafeEnumClass ref="com.picoto.QualifierType"/>
+    </bindings>
+  </bindings>
+</bindings>
+

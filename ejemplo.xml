@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <re:remesa
 	xmlns:re="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
-	xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
-	xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+	xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
 	<fe:Facturae>
 		<FileHeader>
 			<SchemaVersion>3.2.2</SchemaVersion>

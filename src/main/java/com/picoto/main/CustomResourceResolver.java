@@ -21,12 +21,13 @@ public class CustomResourceResolver implements LSResourceResolver {
 
 	@Override
 	public LSInput resolveResource(String type, String namespaceURI, String publicId, String systemId, String baseURI) {
-		debug("     Cargando schema: " + clazz.getCanonicalName() + " " + systemId);
+		Utils.debug("     Cargando schema: " + clazz.getCanonicalName() + " " + systemId);
 		return new Input(publicId, systemId);
 	}
 
 	class Input implements LSInput {
 
+		private static final String PREFIX = "schemas/";
 		private String publicId;
 		private String systemId;
 
@@ -69,7 +70,7 @@ public class CustomResourceResolver implements LSResourceResolver {
 
 		public String getStringData() {
 			try {
-				return IOUtils.resourceToString(systemId, charset, clazz.getClassLoader());
+				return IOUtils.resourceToString(PREFIX+systemId, charset, clazz.getClassLoader());
 			} catch (Exception e) {
 				throw new IllegalArgumentException("Error al cargar string de esquema", e);
 			}
@@ -105,10 +106,6 @@ public class CustomResourceResolver implements LSResourceResolver {
 		public void setStringData(String stringData) {
 		}
 
-	}
-
-	public void debug(String msg) {
-		//System.out.println(msg);
 	}
 
 }

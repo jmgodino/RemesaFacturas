@@ -5,7 +5,7 @@
 	targetNamespace="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
 	version="3.2.2">
 	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#"
-		schemaLocation="schemas/signature.xml" />
+		schemaLocation="xmldsig.xsd" />
 	<xs:element name="Facturae">
 		<xs:annotation>
 			<xs:documentation xml:lang="en"> Element ORIGIN of

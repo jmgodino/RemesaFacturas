@@ -5,7 +5,7 @@
 	xmlns:fact="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
 	version="1.0.0">
 	<xs:import namespace="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
-		schemaLocation="schemas/Facturaev322.xml" />
+		schemaLocation="Facturaev322.xsd" />
 	<xs:element name="remesa">
 		<xs:annotation>
 			<xs:documentation xml:lang="es">Remesa de facturas
