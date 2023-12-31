@@ -18,7 +18,6 @@ import java.security.cert.X509Certificate;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 import javax.xml.crypto.MarshalException;
@@ -51,7 +50,6 @@ import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import com.picoto.CertIDListType;
 import com.picoto.CertIDType;
@@ -68,7 +66,7 @@ import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 
-public class XAdESSigner {
+public class XAdESSigner extends XAdESCommon {
 
 	// Removes "enveloped signature" from a document, so the signature element
 	// itself is not digested
@@ -254,7 +252,7 @@ public class XAdESSigner {
 
 		// Re-set id flag lost during element import to all xs:id attributes
 		// by setting the `Element.setIdAttribute("Id", true)`.
-		markIdsRecursively(importedQualifyingProperties.getChildNodes());
+		markSignerPropertiesId((Element) importedQualifyingProperties);
 
 		// If the owner document of the DOMStructure is different than the target
 		// document of an XMLSignature,
@@ -329,24 +327,6 @@ public class XAdESSigner {
 			}
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
-		}
-	}
-
-	private static void markIdsRecursively(NodeList nodeList) {
-		for (int i = 0; i < nodeList.getLength(); i++) {
-			Node item = nodeList.item(i);
-			if (item instanceof Element element) {
-				for (String idAttributeName : Set.of("id", "Id", "ID")) {
-					if (element.hasAttribute(idAttributeName)) {
-						Utils.log(element.getNodeName());
-						element.setIdAttribute(idAttributeName, true);
-						//Ojo, element.setIdAttributeNS parece mejor opción
-						//element.setIdAttributeNS("ds", idAttributeName, true);
-						
-					}
-				}
-			}
-			markIdsRecursively(item.getChildNodes());
 		}
 	}
 

@@ -1,6 +1,5 @@
 package com.picoto.main;
 
-import static java.util.Objects.requireNonNull;
 import static javax.xml.crypto.dsig.XMLSignature.XMLNS;
 
 import java.nio.charset.Charset;
@@ -27,7 +26,6 @@ import javax.xml.crypto.dsig.keyinfo.X509Data;
 
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -38,10 +36,7 @@ import org.w3c.dom.NodeList;
  * It does not check whether provided certificate is trusted, expired, revoked,
  * etc. This check has to be implemented in yet, or done separately.
  */
-public class XAdESValidator {
-
-	private static final String XADES_NAMESPACE = "http://uri.etsi.org/01903/v1.3.2#";
-
+public class XAdESValidator extends XAdESCommon {
 
 	public void validate(Document document) throws XAdESValidationException {
 		try {
@@ -49,7 +44,7 @@ public class XAdESValidator {
 			// element ID attribute is not properly marked, which means reference
 			// URL to the signed properties does not work. Manual marking it, fixes
 			// the issue.
-			markSignerPropertiesId(document);
+			markSignerPropertiesId(document.getDocumentElement());
 
 			NodeList signatureNodes = document.getElementsByTagNameNS(XMLNS, "Signature");
 			if (signatureNodes.getLength() != 1)
@@ -73,19 +68,6 @@ public class XAdESValidator {
 			}
 		} catch (MarshalException | XMLSignatureException e) {
 			throw new XAdESValidationException(e);
-		}
-	}
-
-	private void markSignerPropertiesId(Document document) {
-		NodeList signedPropertiesNodeList = document.getElementsByTagNameNS(XADES_NAMESPACE,"SignedProperties");
-		requireNonNull(signedPropertiesNodeList);
-		for (int i = 0; i < signedPropertiesNodeList.getLength(); i++) {
-			Node node = signedPropertiesNodeList.item(i);
-			if (node instanceof Element) {
-				Element element = (Element) node;
-				element.setIdAttribute("Id", true);
-
-			}
 		}
 	}
 
@@ -151,11 +133,10 @@ public class XAdESValidator {
 			super(cause);
 		}
 	}
-	
 
 	public static void main(String args[]) throws Exception {
 		XAdESValidator signer = new XAdESValidator();
-		String strDoc = IOUtils.toString(Utils.getFile("./signed.xml"),Charset.defaultCharset());
+		String strDoc = IOUtils.toString(Utils.getFile("./signed.xml"), Charset.defaultCharset());
 		signer.validate(Utils.parseDocument(strDoc));
 		Utils.log("Firma validada correctamente");
 	}
