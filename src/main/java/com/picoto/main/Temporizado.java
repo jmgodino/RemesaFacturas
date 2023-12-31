@@ -1,12 +1,11 @@
 package com.picoto.main;
 
-public class Temporizado {
+public class Temporizado extends ContextCommon {
 
 	private long ini, fin;
 
 	public Temporizado() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public void initTimeCalculation(String tipo) {

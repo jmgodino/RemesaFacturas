@@ -332,8 +332,8 @@ public class XAdESSigner extends XAdESCommon {
 
 	public static void main(String args[]) throws Exception {
 		XAdESSigner signer = new XAdESSigner(getCert(), getPrivateKey("RSA"));
-		Document signed = signer.signEnveloped(
-				Utils.parseDocument(IOUtils.toString(Utils.getFile("./ejemplo.xml"), Charset.defaultCharset())));
+		String strDoc = IOUtils.toString(Utils.getFile("./ejemplo.xml"), Charset.defaultCharset());
+		Document signed = signer.signEnveloped(Utils.parseDocument(strDoc));
 		String strSigned = new String(Utils.getDatosCompleto(signed, false));
 		IOUtils.write(strSigned, new FileOutputStream("./signed.xml"), Charset.defaultCharset());
 		Utils.log(strSigned);

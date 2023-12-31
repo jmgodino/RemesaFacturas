@@ -19,19 +19,12 @@ import org.xml.sax.SAXException;
 
 import com.picoto.Facturae;
 
-import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Unmarshaller;
 
 public class TestValidator extends Temporizado {
 
-	private JAXBContext ctx;
-
 	public TestValidator() throws JAXBException {
 		super();
-		if (ctx == null) {
-			ctx = JAXBContext.newInstance("com.picoto");
-		}
 	}
 
 	public void validarPorBloques() throws XMLStreamException, SAXException, IOException, TransformerException {
@@ -65,7 +58,8 @@ public class TestValidator extends Temporizado {
 				validator.validate(new DOMSource(node));
 
 				Utils.debug("     Valor XPath del DOM: " + Utils.getXPath(
-						"/fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal/text()", node.getFirstChild()));
+						"/fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal/text()", "fe",
+						"http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", node.getFirstChild()));
 			} catch (Exception e) {
 				throw new RuntimeException("Error al procesar el elemento", e);
 			}
@@ -74,13 +68,10 @@ public class TestValidator extends Temporizado {
 
 	private Facturae getObjetoCompleto(XMLStreamReader reader, Schema schema)
 			throws JAXBException, TransformerException, SAXException, IOException {
-
-		Unmarshaller unmarshaller = ctx.createUnmarshaller();
-		unmarshaller.setSchema(schema);
-		return unmarshaller.unmarshal(reader, Facturae.class).getValue();
+		return getJaxbObject(Facturae.class, schema, reader);
+		
 	}
 
-	
 	public void validarPorBloquesConJaxbAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException, JAXBException {
 		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("./ejemplo.xml"));
@@ -141,7 +132,5 @@ public class TestValidator extends Temporizado {
 			e.printStackTrace();
 		}
 	}
-
-
 
 }

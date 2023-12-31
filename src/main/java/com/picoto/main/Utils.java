@@ -48,17 +48,22 @@ import org.xml.sax.SAXException;
 public class Utils {
 
 	public static Document parseDocument(String str) throws Exception {
+		return  parseDocument(str.getBytes());
+	}
+
+	public static Document parseDocument(byte[] strDoc) throws Exception {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		dbf.setNamespaceAware(true);
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		
-		return db.parse(new ByteArrayInputStream(str.getBytes("UTF-8")));
+		return db.parse(new ByteArrayInputStream(strDoc));
 	}
 
-	public static String getXPath(String xpath, Node node) throws JaxenException {
+	
+	public static String getXPath(String xpath, String prefix, String nameSpace, Node node) throws JaxenException {
 		XPath path = new DOMXPath(xpath);
 		SimpleNamespaceContext nsContext = new SimpleNamespaceContext();
-		nsContext.addNamespace("fe", "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml");
+		nsContext.addNamespace(prefix, nameSpace);
 		path.setNamespaceContext(nsContext);
 		String str = (String) path.stringValueOf(node);
 		return str;
@@ -148,6 +153,10 @@ public class Utils {
 
 	public static String normalizeDocument(Node node) throws Exception {
 		return new String(canonicalize(Utils.getDatosCompleto(node, false)));
+	}
+	
+	public static Document toNormalizedDocument(Document doc) throws Exception {
+		return parseDocument(canonicalize(Utils.getDatosCompleto(doc, false)));
 	}
 
 	public static byte[] canonicalize(byte[] data) throws Exception {
