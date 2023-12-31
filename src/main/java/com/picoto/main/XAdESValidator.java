@@ -76,16 +76,16 @@ public class XAdESValidator extends XAdESCommon {
 		Map<String, Boolean> components = new LinkedHashMap<>();
 
 		boolean signatureValidity = signature.getSignatureValue().validate(validateContext);
-		components.put("signature", signatureValidity);
+		components.put("Validez de la  firma respecto al hash", signatureValidity);
 
 		for (Reference reference : signature.getSignedInfo().getReferences()) {
 			String referenceUri = reference.getURI();
 			boolean referenceValidity = reference.validate(validateContext);
-			String name = "reference[uri=%s]".formatted(referenceUri);
+			String name = "Validez de los datos referenciados en [uri=%s]".formatted(referenceUri);
 			components.put(name, referenceValidity);
 		}
 
-		return components.entrySet().stream().map(e -> "%s validity: %b".formatted(e.getKey(), e.getValue()))
+		return components.entrySet().stream().map(e -> "%s: %b".formatted(e.getKey(), e.getValue()))
 				.collect(Collectors.joining("\n"));
 	}
 
@@ -137,7 +137,13 @@ public class XAdESValidator extends XAdESCommon {
 	public static void main(String args[]) throws Exception {
 		XAdESValidator signer = new XAdESValidator();
 		String strDoc = IOUtils.toString(Utils.getFile("./signed.xml"), Charset.defaultCharset());
-		signer.validate(Utils.parseDocument(strDoc));
+		try {
+			signer.validate(Utils.parseDocument(strDoc));
+		} catch (Exception e) {
+			Utils.log("Error al validar la firma");
+			Utils.log(e.getMessage());
+			return;
+		}
 		Utils.log("Firma validada correctamente");
 	}
 }
