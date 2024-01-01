@@ -81,11 +81,11 @@ public class XAdESValidator extends XAdESCommon {
 		for (Reference reference : signature.getSignedInfo().getReferences()) {
 			String referenceUri = reference.getURI();
 			boolean referenceValidity = reference.validate(validateContext);
-			String name = "Validez de los datos referenciados en [uri=%s]".formatted(referenceUri);
+			String name = String.format("Validez de los datos referenciados en [uri=%s]", referenceUri);
 			components.put(name, referenceValidity);
 		}
 
-		return components.entrySet().stream().map(e -> "%s: %b".formatted(e.getKey(), e.getValue()))
+		return components.entrySet().stream().map(e -> String.format("%s: %b",e.getKey(), e.getValue()))
 				.collect(Collectors.joining("\n"));
 	}
 

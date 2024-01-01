@@ -112,7 +112,7 @@
 		<Invoices>
 			<Invoice>
 				<InvoiceHeader>
-					<InvoiceNumber>2</InvoiceNumber>
+					<InvoiceNumber>2123123-G200</InvoiceNumber>
 					<InvoiceSeriesCode>PACOP</InvoiceSeriesCode>
 					<InvoiceDocumentType>FC</InvoiceDocumentType>
 					<InvoiceClass>OO</InvoiceClass>
@@ -179,9 +179,14 @@
 					<TotalGrossAmountBeforeTaxes>1163.52</TotalGrossAmountBeforeTaxes>
 					<TotalTaxOutputs>279.24</TotalTaxOutputs>
 					<TotalTaxesWithheld>58.18</TotalTaxesWithheld>
-					<InvoiceTotal>2345.45</InvoiceTotal>
-					<TotalOutstandingAmount>1384.58</TotalOutstandingAmount>
-					<TotalExecutableAmount>1384.58</TotalExecutableAmount>
+					<InvoiceTotal>1384.58</InvoiceTotal>
+					<TotalPaymentsOnAccount>200.00</TotalPaymentsOnAccount>
+					<TotalOutstandingAmount>1184.58</TotalOutstandingAmount>
+					<AmountsWithheld>800.00</AmountsWithheld>
+					<PaymentInKind>100</PaymentInKind>
+					<TotalReimbursableExpenses>1.00</TotalReimbursableExpenses>
+					<TotalFinancialExpenses>2.00</TotalFinancialExpenses>
+					<TotalExecutableAmount>281.58</TotalExecutableAmount>
 				</InvoiceTotals>
 				<Items>
 					<InvoiceLine>

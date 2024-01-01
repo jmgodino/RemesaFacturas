@@ -42,6 +42,7 @@ import org.jaxen.dom.DOMXPath;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
@@ -151,6 +152,16 @@ public class Utils {
 		return doc.getElementsByTagName(nombre).item(0);
 	}
 
+	public static Node getNodoNS(String ns, String nombre, Document doc) {
+		return doc.getElementsByTagNameNS(ns, nombre).item(0);
+	}
+
+	
+	public static NodeList getNodosNS(String ns, String nombre, Document doc) {
+		return doc.getElementsByTagNameNS(ns, nombre);
+	}
+
+	
 	public static String normalizeDocument(Node node) throws Exception {
 		return new String(canonicalize(Utils.getDatosCompleto(node, false)));
 	}

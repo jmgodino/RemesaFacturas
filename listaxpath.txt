@@ -1,0 +1,146 @@
+-- Principal
+//fe:Facturae/FileHeader/Modality -> Debe ser "I" (VALIDACIÓN)
+//fe:Facturae/FileHeader/InvoiceIssuerType (RE,DE,TE)
+
+-- Emisor
+	
+	//fe:Facturae/Parties/SellerParty/TaxIdentification/TaxIdentificationNumber
+	//fe:Facturae/Parties/SellerParty/ContactDetails/Telephone
+	//fe:Facturae/Parties/SellerParty/ContactDetails/ElectronicMail
+	//fe:Facturae/Parties/SellerParty/ContactDetails/WebAddress
+	
+	IF //fe:Facturae/Parties/SellerParty/TaxIdentification/PersonTypeCode == 'F' AND
+	   //fe:Facturae/Parties/SellerParty/TaxIdentification/ResidenceTypeCode == 'R' 
+	
+	//fe:Facturae/Parties/SellerParty/Individual/Name + FirstSurname + SecondSurname
+	//fe:Facturae/Parties/SellerParty/Individual/AddressInSpain/Address
+	//fe:Facturae/Parties/SellerParty/Individual/AddressInSpain/PostCode
+	//fe:Facturae/Parties/SellerParty/Individual/AddressInSpain/Town
+	//fe:Facturae/Parties/SellerParty/Individual/AddressInSpain/Province
+	//fe:Facturae/Parties/SellerParty/Individual/AddressInSpain/CountryCode
+	
+	IF //fe:Facturae/Parties/SellerParty/TaxIdentification/PersonTypeCode == 'J' AND
+	   //fe:Facturae/Parties/SellerParty/TaxIdentification/ResidenceTypeCode == 'R' 
+	
+	//fe:Facturae/Parties/SellerParty/LegalEntity/CorporateName + TradeName
+	//fe:Facturae/Parties/SellerParty/LegalEntity/AddressInSpain/Address
+	//fe:Facturae/Parties/SellerParty/LegalEntity/AddressInSpain/PostCode
+	//fe:Facturae/Parties/SellerParty/LegalEntity/AddressInSpain/Town
+	//fe:Facturae/Parties/SellerParty/LegalEntity/AddressInSpain/Province
+	//fe:Facturae/Parties/SellerParty/LegalEntity/AddressInSpain/CountryCode
+						
+	IF //fe:Facturae/Parties/SellerParty/TaxIdentification/PersonTypeCode == 'F' AND
+	   //fe:Facturae/Parties/SellerParty/TaxIdentification/ResidenceTypeCode == ('E','U') 
+			
+	//fe:Facturae/Parties/SellerParty/TaxIdentification/TaxIdentificationNumber
+	//fe:Facturae/Parties/SellerParty/Individual/Name + FirstSurname + SecondSurname
+	//fe:Facturae/Parties/SellerParty/Individual/OverseasAddress/Address
+	//fe:Facturae/Parties/SellerParty/Individual/OverseasAddress/PostCodeAndTown
+	//fe:Facturae/Parties/SellerParty/Individual/OverseasAddress/Province
+	//fe:Facturae/Parties/SellerParty/Individual/OverseasAddress/CountryCode
+	
+	IF //fe:Facturae/Parties/SellerParty/TaxIdentification/PersonTypeCode == 'J' AND
+	   //fe:Facturae/Parties/SellerParty/TaxIdentification/ResidenceTypeCode == ('E','U') 
+			
+	//fe:Facturae/Parties/SellerParty/LegalEntity/CorporateName + TradeName
+	//fe:Facturae/Parties/SellerParty/LegalEntity/OverseasAddress/Address
+	//fe:Facturae/Parties/SellerParty/LegalEntity/OverseasAddress/PostCodeAndTown
+	//fe:Facturae/Parties/SellerParty/LegalEntity/OverseasAddress/Province
+	//fe:Facturae/Parties/SellerParty/LegalEntity/OverseasAddress/CountryCode
+
+-- Destinatario (si lo hubiera)
+	
+	//fe:Facturae/Parties/BuyerParty/TaxIdentification/TaxIdentificationNumber
+	
+	IF //fe:Facturae/Parties/BuyerParty/TaxIdentification/PersonTypeCode == 'F' AND
+	   //fe:Facturae/Parties/BuyerParty/TaxIdentification/ResidenceTypeCode == 'R' 
+	
+	//fe:Facturae/Parties/BuyerParty/Individual/Name + FirstSurname + SecondSurname
+	//fe:Facturae/Parties/BuyerParty/Individual/AddressInSpain/Address
+	//fe:Facturae/Parties/BuyerParty/Individual/AddressInSpain/PostCode
+	//fe:Facturae/Parties/BuyerParty/Individual/AddressInSpain/Town
+	//fe:Facturae/Parties/BuyerParty/Individual/AddressInSpain/Province
+	//fe:Facturae/Parties/BuyerParty/Individual/AddressInSpain/CountryCode
+	
+	IF //fe:Facturae/Parties/BuyerParty/TaxIdentification/PersonTypeCode == 'J' AND
+	   //fe:Facturae/Parties/BuyerParty/TaxIdentification/ResidenceTypeCode == 'R' 
+	
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/CorporateName + TradeName
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/AddressInSpain/Address
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/AddressInSpain/PostCode
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/AddressInSpain/Town
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/AddressInSpain/Province
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/AddressInSpain/CountryCode
+						
+	IF //fe:Facturae/Parties/BuyerParty/TaxIdentification/PersonTypeCode == 'F' AND
+	   //fe:Facturae/Parties/BuyerParty/TaxIdentification/ResidenceTypeCode == ('E','U') 
+			
+	//fe:Facturae/Parties/BuyerParty/TaxIdentification/TaxIdentificationNumber
+	//fe:Facturae/Parties/BuyerParty/Individual/Name + FirstSurname + SecondSurname
+	//fe:Facturae/Parties/BuyerParty/Individual/OverseasAddress/Address
+	//fe:Facturae/Parties/BuyerParty/Individual/OverseasAddress/PostCodeAndTown
+	//fe:Facturae/Parties/BuyerParty/Individual/OverseasAddress/Province
+	//fe:Facturae/Parties/BuyerParty/Individual/OverseasAddress/CountryCode
+	
+	IF //fe:Facturae/Parties/BuyerParty/TaxIdentification/PersonTypeCode == 'J' AND
+	   //fe:Facturae/Parties/BuyerParty/TaxIdentification/ResidenceTypeCode == ('E','U') 
+			
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/CorporateName + TradeName
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/OverseasAddress/Address
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/OverseasAddress/PostCodeAndTown
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/OverseasAddress/Province
+	//fe:Facturae/Parties/BuyerParty/LegalEntity/OverseasAddress/CountryCode
+
+
+-- Id. Factura, Tipo Factura y fechas
+//fe:Facturae/Invoices/Invoice/InvoiceHeader/InvoiceNumber  (Nº factura)
+//fe:Facturae/Invoices/Invoice/InvoiceHeader/InvoiceDocumentType (FC: ordinaria, FA: simplificada)
+//fe:Facturae/Invoices/Invoice/InvoiceHeader/InvoiceClass (OO: Original, OR: rectificativa, OC: recapitulativa, CO: Copia, CR: copia rect. CC: copia recap.)
+
+//fe:Facturae/Invoices/Invoice/InvoiceIssueData/IssueDate  (fecha emisión formato: yyyy-MM-dd)
+//fe:Facturae/Invoices/Invoice/InvoiceIssueData/OperationDate - OPCIONAL (fecha operación formato: yyyy-MM-dd)
+
+-- Resumen de impuestos
+* Iterar con cada registro/tipo impositivo
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxTypeCode  (01: IVA, 02: IPSI, 03: IGIC, ...)
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxRate  (tipo impositivo)
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxAmount/TotalAmount  (cuota para este tipo impositivo)
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/EquivalenceSurcharge (tipo impositivo)
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/EquivalenceSurchargeAmount/TotalAmount (cuota para el RE de este tipo impositivo)
+
+- Resumen de Retenciones
+//fe:Facturae/Invoices/Invoice/TaxesWithheld/Tax/TaxTypeCode  (04: IRPF)
+//fe:Facturae/Invoices/Invoice/TaxesWithheld/Tax/TaxRate (tipo impositivo)
+//fe:Facturae/Invoices/Invoice/TaxesWithheld/Tax/TaxAmount/TotalAmount (importe retenido)
+
+-- Cálculo del importe a ingresar
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalGrossAmount  (total bases imponibles)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalGeneralDiscounts  (total descuentos)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalGeneralSurcharges (total suplidos)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalGrossAmountBeforeTaxes (total antes impuestos)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalTaxOutputs  (total de impuestos)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalTaxesWithheld (total retenciones)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal  (total factura)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalPaymentsOnAccount (anticipos)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalOutstandingAmount (total factura menos anticipos, ayudas, otros)
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/AmountsWithheld
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/PaymentInKind
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalReimbursableExpenses
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalFinancialExpenses
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalExecutableAmount (importe a ingresar)
+
+-- Detalle operaciones
+* Iterar por cada registro
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/SpecialTaxableEvent (exento o no sujeto si tiene valor)
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/ArticleCode (artículo aplicable)
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxTypeCode (01: IVA, 02: IPSI, ...)
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxRate
+
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/ItemDescription
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/Quantity
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/UnitPriceWithoutTax
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/GrossAmount (importe quitando descuentos y añadiendo cargos)
+
+
+
+				

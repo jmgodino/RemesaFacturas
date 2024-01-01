@@ -61,7 +61,7 @@
 				</executions>
 				<configuration>
 					<!-- The package of your generated sources -->
-					<packageName>com.picoto</packageName>
+					<packageName>com.picoto.jaxb</packageName>
 					<outputDirectory>src/main/java</outputDirectory>
 					<generateEpisode>false</generateEpisode>
 					<clearOutputDir>false</clearOutputDir>

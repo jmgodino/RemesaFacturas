@@ -51,15 +51,15 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import com.picoto.CertIDListType;
-import com.picoto.CertIDType;
-import com.picoto.DigestAlgAndValueType;
-import com.picoto.ObjectFactory;
-import com.picoto.QualifyingPropertiesType;
-import com.picoto.SignaturePolicyIdentifierType;
-import com.picoto.SignedPropertiesType;
-import com.picoto.SignedSignaturePropertiesType;
-import com.picoto.X509IssuerSerialType;
+import com.picoto.jaxb.CertIDListType;
+import com.picoto.jaxb.CertIDType;
+import com.picoto.jaxb.DigestAlgAndValueType;
+import com.picoto.jaxb.ObjectFactory;
+import com.picoto.jaxb.QualifyingPropertiesType;
+import com.picoto.jaxb.SignaturePolicyIdentifierType;
+import com.picoto.jaxb.SignedPropertiesType;
+import com.picoto.jaxb.SignedSignaturePropertiesType;
+import com.picoto.jaxb.X509IssuerSerialType;
 
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
@@ -320,7 +320,8 @@ public class XAdESSigner extends XAdESCommon {
 			DOMResult domResult = new DOMResult();
 			marshaller.marshal(qualifyingProperties, domResult);
 			Node node = domResult.getNode();
-			if (node instanceof Document qualifyingPropertiesDocument) {
+			if (node instanceof Document) {
+				Document qualifyingPropertiesDocument = (Document)node;
 				return qualifyingPropertiesDocument.getDocumentElement();
 			} else {
 				throw new IllegalStateException("Node " + node + " is not document!");
