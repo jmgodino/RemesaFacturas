@@ -180,13 +180,19 @@
 					<TotalTaxOutputs>279.24</TotalTaxOutputs>
 					<TotalTaxesWithheld>58.18</TotalTaxesWithheld>
 					<InvoiceTotal>1384.58</InvoiceTotal>
-					<TotalPaymentsOnAccount>200.00</TotalPaymentsOnAccount>
-					<TotalOutstandingAmount>1184.58</TotalOutstandingAmount>
-					<AmountsWithheld>800.00</AmountsWithheld>
-					<PaymentInKind>100</PaymentInKind>
-					<TotalReimbursableExpenses>1.00</TotalReimbursableExpenses>
 					<TotalFinancialExpenses>2.00</TotalFinancialExpenses>
+					<TotalOutstandingAmount>1184.58</TotalOutstandingAmount>
+					<TotalPaymentsOnAccount>200.00</TotalPaymentsOnAccount>
+					<AmountsWithheld>
+						<WithholdingReason>motivo</WithholdingReason>
+						<WithholdingAmount>2.00</WithholdingAmount>
+					</AmountsWithheld>
 					<TotalExecutableAmount>281.58</TotalExecutableAmount>
+					<TotalReimbursableExpenses>1.00</TotalReimbursableExpenses>
+					<PaymentInKind>
+						<PaymentInKindReason>motivo</PaymentInKindReason>
+						<PaymentInKindAmount>5.00</PaymentInKindAmount>
+					</PaymentInKind>
 				</InvoiceTotals>
 				<Items>
 					<InvoiceLine>
@@ -253,7 +259,8 @@
 							</Tax>
 						</TaxesOutputs>
 						<AdditionalLineItemInformation>Informacion adicional de la factura
-							de la mesas</AdditionalLineItemInformation>
+							de la mesas
+						</AdditionalLineItemInformation>
 					</InvoiceLine>
 				</Items>
 				<AdditionalData>

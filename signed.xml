@@ -109,7 +109,7 @@
 		<Invoices>
 			<Invoice>
 				<InvoiceHeader>
-					<InvoiceNumber>2</InvoiceNumber>
+					<InvoiceNumber>2123123-G200</InvoiceNumber>
 					<InvoiceSeriesCode>PACOP</InvoiceSeriesCode>
 					<InvoiceDocumentType>FC</InvoiceDocumentType>
 					<InvoiceClass>OO</InvoiceClass>
@@ -176,9 +176,12 @@
 					<TotalGrossAmountBeforeTaxes>1163.52</TotalGrossAmountBeforeTaxes>
 					<TotalTaxOutputs>279.24</TotalTaxOutputs>
 					<TotalTaxesWithheld>58.18</TotalTaxesWithheld>
-					<InvoiceTotal>2345.45</InvoiceTotal>
-					<TotalOutstandingAmount>1384.58</TotalOutstandingAmount>
-					<TotalExecutableAmount>1384.58</TotalExecutableAmount>
+					<InvoiceTotal>1384.58</InvoiceTotal>
+					<TotalFinancialExpenses>2.00</TotalFinancialExpenses>
+					<TotalOutstandingAmount>1184.58</TotalOutstandingAmount>
+					<TotalPaymentsOnAccount>200.00</TotalPaymentsOnAccount>
+					<TotalExecutableAmount>281.58</TotalExecutableAmount>
+					<TotalReimbursableExpenses>1.00</TotalReimbursableExpenses>
 				</InvoiceTotals>
 				<Items>
 					<InvoiceLine>
@@ -245,7 +248,8 @@
 							</Tax>
 						</TaxesOutputs>
 						<AdditionalLineItemInformation>Informacion adicional de la factura
-							de la mesas</AdditionalLineItemInformation>
+							de la mesas
+						</AdditionalLineItemInformation>
 					</InvoiceLine>
 				</Items>
 				<AdditionalData>
@@ -255,11 +259,11 @@
 		</Invoices>
 		<!-- comentario a eliminar en c14n -->
 	</fe:Facturae>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="signature-14caeb90-6d8d-4452-b7c0-f940f100d1f1"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>J70cDX6mvFr99+y4iGhNTWIC24DTY0ydMoy24Nep9z8=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#signed-properties-425f1440-9fbb-49a0-b26e-ba3e09dbbacc"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>fM4qLVnr77XtSJGHT/5OV+KajYbFhcNG91wcviCSNlo=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>vYN1px626i6C9nbR/RjUItAQ7H6r8AeTm6g+Ff9M7rSIc5eU6WULSx3PEa1BK9k56HJ+DF8TFhn7&#13;
-8b9biAb9BrwWFFsSN/BFe6u6zINWkx1vRPJre8NOZQ2ZZgaTOBQaGAuOUeuih8bVtOPkAFlVfxiW&#13;
-JcagbaPc7huetIxbOw91MtCuBgUtIkfOBdxDsPMlatvGMQJ1bPioVhD2ONwqYLzOSYAij1Bh3I+u&#13;
-SW0hQ4wzmbQ9qV29XzsIKEv0zYKsmTv5iMrljd3W2s9cqzIHZftYNCPlnnnhD4XmsoE+14kCnxw9&#13;
-cwkFvNMcNouE9J6E+cx1Saf3CD8gf8ciqWZPfw==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDrzCCApegAwIBAgIUenmDzxUKsauLvle9+aMyy3kABrowDQYJKoZIhvcNAQELBQAwZzELMAkG&#13;
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="signature-dbff4941-a7ca-4d3c-99e6-b2f4a5c9f044"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>6xp4RFAODUnNyUViwJrYH5wdOfVKZ8UgSvyo7GsTk1c=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#signed-properties-e9e39b9f-b7ea-4daa-a460-15ab0421f205"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>BllULI17B0zCPoqmgXat+zdyOLi+mnhNUKU2UI6WcEQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>j7cyvAnqBDhzhQo+1fpE0HdqxV/bmI5YWgizTAbxwP8NaQMRV/tHo08gHkpRtjy2+rZ6eyNZAADN&#13;
+byAP4wymi44ipObpTY6wAg2oECu2Qxa+kdnFZoin8G3HNoG73/EGJJIU4xDZPQHzQGxdCF+6CM/n&#13;
+qR8tKY5X/m+FBgCDE1nNRVckQQUmAZWlvPNKjzEP4Pmny1U5OUGXuwnbZ2IxgMIuVKFsnxHsHdzl&#13;
+0kS2xchj+nrpurQHp9eDpLeaTSR/I/AOgUy10qWQKN2VVpJjlX7kpX+M/sgN3hmUPDIn9h/2BP/v&#13;
+LoRWMCbKBak5EsGHmYRWaYPt+w8OuNEeF1qRSg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDrzCCApegAwIBAgIUenmDzxUKsauLvle9+aMyy3kABrowDQYJKoZIhvcNAQELBQAwZzELMAkG&#13;
 A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
 UElDT1RPMRAwDgYDVQQLDAdJTlZPSUNFMQ8wDQYDVQQDDAZqb3NldGUwHhcNMjMxMjMwMjIxMzEw&#13;
 WhcNMjQxMjI5MjIxMzEwWjBnMQswCQYDVQQGEwJFUzEPMA0GA1UECAwGTUFEUklEMRMwEQYDVQQH&#13;
@@ -275,4 +279,4 @@ BQADggEBAGWQG7dIpg6NkAw/neLJ4uZx/GtszJ6w1qp1i/UbPsS+O3+MRruUVND+US7KEHSztcuO&#13
 aS59ZcSjgc6vSx0mlTGUvxPsdQ0/ChWY1TpMkAHqohQCHC347K86vv5Is9moO2UhZsyHG83EW4ka&#13;
 N8G0rfmqBLcBkXNOYh2JTeNWH3Vu7WLVR+tpiJmWcpY6IOgz+TN0fLQ3Lo8nvyB4VRW+Stq1kwjb&#13;
 /fxvqQoyupeFc6Ng7wI4jcQVIj0siZGoSIB0OflTbe+xp7/ElygeVkBhqBlGrFu5HYMV3pvDXh66&#13;
-OwQlYOrzOpfRTCe+1Zq69EqWfn/FxE0N539k43i8xeiZRtk=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><ns3:QualifyingProperties xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml" xmlns:ns5="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" Target="#signature-14caeb90-6d8d-4452-b7c0-f940f100d1f1"><ns3:SignedProperties Id="signed-properties-425f1440-9fbb-49a0-b26e-ba3e09dbbacc"><ns3:SignedSignatureProperties><ns3:SigningTime>2023-12-31T12:42:38.008+01:00</ns3:SigningTime><ns3:SigningCertificate><ns3:Cert><ns3:CertDigest><ns2:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns2:DigestValue>gcbIIwOh1axm0Qq23n2IbbkPTKE8l3zlSJQhj755SBU=</ns2:DigestValue></ns3:CertDigest><ns3:IssuerSerial><ns2:X509IssuerName>CN=josete,OU=INVOICE,O=PICOTO,L=ALCOBENDAS,ST=MADRID,C=ES</ns2:X509IssuerName><ns2:X509SerialNumber>699206746385406955040974764165055329712750986938</ns2:X509SerialNumber></ns3:IssuerSerial></ns3:Cert></ns3:SigningCertificate><ns3:SignaturePolicyIdentifier><ns3:SignaturePolicyImplied xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string"/></ns3:SignaturePolicyIdentifier></ns3:SignedSignatureProperties></ns3:SignedProperties></ns3:QualifyingProperties></ds:Object></ds:Signature></re:remesa>
+OwQlYOrzOpfRTCe+1Zq69EqWfn/FxE0N539k43i8xeiZRtk=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><ns3:QualifyingProperties xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml" xmlns:ns5="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" Target="#signature-dbff4941-a7ca-4d3c-99e6-b2f4a5c9f044"><ns3:SignedProperties Id="signed-properties-e9e39b9f-b7ea-4daa-a460-15ab0421f205"><ns3:SignedSignatureProperties><ns3:SigningTime>2024-01-02T14:03:15.625+01:00</ns3:SigningTime><ns3:SigningCertificate><ns3:Cert><ns3:CertDigest><ns2:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns2:DigestValue>gcbIIwOh1axm0Qq23n2IbbkPTKE8l3zlSJQhj755SBU=</ns2:DigestValue></ns3:CertDigest><ns3:IssuerSerial><ns2:X509IssuerName>CN=josete,OU=INVOICE,O=PICOTO,L=ALCOBENDAS,ST=MADRID,C=ES</ns2:X509IssuerName><ns2:X509SerialNumber>699206746385406955040974764165055329712750986938</ns2:X509SerialNumber></ns3:IssuerSerial></ns3:Cert></ns3:SigningCertificate><ns3:SignaturePolicyIdentifier><ns3:SignaturePolicyImplied xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string"/></ns3:SignaturePolicyIdentifier></ns3:SignedSignatureProperties></ns3:SignedProperties></ns3:QualifyingProperties></ds:Object></ds:Signature></re:remesa>

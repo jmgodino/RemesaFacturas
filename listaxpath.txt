@@ -124,13 +124,14 @@
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalPaymentsOnAccount (anticipos)
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalOutstandingAmount (total factura menos anticipos, ayudas, otros)
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/AmountsWithheld
-//fe:Facturae/Invoices/Invoice/InvoiceTotals/PaymentInKind
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/AmountsWithheld/WithholdingAmount",
+//fe:Facturae/Invoices/Invoice/InvoiceTotals/PaymentInKind/PaymentInKindAmount"
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalReimbursableExpenses
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalFinancialExpenses
 //fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalExecutableAmount (importe a ingresar)
 
 -- Detalle operaciones
-* Iterar por cada registro
+* Iterar por cada registro (Items/InvoiceLine):
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/SpecialTaxableEvent (exento o no sujeto si tiene valor)
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/ArticleCode (artículo aplicable)
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxTypeCode (01: IVA, 02: IPSI, ...)

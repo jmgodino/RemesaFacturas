@@ -1,14 +1,14 @@
 package com.picoto.test;
 
-import com.picoto.BusinessType;
-import com.picoto.Facturae;
-import com.picoto.FileHeaderType;
-import com.picoto.InvoiceIssuerTypeType;
-import com.picoto.InvoiceType;
-import com.picoto.InvoicesType;
-import com.picoto.ModalityType;
-import com.picoto.PartiesType;
-import com.picoto.Remesa;
+import com.picoto.jaxb.BusinessType;
+import com.picoto.jaxb.Facturae;
+import com.picoto.jaxb.FileHeaderType;
+import com.picoto.jaxb.InvoiceIssuerTypeType;
+import com.picoto.jaxb.InvoiceType;
+import com.picoto.jaxb.InvoicesType;
+import com.picoto.jaxb.ModalityType;
+import com.picoto.jaxb.PartiesType;
+import com.picoto.jaxb.Remesa;
 
 public class TestBasico {
 

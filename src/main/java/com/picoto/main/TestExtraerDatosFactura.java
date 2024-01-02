@@ -17,8 +17,8 @@ public class TestExtraerDatosFactura {
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/InvoiceTotal",
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalPaymentsOnAccount",
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalOutstandingAmount",
-			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/AmountsWithheld",
-			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/PaymentInKind",
+			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/AmountsWithheld/WithholdingAmount",
+			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/PaymentInKind/PaymentInKindAmount",
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalReimbursableExpenses",
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalFinancialExpenses",
 			"//fe:Facturae/Invoices/Invoice/InvoiceTotals/TotalExecutableAmount"
