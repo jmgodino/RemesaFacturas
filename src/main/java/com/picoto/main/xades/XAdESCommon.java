@@ -1,4 +1,4 @@
-package com.picoto.main;
+package com.picoto.main.xades;
 
 import static java.util.Objects.requireNonNull;
 

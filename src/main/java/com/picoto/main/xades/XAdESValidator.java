@@ -1,4 +1,4 @@
-package com.picoto.main;
+package com.picoto.main.xades;
 
 import static javax.xml.crypto.dsig.XMLSignature.XMLNS;
 
@@ -28,6 +28,8 @@ import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import com.picoto.main.Utils;
 
 /**
  * Be aware, this validator checks signature of a document against certificate
@@ -136,7 +138,7 @@ public class XAdESValidator extends XAdESCommon {
 
 	public static void main(String args[]) throws Exception {
 		XAdESValidator signer = new XAdESValidator();
-		String strDoc = IOUtils.toString(Utils.getFile("./signed.xml"), Charset.defaultCharset());
+		String strDoc = IOUtils.toString(Utils.getFile("./examples/ejemplo-signed-custom.xml"), Charset.defaultCharset());
 		try {
 			signer.validate(Utils.parseDocument(strDoc));
 		} catch (Exception e) {

@@ -1,4 +1,4 @@
-package com.picoto.main;
+package com.picoto.main.xades;
 
 import static java.time.ZonedDateTime.now;
 import static java.util.Collections.singletonList;
@@ -60,6 +60,7 @@ import com.picoto.jaxb.SignaturePolicyIdentifierType;
 import com.picoto.jaxb.SignedPropertiesType;
 import com.picoto.jaxb.SignedSignaturePropertiesType;
 import com.picoto.jaxb.X509IssuerSerialType;
+import com.picoto.main.Utils;
 
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
@@ -333,10 +334,10 @@ public class XAdESSigner extends XAdESCommon {
 
 	public static void main(String args[]) throws Exception {
 		XAdESSigner signer = new XAdESSigner(getCert(), getPrivateKey("RSA"));
-		String strDoc = IOUtils.toString(Utils.getFile("./ejemplo.xml"), Charset.defaultCharset());
+		String strDoc = IOUtils.toString(Utils.getFile("./examples/ejemplo.xml"), Charset.defaultCharset());
 		Document signed = signer.signEnveloped(Utils.parseDocument(strDoc));
 		String strSigned = new String(Utils.getDatosCompleto(signed, false));
-		IOUtils.write(strSigned, new FileOutputStream("./signed.xml"), Charset.defaultCharset());
+		IOUtils.write(strSigned, new FileOutputStream("./examples/ejemplo-signed-custom.xml"), Charset.defaultCharset());
 		Utils.log(strSigned);
 	}
 
