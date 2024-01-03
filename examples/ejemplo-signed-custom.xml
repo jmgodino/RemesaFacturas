@@ -272,12 +272,12 @@
 	</fe:Facturae>
 	<ds:Signature
 		xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-		Id="signature-a83be244-67d2-4eab-a3f2-922d029d7db5">
+		Id="signature-e7e3494f-c809-42a2-a3dd-76910a2e36a0">
 		<ds:SignedInfo>
 			<ds:CanonicalizationMethod
 				Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
 			<ds:SignatureMethod
-				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
 			<ds:Reference URI="">
 				<ds:Transforms>
 					<ds:Transform
@@ -292,27 +292,26 @@
 			</ds:Reference>
 			<ds:Reference
 				Type="http://uri.etsi.org/01903#SignedProperties"
-				URI="#signed-properties-48b6fa06-b00e-46f2-8d6c-1f3ecd2e8e74">
+				URI="#signed-properties-10539dde-1015-4b49-a828-09637491d703">
 				<ds:Transforms>
 					<ds:Transform
 						Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
 				</ds:Transforms>
 				<ds:DigestMethod
 					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-				<ds:DigestValue>SbyCtRZ6RTjWU7Fqtla+9Oewb1xihvhyrICXQ5CF9ko=
+				<ds:DigestValue>T966yMn/Aqv2KCQfYVyXKg42zS8tQOzn+pMgt5eiVTI=
 				</ds:DigestValue>
 			</ds:Reference>
 		</ds:SignedInfo>
-		<ds:SignatureValue>bkgpMafm+Bq8KEDSv6DYIavJkJN08543GX68o9+VWAWUJaMZ+b/7QNObE4Kj+OEQYJg3kQ1BcJqW&#13;
-			I7AACqN/YPTfmixaetIlvkMOv9KAxDdycgW/SQ5dXjKQNxutqNJyqtEG0g2rvdZAW/0EsHL/Thij&#13;
-			+2uEs3lsQw1MUkUaO4+d1Hb8qRvmH/V5yFoTESqvbQjiJWJguG/dl8487Hz9Jg7ScHr3muY4R0z4&#13;
-			UCfn0u1JzMIg9DUeBLHe4v86UVZ+zon9WGMjf2594MWqcK5Wx9LZcJ57e5KQ2lf/Vd1ADRk4McJK&#13;
-			uePG9BSCdZq3G9G/o5/YaaAKSGKDy75D5VvyKQ==
+		<ds:SignatureValue>mK+UMLD90l96jUy/2Sga8tV+d61136TYR+pQR2xILCjZWNokqnedBBuqkuS0zWMhf3bt2iH9lFre&#13;
+			VG16GhAiO21pSLeUSUGWJXzW68vN4FbTU/ipP34nQMEPUOQPYwCUElO/5rFaKWH3hCABMkBybz+o&#13;
+			kaUh4xgBwD0MeBHT1uGYS/aZH2oEdQm0UrMc+PmiS7u2fP/HgE7UUTgdQ59GeUYVk8JP+st6O/i3&#13;
+			IhsAGZuo+flGQQvmRJrjqrsylBjTokJR2nQMf8ACXJWhVVv6yihBYzSMfeKAOS0VTPnlvPv04hdc&#13;
+			EzIrPMvAg+gZfVVGbDJGp8t/8j97tZBiH59q9Q==
 		</ds:SignatureValue>
 		<ds:KeyInfo>
 			<ds:X509Data>
-				<ds:X509Certificate>
-					MIIDpTCCAo2gAwIBAgIUUczE69QFJLMBTP83S274wGuS7HUwDQYJKoZIhvcNAQELBQAwYjELMAkG&#13;
+				<ds:X509Certificate>MIIDpTCCAo2gAwIBAgIUUczE69QFJLMBTP83S274wGuS7HUwDQYJKoZIhvcNAQELBQAwYjELMAkG&#13;
 					A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
 					UElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMB4XDTI0MDEwMjIyMjExNVoXDTI1&#13;
 					MDEwMTIyMjExNVowYjELMAkGA1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxD&#13;
@@ -338,11 +337,11 @@
 				xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#"
 				xmlns:ns4="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
 				xmlns:ns5="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
-				Target="#signature-a83be244-67d2-4eab-a3f2-922d029d7db5">
+				Target="#signature-e7e3494f-c809-42a2-a3dd-76910a2e36a0">
 				<ns3:SignedProperties
-					Id="signed-properties-48b6fa06-b00e-46f2-8d6c-1f3ecd2e8e74">
+					Id="signed-properties-10539dde-1015-4b49-a828-09637491d703">
 					<ns3:SignedSignatureProperties>
-						<ns3:SigningTime>2024-01-03T10:00:00.234+01:00</ns3:SigningTime>
+						<ns3:SigningTime>2024-01-03T10:13:03.134+01:00</ns3:SigningTime>
 						<ns3:SigningCertificate>
 							<ns3:Cert>
 								<ns3:CertDigest>

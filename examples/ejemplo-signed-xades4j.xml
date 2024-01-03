@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><re:remesa xmlns:re="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<re:remesa
+	xmlns:re="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
+	xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
 	<fe:Facturae>
 		<FileHeader>
 			<SchemaVersion>3.2.2</SchemaVersion>
@@ -261,70 +264,115 @@
 					</InvoiceLine>
 				</Items>
 				<AdditionalData>
-					<Extensions/>
+					<Extensions />
 				</AdditionalData>
 			</Invoice>
 		</Invoices>
 		<!-- comentario a eliminar en c14n -->
 	</fe:Facturae>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26">
-<ds:SignedInfo>
-<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<ds:Reference Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-ref0" URI="">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>rbgCIeKeuCC1aFbA46kU5CNQBByFS/flke1p/114ZVw=</ds:DigestValue>
-</ds:Reference>
-<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-signedprops">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>tGm3RI/AjJg46VjHZvjofY4aPrUJjR5rrrKgm8U0AAo=</ds:DigestValue>
-</ds:Reference>
-</ds:SignedInfo>
-<ds:SignatureValue Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-sigvalue">
-xcm6csTJcun6F+0044Ym2988GfsDMtpLnASq93tRuadJG01AxwW/22GoEXK40GQQ87Im5FKJYnvZ&#13;
-c62Ix6Idvlx/iGzzm+TRr2vFy7RUq/wwN9WEIeALtgaExQ7TvG2ig5LWgafqa4bPSeA3bZ81qCIQ&#13;
-1DqGnKNVim64b41Es/GO//VroKjEzW0GvqguiMaeQPQ9ftLcMAdpTCT60CsXS3cQ2CQCDEqWuFC8&#13;
-1gt9gjIqbdIgbhiZAQqO6/PH5Fn1k0nrQEqodA6cUH+5b2MqIZIj7JjPkBG5YRjRImpeeeGxGby8&#13;
-Trd9Fq0gtaVFVsfyOd0Sufvyuh00xksABwMZhg==
-</ds:SignatureValue>
-<ds:KeyInfo>
-<ds:X509Data>
-<ds:X509Certificate>
-MIIDpTCCAo2gAwIBAgIUUczE69QFJLMBTP83S274wGuS7HUwDQYJKoZIhvcNAQELBQAwYjELMAkG&#13;
-A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
-UElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMB4XDTI0MDEwMjIyMjExNVoXDTI1&#13;
-MDEwMTIyMjExNVowYjELMAkGA1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxD&#13;
-T0JFTkRBUzEPMA0GA1UECgwGUElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMIIB&#13;
-IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1ZyYsiBHu2Z4KjA/6xTnwJ1BE8x60Wkw8g4&#13;
-ibWPMwoTU4EGUFNXRkHnI1BVrknIp0GPnGxC8El3xUiHzp8gdEkNyWP2hpSSt2K6AISG7gBGJLB2&#13;
-QrkTBsPAznSZUJJoilLLhvTIT+FqvaDIo+LCk5w6dVkiE3V6wAVwmJKZ4aKwynGp05KjbOqIHRcd&#13;
-xBj7paoFsq26c0gQslLU+Jh/LYhaP3zLZ1X/LfgGUtp1Xt4y7/p5gKTfpydupvlaF5GMhurm/Cy4&#13;
-uiPjEn3LwWr02V/QIgfwEhVWaFg4o+yVEYacQXLtFfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaa&#13;
-BQIDAQABo1MwUTAdBgNVHQ4EFgQUg6OkzdLhnOAMWNR2lXgznXWskIcwHwYDVR0jBBgwFoAUg6Ok&#13;
-zdLhnOAMWNR2lXgznXWskIcwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAdc3a&#13;
-A7JU7S6En0TaQZBvkFnmQkUedvrGFHtjhP1BOPsmiahgcxPCtCKP2CE1ZASFzPN1F3zATFY8Xa8Q&#13;
-aIwyVLE8RraRNOTzjtjwOWsdlQA33c0xhWmqPHsPkrF2NZIVbhG7jvKtZNewUZs8flYdlmjdPUJZ&#13;
-pPIm1+oQoRJ8SwkJPQATbe7TuEweOaiQQw7hrCiIUkMwLRrIQ98NybTMllowIM6rjl/5atUk13W+&#13;
-MHNML43u7hxBEddcsaqtc/VEm4BUFD9woJ2DzK37BJ8z9oLMZUUgGbiRUV+YCuCH7Lff/GRNAavl&#13;
-/kbTqZWcG/uoK+P1UPJsM9Yx2F7CeLltrg==
-</ds:X509Certificate>
-</ds:X509Data>
-<ds:KeyValue>
-<ds:RSAKeyValue>
-<ds:Modulus>z1ZyYsiBHu2Z4KjA/6xTnwJ1BE8x60Wkw8g4ibWPMwoTU4EGUFNXRkHnI1BVrknIp0GPnGxC8El3&#13;
-xUiHzp8gdEkNyWP2hpSSt2K6AISG7gBGJLB2QrkTBsPAznSZUJJoilLLhvTIT+FqvaDIo+LCk5w6&#13;
-dVkiE3V6wAVwmJKZ4aKwynGp05KjbOqIHRcdxBj7paoFsq26c0gQslLU+Jh/LYhaP3zLZ1X/LfgG&#13;
-Utp1Xt4y7/p5gKTfpydupvlaF5GMhurm/Cy4uiPjEn3LwWr02V/QIgfwEhVWaFg4o+yVEYacQXLt&#13;
-FfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaaBQ==</ds:Modulus>
-<ds:Exponent>AQAB</ds:Exponent>
-</ds:RSAKeyValue>
-</ds:KeyValue>
-</ds:KeyInfo>
-<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26"><xades:SignedProperties Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-01-03T10:03:10.942+01:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>+ykAfYPzeCKh3+KXC9FyzkIQZTUMwYhdMLuFJDRGuuM=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=JOSEMI,ou=IT,o=PICOTO,l=ALCOBENDAS,st=MADRID,c=ES</ds:X509IssuerName><ds:X509SerialNumber>466994758713453140952323822109365041414192426101</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
-</ds:Signature></re:remesa>
+	<ds:Signature
+		xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+		Id="xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod
+				Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+			<ds:SignatureMethod
+				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+			<ds:Reference
+				Id="xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1-ref0" URI="">
+				<ds:Transforms>
+					<ds:Transform
+						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+				</ds:Transforms>
+				<ds:DigestMethod
+					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+				<ds:DigestValue>rbgCIeKeuCC1aFbA46kU5CNQBByFS/flke1p/114ZVw=
+				</ds:DigestValue>
+			</ds:Reference>
+			<ds:Reference
+				Type="http://uri.etsi.org/01903#SignedProperties"
+				URI="#xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1-signedprops">
+				<ds:Transforms>
+					<ds:Transform
+						Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+				</ds:Transforms>
+				<ds:DigestMethod
+					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+				<ds:DigestValue>z9mWB6Gcx6cyKBxkvsuhoeUi1sc92+2xr6d7X5q0VTg=
+				</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue
+			Id="xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1-sigvalue">
+			KQ+n6Hy44ZCtSUwrdYWWb1j7BL5ne0KBqgI8xTd8v+IGams6AvMrqSxq89Fokgc3mYR4HXE72BJQ&#13;
+			jB8/AnHm2MdRYN+srn3QvNrhcefrsRphCPspkvcjzokAwxPjdZaahsf5XjHW+8+L8ahxeu76zD0d&#13;
+			fWDKk9vDiFN2nMTB/avz8zuI6WUlCqu0CgPHqT0ZQ32V2ccy+Lu4y31/plUYBtSIKz/OK+Zfw3pV&#13;
+			aNwY15eHryCBWF41VEJsQwZUh+HA6tUECy2oggIixFznfWdGnn+Lf8qH6j4EJiD9JbvxjNzV/EmL&#13;
+			bkRzvHk/WfcTVSqf7B0EbQNYCbhn0zPrl10Nmw==
+		</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>
+					MIIDpTCCAo2gAwIBAgIUUczE69QFJLMBTP83S274wGuS7HUwDQYJKoZIhvcNAQELBQAwYjELMAkG&#13;
+					A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
+					UElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMB4XDTI0MDEwMjIyMjExNVoXDTI1&#13;
+					MDEwMTIyMjExNVowYjELMAkGA1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxD&#13;
+					T0JFTkRBUzEPMA0GA1UECgwGUElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMIIB&#13;
+					IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1ZyYsiBHu2Z4KjA/6xTnwJ1BE8x60Wkw8g4&#13;
+					ibWPMwoTU4EGUFNXRkHnI1BVrknIp0GPnGxC8El3xUiHzp8gdEkNyWP2hpSSt2K6AISG7gBGJLB2&#13;
+					QrkTBsPAznSZUJJoilLLhvTIT+FqvaDIo+LCk5w6dVkiE3V6wAVwmJKZ4aKwynGp05KjbOqIHRcd&#13;
+					xBj7paoFsq26c0gQslLU+Jh/LYhaP3zLZ1X/LfgGUtp1Xt4y7/p5gKTfpydupvlaF5GMhurm/Cy4&#13;
+					uiPjEn3LwWr02V/QIgfwEhVWaFg4o+yVEYacQXLtFfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaa&#13;
+					BQIDAQABo1MwUTAdBgNVHQ4EFgQUg6OkzdLhnOAMWNR2lXgznXWskIcwHwYDVR0jBBgwFoAUg6Ok&#13;
+					zdLhnOAMWNR2lXgznXWskIcwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAdc3a&#13;
+					A7JU7S6En0TaQZBvkFnmQkUedvrGFHtjhP1BOPsmiahgcxPCtCKP2CE1ZASFzPN1F3zATFY8Xa8Q&#13;
+					aIwyVLE8RraRNOTzjtjwOWsdlQA33c0xhWmqPHsPkrF2NZIVbhG7jvKtZNewUZs8flYdlmjdPUJZ&#13;
+					pPIm1+oQoRJ8SwkJPQATbe7TuEweOaiQQw7hrCiIUkMwLRrIQ98NybTMllowIM6rjl/5atUk13W+&#13;
+					MHNML43u7hxBEddcsaqtc/VEm4BUFD9woJ2DzK37BJ8z9oLMZUUgGbiRUV+YCuCH7Lff/GRNAavl&#13;
+					/kbTqZWcG/uoK+P1UPJsM9Yx2F7CeLltrg==
+				</ds:X509Certificate>
+			</ds:X509Data>
+			<ds:KeyValue>
+				<ds:RSAKeyValue>
+					<ds:Modulus>z1ZyYsiBHu2Z4KjA/6xTnwJ1BE8x60Wkw8g4ibWPMwoTU4EGUFNXRkHnI1BVrknIp0GPnGxC8El3&#13;
+						xUiHzp8gdEkNyWP2hpSSt2K6AISG7gBGJLB2QrkTBsPAznSZUJJoilLLhvTIT+FqvaDIo+LCk5w6&#13;
+						dVkiE3V6wAVwmJKZ4aKwynGp05KjbOqIHRcdxBj7paoFsq26c0gQslLU+Jh/LYhaP3zLZ1X/LfgG&#13;
+						Utp1Xt4y7/p5gKTfpydupvlaF5GMhurm/Cy4uiPjEn3LwWr02V/QIgfwEhVWaFg4o+yVEYacQXLt&#13;
+						FfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaaBQ==
+					</ds:Modulus>
+					<ds:Exponent>AQAB</ds:Exponent>
+				</ds:RSAKeyValue>
+			</ds:KeyValue>
+		</ds:KeyInfo>
+		<ds:Object>
+			<xades:QualifyingProperties
+				xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+				xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#"
+				Target="#xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1">
+				<xades:SignedProperties
+					Id="xmldsig-c3e16f1a-8d42-4161-a142-413acc1783c1-signedprops">
+					<xades:SignedSignatureProperties>
+						<xades:SigningTime>2024-01-03T10:12:33.745+01:00
+						</xades:SigningTime>
+						<xades:SigningCertificate>
+							<xades:Cert>
+								<xades:CertDigest>
+									<ds:DigestMethod
+										Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+									<ds:DigestValue>+ykAfYPzeCKh3+KXC9FyzkIQZTUMwYhdMLuFJDRGuuM=
+									</ds:DigestValue>
+								</xades:CertDigest>
+								<xades:IssuerSerial>
+									<ds:X509IssuerName>cn=JOSEMI,ou=IT,o=PICOTO,l=ALCOBENDAS,st=MADRID,c=ES
+									</ds:X509IssuerName>
+									<ds:X509SerialNumber>466994758713453140952323822109365041414192426101
+									</ds:X509SerialNumber>
+								</xades:IssuerSerial>
+							</xades:Cert>
+						</xades:SigningCertificate>
+					</xades:SignedSignatureProperties>
+				</xades:SignedProperties>
+			</xades:QualifyingProperties>
+		</ds:Object>
+	</ds:Signature>
+</re:remesa>
