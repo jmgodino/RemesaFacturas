@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><re:remesa xmlns:re="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<re:remesa
+	xmlns:re="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
+	xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
 	<fe:Facturae>
 		<FileHeader>
 			<SchemaVersion>3.2.2</SchemaVersion>
@@ -261,30 +264,110 @@
 					</InvoiceLine>
 				</Items>
 				<AdditionalData>
-					<Extensions/>
+					<Extensions />
 				</AdditionalData>
 			</Invoice>
 		</Invoices>
 		<!-- comentario a eliminar en c14n -->
 	</fe:Facturae>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="signature-d159afa2-f74b-48c8-b2eb-bbb6c88759f2"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>rbgCIeKeuCC1aFbA46kU5CNQBByFS/flke1p/114ZVw=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#signed-properties-ca56aeb2-96ef-4084-acd0-5c68a4488f7e"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>VHcLCsqgzt9FUEz2QyKKA+9dHdon6hBK0vyZvKe8IwA=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>mvXTABaPY0uYzbKbcKiO8VN3NkYUzvOX3h+PtNTRqveG5tJmiobZhZW/fdv3ey7HQ6XUIFjsiMX9&#13;
-Eq+/+nEC78NHHtbQzjEP9unLAHL7P1QUI2NOSrdIeC8I+aioCPuP9dT/jVthNOgOC5Eqvj4zButf&#13;
-DLgkdUm9/TpRpmHFA9relWyGE1TOVJYNDj+jrsOSA85X+Z7SrdgaA+/9jOhTob+ynye5enycco3I&#13;
-HEUFzF77U2pS9YDJ1HqlJRFDwqtn6hEq5cmV7dCYqoE+/mPy9Z/InbOi/eRX7qSQXYNqLXGb7pzU&#13;
-BY7PU/NRi0GF2Nrlp5VS58TOYLlUMbqWZM2tnQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDrzCCApegAwIBAgIUenmDzxUKsauLvle9+aMyy3kABrowDQYJKoZIhvcNAQELBQAwZzELMAkG&#13;
-A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
-UElDT1RPMRAwDgYDVQQLDAdJTlZPSUNFMQ8wDQYDVQQDDAZqb3NldGUwHhcNMjMxMjMwMjIxMzEw&#13;
-WhcNMjQxMjI5MjIxMzEwWjBnMQswCQYDVQQGEwJFUzEPMA0GA1UECAwGTUFEUklEMRMwEQYDVQQH&#13;
-DApBTENPQkVOREFTMQ8wDQYDVQQKDAZQSUNPVE8xEDAOBgNVBAsMB0lOVk9JQ0UxDzANBgNVBAMM&#13;
-Bmpvc2V0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtrsfRV0B259YY8tK4AZ9XS&#13;
-zONfaFOq32/u77XcnH6xoAYpafr37p0g2JCbrBOWcz1A0g/OeaetxGuu4GDb2/uvcRobIYvKCDpz&#13;
-/Nc3wh+Lip9D5Ld69v8zTynyHHXmyTlF4Mh6sAn4+FMCMheO9g6xLCJ/J8jVo1W0Wr64B8/Ndtto&#13;
-58kIEvRFTfPA769613/cWQFDgqx7T00spYZiSMkWrpJENkUSSpFWU0TO4Vbbd94ARKkkxmo2lpfh&#13;
-GTlJSW8EQrU2/XsB988F5crBRxE9miR9niGpED1zJhF1T2qH36OI6vY8SNPL+/iSzS+pyUlX6Xst&#13;
-9aTV3Ey2eTejTysCAwEAAaNTMFEwHQYDVR0OBBYEFDdMJtqNCVlJNqftf5QxOlXXVWk2MB8GA1Ud&#13;
-IwQYMBaAFDdMJtqNCVlJNqftf5QxOlXXVWk2MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL&#13;
-BQADggEBAGWQG7dIpg6NkAw/neLJ4uZx/GtszJ6w1qp1i/UbPsS+O3+MRruUVND+US7KEHSztcuO&#13;
-aS59ZcSjgc6vSx0mlTGUvxPsdQ0/ChWY1TpMkAHqohQCHC347K86vv5Is9moO2UhZsyHG83EW4ka&#13;
-N8G0rfmqBLcBkXNOYh2JTeNWH3Vu7WLVR+tpiJmWcpY6IOgz+TN0fLQ3Lo8nvyB4VRW+Stq1kwjb&#13;
-/fxvqQoyupeFc6Ng7wI4jcQVIj0siZGoSIB0OflTbe+xp7/ElygeVkBhqBlGrFu5HYMV3pvDXh66&#13;
-OwQlYOrzOpfRTCe+1Zq69EqWfn/FxE0N539k43i8xeiZRtk=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><ns3:QualifyingProperties xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml" xmlns:ns5="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml" Target="#signature-d159afa2-f74b-48c8-b2eb-bbb6c88759f2"><ns3:SignedProperties Id="signed-properties-ca56aeb2-96ef-4084-acd0-5c68a4488f7e"><ns3:SignedSignatureProperties><ns3:SigningTime>2024-01-02T22:47:45.470+01:00</ns3:SigningTime><ns3:SigningCertificate><ns3:Cert><ns3:CertDigest><ns2:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns2:DigestValue>gcbIIwOh1axm0Qq23n2IbbkPTKE8l3zlSJQhj755SBU=</ns2:DigestValue></ns3:CertDigest><ns3:IssuerSerial><ns2:X509IssuerName>CN=josete,OU=INVOICE,O=PICOTO,L=ALCOBENDAS,ST=MADRID,C=ES</ns2:X509IssuerName><ns2:X509SerialNumber>699206746385406955040974764165055329712750986938</ns2:X509SerialNumber></ns3:IssuerSerial></ns3:Cert></ns3:SigningCertificate><ns3:SignaturePolicyIdentifier><ns3:SignaturePolicyImplied xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string"/></ns3:SignaturePolicyIdentifier></ns3:SignedSignatureProperties></ns3:SignedProperties></ns3:QualifyingProperties></ds:Object></ds:Signature></re:remesa>
+	<ds:Signature
+		xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+		Id="signature-a83be244-67d2-4eab-a3f2-922d029d7db5">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod
+				Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+			<ds:SignatureMethod
+				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+			<ds:Reference URI="">
+				<ds:Transforms>
+					<ds:Transform
+						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+					<ds:Transform
+						Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+				</ds:Transforms>
+				<ds:DigestMethod
+					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+				<ds:DigestValue>rbgCIeKeuCC1aFbA46kU5CNQBByFS/flke1p/114ZVw=
+				</ds:DigestValue>
+			</ds:Reference>
+			<ds:Reference
+				Type="http://uri.etsi.org/01903#SignedProperties"
+				URI="#signed-properties-48b6fa06-b00e-46f2-8d6c-1f3ecd2e8e74">
+				<ds:Transforms>
+					<ds:Transform
+						Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+				</ds:Transforms>
+				<ds:DigestMethod
+					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+				<ds:DigestValue>SbyCtRZ6RTjWU7Fqtla+9Oewb1xihvhyrICXQ5CF9ko=
+				</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue>bkgpMafm+Bq8KEDSv6DYIavJkJN08543GX68o9+VWAWUJaMZ+b/7QNObE4Kj+OEQYJg3kQ1BcJqW&#13;
+			I7AACqN/YPTfmixaetIlvkMOv9KAxDdycgW/SQ5dXjKQNxutqNJyqtEG0g2rvdZAW/0EsHL/Thij&#13;
+			+2uEs3lsQw1MUkUaO4+d1Hb8qRvmH/V5yFoTESqvbQjiJWJguG/dl8487Hz9Jg7ScHr3muY4R0z4&#13;
+			UCfn0u1JzMIg9DUeBLHe4v86UVZ+zon9WGMjf2594MWqcK5Wx9LZcJ57e5KQ2lf/Vd1ADRk4McJK&#13;
+			uePG9BSCdZq3G9G/o5/YaaAKSGKDy75D5VvyKQ==
+		</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>
+					MIIDpTCCAo2gAwIBAgIUUczE69QFJLMBTP83S274wGuS7HUwDQYJKoZIhvcNAQELBQAwYjELMAkG&#13;
+					A1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxDT0JFTkRBUzEPMA0GA1UECgwG&#13;
+					UElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMB4XDTI0MDEwMjIyMjExNVoXDTI1&#13;
+					MDEwMTIyMjExNVowYjELMAkGA1UEBhMCRVMxDzANBgNVBAgMBk1BRFJJRDETMBEGA1UEBwwKQUxD&#13;
+					T0JFTkRBUzEPMA0GA1UECgwGUElDT1RPMQswCQYDVQQLDAJJVDEPMA0GA1UEAwwGSk9TRU1JMIIB&#13;
+					IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1ZyYsiBHu2Z4KjA/6xTnwJ1BE8x60Wkw8g4&#13;
+					ibWPMwoTU4EGUFNXRkHnI1BVrknIp0GPnGxC8El3xUiHzp8gdEkNyWP2hpSSt2K6AISG7gBGJLB2&#13;
+					QrkTBsPAznSZUJJoilLLhvTIT+FqvaDIo+LCk5w6dVkiE3V6wAVwmJKZ4aKwynGp05KjbOqIHRcd&#13;
+					xBj7paoFsq26c0gQslLU+Jh/LYhaP3zLZ1X/LfgGUtp1Xt4y7/p5gKTfpydupvlaF5GMhurm/Cy4&#13;
+					uiPjEn3LwWr02V/QIgfwEhVWaFg4o+yVEYacQXLtFfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaa&#13;
+					BQIDAQABo1MwUTAdBgNVHQ4EFgQUg6OkzdLhnOAMWNR2lXgznXWskIcwHwYDVR0jBBgwFoAUg6Ok&#13;
+					zdLhnOAMWNR2lXgznXWskIcwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAdc3a&#13;
+					A7JU7S6En0TaQZBvkFnmQkUedvrGFHtjhP1BOPsmiahgcxPCtCKP2CE1ZASFzPN1F3zATFY8Xa8Q&#13;
+					aIwyVLE8RraRNOTzjtjwOWsdlQA33c0xhWmqPHsPkrF2NZIVbhG7jvKtZNewUZs8flYdlmjdPUJZ&#13;
+					pPIm1+oQoRJ8SwkJPQATbe7TuEweOaiQQw7hrCiIUkMwLRrIQ98NybTMllowIM6rjl/5atUk13W+&#13;
+					MHNML43u7hxBEddcsaqtc/VEm4BUFD9woJ2DzK37BJ8z9oLMZUUgGbiRUV+YCuCH7Lff/GRNAavl&#13;
+					/kbTqZWcG/uoK+P1UPJsM9Yx2F7CeLltrg==
+				</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+		<ds:Object>
+			<ns3:QualifyingProperties
+				xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"
+				xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#"
+				xmlns:ns4="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml"
+				xmlns:ns5="https://www.agenciaributaria.gob.es/formato/Versiones/FacturaeElectronicav1_0_0.xml"
+				Target="#signature-a83be244-67d2-4eab-a3f2-922d029d7db5">
+				<ns3:SignedProperties
+					Id="signed-properties-48b6fa06-b00e-46f2-8d6c-1f3ecd2e8e74">
+					<ns3:SignedSignatureProperties>
+						<ns3:SigningTime>2024-01-03T10:00:00.234+01:00</ns3:SigningTime>
+						<ns3:SigningCertificate>
+							<ns3:Cert>
+								<ns3:CertDigest>
+									<ns2:DigestMethod
+										Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+									<ns2:DigestValue>+ykAfYPzeCKh3+KXC9FyzkIQZTUMwYhdMLuFJDRGuuM=
+									</ns2:DigestValue>
+								</ns3:CertDigest>
+								<ns3:IssuerSerial>
+									<ns2:X509IssuerName>CN=JOSEMI,OU=IT,O=PICOTO,L=ALCOBENDAS,ST=MADRID,C=ES
+									</ns2:X509IssuerName>
+									<ns2:X509SerialNumber>466994758713453140952323822109365041414192426101
+									</ns2:X509SerialNumber>
+								</ns3:IssuerSerial>
+							</ns3:Cert>
+						</ns3:SigningCertificate>
+						<ns3:SignaturePolicyIdentifier>
+							<ns3:SignaturePolicyImplied
+								xmlns:xs="http://www.w3.org/2001/XMLSchema"
+								xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+								xsi:type="xs:string" />
+						</ns3:SignaturePolicyIdentifier>
+					</ns3:SignedSignatureProperties>
+				</ns3:SignedProperties>
+			</ns3:QualifyingProperties>
+		</ds:Object>
+	</ds:Signature>
+</re:remesa>

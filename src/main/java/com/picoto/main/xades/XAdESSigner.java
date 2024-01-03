@@ -77,7 +77,7 @@ public class XAdESSigner extends XAdESCommon {
 	private static final String C14N_CANONICALIZATION_ALGORITHM = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315";
 	private static final String SIGNED_PROPERTIES_REFERENCE_TYPE = "http://uri.etsi.org/01903#SignedProperties";
 	private static final String SHA256_DIGEST_ALGORITHM = "http://www.w3.org/2001/04/xmlenc#sha256";
-	private static final String RSA_SHA512_SIGN_ALGORITHM = "http://www.w3.org/2001/04/xmldsig-more#rsa-sha512";
+	private static final String RSA_SHA512_SIGN_ALGORITHM = "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256";
 
 	private static final C14NMethodParameterSpec EMPTY_C14N_PARAMS = null;
 	private static final DigestMethodParameterSpec EMPTY_DIGEST_PARAMS = null;

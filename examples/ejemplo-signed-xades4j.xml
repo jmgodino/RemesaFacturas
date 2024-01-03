@@ -267,31 +267,31 @@
 		</Invoices>
 		<!-- comentario a eliminar en c14n -->
 	</fe:Facturae>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e">
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<ds:Reference Id="xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e-ref0" URI="">
+<ds:Reference Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-ref0" URI="">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
 <ds:DigestValue>rbgCIeKeuCC1aFbA46kU5CNQBByFS/flke1p/114ZVw=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e-signedprops">
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-signedprops">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>cVQx7LY1Kv/Xa2pNBeMzx99tDU8voZBfkrbD2LtKq6I=</ds:DigestValue>
+<ds:DigestValue>tGm3RI/AjJg46VjHZvjofY4aPrUJjR5rrrKgm8U0AAo=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e-sigvalue">
-mzYaUkfJUpQQbThWaucIjW5RypfAcjZXomxP8m0GhsCwkZT987jiUWd6JpLVPNU5M0VCH21WijiZ&#13;
-3sIA6+KQh7ABt7w+Bp9JNCciP1gLWPwUvhoj04Ty+0s9TAPsCUuzRce8F1Vhzv7B4mw+D7MBoyqG&#13;
-AMsBPbZoYLmsh7LU8cjY4Xp1g8XSd0aVIbf8HlJExVzuYZkzNQnK8bUqX5y1e4ZpHHLu3PjdB2+K&#13;
-8YIXnHW3Jl5uxKofoq5Va3pviKUPyQ85hxgJ0XCiKLbfX6/CpMvHyAZ/zmav6wajIx6A6rBhLH8T&#13;
-KU0M6NDKYVzWtIuxxsHPDX7/SLp0/978Nk9dLA==
+<ds:SignatureValue Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-sigvalue">
+xcm6csTJcun6F+0044Ym2988GfsDMtpLnASq93tRuadJG01AxwW/22GoEXK40GQQ87Im5FKJYnvZ&#13;
+c62Ix6Idvlx/iGzzm+TRr2vFy7RUq/wwN9WEIeALtgaExQ7TvG2ig5LWgafqa4bPSeA3bZ81qCIQ&#13;
+1DqGnKNVim64b41Es/GO//VroKjEzW0GvqguiMaeQPQ9ftLcMAdpTCT60CsXS3cQ2CQCDEqWuFC8&#13;
+1gt9gjIqbdIgbhiZAQqO6/PH5Fn1k0nrQEqodA6cUH+5b2MqIZIj7JjPkBG5YRjRImpeeeGxGby8&#13;
+Trd9Fq0gtaVFVsfyOd0Sufvyuh00xksABwMZhg==
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:X509Data>
@@ -326,5 +326,5 @@ FfGD9iKQ5yVZPz8oDn7yzKc7mvujY3FWFPaaBQ==</ds:Modulus>
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e"><xades:SignedProperties Id="xmldsig-dc4fff63-2af4-4509-92d8-67f0bf97ca4e-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-01-02T23:21:55.018+01:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>+ykAfYPzeCKh3+KXC9FyzkIQZTUMwYhdMLuFJDRGuuM=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=JOSEMI,ou=IT,o=PICOTO,l=ALCOBENDAS,st=MADRID,c=ES</ds:X509IssuerName><ds:X509SerialNumber>466994758713453140952323822109365041414192426101</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26"><xades:SignedProperties Id="xmldsig-c8f96bad-ca96-40c6-a548-6be88b81ca26-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-01-03T10:03:10.942+01:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>+ykAfYPzeCKh3+KXC9FyzkIQZTUMwYhdMLuFJDRGuuM=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=JOSEMI,ou=IT,o=PICOTO,l=ALCOBENDAS,st=MADRID,c=ES</ds:X509IssuerName><ds:X509SerialNumber>466994758713453140952323822109365041414192426101</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
 </ds:Signature></re:remesa>

@@ -17,11 +17,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import xades4j.providers.impl.HttpTsaConfiguration;
 import xades4j.utils.DOMHelper;
 
 public class SignatureServicesTestBase {
-	static protected HttpTsaConfiguration DEFAULT_TEST_TSA = new HttpTsaConfiguration("http://tss.accv.es:8318/tsa");
 
 	static private final DocumentBuilder db;
 
@@ -31,14 +29,10 @@ public class SignatureServicesTestBase {
 			dbf.setNamespaceAware(true);
 			db = dbf.newDocumentBuilder();
 		} catch (ParserConfigurationException ex) {
-			throw new NullPointerException("SignatureServicesTestBase init failed:" + ex.getMessage());
+			throw new NullPointerException("Error:" + ex.getMessage());
 		}
 	}
 
-	/**
-	 * Gets a XML document from the src/test/xml folder. If the root element of the
-	 * document has an "Id" attribute it is set to be its XML ID.
-	 */
 	public static Document getDocument(String fileName) throws Exception {
 		String path = fileName;
 		try (FileInputStream fis = new FileInputStream(path)) {
