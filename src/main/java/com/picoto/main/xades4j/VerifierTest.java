@@ -10,6 +10,7 @@ class VerifierTet extends VerifierBase {
 
 		XAdESVerificationResult result = verifySignature("./examples/ejemplo-signed-xades4j.xml");
 		Utils.log(result.getSignatureForm().toString());
+		result.getPropertiesAndData().forEach(x -> Utils.log(x.getProperty().getName()));
 
 	}
 
