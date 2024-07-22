@@ -3,6 +3,7 @@ package com.picoto.main;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -213,8 +214,12 @@ public class Utils {
 		}
 	}
 
-	public static InputStream getFile(String location) throws IOException {
-		return new FileInputStream(location);
+	public static InputStream getFile(String location) throws RuntimeException {
+		try {
+			return new FileInputStream(location);
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException("Error al cargar el fichero: "+location);
+		}
 	}
 
 	public static void debug(String msg) {

@@ -1,7 +1,8 @@
 package com.picoto.main.xades4j;
 
-import java.io.ByteArrayInputStream;
 import java.security.KeyStoreException;
+
+import com.picoto.main.Utils;
 
 import xades4j.properties.IdentifierType;
 import xades4j.properties.ObjectIdentifier;
@@ -22,10 +23,8 @@ public class SignerBase extends SignatureServicesTestBase {
 			policyInfoProvider = new SignaturePolicyInfoProvider() {
 	            public SignaturePolicyBase getSignaturePolicy() {
 	                return new SignaturePolicyIdentifierProperty(
-	                        new ObjectIdentifier("oid:/2.16.724.1.3.1.1.2.1.9", IdentifierType.OID_AS_URI, "Política de Firma Electrónica y de Certificados de la\n"
-	                        		+ "Administración General del Estado"),
-	                        new ByteArrayInputStream("En el Punto de acceso general de la Administración General del Estado".getBytes()))
-	                                .withLocationUrl("http://administracionelectronica.gob.es/es/ctt/politicafirma");
+	                        new ObjectIdentifier("urn:oid:2.16.724.1.3.1.1.2.1.9", IdentifierType.URI, ""), Utils.getFile("politica/politica_de_firma_anexo_1.pdf"))
+	                                .withLocationUrl("https://sede.administracion.gob.es/politica_de_firma_anexo_1.pdf");
 	            }
 	        };
 			
