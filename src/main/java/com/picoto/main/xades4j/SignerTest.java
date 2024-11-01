@@ -17,13 +17,13 @@ public class SignerTest extends SignerBase {
 		Document doc = getDocument("./examples/ejemploRegistro.xml");
 		Element elemToSign = doc.getDocumentElement();
 
-		XadesSigner signer = new XadesEpesSigningProfile(keyingProviderMy, policyInfoProvider)
+		XadesSigner signer = new XadesEpesSigningProfile(keyingProviderMy, policyInfoProviderMy)
 				.withBasicSignatureOptions(new BasicSignatureOptions().includePublicKey(true))
+				.withDataObjectPropertiesProvider(dataObjectPropertiesProviderMy)
 				.withSignatureAlgorithms(new SignatureAlgorithms()
 						.withSignatureAlgorithm("RSA", XMLSignature.ALGO_ID_SIGNATURE_RSA_SHA256)
-						.withDigestAlgorithmForReferenceProperties(MessageDigestAlgorithm.ALGO_ID_DIGEST_SHA256)
-						.withDigestAlgorithmForDataObjectReferences(MessageDigestAlgorithm.ALGO_ID_DIGEST_SHA256)
-						)
+						.withDigestAlgorithmForReferenceProperties(MessageDigestAlgorithm.ALGO_ID_DIGEST_SHA1)
+						.withDigestAlgorithmForDataObjectReferences(MessageDigestAlgorithm.ALGO_ID_DIGEST_SHA256))
 				.newSigner();
 
 		new Enveloped(signer).sign(elemToSign);
