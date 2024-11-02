@@ -44,7 +44,7 @@ public class SignerBase extends SignatureServicesTestBase {
 			@Override
 			public void provideProperties(DataObjectDesc dataObj) {
 				ObjectIdentifier idObj = new ObjectIdentifier("urn:oid:1.2.840.10003.5.109.10", IdentifierType.URI, "");
-				dataObj.withDataObjectFormat(new DataObjectFormatProperty("text/xml").withIdentifier(idObj));
+				dataObj.withDataObjectFormat(new DataObjectFormatProperty("text/xml", "UTF-8").withIdentifier(idObj));
 			}
 
 		};
