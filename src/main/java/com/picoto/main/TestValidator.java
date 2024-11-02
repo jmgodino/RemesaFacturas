@@ -28,7 +28,7 @@ public class TestValidator extends Temporizado {
 	}
 
 	public void validarPorBloques() throws XMLStreamException, SAXException, IOException, TransformerException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("./ejemplo.xml"));
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
 		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "STR", reader, (r) -> {
@@ -49,7 +49,7 @@ public class TestValidator extends Temporizado {
 
 	public void validarPorBloquesConDomAuxiliar(boolean canonical)
 			throws XMLStreamException, SAXException, IOException, TransformerException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("./ejemplo.xml"));
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
 		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "DOM canonical(" + canonical + ")", reader, (r) -> {
@@ -74,7 +74,7 @@ public class TestValidator extends Temporizado {
 
 	public void validarPorBloquesConJaxbAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException, JAXBException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("./ejemplo.xml"));
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
 		Schema schema = Utils.getSchema(Facturae.class, "/schemas/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "JAXB", reader, (r) -> {
@@ -91,7 +91,7 @@ public class TestValidator extends Temporizado {
 
 	public void validarCompleto() throws XMLStreamException, SAXException, IOException {
 
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("./ejemplo.xml"));
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
 		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
 
 		initTimeCalculation("COMPLETO");
