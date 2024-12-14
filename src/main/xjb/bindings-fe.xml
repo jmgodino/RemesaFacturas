@@ -1,0 +1,22 @@
+<jaxb:bindings jaxb:extensionBindingPrefixes="xjc" version="2.1"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
+
+	<jaxb:globalBindings>
+		<xjc:simple />
+	</jaxb:globalBindings>
+
+	<jaxb:bindings schemaLocation="../xsd/Facturaev322.xsd">
+		<jaxb:schemaBindings>
+			<jaxb:package name="com.picoto.jaxb.fe" />
+		</jaxb:schemaBindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="../xsd/Remesas.xsd">
+		<jaxb:schemaBindings>
+			<jaxb:package name="com.picoto.jaxb.fe" />
+		</jaxb:schemaBindings>
+	</jaxb:bindings>
+
+</jaxb:bindings>
+

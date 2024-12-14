@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -78,20 +78,20 @@ import com.picoto.jaxb.ubl.common.ccts.NumericType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PercentType")
 @XmlSeeAlso({
-    TierRatePercent.class,
-    TargetServicePercent.class,
     SettlementDiscountPercent.class,
-    ReliabilityPercent.class,
-    ProgressPercent.class,
-    Percent.class,
-    PenaltySurchargePercent.class,
     PaymentPercent.class,
     ParticipationPercent.class,
-    PartecipationPercent.class,
     MinimumPercent.class,
     MaximumPercent.class,
     HumidityPercent.class,
-    AirFlowPercent.class
+    AirFlowPercent.class,
+    ReliabilityPercent.class,
+    TierRatePercent.class,
+    PenaltySurchargePercent.class,
+    ProgressPercent.class,
+    PartecipationPercent.class,
+    TargetServicePercent.class,
+    Percent.class
 })
 public class PercentType
     extends NumericType

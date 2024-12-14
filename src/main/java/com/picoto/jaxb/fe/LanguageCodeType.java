@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -19,51 +19,51 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * <p>
  * <pre>
- * &lt;simpleType name="LanguageCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ar"/>
- *     &lt;enumeration value="be"/>
- *     &lt;enumeration value="bg"/>
- *     &lt;enumeration value="ca"/>
- *     &lt;enumeration value="cs"/>
- *     &lt;enumeration value="da"/>
- *     &lt;enumeration value="de"/>
- *     &lt;enumeration value="el"/>
- *     &lt;enumeration value="en"/>
- *     &lt;enumeration value="es"/>
- *     &lt;enumeration value="et"/>
- *     &lt;enumeration value="eu"/>
- *     &lt;enumeration value="fi"/>
- *     &lt;enumeration value="fr"/>
- *     &lt;enumeration value="ga"/>
- *     &lt;enumeration value="gl"/>
- *     &lt;enumeration value="hr"/>
- *     &lt;enumeration value="hu"/>
- *     &lt;enumeration value="is"/>
- *     &lt;enumeration value="it"/>
- *     &lt;enumeration value="lv"/>
- *     &lt;enumeration value="lt"/>
- *     &lt;enumeration value="mk"/>
- *     &lt;enumeration value="mt"/>
- *     &lt;enumeration value="nl"/>
- *     &lt;enumeration value="no"/>
- *     &lt;enumeration value="pl"/>
- *     &lt;enumeration value="pt"/>
- *     &lt;enumeration value="ro"/>
- *     &lt;enumeration value="ru"/>
- *     &lt;enumeration value="sk"/>
- *     &lt;enumeration value="sl"/>
- *     &lt;enumeration value="sq"/>
- *     &lt;enumeration value="sr"/>
- *     &lt;enumeration value="sv"/>
- *     &lt;enumeration value="tr"/>
- *     &lt;enumeration value="uk"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="LanguageCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="ar"/&gt;
+ *     &lt;enumeration value="be"/&gt;
+ *     &lt;enumeration value="bg"/&gt;
+ *     &lt;enumeration value="ca"/&gt;
+ *     &lt;enumeration value="cs"/&gt;
+ *     &lt;enumeration value="da"/&gt;
+ *     &lt;enumeration value="de"/&gt;
+ *     &lt;enumeration value="el"/&gt;
+ *     &lt;enumeration value="en"/&gt;
+ *     &lt;enumeration value="es"/&gt;
+ *     &lt;enumeration value="et"/&gt;
+ *     &lt;enumeration value="eu"/&gt;
+ *     &lt;enumeration value="fi"/&gt;
+ *     &lt;enumeration value="fr"/&gt;
+ *     &lt;enumeration value="ga"/&gt;
+ *     &lt;enumeration value="gl"/&gt;
+ *     &lt;enumeration value="hr"/&gt;
+ *     &lt;enumeration value="hu"/&gt;
+ *     &lt;enumeration value="is"/&gt;
+ *     &lt;enumeration value="it"/&gt;
+ *     &lt;enumeration value="lv"/&gt;
+ *     &lt;enumeration value="lt"/&gt;
+ *     &lt;enumeration value="mk"/&gt;
+ *     &lt;enumeration value="mt"/&gt;
+ *     &lt;enumeration value="nl"/&gt;
+ *     &lt;enumeration value="no"/&gt;
+ *     &lt;enumeration value="pl"/&gt;
+ *     &lt;enumeration value="pt"/&gt;
+ *     &lt;enumeration value="ro"/&gt;
+ *     &lt;enumeration value="ru"/&gt;
+ *     &lt;enumeration value="sk"/&gt;
+ *     &lt;enumeration value="sl"/&gt;
+ *     &lt;enumeration value="sq"/&gt;
+ *     &lt;enumeration value="sr"/&gt;
+ *     &lt;enumeration value="sv"/&gt;
+ *     &lt;enumeration value="tr"/&gt;
+ *     &lt;enumeration value="uk"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "LanguageCodeType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml")
+@XmlType(name = "LanguageCodeType")
 @XmlEnum
 public enum LanguageCodeType {
 

@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -24,65 +24,65 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="InvoiceLineType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="IssuerContractReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="IssuerContractDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="IssuerTransactionReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="IssuerTransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="ReceiverContractReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="ReceiverContractDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="ReceiverTransactionReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="ReceiverTransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="FileReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="FileDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="SequenceNumber" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="DeliveryNotesReferences" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DeliveryNotesReferencesType" minOccurs="0"/>
- *         &lt;element name="ItemDescription" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type"/>
- *         &lt;element name="Quantity" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="UnitOfMeasure" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}UnitOfMeasureType" minOccurs="0"/>
- *         &lt;element name="UnitPriceWithoutTax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TotalCost" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="DiscountsAndRebates" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DiscountsAndRebatesType" minOccurs="0"/>
- *         &lt;element name="Charges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ChargesType" minOccurs="0"/>
- *         &lt;element name="GrossAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxesType" minOccurs="0"/>
- *         &lt;element name="TaxesOutputs">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="Tax" maxOccurs="unbounded">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType">
- *                         &lt;/extension>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="LineItemPeriod" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PeriodDates" minOccurs="0"/>
- *         &lt;element name="TransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
- *         &lt;element name="AdditionalLineItemInformation" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type" minOccurs="0"/>
- *         &lt;element name="SpecialTaxableEvent" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}SpecialTaxableEventType" minOccurs="0"/>
- *         &lt;element name="ArticleCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/>
- *         &lt;element name="Extensions" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ExtensionsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="InvoiceLineType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="IssuerContractReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="IssuerContractDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="IssuerTransactionReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="IssuerTransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="ReceiverContractReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="ReceiverContractDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="ReceiverTransactionReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="ReceiverTransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="FileReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="FileDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="SequenceNumber" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *         &lt;element name="DeliveryNotesReferences" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DeliveryNotesReferencesType" minOccurs="0"/&gt;
+ *         &lt;element name="ItemDescription" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type"/&gt;
+ *         &lt;element name="Quantity" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="UnitOfMeasure" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}UnitOfMeasureType" minOccurs="0"/&gt;
+ *         &lt;element name="UnitPriceWithoutTax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TotalCost" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="DiscountsAndRebates" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DiscountsAndRebatesType" minOccurs="0"/&gt;
+ *         &lt;element name="Charges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ChargesType" minOccurs="0"/&gt;
+ *         &lt;element name="GrossAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxesType" minOccurs="0"/&gt;
+ *         &lt;element name="TaxesOutputs"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="Tax" maxOccurs="unbounded"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType"&gt;
+ *                         &lt;/extension&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="LineItemPeriod" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PeriodDates" minOccurs="0"/&gt;
+ *         &lt;element name="TransactionDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
+ *         &lt;element name="AdditionalLineItemInformation" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type" minOccurs="0"/&gt;
+ *         &lt;element name="SpecialTaxableEvent" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}SpecialTaxableEventType" minOccurs="0"/&gt;
+ *         &lt;element name="ArticleCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax20Type" minOccurs="0"/&gt;
+ *         &lt;element name="Extensions" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ExtensionsType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InvoiceLineType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "InvoiceLineType", propOrder = {
     "issuerContractReference",
     "issuerContractDate",
     "issuerTransactionReference",
@@ -824,48 +824,48 @@ public class InvoiceLineType {
      * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="Tax" maxOccurs="unbounded">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType">
-     *               &lt;/extension>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="Tax" maxOccurs="unbounded"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType"&gt;
+     *               &lt;/extension&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "tax"
+        "taxes"
     })
     public static class TaxesOutputs {
 
         @XmlElement(name = "Tax", required = true)
-        protected List<InvoiceLineType.TaxesOutputs.Tax> tax;
+        protected List<InvoiceLineType.TaxesOutputs.Tax> taxes;
 
         /**
-         * Gets the value of the tax property.
+         * Gets the value of the taxes property.
          * 
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the tax property.
+         * This is why there is not a <CODE>set</CODE> method for the taxes property.
          * 
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
-         *    getTax().add(newItem);
+         *    getTaxes().add(newItem);
          * </pre>
          * 
          * 
@@ -875,11 +875,11 @@ public class InvoiceLineType {
          * 
          * 
          */
-        public List<InvoiceLineType.TaxesOutputs.Tax> getTax() {
-            if (tax == null) {
-                tax = new ArrayList<InvoiceLineType.TaxesOutputs.Tax>();
+        public List<InvoiceLineType.TaxesOutputs.Tax> getTaxes() {
+            if (taxes == null) {
+                taxes = new ArrayList<InvoiceLineType.TaxesOutputs.Tax>();
             }
-            return this.tax;
+            return this.taxes;
         }
 
 
@@ -889,12 +889,12 @@ public class InvoiceLineType {
          * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType">
-         *     &lt;/extension>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;extension base="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType"&gt;
+         *     &lt;/extension&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 

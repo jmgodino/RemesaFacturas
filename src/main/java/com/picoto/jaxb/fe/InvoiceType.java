@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -22,39 +22,39 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="InvoiceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="InvoiceHeader" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceHeaderType"/>
- *         &lt;element name="InvoiceIssueData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceIssueDataType"/>
- *         &lt;element name="TaxesOutputs">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="Tax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType" maxOccurs="unbounded"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="TaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxesType" minOccurs="0"/>
- *         &lt;element name="InvoiceTotals" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceTotalsType"/>
- *         &lt;element name="Items" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ItemsType"/>
- *         &lt;element name="PaymentDetails" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InstallmentsType" minOccurs="0"/>
- *         &lt;element name="LegalLiterals" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}LegalLiteralsType" minOccurs="0"/>
- *         &lt;element name="AdditionalData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AdditionalDataType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="InvoiceType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="InvoiceHeader" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceHeaderType"/&gt;
+ *         &lt;element name="InvoiceIssueData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceIssueDataType"/&gt;
+ *         &lt;element name="TaxesOutputs"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="Tax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType" maxOccurs="unbounded"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="TaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxesType" minOccurs="0"/&gt;
+ *         &lt;element name="InvoiceTotals" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InvoiceTotalsType"/&gt;
+ *         &lt;element name="Items" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ItemsType"/&gt;
+ *         &lt;element name="PaymentDetails" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}InstallmentsType" minOccurs="0"/&gt;
+ *         &lt;element name="LegalLiterals" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}LegalLiteralsType" minOccurs="0"/&gt;
+ *         &lt;element name="AdditionalData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AdditionalDataType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InvoiceType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "InvoiceType", propOrder = {
     "invoiceHeader",
     "invoiceIssueData",
     "taxesOutputs",
@@ -309,41 +309,41 @@ public class InvoiceType {
      * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="Tax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType" maxOccurs="unbounded"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="Tax" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxOutputType" maxOccurs="unbounded"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "tax"
+        "taxes"
     })
     public static class TaxesOutputs {
 
         @XmlElement(name = "Tax", required = true)
-        protected List<TaxOutputType> tax;
+        protected List<TaxOutputType> taxes;
 
         /**
-         * Gets the value of the tax property.
+         * Gets the value of the taxes property.
          * 
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the tax property.
+         * This is why there is not a <CODE>set</CODE> method for the taxes property.
          * 
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
-         *    getTax().add(newItem);
+         *    getTaxes().add(newItem);
          * </pre>
          * 
          * 
@@ -353,11 +353,11 @@ public class InvoiceType {
          * 
          * 
          */
-        public List<TaxOutputType> getTax() {
-            if (tax == null) {
-                tax = new ArrayList<TaxOutputType>();
+        public List<TaxOutputType> getTaxes() {
+            if (taxes == null) {
+                taxes = new ArrayList<TaxOutputType>();
             }
-            return this.tax;
+            return this.taxes;
         }
 
     }

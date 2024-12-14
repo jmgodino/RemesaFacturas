@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -20,37 +20,37 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="ThirdPartyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TaxIdentification" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxIdentificationType"/>
- *         &lt;choice>
- *           &lt;element name="LegalEntity" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}LegalEntityType"/>
- *           &lt;element name="Individual" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}IndividualType"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ThirdPartyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TaxIdentification" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TaxIdentificationType"/&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="LegalEntity" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}LegalEntityType"/&gt;
+ *           &lt;element name="Individual" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}IndividualType"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThirdPartyType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "ThirdPartyType", propOrder = {
     "taxIdentification",
-    "legalEntity",
-    "individual"
+    "individual",
+    "legalEntity"
 })
 public class ThirdPartyType {
 
     @XmlElement(name = "TaxIdentification", required = true)
     protected TaxIdentificationType taxIdentification;
-    @XmlElement(name = "LegalEntity")
-    protected LegalEntityType legalEntity;
     @XmlElement(name = "Individual")
     protected IndividualType individual;
+    @XmlElement(name = "LegalEntity")
+    protected LegalEntityType legalEntity;
 
     /**
      * Obtiene el valor de la propiedad taxIdentification.
@@ -77,30 +77,6 @@ public class ThirdPartyType {
     }
 
     /**
-     * Obtiene el valor de la propiedad legalEntity.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LegalEntityType }
-     *     
-     */
-    public LegalEntityType getLegalEntity() {
-        return legalEntity;
-    }
-
-    /**
-     * Define el valor de la propiedad legalEntity.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LegalEntityType }
-     *     
-     */
-    public void setLegalEntity(LegalEntityType value) {
-        this.legalEntity = value;
-    }
-
-    /**
      * Obtiene el valor de la propiedad individual.
      * 
      * @return
@@ -122,6 +98,30 @@ public class ThirdPartyType {
      */
     public void setIndividual(IndividualType value) {
         this.individual = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad legalEntity.
+     * 
+     * @return
+     *     possible object is
+     *     {@link LegalEntityType }
+     *     
+     */
+    public LegalEntityType getLegalEntity() {
+        return legalEntity;
+    }
+
+    /**
+     * Define el valor de la propiedad legalEntity.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link LegalEntityType }
+     *     
+     */
+    public void setLegalEntity(LegalEntityType value) {
+        this.legalEntity = value;
     }
 
 }

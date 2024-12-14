@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -99,37 +99,37 @@ import com.picoto.jaxb.ubl.common.cbc.ValidationTime;
     "value"
 })
 @XmlSeeAlso({
-    ValidationTime.class,
     StartTime.class,
-    SourceForecastIssueTime.class,
     RevisionTime.class,
     ResponseTime.class,
-    ResolutionTime.class,
     RequiredDeliveryTime.class,
-    RequestedDespatchTime.class,
     RegisteredTime.class,
-    ReferenceTime.class,
     PaidTime.class,
     OccurrenceTime.class,
     NominationTime.class,
-    ManufactureTime.class,
-    LatestPickupTime.class,
     LatestDeliveryTime.class,
     LastRevisionTime.class,
-    IssueTime.class,
-    GuaranteedDespatchTime.class,
-    ExpiryTime.class,
-    EstimatedDespatchTime.class,
     EstimatedDeliveryTime.class,
     EndTime.class,
     EffectiveTime.class,
-    EarliestPickupTime.class,
-    ComparisonForecastIssueTime.class,
-    CallTime.class,
+    ActualDeliveryTime.class,
+    ReferenceTime.class,
     AwardTime.class,
+    ResolutionTime.class,
+    LatestPickupTime.class,
+    EarliestPickupTime.class,
     ActualPickupTime.class,
+    ManufactureTime.class,
+    SourceForecastIssueTime.class,
+    ExpiryTime.class,
+    ComparisonForecastIssueTime.class,
+    IssueTime.class,
+    GuaranteedDespatchTime.class,
     ActualDespatchTime.class,
-    ActualDeliveryTime.class
+    EstimatedDespatchTime.class,
+    RequestedDespatchTime.class,
+    CallTime.class,
+    ValidationTime.class
 })
 public class TimeType {
 

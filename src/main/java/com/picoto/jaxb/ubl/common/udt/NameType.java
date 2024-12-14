@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -87,28 +87,28 @@ import com.picoto.jaxb.ubl.common.ccts.TextType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NameType")
 @XmlSeeAlso({
-    VesselName.class,
-    TechnicalName.class,
     StreetName.class,
     ServiceName.class,
-    RoamingPartnerName.class,
     RetailEventName.class,
-    RegistrationName.class,
     OtherName.class,
     ModelName.class,
     MiddleName.class,
-    HolderName.class,
     FirstName.class,
-    FileName.class,
     FamilyName.class,
     CitySubdivisionName.class,
     CityName.class,
-    CategoryName.class,
     BuildingName.class,
     BrandName.class,
     BlockName.class,
     AliasName.class,
     AdditionalStreetName.class,
+    RegistrationName.class,
+    VesselName.class,
+    CategoryName.class,
+    TechnicalName.class,
+    FileName.class,
+    RoamingPartnerName.class,
+    HolderName.class,
     Name.class
 })
 public class NameType

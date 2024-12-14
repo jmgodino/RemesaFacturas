@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -37,14 +37,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link IdentifierType }
-     * 
-     */
-    public IdentifierType createIdentifierType() {
-        return new IdentifierType();
-    }
-
-    /**
      * Create an instance of {@link NameType }
      * 
      */
@@ -61,6 +53,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link IdentifierType }
+     * 
+     */
+    public IdentifierType createIdentifierType() {
+        return new IdentifierType();
+    }
+
+    /**
+     * Create an instance of {@link IndicatorType }
+     * 
+     */
+    public IndicatorType createIndicatorType() {
+        return new IndicatorType();
+    }
+
+    /**
      * Create an instance of {@link CodeType }
      * 
      */
@@ -74,6 +82,62 @@ public class ObjectFactory {
      */
     public AmountType createAmountType() {
         return new AmountType();
+    }
+
+    /**
+     * Create an instance of {@link NumericType }
+     * 
+     */
+    public NumericType createNumericType() {
+        return new NumericType();
+    }
+
+    /**
+     * Create an instance of {@link DateType }
+     * 
+     */
+    public DateType createDateType() {
+        return new DateType();
+    }
+
+    /**
+     * Create an instance of {@link QuantityType }
+     * 
+     */
+    public QuantityType createQuantityType() {
+        return new QuantityType();
+    }
+
+    /**
+     * Create an instance of {@link TimeType }
+     * 
+     */
+    public TimeType createTimeType() {
+        return new TimeType();
+    }
+
+    /**
+     * Create an instance of {@link MeasureType }
+     * 
+     */
+    public MeasureType createMeasureType() {
+        return new MeasureType();
+    }
+
+    /**
+     * Create an instance of {@link PercentType }
+     * 
+     */
+    public PercentType createPercentType() {
+        return new PercentType();
+    }
+
+    /**
+     * Create an instance of {@link RateType }
+     * 
+     */
+    public RateType createRateType() {
+        return new RateType();
     }
 
     /**
@@ -125,75 +189,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DateType }
-     * 
-     */
-    public DateType createDateType() {
-        return new DateType();
-    }
-
-    /**
-     * Create an instance of {@link TimeType }
-     * 
-     */
-    public TimeType createTimeType() {
-        return new TimeType();
-    }
-
-    /**
-     * Create an instance of {@link IndicatorType }
-     * 
-     */
-    public IndicatorType createIndicatorType() {
-        return new IndicatorType();
-    }
-
-    /**
-     * Create an instance of {@link MeasureType }
-     * 
-     */
-    public MeasureType createMeasureType() {
-        return new MeasureType();
-    }
-
-    /**
-     * Create an instance of {@link NumericType }
-     * 
-     */
-    public NumericType createNumericType() {
-        return new NumericType();
-    }
-
-    /**
      * Create an instance of {@link ValueType }
      * 
      */
     public ValueType createValueType() {
         return new ValueType();
-    }
-
-    /**
-     * Create an instance of {@link PercentType }
-     * 
-     */
-    public PercentType createPercentType() {
-        return new PercentType();
-    }
-
-    /**
-     * Create an instance of {@link RateType }
-     * 
-     */
-    public RateType createRateType() {
-        return new RateType();
-    }
-
-    /**
-     * Create an instance of {@link QuantityType }
-     * 
-     */
-    public QuantityType createQuantityType() {
-        return new QuantityType();
     }
 
 }

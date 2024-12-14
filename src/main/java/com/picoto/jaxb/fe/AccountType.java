@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -20,79 +20,55 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="AccountType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice>
- *           &lt;element name="IBAN" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMin5Max34Type"/>
- *           &lt;element name="AccountNumber" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMin5Max34Type"/>
- *         &lt;/choice>
- *         &lt;element name="BankCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/>
- *         &lt;element name="BranchCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/>
- *         &lt;choice minOccurs="0">
- *           &lt;element name="BranchInSpainAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AddressType" minOccurs="0"/>
- *           &lt;element name="OverseasBranchAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}OverseasAddressType" minOccurs="0"/>
- *         &lt;/choice>
- *         &lt;element name="BIC" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}BICType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AccountType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="IBAN" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMin5Max34Type"/&gt;
+ *           &lt;element name="AccountNumber" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMin5Max34Type"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element name="BankCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/&gt;
+ *         &lt;element name="BranchCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/&gt;
+ *         &lt;choice minOccurs="0"&gt;
+ *           &lt;element name="BranchInSpainAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AddressType" minOccurs="0"/&gt;
+ *           &lt;element name="OverseasBranchAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}OverseasAddressType" minOccurs="0"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element name="BIC" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}BICType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AccountType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
-    "iban",
+@XmlType(name = "AccountType", propOrder = {
     "accountNumber",
+    "iban",
     "bankCode",
     "branchCode",
-    "branchInSpainAddress",
     "overseasBranchAddress",
+    "branchInSpainAddress",
     "bic"
 })
 public class AccountType {
 
-    @XmlElement(name = "IBAN")
-    protected String iban;
     @XmlElement(name = "AccountNumber")
     protected String accountNumber;
+    @XmlElement(name = "IBAN")
+    protected String iban;
     @XmlElement(name = "BankCode")
     protected String bankCode;
     @XmlElement(name = "BranchCode")
     protected String branchCode;
-    @XmlElement(name = "BranchInSpainAddress")
-    protected AddressType branchInSpainAddress;
     @XmlElement(name = "OverseasBranchAddress")
     protected OverseasAddressType overseasBranchAddress;
+    @XmlElement(name = "BranchInSpainAddress")
+    protected AddressType branchInSpainAddress;
     @XmlElement(name = "BIC")
     protected String bic;
-
-    /**
-     * Obtiene el valor de la propiedad iban.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIBAN() {
-        return iban;
-    }
-
-    /**
-     * Define el valor de la propiedad iban.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIBAN(String value) {
-        this.iban = value;
-    }
 
     /**
      * Obtiene el valor de la propiedad accountNumber.
@@ -116,6 +92,30 @@ public class AccountType {
      */
     public void setAccountNumber(String value) {
         this.accountNumber = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad iban.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIBAN() {
+        return iban;
+    }
+
+    /**
+     * Define el valor de la propiedad iban.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIBAN(String value) {
+        this.iban = value;
     }
 
     /**
@@ -167,30 +167,6 @@ public class AccountType {
     }
 
     /**
-     * Obtiene el valor de la propiedad branchInSpainAddress.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AddressType }
-     *     
-     */
-    public AddressType getBranchInSpainAddress() {
-        return branchInSpainAddress;
-    }
-
-    /**
-     * Define el valor de la propiedad branchInSpainAddress.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AddressType }
-     *     
-     */
-    public void setBranchInSpainAddress(AddressType value) {
-        this.branchInSpainAddress = value;
-    }
-
-    /**
      * Obtiene el valor de la propiedad overseasBranchAddress.
      * 
      * @return
@@ -212,6 +188,30 @@ public class AccountType {
      */
     public void setOverseasBranchAddress(OverseasAddressType value) {
         this.overseasBranchAddress = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad branchInSpainAddress.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
+     */
+    public AddressType getBranchInSpainAddress() {
+        return branchInSpainAddress;
+    }
+
+    /**
+     * Define el valor de la propiedad branchInSpainAddress.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
+     */
+    public void setBranchInSpainAddress(AddressType value) {
+        this.branchInSpainAddress = value;
     }
 
     /**

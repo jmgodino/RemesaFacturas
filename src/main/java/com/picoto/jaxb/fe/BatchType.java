@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -21,26 +21,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="BatchType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="BatchIdentifier" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax70Type"/>
- *         &lt;element name="InvoicesCount" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="TotalInvoicesAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/>
- *         &lt;element name="TotalOutstandingAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/>
- *         &lt;element name="TotalExecutableAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/>
- *         &lt;element name="InvoiceCurrencyCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}CurrencyCodeType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="BatchType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="BatchIdentifier" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax70Type"/&gt;
+ *         &lt;element name="InvoicesCount" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
+ *         &lt;element name="TotalInvoicesAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/&gt;
+ *         &lt;element name="TotalOutstandingAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/&gt;
+ *         &lt;element name="TotalExecutableAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountType"/&gt;
+ *         &lt;element name="InvoiceCurrencyCode" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}CurrencyCodeType"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BatchType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "BatchType", propOrder = {
     "batchIdentifier",
     "invoicesCount",
     "totalInvoicesAmount",

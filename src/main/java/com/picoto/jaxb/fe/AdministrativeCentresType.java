@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -22,41 +22,41 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="AdministrativeCentresType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AdministrativeCentre" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AdministrativeCentreType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AdministrativeCentresType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AdministrativeCentre" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AdministrativeCentreType" maxOccurs="unbounded"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AdministrativeCentresType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
-    "administrativeCentre"
+@XmlType(name = "AdministrativeCentresType", propOrder = {
+    "administrativeCentres"
 })
 public class AdministrativeCentresType {
 
     @XmlElement(name = "AdministrativeCentre", required = true)
-    protected List<AdministrativeCentreType> administrativeCentre;
+    protected List<AdministrativeCentreType> administrativeCentres;
 
     /**
-     * Gets the value of the administrativeCentre property.
+     * Gets the value of the administrativeCentres property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the administrativeCentre property.
+     * This is why there is not a <CODE>set</CODE> method for the administrativeCentres property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getAdministrativeCentre().add(newItem);
+     *    getAdministrativeCentres().add(newItem);
      * </pre>
      * 
      * 
@@ -66,11 +66,11 @@ public class AdministrativeCentresType {
      * 
      * 
      */
-    public List<AdministrativeCentreType> getAdministrativeCentre() {
-        if (administrativeCentre == null) {
-            administrativeCentre = new ArrayList<AdministrativeCentreType>();
+    public List<AdministrativeCentreType> getAdministrativeCentres() {
+        if (administrativeCentres == null) {
+            administrativeCentres = new ArrayList<AdministrativeCentreType>();
         }
-        return this.administrativeCentre;
+        return this.administrativeCentres;
     }
 
 }

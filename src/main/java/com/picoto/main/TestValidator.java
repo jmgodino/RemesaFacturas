@@ -81,7 +81,7 @@ public class TestValidator extends Temporizado {
 			try {
 				Facturae face = getObjetoCompleto(r, schema);
 				Utils.debug("     Valor del JAX-B: "
-						+ face.getInvoices().getInvoice().get(0).getInvoiceTotals().getInvoiceTotal());
+						+ face.getInvoices().getInvoices().get(0).getInvoiceTotals().getInvoiceTotal());
 				// Aqui ya se ha validado al montar el JAX-B no hace falta validar
 			} catch (Exception e) {
 				throw new RuntimeException("Error al procesar el elemento", e);

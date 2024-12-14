@@ -14,7 +14,7 @@ public class TestBasico {
 
 	public static void main(String args[]) {
 		Remesa rem = new Remesa();
-		rem.getFacturae().add(newFactura());
+		rem.getFacturaes().add(newFactura());
 		System.out.println(rem);
 	}
 
@@ -30,7 +30,7 @@ public class TestBasico {
 
 	private static InvoicesType newInvoices() {
 		InvoicesType invoice = new InvoicesType();
-		invoice.getInvoice().add(newInvoice());
+		invoice.getInvoices().add(newInvoice());
 		return invoice;
 	}
 

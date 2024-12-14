@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -19,36 +19,36 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * <p>
  * <pre>
- * &lt;simpleType name="ReasonDescriptionType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Número de la factura"/>
- *     &lt;enumeration value="Serie de la factura"/>
- *     &lt;enumeration value="Fecha expedición"/>
- *     &lt;enumeration value="Nombre y apellidos/Razón Social-Emisor"/>
- *     &lt;enumeration value="Nombre y apellidos/Razón Social-Receptor"/>
- *     &lt;enumeration value="Identificación fiscal Emisor/obligado"/>
- *     &lt;enumeration value="Identificación fiscal Receptor"/>
- *     &lt;enumeration value="Domicilio Emisor/Obligado"/>
- *     &lt;enumeration value="Domicilio Receptor"/>
- *     &lt;enumeration value="Detalle Operación"/>
- *     &lt;enumeration value="Porcentaje impositivo a aplicar"/>
- *     &lt;enumeration value="Cuota tributaria a aplicar"/>
- *     &lt;enumeration value="Fecha/Periodo a aplicar"/>
- *     &lt;enumeration value="Clase de factura"/>
- *     &lt;enumeration value="Literales legales"/>
- *     &lt;enumeration value="Base imponible"/>
- *     &lt;enumeration value="Cálculo de cuotas repercutidas"/>
- *     &lt;enumeration value="Cálculo de cuotas retenidas"/>
- *     &lt;enumeration value="Base imponible modificada por devolución de envases / embalajes"/>
- *     &lt;enumeration value="Base imponible modificada por descuentos y bonificaciones"/>
- *     &lt;enumeration value="Base imponible modificada por resolución firme, judicial o administrativa"/>
- *     &lt;enumeration value="Base imponible modificada cuotas repercutidas no satisfechas. Auto de declaración de concurso"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ReasonDescriptionType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Número de la factura"/&gt;
+ *     &lt;enumeration value="Serie de la factura"/&gt;
+ *     &lt;enumeration value="Fecha expedición"/&gt;
+ *     &lt;enumeration value="Nombre y apellidos/Razón Social-Emisor"/&gt;
+ *     &lt;enumeration value="Nombre y apellidos/Razón Social-Receptor"/&gt;
+ *     &lt;enumeration value="Identificación fiscal Emisor/obligado"/&gt;
+ *     &lt;enumeration value="Identificación fiscal Receptor"/&gt;
+ *     &lt;enumeration value="Domicilio Emisor/Obligado"/&gt;
+ *     &lt;enumeration value="Domicilio Receptor"/&gt;
+ *     &lt;enumeration value="Detalle Operación"/&gt;
+ *     &lt;enumeration value="Porcentaje impositivo a aplicar"/&gt;
+ *     &lt;enumeration value="Cuota tributaria a aplicar"/&gt;
+ *     &lt;enumeration value="Fecha/Periodo a aplicar"/&gt;
+ *     &lt;enumeration value="Clase de factura"/&gt;
+ *     &lt;enumeration value="Literales legales"/&gt;
+ *     &lt;enumeration value="Base imponible"/&gt;
+ *     &lt;enumeration value="Cálculo de cuotas repercutidas"/&gt;
+ *     &lt;enumeration value="Cálculo de cuotas retenidas"/&gt;
+ *     &lt;enumeration value="Base imponible modificada por devolución de envases / embalajes"/&gt;
+ *     &lt;enumeration value="Base imponible modificada por descuentos y bonificaciones"/&gt;
+ *     &lt;enumeration value="Base imponible modificada por resolución firme, judicial o administrativa"/&gt;
+ *     &lt;enumeration value="Base imponible modificada cuotas repercutidas no satisfechas. Auto de declaración de concurso"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "ReasonDescriptionType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml")
+@XmlType(name = "ReasonDescriptionType")
 @XmlEnum
 public enum ReasonDescriptionType {
 

@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -94,32 +94,32 @@ import com.picoto.jaxb.ubl.common.cbc.ValueMeasure;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "MeasureType")
 @XmlSeeAlso({
-    ValueMeasure.class,
     TareWeightMeasure.class,
-    SourceValueMeasure.class,
-    PreEventNotificationDurationMeasure.class,
-    PostEventNotificationDurationMeasure.class,
-    NetWeightMeasure.class,
-    NetVolumeMeasure.class,
-    NetTonnageMeasure.class,
     NetNetWeightMeasure.class,
-    MinimumMeasure.class,
-    Measure.class,
-    MaximumMeasure.class,
-    LongitudeMinutesMeasure.class,
-    LongitudeDegreesMeasure.class,
     LoadingLengthMeasure.class,
     LeadTimeMeasure.class,
-    LatitudeMinutesMeasure.class,
-    LatitudeDegreesMeasure.class,
     GrossWeightMeasure.class,
     GrossVolumeMeasure.class,
-    GrossTonnageMeasure.class,
     DurationMeasure.class,
-    ComparedValueMeasure.class,
     ChargeableWeightMeasure.class,
     BaseUnitMeasure.class,
-    AltitudeMeasure.class
+    PreEventNotificationDurationMeasure.class,
+    PostEventNotificationDurationMeasure.class,
+    NetTonnageMeasure.class,
+    GrossTonnageMeasure.class,
+    AltitudeMeasure.class,
+    LongitudeMinutesMeasure.class,
+    LongitudeDegreesMeasure.class,
+    LatitudeMinutesMeasure.class,
+    LatitudeDegreesMeasure.class,
+    NetVolumeMeasure.class,
+    NetWeightMeasure.class,
+    SourceValueMeasure.class,
+    ComparedValueMeasure.class,
+    ValueMeasure.class,
+    MaximumMeasure.class,
+    MinimumMeasure.class,
+    Measure.class
 })
 public class MeasureType
     extends com.picoto.jaxb.ubl.common.ccts.MeasureType

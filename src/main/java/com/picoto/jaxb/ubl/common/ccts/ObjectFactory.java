@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -37,30 +37,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link IdentifierType }
-     * 
-     */
-    public IdentifierType createIdentifierType() {
-        return new IdentifierType();
-    }
-
-    /**
-     * Create an instance of {@link TextType }
-     * 
-     */
-    public TextType createTextType() {
-        return new TextType();
-    }
-
-    /**
-     * Create an instance of {@link CodeType }
-     * 
-     */
-    public CodeType createCodeType() {
-        return new CodeType();
-    }
-
-    /**
      * Create an instance of {@link AmountType }
      * 
      */
@@ -77,11 +53,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CodeType }
+     * 
+     */
+    public CodeType createCodeType() {
+        return new CodeType();
+    }
+
+    /**
      * Create an instance of {@link DateTimeType }
      * 
      */
     public DateTimeType createDateTimeType() {
         return new DateTimeType();
+    }
+
+    /**
+     * Create an instance of {@link IdentifierType }
+     * 
+     */
+    public IdentifierType createIdentifierType() {
+        return new IdentifierType();
     }
 
     /**
@@ -114,6 +106,14 @@ public class ObjectFactory {
      */
     public QuantityType createQuantityType() {
         return new QuantityType();
+    }
+
+    /**
+     * Create an instance of {@link TextType }
+     * 
+     */
+    public TextType createTextType() {
+        return new TextType();
     }
 
 }

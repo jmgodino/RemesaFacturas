@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -20,39 +20,39 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="InvoiceTotalsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TotalGrossAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="GeneralDiscounts" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DiscountsAndRebatesType" minOccurs="0"/>
- *         &lt;element name="GeneralSurcharges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ChargesType" minOccurs="0"/>
- *         &lt;element name="TotalGeneralDiscounts" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/>
- *         &lt;element name="TotalGeneralSurcharges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/>
- *         &lt;element name="TotalGrossAmountBeforeTaxes" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TotalTaxOutputs" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TotalTaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="InvoiceTotal" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="Subsidies" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}SubsidiesType" minOccurs="0"/>
- *         &lt;element name="PaymentsOnAccount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentsOnAccountType" minOccurs="0"/>
- *         &lt;element name="ReimbursableExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ReimbursableExpenses" minOccurs="0"/>
- *         &lt;element name="TotalFinancialExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleTwoDecimalType" minOccurs="0"/>
- *         &lt;element name="TotalOutstandingAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TotalPaymentsOnAccount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/>
- *         &lt;element name="AmountsWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountsWithheldType" minOccurs="0"/>
- *         &lt;element name="TotalExecutableAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/>
- *         &lt;element name="TotalReimbursableExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/>
- *         &lt;element name="PaymentInKind" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentInKindType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="InvoiceTotalsType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TotalGrossAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="GeneralDiscounts" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DiscountsAndRebatesType" minOccurs="0"/&gt;
+ *         &lt;element name="GeneralSurcharges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ChargesType" minOccurs="0"/&gt;
+ *         &lt;element name="TotalGeneralDiscounts" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/&gt;
+ *         &lt;element name="TotalGeneralSurcharges" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/&gt;
+ *         &lt;element name="TotalGrossAmountBeforeTaxes" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TotalTaxOutputs" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TotalTaxesWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="InvoiceTotal" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="Subsidies" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}SubsidiesType" minOccurs="0"/&gt;
+ *         &lt;element name="PaymentsOnAccount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentsOnAccountType" minOccurs="0"/&gt;
+ *         &lt;element name="ReimbursableExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ReimbursableExpenses" minOccurs="0"/&gt;
+ *         &lt;element name="TotalFinancialExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleTwoDecimalType" minOccurs="0"/&gt;
+ *         &lt;element name="TotalOutstandingAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TotalPaymentsOnAccount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/&gt;
+ *         &lt;element name="AmountsWithheld" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AmountsWithheldType" minOccurs="0"/&gt;
+ *         &lt;element name="TotalExecutableAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType"/&gt;
+ *         &lt;element name="TotalReimbursableExpenses" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleUpToEightDecimalType" minOccurs="0"/&gt;
+ *         &lt;element name="PaymentInKind" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentInKindType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InvoiceTotalsType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "InvoiceTotalsType", propOrder = {
     "totalGrossAmount",
     "generalDiscounts",
     "generalSurcharges",

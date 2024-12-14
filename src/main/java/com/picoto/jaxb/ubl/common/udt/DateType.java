@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -122,60 +122,60 @@ import com.picoto.jaxb.ubl.common.cbc.ValidityStartDate;
     "value"
 })
 @XmlSeeAlso({
-    ValidityStartDate.class,
-    ValidationDate.class,
     TaxPointDate.class,
     SubmissionDueDate.class,
-    SubmissionDate.class,
-    StartDate.class,
-    SourceForecastIssueDate.class,
     RevisionDate.class,
     ResponseDate.class,
-    ResolutionDate.class,
     RequiredDeliveryDate.class,
     RequestedPublicationDate.class,
-    RequestedDespatchDate.class,
-    RequestedDeliveryDate.class,
-    RegistrationExpirationDate.class,
-    RegistrationDate.class,
     RegisteredDate.class,
-    ReferenceDate.class,
     ReceivedDate.class,
-    PreviousMeterReadingDate.class,
     PlannedDate.class,
-    PaymentDueDate.class,
     PaidDate.class,
     OccurrenceDate.class,
     NominationDate.class,
-    ManufactureDate.class,
-    LatestSecurityClearanceDate.class,
-    LatestProposalAcceptanceDate.class,
-    LatestPickupDate.class,
-    LatestMeterReadingDate.class,
     LatestDeliveryDate.class,
     LastRevisionDate.class,
-    IssueDate.class,
     InstallmentDueDate.class,
-    GuaranteedDespatchDate.class,
-    FirstShipmentAvailibilityDate.class,
-    ExpiryDate.class,
-    EstimatedDespatchDate.class,
     EstimatedDeliveryDate.class,
-    EndDate.class,
     EffectiveDate.class,
-    EarliestPickupDate.class,
     DueDate.class,
     Date.class,
-    ComparisonForecastIssueDate.class,
-    CallDate.class,
     BirthDate.class,
-    BestBeforeDate.class,
-    AwardDate.class,
-    AvailabilityDate.class,
     ApprovalDate.class,
+    ActualDeliveryDate.class,
+    ReferenceDate.class,
+    LatestSecurityClearanceDate.class,
+    AwardDate.class,
+    ResolutionDate.class,
+    LatestProposalAcceptanceDate.class,
+    FirstShipmentAvailibilityDate.class,
+    SubmissionDate.class,
+    EndDate.class,
+    StartDate.class,
+    RequestedDeliveryDate.class,
+    LatestPickupDate.class,
+    EarliestPickupDate.class,
     ActualPickupDate.class,
+    PaymentDueDate.class,
+    RegistrationExpirationDate.class,
+    RegistrationDate.class,
+    LatestMeterReadingDate.class,
+    PreviousMeterReadingDate.class,
+    BestBeforeDate.class,
+    ManufactureDate.class,
+    AvailabilityDate.class,
+    SourceForecastIssueDate.class,
+    ComparisonForecastIssueDate.class,
+    IssueDate.class,
+    GuaranteedDespatchDate.class,
     ActualDespatchDate.class,
-    ActualDeliveryDate.class
+    EstimatedDespatchDate.class,
+    RequestedDespatchDate.class,
+    CallDate.class,
+    ValidationDate.class,
+    ExpiryDate.class,
+    ValidityStartDate.class
 })
 public class DateType {
 

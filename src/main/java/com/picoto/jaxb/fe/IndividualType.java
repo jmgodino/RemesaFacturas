@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -20,33 +20,33 @@ import javax.xml.bind.annotation.XmlType;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="IndividualType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type"/>
- *         &lt;element name="FirstSurname" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type"/>
- *         &lt;element name="SecondSurname" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type" minOccurs="0"/>
- *         &lt;choice>
- *           &lt;element name="AddressInSpain" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AddressType"/>
- *           &lt;element name="OverseasAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}OverseasAddressType"/>
- *         &lt;/choice>
- *         &lt;element name="ContactDetails" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ContactDetailsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IndividualType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type"/&gt;
+ *         &lt;element name="FirstSurname" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type"/&gt;
+ *         &lt;element name="SecondSurname" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax40Type" minOccurs="0"/&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="AddressInSpain" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AddressType"/&gt;
+ *           &lt;element name="OverseasAddress" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}OverseasAddressType"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element name="ContactDetails" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}ContactDetailsType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "IndividualType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "IndividualType", propOrder = {
     "name",
     "firstSurname",
     "secondSurname",
-    "addressInSpain",
     "overseasAddress",
+    "addressInSpain",
     "contactDetails"
 })
 public class IndividualType {
@@ -57,10 +57,10 @@ public class IndividualType {
     protected String firstSurname;
     @XmlElement(name = "SecondSurname")
     protected String secondSurname;
-    @XmlElement(name = "AddressInSpain")
-    protected AddressType addressInSpain;
     @XmlElement(name = "OverseasAddress")
     protected OverseasAddressType overseasAddress;
+    @XmlElement(name = "AddressInSpain")
+    protected AddressType addressInSpain;
     @XmlElement(name = "ContactDetails")
     protected ContactDetailsType contactDetails;
 
@@ -137,30 +137,6 @@ public class IndividualType {
     }
 
     /**
-     * Obtiene el valor de la propiedad addressInSpain.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AddressType }
-     *     
-     */
-    public AddressType getAddressInSpain() {
-        return addressInSpain;
-    }
-
-    /**
-     * Define el valor de la propiedad addressInSpain.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AddressType }
-     *     
-     */
-    public void setAddressInSpain(AddressType value) {
-        this.addressInSpain = value;
-    }
-
-    /**
      * Obtiene el valor de la propiedad overseasAddress.
      * 
      * @return
@@ -182,6 +158,30 @@ public class IndividualType {
      */
     public void setOverseasAddress(OverseasAddressType value) {
         this.overseasAddress = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad addressInSpain.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
+     */
+    public AddressType getAddressInSpain() {
+        return addressInSpain;
+    }
+
+    /**
+     * Define el valor de la propiedad addressInSpain.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
+     */
+    public void setAddressInSpain(AddressType value) {
+        this.addressInSpain = value;
     }
 
     /**

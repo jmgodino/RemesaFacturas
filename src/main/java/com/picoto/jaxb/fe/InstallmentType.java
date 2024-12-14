@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:15 PM CET 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -22,29 +22,29 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="InstallmentType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="InstallmentDueDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *         &lt;element name="InstallmentAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleTwoDecimalType"/>
- *         &lt;element name="PaymentMeans" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentMeansType"/>
- *         &lt;element name="AccountToBeCredited" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AccountType" minOccurs="0"/>
- *         &lt;element name="PaymentReconciliationReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/>
- *         &lt;element name="AccountToBeDebited" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AccountType" minOccurs="0"/>
- *         &lt;element name="CollectionAdditionalInformation" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type" minOccurs="0"/>
- *         &lt;element name="RegulatoryReportingData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}RegulatoryReportingDataType" minOccurs="0"/>
- *         &lt;element name="DebitReconciliationReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="InstallmentType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="InstallmentDueDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="InstallmentAmount" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}DoubleTwoDecimalType"/&gt;
+ *         &lt;element name="PaymentMeans" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}PaymentMeansType"/&gt;
+ *         &lt;element name="AccountToBeCredited" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AccountType" minOccurs="0"/&gt;
+ *         &lt;element name="PaymentReconciliationReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/&gt;
+ *         &lt;element name="AccountToBeDebited" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}AccountType" minOccurs="0"/&gt;
+ *         &lt;element name="CollectionAdditionalInformation" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax2500Type" minOccurs="0"/&gt;
+ *         &lt;element name="RegulatoryReportingData" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}RegulatoryReportingDataType" minOccurs="0"/&gt;
+ *         &lt;element name="DebitReconciliationReference" type="{http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml}TextMax60Type" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InstallmentType", namespace = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml", propOrder = {
+@XmlType(name = "InstallmentType", propOrder = {
     "installmentDueDate",
     "installmentAmount",
     "paymentMeans",

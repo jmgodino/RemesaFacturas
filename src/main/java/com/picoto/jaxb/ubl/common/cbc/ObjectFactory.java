@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
+// Generado el: 2024.12.14 a las 09:16:24 PM CET 
 //
 
 
@@ -37,14 +37,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ID }
-     * 
-     */
-    public ID createID() {
-        return new ID();
-    }
-
-    /**
      * Create an instance of {@link Name }
      * 
      */
@@ -53,59 +45,267 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AcceptedIndicator }
+     * Create an instance of {@link Value }
      * 
      */
-    public AcceptedIndicator createAcceptedIndicator() {
-        return new AcceptedIndicator();
+    public Value createValue() {
+        return new Value();
     }
 
     /**
-     * Create an instance of {@link AcceptedVariantsDescription }
+     * Create an instance of {@link Line }
      * 
      */
-    public AcceptedVariantsDescription createAcceptedVariantsDescription() {
-        return new AcceptedVariantsDescription();
+    public Line createLine() {
+        return new Line();
     }
 
     /**
-     * Create an instance of {@link AccountFormatCode }
+     * Create an instance of {@link AircraftID }
      * 
      */
-    public AccountFormatCode createAccountFormatCode() {
-        return new AccountFormatCode();
+    public AircraftID createAircraftID() {
+        return new AircraftID();
     }
 
     /**
-     * Create an instance of {@link AccountID }
+     * Create an instance of {@link Description }
      * 
      */
-    public AccountID createAccountID() {
-        return new AccountID();
+    public Description createDescription() {
+        return new Description();
     }
 
     /**
-     * Create an instance of {@link AccountTypeCode }
+     * Create an instance of {@link AuctionConstraintIndicator }
      * 
      */
-    public AccountTypeCode createAccountTypeCode() {
-        return new AccountTypeCode();
+    public AuctionConstraintIndicator createAuctionConstraintIndicator() {
+        return new AuctionConstraintIndicator();
     }
 
     /**
-     * Create an instance of {@link AccountingCost }
+     * Create an instance of {@link JustificationDescription }
      * 
      */
-    public AccountingCost createAccountingCost() {
-        return new AccountingCost();
+    public JustificationDescription createJustificationDescription() {
+        return new JustificationDescription();
     }
 
     /**
-     * Create an instance of {@link AccountingCostCode }
+     * Create an instance of {@link ProcessDescription }
      * 
      */
-    public AccountingCostCode createAccountingCostCode() {
-        return new AccountingCostCode();
+    public ProcessDescription createProcessDescription() {
+        return new ProcessDescription();
+    }
+
+    /**
+     * Create an instance of {@link ConditionsDescription }
+     * 
+     */
+    public ConditionsDescription createConditionsDescription() {
+        return new ConditionsDescription();
+    }
+
+    /**
+     * Create an instance of {@link ElectronicDeviceDescription }
+     * 
+     */
+    public ElectronicDeviceDescription createElectronicDeviceDescription() {
+        return new ElectronicDeviceDescription();
+    }
+
+    /**
+     * Create an instance of {@link AuctionURI }
+     * 
+     */
+    public AuctionURI createAuctionURI() {
+        return new AuctionURI();
+    }
+
+    /**
+     * Create an instance of {@link WeightingAlgorithmCode }
+     * 
+     */
+    public WeightingAlgorithmCode createWeightingAlgorithmCode() {
+        return new WeightingAlgorithmCode();
+    }
+
+    /**
+     * Create an instance of {@link TechnicalCommitteeDescription }
+     * 
+     */
+    public TechnicalCommitteeDescription createTechnicalCommitteeDescription() {
+        return new TechnicalCommitteeDescription();
+    }
+
+    /**
+     * Create an instance of {@link LowTendersDescription }
+     * 
+     */
+    public LowTendersDescription createLowTendersDescription() {
+        return new LowTendersDescription();
+    }
+
+    /**
+     * Create an instance of {@link PrizeIndicator }
+     * 
+     */
+    public PrizeIndicator createPrizeIndicator() {
+        return new PrizeIndicator();
+    }
+
+    /**
+     * Create an instance of {@link PrizeDescription }
+     * 
+     */
+    public PrizeDescription createPrizeDescription() {
+        return new PrizeDescription();
+    }
+
+    /**
+     * Create an instance of {@link PaymentDescription }
+     * 
+     */
+    public PaymentDescription createPaymentDescription() {
+        return new PaymentDescription();
+    }
+
+    /**
+     * Create an instance of {@link FollowupContractIndicator }
+     * 
+     */
+    public FollowupContractIndicator createFollowupContractIndicator() {
+        return new FollowupContractIndicator();
+    }
+
+    /**
+     * Create an instance of {@link BindingOnBuyerIndicator }
+     * 
+     */
+    public BindingOnBuyerIndicator createBindingOnBuyerIndicator() {
+        return new BindingOnBuyerIndicator();
+    }
+
+    /**
+     * Create an instance of {@link ID }
+     * 
+     */
+    public ID createID() {
+        return new ID();
+    }
+
+    /**
+     * Create an instance of {@link Amount }
+     * 
+     */
+    public Amount createAmount() {
+        return new Amount();
+    }
+
+    /**
+     * Create an instance of {@link BudgetYearNumeric }
+     * 
+     */
+    public BudgetYearNumeric createBudgetYearNumeric() {
+        return new BudgetYearNumeric();
+    }
+
+    /**
+     * Create an instance of {@link TotalAmount }
+     * 
+     */
+    public TotalAmount createTotalAmount() {
+        return new TotalAmount();
+    }
+
+    /**
+     * Create an instance of {@link PrimaryAccountNumberID }
+     * 
+     */
+    public PrimaryAccountNumberID createPrimaryAccountNumberID() {
+        return new PrimaryAccountNumberID();
+    }
+
+    /**
+     * Create an instance of {@link NetworkID }
+     * 
+     */
+    public NetworkID createNetworkID() {
+        return new NetworkID();
+    }
+
+    /**
+     * Create an instance of {@link CardTypeCode }
+     * 
+     */
+    public CardTypeCode createCardTypeCode() {
+        return new CardTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ValidityStartDate }
+     * 
+     */
+    public ValidityStartDate createValidityStartDate() {
+        return new ValidityStartDate();
+    }
+
+    /**
+     * Create an instance of {@link ExpiryDate }
+     * 
+     */
+    public ExpiryDate createExpiryDate() {
+        return new ExpiryDate();
+    }
+
+    /**
+     * Create an instance of {@link IssuerID }
+     * 
+     */
+    public IssuerID createIssuerID() {
+        return new IssuerID();
+    }
+
+    /**
+     * Create an instance of {@link IssueNumberID }
+     * 
+     */
+    public IssueNumberID createIssueNumberID() {
+        return new IssueNumberID();
+    }
+
+    /**
+     * Create an instance of {@link CV2ID }
+     * 
+     */
+    public CV2ID createCV2ID() {
+        return new CV2ID();
+    }
+
+    /**
+     * Create an instance of {@link CardChipCode }
+     * 
+     */
+    public CardChipCode createCardChipCode() {
+        return new CardChipCode();
+    }
+
+    /**
+     * Create an instance of {@link ChipApplicationID }
+     * 
+     */
+    public ChipApplicationID createChipApplicationID() {
+        return new ChipApplicationID();
+    }
+
+    /**
+     * Create an instance of {@link HolderName }
+     * 
+     */
+    public HolderName createHolderName() {
+        return new HolderName();
     }
 
     /**
@@ -117,11 +317,731 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ActivityType }
+     * Create an instance of {@link LifeCycleStatusCode }
      * 
      */
-    public ActivityType createActivityType() {
-        return new ActivityType();
+    public LifeCycleStatusCode createLifeCycleStatusCode() {
+        return new LifeCycleStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link ContractSubdivision }
+     * 
+     */
+    public ContractSubdivision createContractSubdivision() {
+        return new ContractSubdivision();
+    }
+
+    /**
+     * Create an instance of {@link Note }
+     * 
+     */
+    public Note createNote() {
+        return new Note();
+    }
+
+    /**
+     * Create an instance of {@link OrderableIndicator }
+     * 
+     */
+    public OrderableIndicator createOrderableIndicator() {
+        return new OrderableIndicator();
+    }
+
+    /**
+     * Create an instance of {@link OrderableUnit }
+     * 
+     */
+    public OrderableUnit createOrderableUnit() {
+        return new OrderableUnit();
+    }
+
+    /**
+     * Create an instance of {@link ContentUnitQuantity }
+     * 
+     */
+    public ContentUnitQuantity createContentUnitQuantity() {
+        return new ContentUnitQuantity();
+    }
+
+    /**
+     * Create an instance of {@link OrderQuantityIncrementNumeric }
+     * 
+     */
+    public OrderQuantityIncrementNumeric createOrderQuantityIncrementNumeric() {
+        return new OrderQuantityIncrementNumeric();
+    }
+
+    /**
+     * Create an instance of {@link MinimumOrderQuantity }
+     * 
+     */
+    public MinimumOrderQuantity createMinimumOrderQuantity() {
+        return new MinimumOrderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MaximumOrderQuantity }
+     * 
+     */
+    public MaximumOrderQuantity createMaximumOrderQuantity() {
+        return new MaximumOrderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link WarrantyInformation }
+     * 
+     */
+    public WarrantyInformation createWarrantyInformation() {
+        return new WarrantyInformation();
+    }
+
+    /**
+     * Create an instance of {@link PackLevelCode }
+     * 
+     */
+    public PackLevelCode createPackLevelCode() {
+        return new PackLevelCode();
+    }
+
+    /**
+     * Create an instance of {@link PriceAmount }
+     * 
+     */
+    public PriceAmount createPriceAmount() {
+        return new PriceAmount();
+    }
+
+    /**
+     * Create an instance of {@link Quantity }
+     * 
+     */
+    public Quantity createQuantity() {
+        return new Quantity();
+    }
+
+    /**
+     * Create an instance of {@link CertificateTypeCode }
+     * 
+     */
+    public CertificateTypeCode createCertificateTypeCode() {
+        return new CertificateTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link CertificateType }
+     * 
+     */
+    public CertificateType createCertificateType() {
+        return new CertificateType();
+    }
+
+    /**
+     * Create an instance of {@link Remarks }
+     * 
+     */
+    public Remarks createRemarks() {
+        return new Remarks();
+    }
+
+    /**
+     * Create an instance of {@link ValidationDate }
+     * 
+     */
+    public ValidationDate createValidationDate() {
+        return new ValidationDate();
+    }
+
+    /**
+     * Create an instance of {@link ValidationTime }
+     * 
+     */
+    public ValidationTime createValidationTime() {
+        return new ValidationTime();
+    }
+
+    /**
+     * Create an instance of {@link ValidatorID }
+     * 
+     */
+    public ValidatorID createValidatorID() {
+        return new ValidatorID();
+    }
+
+    /**
+     * Create an instance of {@link CanonicalizationMethod }
+     * 
+     */
+    public CanonicalizationMethod createCanonicalizationMethod() {
+        return new CanonicalizationMethod();
+    }
+
+    /**
+     * Create an instance of {@link SignatureMethod }
+     * 
+     */
+    public SignatureMethod createSignatureMethod() {
+        return new SignatureMethod();
+    }
+
+    /**
+     * Create an instance of {@link ReferenceID }
+     * 
+     */
+    public ReferenceID createReferenceID() {
+        return new ReferenceID();
+    }
+
+    /**
+     * Create an instance of {@link ApplicationStatusCode }
+     * 
+     */
+    public ApplicationStatusCode createApplicationStatusCode() {
+        return new ApplicationStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link OriginalJobID }
+     * 
+     */
+    public OriginalJobID createOriginalJobID() {
+        return new OriginalJobID();
+    }
+
+    /**
+     * Create an instance of {@link PreviousJobID }
+     * 
+     */
+    public PreviousJobID createPreviousJobID() {
+        return new PreviousJobID();
+    }
+
+    /**
+     * Create an instance of {@link RoleCode }
+     * 
+     */
+    public RoleCode createRoleCode() {
+        return new RoleCode();
+    }
+
+    /**
+     * Create an instance of {@link SequenceNumeric }
+     * 
+     */
+    public SequenceNumeric createSequenceNumeric() {
+        return new SequenceNumeric();
+    }
+
+    /**
+     * Create an instance of {@link PrintQualifier }
+     * 
+     */
+    public PrintQualifier createPrintQualifier() {
+        return new PrintQualifier();
+    }
+
+    /**
+     * Create an instance of {@link MaximumCopiesNumeric }
+     * 
+     */
+    public MaximumCopiesNumeric createMaximumCopiesNumeric() {
+        return new MaximumCopiesNumeric();
+    }
+
+    /**
+     * Create an instance of {@link AnnualAverageAmount }
+     * 
+     */
+    public AnnualAverageAmount createAnnualAverageAmount() {
+        return new AnnualAverageAmount();
+    }
+
+    /**
+     * Create an instance of {@link TotalTaskAmount }
+     * 
+     */
+    public TotalTaskAmount createTotalTaskAmount() {
+        return new TotalTaskAmount();
+    }
+
+    /**
+     * Create an instance of {@link PartyCapacityAmount }
+     * 
+     */
+    public PartyCapacityAmount createPartyCapacityAmount() {
+        return new PartyCapacityAmount();
+    }
+
+    /**
+     * Create an instance of {@link AttributeID }
+     * 
+     */
+    public AttributeID createAttributeID() {
+        return new AttributeID();
+    }
+
+    /**
+     * Create an instance of {@link Measure }
+     * 
+     */
+    public Measure createMeasure() {
+        return new Measure();
+    }
+
+    /**
+     * Create an instance of {@link MinimumMeasure }
+     * 
+     */
+    public MinimumMeasure createMinimumMeasure() {
+        return new MinimumMeasure();
+    }
+
+    /**
+     * Create an instance of {@link MaximumMeasure }
+     * 
+     */
+    public MaximumMeasure createMaximumMeasure() {
+        return new MaximumMeasure();
+    }
+
+    /**
+     * Create an instance of {@link UtilityStatementTypeCode }
+     * 
+     */
+    public UtilityStatementTypeCode createUtilityStatementTypeCode() {
+        return new UtilityStatementTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionType }
+     * 
+     */
+    public ConsumptionType createConsumptionType() {
+        return new ConsumptionType();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionTypeCode }
+     * 
+     */
+    public ConsumptionTypeCode createConsumptionTypeCode() {
+        return new ConsumptionTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link TotalConsumedQuantity }
+     * 
+     */
+    public TotalConsumedQuantity createTotalConsumedQuantity() {
+        return new TotalConsumedQuantity();
+    }
+
+    /**
+     * Create an instance of {@link BasicConsumedQuantity }
+     * 
+     */
+    public BasicConsumedQuantity createBasicConsumedQuantity() {
+        return new BasicConsumedQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ResidentOccupantsNumeric }
+     * 
+     */
+    public ResidentOccupantsNumeric createResidentOccupantsNumeric() {
+        return new ResidentOccupantsNumeric();
+    }
+
+    /**
+     * Create an instance of {@link ConsumersEnergyLevelCode }
+     * 
+     */
+    public ConsumersEnergyLevelCode createConsumersEnergyLevelCode() {
+        return new ConsumersEnergyLevelCode();
+    }
+
+    /**
+     * Create an instance of {@link ConsumersEnergyLevel }
+     * 
+     */
+    public ConsumersEnergyLevel createConsumersEnergyLevel() {
+        return new ConsumersEnergyLevel();
+    }
+
+    /**
+     * Create an instance of {@link ResidenceType }
+     * 
+     */
+    public ResidenceType createResidenceType() {
+        return new ResidenceType();
+    }
+
+    /**
+     * Create an instance of {@link ResidenceTypeCode }
+     * 
+     */
+    public ResidenceTypeCode createResidenceTypeCode() {
+        return new ResidenceTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link HeatingType }
+     * 
+     */
+    public HeatingType createHeatingType() {
+        return new HeatingType();
+    }
+
+    /**
+     * Create an instance of {@link HeatingTypeCode }
+     * 
+     */
+    public HeatingTypeCode createHeatingTypeCode() {
+        return new HeatingTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionReportID }
+     * 
+     */
+    public ConsumptionReportID createConsumptionReportID() {
+        return new ConsumptionReportID();
+    }
+
+    /**
+     * Create an instance of {@link MeterNumber }
+     * 
+     */
+    public MeterNumber createMeterNumber() {
+        return new MeterNumber();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionLevelCode }
+     * 
+     */
+    public ConsumptionLevelCode createConsumptionLevelCode() {
+        return new ConsumptionLevelCode();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionLevel }
+     * 
+     */
+    public ConsumptionLevel createConsumptionLevel() {
+        return new ConsumptionLevel();
+    }
+
+    /**
+     * Create an instance of {@link TaxEnergyAmount }
+     * 
+     */
+    public TaxEnergyAmount createTaxEnergyAmount() {
+        return new TaxEnergyAmount();
+    }
+
+    /**
+     * Create an instance of {@link TaxEnergyOnAccountAmount }
+     * 
+     */
+    public TaxEnergyOnAccountAmount createTaxEnergyOnAccountAmount() {
+        return new TaxEnergyOnAccountAmount();
+    }
+
+    /**
+     * Create an instance of {@link TaxEnergyBalanceAmount }
+     * 
+     */
+    public TaxEnergyBalanceAmount createTaxEnergyBalanceAmount() {
+        return new TaxEnergyBalanceAmount();
+    }
+
+    /**
+     * Create an instance of {@link TaxTypeCode }
+     * 
+     */
+    public TaxTypeCode createTaxTypeCode() {
+        return new TaxTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link CurrencyCode }
+     * 
+     */
+    public CurrencyCode createCurrencyCode() {
+        return new CurrencyCode();
+    }
+
+    /**
+     * Create an instance of {@link AverageAmount }
+     * 
+     */
+    public AverageAmount createAverageAmount() {
+        return new AverageAmount();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsSupplyType }
+     * 
+     */
+    public TelecommunicationsSupplyType createTelecommunicationsSupplyType() {
+        return new TelecommunicationsSupplyType();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsSupplyTypeCode }
+     * 
+     */
+    public TelecommunicationsSupplyTypeCode createTelecommunicationsSupplyTypeCode() {
+        return new TelecommunicationsSupplyTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PrivacyCode }
+     * 
+     */
+    public PrivacyCode createPrivacyCode() {
+        return new PrivacyCode();
+    }
+
+    /**
+     * Create an instance of {@link PhoneNumber }
+     * 
+     */
+    public PhoneNumber createPhoneNumber() {
+        return new PhoneNumber();
+    }
+
+    /**
+     * Create an instance of {@link LineExtensionAmount }
+     * 
+     */
+    public LineExtensionAmount createLineExtensionAmount() {
+        return new LineExtensionAmount();
+    }
+
+    /**
+     * Create an instance of {@link CallDate }
+     * 
+     */
+    public CallDate createCallDate() {
+        return new CallDate();
+    }
+
+    /**
+     * Create an instance of {@link CallTime }
+     * 
+     */
+    public CallTime createCallTime() {
+        return new CallTime();
+    }
+
+    /**
+     * Create an instance of {@link ServiceNumberCalled }
+     * 
+     */
+    public ServiceNumberCalled createServiceNumberCalled() {
+        return new ServiceNumberCalled();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsServiceCategory }
+     * 
+     */
+    public TelecommunicationsServiceCategory createTelecommunicationsServiceCategory() {
+        return new TelecommunicationsServiceCategory();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsServiceCategoryCode }
+     * 
+     */
+    public TelecommunicationsServiceCategoryCode createTelecommunicationsServiceCategoryCode() {
+        return new TelecommunicationsServiceCategoryCode();
+    }
+
+    /**
+     * Create an instance of {@link MovieTitle }
+     * 
+     */
+    public MovieTitle createMovieTitle() {
+        return new MovieTitle();
+    }
+
+    /**
+     * Create an instance of {@link RoamingPartnerName }
+     * 
+     */
+    public RoamingPartnerName createRoamingPartnerName() {
+        return new RoamingPartnerName();
+    }
+
+    /**
+     * Create an instance of {@link PayPerView }
+     * 
+     */
+    public PayPerView createPayPerView() {
+        return new PayPerView();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsServiceCall }
+     * 
+     */
+    public TelecommunicationsServiceCall createTelecommunicationsServiceCall() {
+        return new TelecommunicationsServiceCall();
+    }
+
+    /**
+     * Create an instance of {@link TelecommunicationsServiceCallCode }
+     * 
+     */
+    public TelecommunicationsServiceCallCode createTelecommunicationsServiceCallCode() {
+        return new TelecommunicationsServiceCallCode();
+    }
+
+    /**
+     * Create an instance of {@link CallBaseAmount }
+     * 
+     */
+    public CallBaseAmount createCallBaseAmount() {
+        return new CallBaseAmount();
+    }
+
+    /**
+     * Create an instance of {@link CallExtensionAmount }
+     * 
+     */
+    public CallExtensionAmount createCallExtensionAmount() {
+        return new CallExtensionAmount();
+    }
+
+    /**
+     * Create an instance of {@link ParentDocumentLineReferenceID }
+     * 
+     */
+    public ParentDocumentLineReferenceID createParentDocumentLineReferenceID() {
+        return new ParentDocumentLineReferenceID();
+    }
+
+    /**
+     * Create an instance of {@link InvoicedQuantity }
+     * 
+     */
+    public InvoicedQuantity createInvoicedQuantity() {
+        return new InvoicedQuantity();
+    }
+
+    /**
+     * Create an instance of {@link SubscriberID }
+     * 
+     */
+    public SubscriberID createSubscriberID() {
+        return new SubscriberID();
+    }
+
+    /**
+     * Create an instance of {@link SubscriberType }
+     * 
+     */
+    public SubscriberType createSubscriberType() {
+        return new SubscriberType();
+    }
+
+    /**
+     * Create an instance of {@link SubscriberTypeCode }
+     * 
+     */
+    public SubscriberTypeCode createSubscriberTypeCode() {
+        return new SubscriberTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PackQuantity }
+     * 
+     */
+    public PackQuantity createPackQuantity() {
+        return new PackQuantity();
+    }
+
+    /**
+     * Create an instance of {@link PackSizeNumeric }
+     * 
+     */
+    public PackSizeNumeric createPackSizeNumeric() {
+        return new PackSizeNumeric();
+    }
+
+    /**
+     * Create an instance of {@link CurrentChargeType }
+     * 
+     */
+    public CurrentChargeType createCurrentChargeType() {
+        return new CurrentChargeType();
+    }
+
+    /**
+     * Create an instance of {@link CurrentChargeTypeCode }
+     * 
+     */
+    public CurrentChargeTypeCode createCurrentChargeTypeCode() {
+        return new CurrentChargeTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link OneTimeChargeType }
+     * 
+     */
+    public OneTimeChargeType createOneTimeChargeType() {
+        return new OneTimeChargeType();
+    }
+
+    /**
+     * Create an instance of {@link OneTimeChargeTypeCode }
+     * 
+     */
+    public OneTimeChargeTypeCode createOneTimeChargeTypeCode() {
+        return new OneTimeChargeTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link TimeAmount }
+     * 
+     */
+    public TimeAmount createTimeAmount() {
+        return new TimeAmount();
+    }
+
+    /**
+     * Create an instance of {@link ExecutionRequirementCode }
+     * 
+     */
+    public ExecutionRequirementCode createExecutionRequirementCode() {
+        return new ExecutionRequirementCode();
+    }
+
+    /**
+     * Create an instance of {@link OptionsDescription }
+     * 
+     */
+    public OptionsDescription createOptionsDescription() {
+        return new OptionsDescription();
+    }
+
+    /**
+     * Create an instance of {@link MinimumNumberNumeric }
+     * 
+     */
+    public MinimumNumberNumeric createMinimumNumberNumeric() {
+        return new MinimumNumberNumeric();
+    }
+
+    /**
+     * Create an instance of {@link MaximumNumberNumeric }
+     * 
+     */
+    public MaximumNumberNumeric createMaximumNumberNumeric() {
+        return new MaximumNumberNumeric();
     }
 
     /**
@@ -133,19 +1053,123 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ActualDeliveryDate }
+     * Create an instance of {@link ActivityType }
      * 
      */
-    public ActualDeliveryDate createActualDeliveryDate() {
-        return new ActualDeliveryDate();
+    public ActivityType createActivityType() {
+        return new ActivityType();
     }
 
     /**
-     * Create an instance of {@link ActualDeliveryTime }
+     * Create an instance of {@link BuyerProfileURI }
      * 
      */
-    public ActualDeliveryTime createActualDeliveryTime() {
-        return new ActualDeliveryTime();
+    public BuyerProfileURI createBuyerProfileURI() {
+        return new BuyerProfileURI();
+    }
+
+    /**
+     * Create an instance of {@link PartyTypeCode }
+     * 
+     */
+    public PartyTypeCode createPartyTypeCode() {
+        return new PartyTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PartyType }
+     * 
+     */
+    public PartyType createPartyType() {
+        return new PartyType();
+    }
+
+    /**
+     * Create an instance of {@link CorporateRegistrationTypeCode }
+     * 
+     */
+    public CorporateRegistrationTypeCode createCorporateRegistrationTypeCode() {
+        return new CorporateRegistrationTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link AccountID }
+     * 
+     */
+    public AccountID createAccountID() {
+        return new AccountID();
+    }
+
+    /**
+     * Create an instance of {@link DeclarationTypeCode }
+     * 
+     */
+    public DeclarationTypeCode createDeclarationTypeCode() {
+        return new DeclarationTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link SpecialTerms }
+     * 
+     */
+    public SpecialTerms createSpecialTerms() {
+        return new SpecialTerms();
+    }
+
+    /**
+     * Create an instance of {@link LossRiskResponsibilityCode }
+     * 
+     */
+    public LossRiskResponsibilityCode createLossRiskResponsibilityCode() {
+        return new LossRiskResponsibilityCode();
+    }
+
+    /**
+     * Create an instance of {@link LossRisk }
+     * 
+     */
+    public LossRisk createLossRisk() {
+        return new LossRisk();
+    }
+
+    /**
+     * Create an instance of {@link Percent }
+     * 
+     */
+    public Percent createPercent() {
+        return new Percent();
+    }
+
+    /**
+     * Create an instance of {@link RequestedDespatchDate }
+     * 
+     */
+    public RequestedDespatchDate createRequestedDespatchDate() {
+        return new RequestedDespatchDate();
+    }
+
+    /**
+     * Create an instance of {@link RequestedDespatchTime }
+     * 
+     */
+    public RequestedDespatchTime createRequestedDespatchTime() {
+        return new RequestedDespatchTime();
+    }
+
+    /**
+     * Create an instance of {@link EstimatedDespatchDate }
+     * 
+     */
+    public EstimatedDespatchDate createEstimatedDespatchDate() {
+        return new EstimatedDespatchDate();
+    }
+
+    /**
+     * Create an instance of {@link EstimatedDespatchTime }
+     * 
+     */
+    public EstimatedDespatchTime createEstimatedDespatchTime() {
+        return new EstimatedDespatchTime();
     }
 
     /**
@@ -165,6 +1189,1406 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GuaranteedDespatchDate }
+     * 
+     */
+    public GuaranteedDespatchDate createGuaranteedDespatchDate() {
+        return new GuaranteedDespatchDate();
+    }
+
+    /**
+     * Create an instance of {@link GuaranteedDespatchTime }
+     * 
+     */
+    public GuaranteedDespatchTime createGuaranteedDespatchTime() {
+        return new GuaranteedDespatchTime();
+    }
+
+    /**
+     * Create an instance of {@link ReleaseID }
+     * 
+     */
+    public ReleaseID createReleaseID() {
+        return new ReleaseID();
+    }
+
+    /**
+     * Create an instance of {@link Instructions }
+     * 
+     */
+    public Instructions createInstructions() {
+        return new Instructions();
+    }
+
+    /**
+     * Create an instance of {@link RoleDescription }
+     * 
+     */
+    public RoleDescription createRoleDescription() {
+        return new RoleDescription();
+    }
+
+    /**
+     * Create an instance of {@link LimitationDescription }
+     * 
+     */
+    public LimitationDescription createLimitationDescription() {
+        return new LimitationDescription();
+    }
+
+    /**
+     * Create an instance of {@link ExpectedQuantity }
+     * 
+     */
+    public ExpectedQuantity createExpectedQuantity() {
+        return new ExpectedQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MaximumQuantity }
+     * 
+     */
+    public MaximumQuantity createMaximumQuantity() {
+        return new MaximumQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MinimumQuantity }
+     * 
+     */
+    public MinimumQuantity createMinimumQuantity() {
+        return new MinimumQuantity();
+    }
+
+    /**
+     * Create an instance of {@link CalculationMethodCode }
+     * 
+     */
+    public CalculationMethodCode createCalculationMethodCode() {
+        return new CalculationMethodCode();
+    }
+
+    /**
+     * Create an instance of {@link FullnessIndicationCode }
+     * 
+     */
+    public FullnessIndicationCode createFullnessIndicationCode() {
+        return new FullnessIndicationCode();
+    }
+
+    /**
+     * Create an instance of {@link EnvironmentalEmissionTypeCode }
+     * 
+     */
+    public EnvironmentalEmissionTypeCode createEnvironmentalEmissionTypeCode() {
+        return new EnvironmentalEmissionTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ValueMeasure }
+     * 
+     */
+    public ValueMeasure createValueMeasure() {
+        return new ValueMeasure();
+    }
+
+    /**
+     * Create an instance of {@link Comment }
+     * 
+     */
+    public Comment createComment() {
+        return new Comment();
+    }
+
+    /**
+     * Create an instance of {@link IssueDate }
+     * 
+     */
+    public IssueDate createIssueDate() {
+        return new IssueDate();
+    }
+
+    /**
+     * Create an instance of {@link IssueTime }
+     * 
+     */
+    public IssueTime createIssueTime() {
+        return new IssueTime();
+    }
+
+    /**
+     * Create an instance of {@link LineNumberNumeric }
+     * 
+     */
+    public LineNumberNumeric createLineNumberNumeric() {
+        return new LineNumberNumeric();
+    }
+
+    /**
+     * Create an instance of {@link ForecastPurposeCode }
+     * 
+     */
+    public ForecastPurposeCode createForecastPurposeCode() {
+        return new ForecastPurposeCode();
+    }
+
+    /**
+     * Create an instance of {@link ForecastTypeCode }
+     * 
+     */
+    public ForecastTypeCode createForecastTypeCode() {
+        return new ForecastTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ConsumerIncentiveTacticTypeCode }
+     * 
+     */
+    public ConsumerIncentiveTacticTypeCode createConsumerIncentiveTacticTypeCode() {
+        return new ConsumerIncentiveTacticTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link DisplayTacticTypeCode }
+     * 
+     */
+    public DisplayTacticTypeCode createDisplayTacticTypeCode() {
+        return new DisplayTacticTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link FeatureTacticTypeCode }
+     * 
+     */
+    public FeatureTacticTypeCode createFeatureTacticTypeCode() {
+        return new FeatureTacticTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link TradeItemPackingLabelingTypeCode }
+     * 
+     */
+    public TradeItemPackingLabelingTypeCode createTradeItemPackingLabelingTypeCode() {
+        return new TradeItemPackingLabelingTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ThresholdValueComparisonCode }
+     * 
+     */
+    public ThresholdValueComparisonCode createThresholdValueComparisonCode() {
+        return new ThresholdValueComparisonCode();
+    }
+
+    /**
+     * Create an instance of {@link ThresholdQuantity }
+     * 
+     */
+    public ThresholdQuantity createThresholdQuantity() {
+        return new ThresholdQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ExceptionStatusCode }
+     * 
+     */
+    public ExceptionStatusCode createExceptionStatusCode() {
+        return new ExceptionStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link CollaborationPriorityCode }
+     * 
+     */
+    public CollaborationPriorityCode createCollaborationPriorityCode() {
+        return new CollaborationPriorityCode();
+    }
+
+    /**
+     * Create an instance of {@link ExceptionResolutionCode }
+     * 
+     */
+    public ExceptionResolutionCode createExceptionResolutionCode() {
+        return new ExceptionResolutionCode();
+    }
+
+    /**
+     * Create an instance of {@link SupplyChainActivityTypeCode }
+     * 
+     */
+    public SupplyChainActivityTypeCode createSupplyChainActivityTypeCode() {
+        return new SupplyChainActivityTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PerformanceMetricTypeCode }
+     * 
+     */
+    public PerformanceMetricTypeCode createPerformanceMetricTypeCode() {
+        return new PerformanceMetricTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ComparisonDataSourceCode }
+     * 
+     */
+    public ComparisonDataSourceCode createComparisonDataSourceCode() {
+        return new ComparisonDataSourceCode();
+    }
+
+    /**
+     * Create an instance of {@link DataSourceCode }
+     * 
+     */
+    public DataSourceCode createDataSourceCode() {
+        return new DataSourceCode();
+    }
+
+    /**
+     * Create an instance of {@link TimeDeltaDaysQuantity }
+     * 
+     */
+    public TimeDeltaDaysQuantity createTimeDeltaDaysQuantity() {
+        return new TimeDeltaDaysQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ResolutionCode }
+     * 
+     */
+    public ResolutionCode createResolutionCode() {
+        return new ResolutionCode();
+    }
+
+    /**
+     * Create an instance of {@link ComparedValueMeasure }
+     * 
+     */
+    public ComparedValueMeasure createComparedValueMeasure() {
+        return new ComparedValueMeasure();
+    }
+
+    /**
+     * Create an instance of {@link SourceValueMeasure }
+     * 
+     */
+    public SourceValueMeasure createSourceValueMeasure() {
+        return new SourceValueMeasure();
+    }
+
+    /**
+     * Create an instance of {@link VarianceQuantity }
+     * 
+     */
+    public VarianceQuantity createVarianceQuantity() {
+        return new VarianceQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ComparisonDataCode }
+     * 
+     */
+    public ComparisonDataCode createComparisonDataCode() {
+        return new ComparisonDataCode();
+    }
+
+    /**
+     * Create an instance of {@link ComparisonForecastIssueTime }
+     * 
+     */
+    public ComparisonForecastIssueTime createComparisonForecastIssueTime() {
+        return new ComparisonForecastIssueTime();
+    }
+
+    /**
+     * Create an instance of {@link ComparisonForecastIssueDate }
+     * 
+     */
+    public ComparisonForecastIssueDate createComparisonForecastIssueDate() {
+        return new ComparisonForecastIssueDate();
+    }
+
+    /**
+     * Create an instance of {@link URI }
+     * 
+     */
+    public URI createURI() {
+        return new URI();
+    }
+
+    /**
+     * Create an instance of {@link DocumentHash }
+     * 
+     */
+    public DocumentHash createDocumentHash() {
+        return new DocumentHash();
+    }
+
+    /**
+     * Create an instance of {@link HashAlgorithmMethod }
+     * 
+     */
+    public HashAlgorithmMethod createHashAlgorithmMethod() {
+        return new HashAlgorithmMethod();
+    }
+
+    /**
+     * Create an instance of {@link ExpiryTime }
+     * 
+     */
+    public ExpiryTime createExpiryTime() {
+        return new ExpiryTime();
+    }
+
+    /**
+     * Create an instance of {@link MimeCode }
+     * 
+     */
+    public MimeCode createMimeCode() {
+        return new MimeCode();
+    }
+
+    /**
+     * Create an instance of {@link FormatCode }
+     * 
+     */
+    public FormatCode createFormatCode() {
+        return new FormatCode();
+    }
+
+    /**
+     * Create an instance of {@link EncodingCode }
+     * 
+     */
+    public EncodingCode createEncodingCode() {
+        return new EncodingCode();
+    }
+
+    /**
+     * Create an instance of {@link CharacterSetCode }
+     * 
+     */
+    public CharacterSetCode createCharacterSetCode() {
+        return new CharacterSetCode();
+    }
+
+    /**
+     * Create an instance of {@link FileName }
+     * 
+     */
+    public FileName createFileName() {
+        return new FileName();
+    }
+
+    /**
+     * Create an instance of {@link FrozenDocumentIndicator }
+     * 
+     */
+    public FrozenDocumentIndicator createFrozenDocumentIndicator() {
+        return new FrozenDocumentIndicator();
+    }
+
+    /**
+     * Create an instance of {@link RevisedForecastLineID }
+     * 
+     */
+    public RevisedForecastLineID createRevisedForecastLineID() {
+        return new RevisedForecastLineID();
+    }
+
+    /**
+     * Create an instance of {@link SourceForecastIssueDate }
+     * 
+     */
+    public SourceForecastIssueDate createSourceForecastIssueDate() {
+        return new SourceForecastIssueDate();
+    }
+
+    /**
+     * Create an instance of {@link SourceForecastIssueTime }
+     * 
+     */
+    public SourceForecastIssueTime createSourceForecastIssueTime() {
+        return new SourceForecastIssueTime();
+    }
+
+    /**
+     * Create an instance of {@link AdjustmentReasonCode }
+     * 
+     */
+    public AdjustmentReasonCode createAdjustmentReasonCode() {
+        return new AdjustmentReasonCode();
+    }
+
+    /**
+     * Create an instance of {@link ExpectedOperatorQuantity }
+     * 
+     */
+    public ExpectedOperatorQuantity createExpectedOperatorQuantity() {
+        return new ExpectedOperatorQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MaximumOperatorQuantity }
+     * 
+     */
+    public MaximumOperatorQuantity createMaximumOperatorQuantity() {
+        return new MaximumOperatorQuantity();
+    }
+
+    /**
+     * Create an instance of {@link Justification }
+     * 
+     */
+    public Justification createJustification() {
+        return new Justification();
+    }
+
+    /**
+     * Create an instance of {@link Frequency }
+     * 
+     */
+    public Frequency createFrequency() {
+        return new Frequency();
+    }
+
+    /**
+     * Create an instance of {@link TransportEmergencyCardCode }
+     * 
+     */
+    public TransportEmergencyCardCode createTransportEmergencyCardCode() {
+        return new TransportEmergencyCardCode();
+    }
+
+    /**
+     * Create an instance of {@link PackingCriteriaCode }
+     * 
+     */
+    public PackingCriteriaCode createPackingCriteriaCode() {
+        return new PackingCriteriaCode();
+    }
+
+    /**
+     * Create an instance of {@link HazardousRegulationCode }
+     * 
+     */
+    public HazardousRegulationCode createHazardousRegulationCode() {
+        return new HazardousRegulationCode();
+    }
+
+    /**
+     * Create an instance of {@link InhalationToxicityZoneCode }
+     * 
+     */
+    public InhalationToxicityZoneCode createInhalationToxicityZoneCode() {
+        return new InhalationToxicityZoneCode();
+    }
+
+    /**
+     * Create an instance of {@link TransportAuthorizationCode }
+     * 
+     */
+    public TransportAuthorizationCode createTransportAuthorizationCode() {
+        return new TransportAuthorizationCode();
+    }
+
+    /**
+     * Create an instance of {@link PlacardNotation }
+     * 
+     */
+    public PlacardNotation createPlacardNotation() {
+        return new PlacardNotation();
+    }
+
+    /**
+     * Create an instance of {@link PlacardEndorsement }
+     * 
+     */
+    public PlacardEndorsement createPlacardEndorsement() {
+        return new PlacardEndorsement();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalInformation }
+     * 
+     */
+    public AdditionalInformation createAdditionalInformation() {
+        return new AdditionalInformation();
+    }
+
+    /**
+     * Create an instance of {@link UNDGCode }
+     * 
+     */
+    public UNDGCode createUNDGCode() {
+        return new UNDGCode();
+    }
+
+    /**
+     * Create an instance of {@link EmergencyProceduresCode }
+     * 
+     */
+    public EmergencyProceduresCode createEmergencyProceduresCode() {
+        return new EmergencyProceduresCode();
+    }
+
+    /**
+     * Create an instance of {@link MedicalFirstAidGuideCode }
+     * 
+     */
+    public MedicalFirstAidGuideCode createMedicalFirstAidGuideCode() {
+        return new MedicalFirstAidGuideCode();
+    }
+
+    /**
+     * Create an instance of {@link TechnicalName }
+     * 
+     */
+    public TechnicalName createTechnicalName() {
+        return new TechnicalName();
+    }
+
+    /**
+     * Create an instance of {@link CategoryName }
+     * 
+     */
+    public CategoryName createCategoryName() {
+        return new CategoryName();
+    }
+
+    /**
+     * Create an instance of {@link HazardousCategoryCode }
+     * 
+     */
+    public HazardousCategoryCode createHazardousCategoryCode() {
+        return new HazardousCategoryCode();
+    }
+
+    /**
+     * Create an instance of {@link UpperOrangeHazardPlacardID }
+     * 
+     */
+    public UpperOrangeHazardPlacardID createUpperOrangeHazardPlacardID() {
+        return new UpperOrangeHazardPlacardID();
+    }
+
+    /**
+     * Create an instance of {@link LowerOrangeHazardPlacardID }
+     * 
+     */
+    public LowerOrangeHazardPlacardID createLowerOrangeHazardPlacardID() {
+        return new LowerOrangeHazardPlacardID();
+    }
+
+    /**
+     * Create an instance of {@link MarkingID }
+     * 
+     */
+    public MarkingID createMarkingID() {
+        return new MarkingID();
+    }
+
+    /**
+     * Create an instance of {@link HazardClassID }
+     * 
+     */
+    public HazardClassID createHazardClassID() {
+        return new HazardClassID();
+    }
+
+    /**
+     * Create an instance of {@link NetWeightMeasure }
+     * 
+     */
+    public NetWeightMeasure createNetWeightMeasure() {
+        return new NetWeightMeasure();
+    }
+
+    /**
+     * Create an instance of {@link NetVolumeMeasure }
+     * 
+     */
+    public NetVolumeMeasure createNetVolumeMeasure() {
+        return new NetVolumeMeasure();
+    }
+
+    /**
+     * Create an instance of {@link Extension }
+     * 
+     */
+    public Extension createExtension() {
+        return new Extension();
+    }
+
+    /**
+     * Create an instance of {@link ImmobilizationCertificateID }
+     * 
+     */
+    public ImmobilizationCertificateID createImmobilizationCertificateID() {
+        return new ImmobilizationCertificateID();
+    }
+
+    /**
+     * Create an instance of {@link SecurityID }
+     * 
+     */
+    public SecurityID createSecurityID() {
+        return new SecurityID();
+    }
+
+    /**
+     * Create an instance of {@link FaceValueAmount }
+     * 
+     */
+    public FaceValueAmount createFaceValueAmount() {
+        return new FaceValueAmount();
+    }
+
+    /**
+     * Create an instance of {@link MarketValueAmount }
+     * 
+     */
+    public MarketValueAmount createMarketValueAmount() {
+        return new MarketValueAmount();
+    }
+
+    /**
+     * Create an instance of {@link SharesNumberQuantity }
+     * 
+     */
+    public SharesNumberQuantity createSharesNumberQuantity() {
+        return new SharesNumberQuantity();
+    }
+
+    /**
+     * Create an instance of {@link InventoryValueAmount }
+     * 
+     */
+    public InventoryValueAmount createInventoryValueAmount() {
+        return new InventoryValueAmount();
+    }
+
+    /**
+     * Create an instance of {@link AvailabilityDate }
+     * 
+     */
+    public AvailabilityDate createAvailabilityDate() {
+        return new AvailabilityDate();
+    }
+
+    /**
+     * Create an instance of {@link AvailabilityStatusCode }
+     * 
+     */
+    public AvailabilityStatusCode createAvailabilityStatusCode() {
+        return new AvailabilityStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link TimeFrequencyCode }
+     * 
+     */
+    public TimeFrequencyCode createTimeFrequencyCode() {
+        return new TimeFrequencyCode();
+    }
+
+    /**
+     * Create an instance of {@link ProductTraceID }
+     * 
+     */
+    public ProductTraceID createProductTraceID() {
+        return new ProductTraceID();
+    }
+
+    /**
+     * Create an instance of {@link ManufactureDate }
+     * 
+     */
+    public ManufactureDate createManufactureDate() {
+        return new ManufactureDate();
+    }
+
+    /**
+     * Create an instance of {@link ManufactureTime }
+     * 
+     */
+    public ManufactureTime createManufactureTime() {
+        return new ManufactureTime();
+    }
+
+    /**
+     * Create an instance of {@link BestBeforeDate }
+     * 
+     */
+    public BestBeforeDate createBestBeforeDate() {
+        return new BestBeforeDate();
+    }
+
+    /**
+     * Create an instance of {@link RegistrationID }
+     * 
+     */
+    public RegistrationID createRegistrationID() {
+        return new RegistrationID();
+    }
+
+    /**
+     * Create an instance of {@link SerialID }
+     * 
+     */
+    public SerialID createSerialID() {
+        return new SerialID();
+    }
+
+    /**
+     * Create an instance of {@link LotNumberID }
+     * 
+     */
+    public LotNumberID createLotNumberID() {
+        return new LotNumberID();
+    }
+
+    /**
+     * Create an instance of {@link FrozenPeriodDaysNumeric }
+     * 
+     */
+    public FrozenPeriodDaysNumeric createFrozenPeriodDaysNumeric() {
+        return new FrozenPeriodDaysNumeric();
+    }
+
+    /**
+     * Create an instance of {@link MinimumInventoryQuantity }
+     * 
+     */
+    public MinimumInventoryQuantity createMinimumInventoryQuantity() {
+        return new MinimumInventoryQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MultipleOrderQuantity }
+     * 
+     */
+    public MultipleOrderQuantity createMultipleOrderQuantity() {
+        return new MultipleOrderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link OrderIntervalDaysNumeric }
+     * 
+     */
+    public OrderIntervalDaysNumeric createOrderIntervalDaysNumeric() {
+        return new OrderIntervalDaysNumeric();
+    }
+
+    /**
+     * Create an instance of {@link ReplenishmentOwnerDescription }
+     * 
+     */
+    public ReplenishmentOwnerDescription createReplenishmentOwnerDescription() {
+        return new ReplenishmentOwnerDescription();
+    }
+
+    /**
+     * Create an instance of {@link TargetServicePercent }
+     * 
+     */
+    public TargetServicePercent createTargetServicePercent() {
+        return new TargetServicePercent();
+    }
+
+    /**
+     * Create an instance of {@link TargetInventoryQuantity }
+     * 
+     */
+    public TargetInventoryQuantity createTargetInventoryQuantity() {
+        return new TargetInventoryQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ImportanceCode }
+     * 
+     */
+    public ImportanceCode createImportanceCode() {
+        return new ImportanceCode();
+    }
+
+    /**
+     * Create an instance of {@link MinimumValue }
+     * 
+     */
+    public MinimumValue createMinimumValue() {
+        return new MinimumValue();
+    }
+
+    /**
+     * Create an instance of {@link MaximumValue }
+     * 
+     */
+    public MaximumValue createMaximumValue() {
+        return new MaximumValue();
+    }
+
+    /**
+     * Create an instance of {@link CoordinateSystemCode }
+     * 
+     */
+    public CoordinateSystemCode createCoordinateSystemCode() {
+        return new CoordinateSystemCode();
+    }
+
+    /**
+     * Create an instance of {@link LatitudeDegreesMeasure }
+     * 
+     */
+    public LatitudeDegreesMeasure createLatitudeDegreesMeasure() {
+        return new LatitudeDegreesMeasure();
+    }
+
+    /**
+     * Create an instance of {@link LatitudeMinutesMeasure }
+     * 
+     */
+    public LatitudeMinutesMeasure createLatitudeMinutesMeasure() {
+        return new LatitudeMinutesMeasure();
+    }
+
+    /**
+     * Create an instance of {@link LatitudeDirectionCode }
+     * 
+     */
+    public LatitudeDirectionCode createLatitudeDirectionCode() {
+        return new LatitudeDirectionCode();
+    }
+
+    /**
+     * Create an instance of {@link LongitudeDegreesMeasure }
+     * 
+     */
+    public LongitudeDegreesMeasure createLongitudeDegreesMeasure() {
+        return new LongitudeDegreesMeasure();
+    }
+
+    /**
+     * Create an instance of {@link LongitudeMinutesMeasure }
+     * 
+     */
+    public LongitudeMinutesMeasure createLongitudeMinutesMeasure() {
+        return new LongitudeMinutesMeasure();
+    }
+
+    /**
+     * Create an instance of {@link LongitudeDirectionCode }
+     * 
+     */
+    public LongitudeDirectionCode createLongitudeDirectionCode() {
+        return new LongitudeDirectionCode();
+    }
+
+    /**
+     * Create an instance of {@link AltitudeMeasure }
+     * 
+     */
+    public AltitudeMeasure createAltitudeMeasure() {
+        return new AltitudeMeasure();
+    }
+
+    /**
+     * Create an instance of {@link VesselID }
+     * 
+     */
+    public VesselID createVesselID() {
+        return new VesselID();
+    }
+
+    /**
+     * Create an instance of {@link VesselName }
+     * 
+     */
+    public VesselName createVesselName() {
+        return new VesselName();
+    }
+
+    /**
+     * Create an instance of {@link RadioCallSignID }
+     * 
+     */
+    public RadioCallSignID createRadioCallSignID() {
+        return new RadioCallSignID();
+    }
+
+    /**
+     * Create an instance of {@link ShipsRequirements }
+     * 
+     */
+    public ShipsRequirements createShipsRequirements() {
+        return new ShipsRequirements();
+    }
+
+    /**
+     * Create an instance of {@link GrossTonnageMeasure }
+     * 
+     */
+    public GrossTonnageMeasure createGrossTonnageMeasure() {
+        return new GrossTonnageMeasure();
+    }
+
+    /**
+     * Create an instance of {@link NetTonnageMeasure }
+     * 
+     */
+    public NetTonnageMeasure createNetTonnageMeasure() {
+        return new NetTonnageMeasure();
+    }
+
+    /**
+     * Create an instance of {@link NameCode }
+     * 
+     */
+    public NameCode createNameCode() {
+        return new NameCode();
+    }
+
+    /**
+     * Create an instance of {@link ValueQuantity }
+     * 
+     */
+    public ValueQuantity createValueQuantity() {
+        return new ValueQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ValueQualifier }
+     * 
+     */
+    public ValueQualifier createValueQualifier() {
+        return new ValueQualifier();
+    }
+
+    /**
+     * Create an instance of {@link MeterReadingType }
+     * 
+     */
+    public MeterReadingType createMeterReadingType() {
+        return new MeterReadingType();
+    }
+
+    /**
+     * Create an instance of {@link MeterReadingTypeCode }
+     * 
+     */
+    public MeterReadingTypeCode createMeterReadingTypeCode() {
+        return new MeterReadingTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PreviousMeterReadingDate }
+     * 
+     */
+    public PreviousMeterReadingDate createPreviousMeterReadingDate() {
+        return new PreviousMeterReadingDate();
+    }
+
+    /**
+     * Create an instance of {@link PreviousMeterQuantity }
+     * 
+     */
+    public PreviousMeterQuantity createPreviousMeterQuantity() {
+        return new PreviousMeterQuantity();
+    }
+
+    /**
+     * Create an instance of {@link LatestMeterReadingDate }
+     * 
+     */
+    public LatestMeterReadingDate createLatestMeterReadingDate() {
+        return new LatestMeterReadingDate();
+    }
+
+    /**
+     * Create an instance of {@link LatestMeterQuantity }
+     * 
+     */
+    public LatestMeterQuantity createLatestMeterQuantity() {
+        return new LatestMeterQuantity();
+    }
+
+    /**
+     * Create an instance of {@link PreviousMeterReadingMethod }
+     * 
+     */
+    public PreviousMeterReadingMethod createPreviousMeterReadingMethod() {
+        return new PreviousMeterReadingMethod();
+    }
+
+    /**
+     * Create an instance of {@link PreviousMeterReadingMethodCode }
+     * 
+     */
+    public PreviousMeterReadingMethodCode createPreviousMeterReadingMethodCode() {
+        return new PreviousMeterReadingMethodCode();
+    }
+
+    /**
+     * Create an instance of {@link LatestMeterReadingMethod }
+     * 
+     */
+    public LatestMeterReadingMethod createLatestMeterReadingMethod() {
+        return new LatestMeterReadingMethod();
+    }
+
+    /**
+     * Create an instance of {@link LatestMeterReadingMethodCode }
+     * 
+     */
+    public LatestMeterReadingMethodCode createLatestMeterReadingMethodCode() {
+        return new LatestMeterReadingMethodCode();
+    }
+
+    /**
+     * Create an instance of {@link MeterReadingComments }
+     * 
+     */
+    public MeterReadingComments createMeterReadingComments() {
+        return new MeterReadingComments();
+    }
+
+    /**
+     * Create an instance of {@link DeliveredQuantity }
+     * 
+     */
+    public DeliveredQuantity createDeliveredQuantity() {
+        return new DeliveredQuantity();
+    }
+
+    /**
+     * Create an instance of {@link MiscellaneousEventTypeCode }
+     * 
+     */
+    public MiscellaneousEventTypeCode createMiscellaneousEventTypeCode() {
+        return new MiscellaneousEventTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link NotificationTypeCode }
+     * 
+     */
+    public NotificationTypeCode createNotificationTypeCode() {
+        return new NotificationTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PostEventNotificationDurationMeasure }
+     * 
+     */
+    public PostEventNotificationDurationMeasure createPostEventNotificationDurationMeasure() {
+        return new PostEventNotificationDurationMeasure();
+    }
+
+    /**
+     * Create an instance of {@link PreEventNotificationDurationMeasure }
+     * 
+     */
+    public PreEventNotificationDurationMeasure createPreEventNotificationDurationMeasure() {
+        return new PreEventNotificationDurationMeasure();
+    }
+
+    /**
+     * Create an instance of {@link SubstitutionStatusCode }
+     * 
+     */
+    public SubstitutionStatusCode createSubstitutionStatusCode() {
+        return new SubstitutionStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link LineID }
+     * 
+     */
+    public LineID createLineID() {
+        return new LineID();
+    }
+
+    /**
+     * Create an instance of {@link SalesOrderLineID }
+     * 
+     */
+    public SalesOrderLineID createSalesOrderLineID() {
+        return new SalesOrderLineID();
+    }
+
+    /**
+     * Create an instance of {@link UUID }
+     * 
+     */
+    public UUID createUUID() {
+        return new UUID();
+    }
+
+    /**
+     * Create an instance of {@link LineStatusCode }
+     * 
+     */
+    public LineStatusCode createLineStatusCode() {
+        return new LineStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link SalesOrderID }
+     * 
+     */
+    public SalesOrderID createSalesOrderID() {
+        return new SalesOrderID();
+    }
+
+    /**
+     * Create an instance of {@link CopyIndicator }
+     * 
+     */
+    public CopyIndicator createCopyIndicator() {
+        return new CopyIndicator();
+    }
+
+    /**
+     * Create an instance of {@link CustomerReference }
+     * 
+     */
+    public CustomerReference createCustomerReference() {
+        return new CustomerReference();
+    }
+
+    /**
+     * Create an instance of {@link OrderTypeCode }
+     * 
+     */
+    public OrderTypeCode createOrderTypeCode() {
+        return new OrderTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link RegistrationName }
+     * 
+     */
+    public RegistrationName createRegistrationName() {
+        return new RegistrationName();
+    }
+
+    /**
+     * Create an instance of {@link CompanyID }
+     * 
+     */
+    public CompanyID createCompanyID() {
+        return new CompanyID();
+    }
+
+    /**
+     * Create an instance of {@link RegistrationDate }
+     * 
+     */
+    public RegistrationDate createRegistrationDate() {
+        return new RegistrationDate();
+    }
+
+    /**
+     * Create an instance of {@link RegistrationExpirationDate }
+     * 
+     */
+    public RegistrationExpirationDate createRegistrationExpirationDate() {
+        return new RegistrationExpirationDate();
+    }
+
+    /**
+     * Create an instance of {@link CompanyLegalFormCode }
+     * 
+     */
+    public CompanyLegalFormCode createCompanyLegalFormCode() {
+        return new CompanyLegalFormCode();
+    }
+
+    /**
+     * Create an instance of {@link CompanyLegalForm }
+     * 
+     */
+    public CompanyLegalForm createCompanyLegalForm() {
+        return new CompanyLegalForm();
+    }
+
+    /**
+     * Create an instance of {@link SoleProprietorshipIndicator }
+     * 
+     */
+    public SoleProprietorshipIndicator createSoleProprietorshipIndicator() {
+        return new SoleProprietorshipIndicator();
+    }
+
+    /**
+     * Create an instance of {@link CompanyLiquidationStatusCode }
+     * 
+     */
+    public CompanyLiquidationStatusCode createCompanyLiquidationStatusCode() {
+        return new CompanyLiquidationStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link CorporateStockAmount }
+     * 
+     */
+    public CorporateStockAmount createCorporateStockAmount() {
+        return new CorporateStockAmount();
+    }
+
+    /**
+     * Create an instance of {@link FullyPaidSharesIndicator }
+     * 
+     */
+    public FullyPaidSharesIndicator createFullyPaidSharesIndicator() {
+        return new FullyPaidSharesIndicator();
+    }
+
+    /**
+     * Create an instance of {@link PartecipationPercent }
+     * 
+     */
+    public PartecipationPercent createPartecipationPercent() {
+        return new PartecipationPercent();
+    }
+
+    /**
+     * Create an instance of {@link TaxLevelCode }
+     * 
+     */
+    public TaxLevelCode createTaxLevelCode() {
+        return new TaxLevelCode();
+    }
+
+    /**
+     * Create an instance of {@link ExemptionReasonCode }
+     * 
+     */
+    public ExemptionReasonCode createExemptionReasonCode() {
+        return new ExemptionReasonCode();
+    }
+
+    /**
+     * Create an instance of {@link ExemptionReason }
+     * 
+     */
+    public ExemptionReason createExemptionReason() {
+        return new ExemptionReason();
+    }
+
+    /**
+     * Create an instance of {@link MandateTypeCode }
+     * 
+     */
+    public MandateTypeCode createMandateTypeCode() {
+        return new MandateTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link MaximumPaymentInstructionsNumeric }
+     * 
+     */
+    public MaximumPaymentInstructionsNumeric createMaximumPaymentInstructionsNumeric() {
+        return new MaximumPaymentInstructionsNumeric();
+    }
+
+    /**
+     * Create an instance of {@link MaximumPaidAmount }
+     * 
+     */
+    public MaximumPaidAmount createMaximumPaidAmount() {
+        return new MaximumPaidAmount();
+    }
+
+    /**
+     * Create an instance of {@link SignatureID }
+     * 
+     */
+    public SignatureID createSignatureID() {
+        return new SignatureID();
+    }
+
+    /**
+     * Create an instance of {@link PaymentMeansCode }
+     * 
+     */
+    public PaymentMeansCode createPaymentMeansCode() {
+        return new PaymentMeansCode();
+    }
+
+    /**
+     * Create an instance of {@link PaymentDueDate }
+     * 
+     */
+    public PaymentDueDate createPaymentDueDate() {
+        return new PaymentDueDate();
+    }
+
+    /**
+     * Create an instance of {@link PaymentChannelCode }
+     * 
+     */
+    public PaymentChannelCode createPaymentChannelCode() {
+        return new PaymentChannelCode();
+    }
+
+    /**
+     * Create an instance of {@link InstructionID }
+     * 
+     */
+    public InstructionID createInstructionID() {
+        return new InstructionID();
+    }
+
+    /**
+     * Create an instance of {@link InstructionNote }
+     * 
+     */
+    public InstructionNote createInstructionNote() {
+        return new InstructionNote();
+    }
+
+    /**
+     * Create an instance of {@link PaymentID }
+     * 
+     */
+    public PaymentID createPaymentID() {
+        return new PaymentID();
+    }
+
+    /**
+     * Create an instance of {@link FinancingInstrumentCode }
+     * 
+     */
+    public FinancingInstrumentCode createFinancingInstrumentCode() {
+        return new FinancingInstrumentCode();
+    }
+
+    /**
+     * Create an instance of {@link PerformanceValueQuantity }
+     * 
+     */
+    public PerformanceValueQuantity createPerformanceValueQuantity() {
+        return new PerformanceValueQuantity();
+    }
+
+    /**
+     * Create an instance of {@link PositionCode }
+     * 
+     */
+    public PositionCode createPositionCode() {
+        return new PositionCode();
+    }
+
+    /**
+     * Create an instance of {@link DescriptionCode }
+     * 
+     */
+    public DescriptionCode createDescriptionCode() {
+        return new DescriptionCode();
+    }
+
+    /**
      * Create an instance of {@link ActualPickupDate }
      * 
      */
@@ -178,6 +2602,1054 @@ public class ObjectFactory {
      */
     public ActualPickupTime createActualPickupTime() {
         return new ActualPickupTime();
+    }
+
+    /**
+     * Create an instance of {@link EarliestPickupDate }
+     * 
+     */
+    public EarliestPickupDate createEarliestPickupDate() {
+        return new EarliestPickupDate();
+    }
+
+    /**
+     * Create an instance of {@link EarliestPickupTime }
+     * 
+     */
+    public EarliestPickupTime createEarliestPickupTime() {
+        return new EarliestPickupTime();
+    }
+
+    /**
+     * Create an instance of {@link LatestPickupDate }
+     * 
+     */
+    public LatestPickupDate createLatestPickupDate() {
+        return new LatestPickupDate();
+    }
+
+    /**
+     * Create an instance of {@link LatestPickupTime }
+     * 
+     */
+    public LatestPickupTime createLatestPickupTime() {
+        return new LatestPickupTime();
+    }
+
+    /**
+     * Create an instance of {@link PreviousCancellationReasonCode }
+     * 
+     */
+    public PreviousCancellationReasonCode createPreviousCancellationReasonCode() {
+        return new PreviousCancellationReasonCode();
+    }
+
+    /**
+     * Create an instance of {@link ProcessReasonCode }
+     * 
+     */
+    public ProcessReasonCode createProcessReasonCode() {
+        return new ProcessReasonCode();
+    }
+
+    /**
+     * Create an instance of {@link ProcessReason }
+     * 
+     */
+    public ProcessReason createProcessReason() {
+        return new ProcessReason();
+    }
+
+    /**
+     * Create an instance of {@link ProcurementTypeCode }
+     * 
+     */
+    public ProcurementTypeCode createProcurementTypeCode() {
+        return new ProcurementTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ProcurementSubTypeCode }
+     * 
+     */
+    public ProcurementSubTypeCode createProcurementSubTypeCode() {
+        return new ProcurementSubTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link QualityControlCode }
+     * 
+     */
+    public QualityControlCode createQualityControlCode() {
+        return new QualityControlCode();
+    }
+
+    /**
+     * Create an instance of {@link RequiredFeeAmount }
+     * 
+     */
+    public RequiredFeeAmount createRequiredFeeAmount() {
+        return new RequiredFeeAmount();
+    }
+
+    /**
+     * Create an instance of {@link FeeDescription }
+     * 
+     */
+    public FeeDescription createFeeDescription() {
+        return new FeeDescription();
+    }
+
+    /**
+     * Create an instance of {@link RequestedDeliveryDate }
+     * 
+     */
+    public RequestedDeliveryDate createRequestedDeliveryDate() {
+        return new RequestedDeliveryDate();
+    }
+
+    /**
+     * Create an instance of {@link EstimatedOverallContractQuantity }
+     * 
+     */
+    public EstimatedOverallContractQuantity createEstimatedOverallContractQuantity() {
+        return new EstimatedOverallContractQuantity();
+    }
+
+    /**
+     * Create an instance of {@link EstimatedOverallContractAmount }
+     * 
+     */
+    public EstimatedOverallContractAmount createEstimatedOverallContractAmount() {
+        return new EstimatedOverallContractAmount();
+    }
+
+    /**
+     * Create an instance of {@link TaxIncludedIndicator }
+     * 
+     */
+    public TaxIncludedIndicator createTaxIncludedIndicator() {
+        return new TaxIncludedIndicator();
+    }
+
+    /**
+     * Create an instance of {@link MinimumAmount }
+     * 
+     */
+    public MinimumAmount createMinimumAmount() {
+        return new MinimumAmount();
+    }
+
+    /**
+     * Create an instance of {@link MaximumAmount }
+     * 
+     */
+    public MaximumAmount createMaximumAmount() {
+        return new MaximumAmount();
+    }
+
+    /**
+     * Create an instance of {@link MonetaryScope }
+     * 
+     */
+    public MonetaryScope createMonetaryScope() {
+        return new MonetaryScope();
+    }
+
+    /**
+     * Create an instance of {@link AverageSubsequentContractAmount }
+     * 
+     */
+    public AverageSubsequentContractAmount createAverageSubsequentContractAmount() {
+        return new AverageSubsequentContractAmount();
+    }
+
+    /**
+     * Create an instance of {@link WorkPhaseCode }
+     * 
+     */
+    public WorkPhaseCode createWorkPhaseCode() {
+        return new WorkPhaseCode();
+    }
+
+    /**
+     * Create an instance of {@link WorkPhase }
+     * 
+     */
+    public WorkPhase createWorkPhase() {
+        return new WorkPhase();
+    }
+
+    /**
+     * Create an instance of {@link ProgressPercent }
+     * 
+     */
+    public ProgressPercent createProgressPercent() {
+        return new ProgressPercent();
+    }
+
+    /**
+     * Create an instance of {@link StartDate }
+     * 
+     */
+    public StartDate createStartDate() {
+        return new StartDate();
+    }
+
+    /**
+     * Create an instance of {@link EndDate }
+     * 
+     */
+    public EndDate createEndDate() {
+        return new EndDate();
+    }
+
+    /**
+     * Create an instance of {@link PromotionalEventTypeCode }
+     * 
+     */
+    public PromotionalEventTypeCode createPromotionalEventTypeCode() {
+        return new PromotionalEventTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link SubmissionDate }
+     * 
+     */
+    public SubmissionDate createSubmissionDate() {
+        return new SubmissionDate();
+    }
+
+    /**
+     * Create an instance of {@link FirstShipmentAvailibilityDate }
+     * 
+     */
+    public FirstShipmentAvailibilityDate createFirstShipmentAvailibilityDate() {
+        return new FirstShipmentAvailibilityDate();
+    }
+
+    /**
+     * Create an instance of {@link LatestProposalAcceptanceDate }
+     * 
+     */
+    public LatestProposalAcceptanceDate createLatestProposalAcceptanceDate() {
+        return new LatestProposalAcceptanceDate();
+    }
+
+    /**
+     * Create an instance of {@link SpecificationID }
+     * 
+     */
+    public SpecificationID createSpecificationID() {
+        return new SpecificationID();
+    }
+
+    /**
+     * Create an instance of {@link AdmissionCode }
+     * 
+     */
+    public AdmissionCode createAdmissionCode() {
+        return new AdmissionCode();
+    }
+
+    /**
+     * Create an instance of {@link ExclusionReason }
+     * 
+     */
+    public ExclusionReason createExclusionReason() {
+        return new ExclusionReason();
+    }
+
+    /**
+     * Create an instance of {@link Resolution }
+     * 
+     */
+    public Resolution createResolution() {
+        return new Resolution();
+    }
+
+    /**
+     * Create an instance of {@link ResolutionDate }
+     * 
+     */
+    public ResolutionDate createResolutionDate() {
+        return new ResolutionDate();
+    }
+
+    /**
+     * Create an instance of {@link ResolutionTime }
+     * 
+     */
+    public ResolutionTime createResolutionTime() {
+        return new ResolutionTime();
+    }
+
+    /**
+     * Create an instance of {@link TotalTaxAmount }
+     * 
+     */
+    public TotalTaxAmount createTotalTaxAmount() {
+        return new TotalTaxAmount();
+    }
+
+    /**
+     * Create an instance of {@link RequestForQuotationLineID }
+     * 
+     */
+    public RequestForQuotationLineID createRequestForQuotationLineID() {
+        return new RequestForQuotationLineID();
+    }
+
+    /**
+     * Create an instance of {@link TrainID }
+     * 
+     */
+    public TrainID createTrainID() {
+        return new TrainID();
+    }
+
+    /**
+     * Create an instance of {@link RailCarID }
+     * 
+     */
+    public RailCarID createRailCarID() {
+        return new RailCarID();
+    }
+
+    /**
+     * Create an instance of {@link BalanceBroughtForwardIndicator }
+     * 
+     */
+    public BalanceBroughtForwardIndicator createBalanceBroughtForwardIndicator() {
+        return new BalanceBroughtForwardIndicator();
+    }
+
+    /**
+     * Create an instance of {@link DebitLineAmount }
+     * 
+     */
+    public DebitLineAmount createDebitLineAmount() {
+        return new DebitLineAmount();
+    }
+
+    /**
+     * Create an instance of {@link CreditLineAmount }
+     * 
+     */
+    public CreditLineAmount createCreditLineAmount() {
+        return new CreditLineAmount();
+    }
+
+    /**
+     * Create an instance of {@link AccountingCostCode }
+     * 
+     */
+    public AccountingCostCode createAccountingCostCode() {
+        return new AccountingCostCode();
+    }
+
+    /**
+     * Create an instance of {@link AccountingCost }
+     * 
+     */
+    public AccountingCost createAccountingCost() {
+        return new AccountingCost();
+    }
+
+    /**
+     * Create an instance of {@link PenaltySurchargePercent }
+     * 
+     */
+    public PenaltySurchargePercent createPenaltySurchargePercent() {
+        return new PenaltySurchargePercent();
+    }
+
+    /**
+     * Create an instance of {@link PaymentPurposeCode }
+     * 
+     */
+    public PaymentPurposeCode createPaymentPurposeCode() {
+        return new PaymentPurposeCode();
+    }
+
+    /**
+     * Create an instance of {@link BalanceAmount }
+     * 
+     */
+    public BalanceAmount createBalanceAmount() {
+        return new BalanceAmount();
+    }
+
+    /**
+     * Create an instance of {@link InvoicingPartyReference }
+     * 
+     */
+    public InvoicingPartyReference createInvoicingPartyReference() {
+        return new InvoicingPartyReference();
+    }
+
+    /**
+     * Create an instance of {@link OptionalLineItemIndicator }
+     * 
+     */
+    public OptionalLineItemIndicator createOptionalLineItemIndicator() {
+        return new OptionalLineItemIndicator();
+    }
+
+    /**
+     * Create an instance of {@link SecurityClassificationCode }
+     * 
+     */
+    public SecurityClassificationCode createSecurityClassificationCode() {
+        return new SecurityClassificationCode();
+    }
+
+    /**
+     * Create an instance of {@link ValidationResultCode }
+     * 
+     */
+    public ValidationResultCode createValidationResultCode() {
+        return new ValidationResultCode();
+    }
+
+    /**
+     * Create an instance of {@link ValidateProcess }
+     * 
+     */
+    public ValidateProcess createValidateProcess() {
+        return new ValidateProcess();
+    }
+
+    /**
+     * Create an instance of {@link ValidateTool }
+     * 
+     */
+    public ValidateTool createValidateTool() {
+        return new ValidateTool();
+    }
+
+    /**
+     * Create an instance of {@link ValidateToolVersion }
+     * 
+     */
+    public ValidateToolVersion createValidateToolVersion() {
+        return new ValidateToolVersion();
+    }
+
+    /**
+     * Create an instance of {@link LicensePlateID }
+     * 
+     */
+    public LicensePlateID createLicensePlateID() {
+        return new LicensePlateID();
+    }
+
+    /**
+     * Create an instance of {@link ServiceTypeCode }
+     * 
+     */
+    public ServiceTypeCode createServiceTypeCode() {
+        return new ServiceTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ServiceType }
+     * 
+     */
+    public ServiceType createServiceType() {
+        return new ServiceType();
+    }
+
+    /**
+     * Create an instance of {@link ValueAmount }
+     * 
+     */
+    public ValueAmount createValueAmount() {
+        return new ValueAmount();
+    }
+
+    /**
+     * Create an instance of {@link LocationID }
+     * 
+     */
+    public LocationID createLocationID() {
+        return new LocationID();
+    }
+
+    /**
+     * Create an instance of {@link Location }
+     * 
+     */
+    public Location createLocation() {
+        return new Location();
+    }
+
+    /**
+     * Create an instance of {@link ConsumptionID }
+     * 
+     */
+    public ConsumptionID createConsumptionID() {
+        return new ConsumptionID();
+    }
+
+    /**
+     * Create an instance of {@link SpecificationTypeCode }
+     * 
+     */
+    public SpecificationTypeCode createSpecificationTypeCode() {
+        return new SpecificationTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link TotalMeteredQuantity }
+     * 
+     */
+    public TotalMeteredQuantity createTotalMeteredQuantity() {
+        return new TotalMeteredQuantity();
+    }
+
+    /**
+     * Create an instance of {@link TaxableAmount }
+     * 
+     */
+    public TaxableAmount createTaxableAmount() {
+        return new TaxableAmount();
+    }
+
+    /**
+     * Create an instance of {@link TaxAmount }
+     * 
+     */
+    public TaxAmount createTaxAmount() {
+        return new TaxAmount();
+    }
+
+    /**
+     * Create an instance of {@link CalculationSequenceNumeric }
+     * 
+     */
+    public CalculationSequenceNumeric createCalculationSequenceNumeric() {
+        return new CalculationSequenceNumeric();
+    }
+
+    /**
+     * Create an instance of {@link TransactionCurrencyTaxAmount }
+     * 
+     */
+    public TransactionCurrencyTaxAmount createTransactionCurrencyTaxAmount() {
+        return new TransactionCurrencyTaxAmount();
+    }
+
+    /**
+     * Create an instance of {@link BaseUnitMeasure }
+     * 
+     */
+    public BaseUnitMeasure createBaseUnitMeasure() {
+        return new BaseUnitMeasure();
+    }
+
+    /**
+     * Create an instance of {@link PerUnitAmount }
+     * 
+     */
+    public PerUnitAmount createPerUnitAmount() {
+        return new PerUnitAmount();
+    }
+
+    /**
+     * Create an instance of {@link TierRange }
+     * 
+     */
+    public TierRange createTierRange() {
+        return new TierRange();
+    }
+
+    /**
+     * Create an instance of {@link TierRatePercent }
+     * 
+     */
+    public TierRatePercent createTierRatePercent() {
+        return new TierRatePercent();
+    }
+
+    /**
+     * Create an instance of {@link TenderEnvelopeID }
+     * 
+     */
+    public TenderEnvelopeID createTenderEnvelopeID() {
+        return new TenderEnvelopeID();
+    }
+
+    /**
+     * Create an instance of {@link TenderEnvelopeTypeCode }
+     * 
+     */
+    public TenderEnvelopeTypeCode createTenderEnvelopeTypeCode() {
+        return new TenderEnvelopeTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link OpenTenderID }
+     * 
+     */
+    public OpenTenderID createOpenTenderID() {
+        return new OpenTenderID();
+    }
+
+    /**
+     * Create an instance of {@link TenderResultCode }
+     * 
+     */
+    public TenderResultCode createTenderResultCode() {
+        return new TenderResultCode();
+    }
+
+    /**
+     * Create an instance of {@link AdvertisementAmount }
+     * 
+     */
+    public AdvertisementAmount createAdvertisementAmount() {
+        return new AdvertisementAmount();
+    }
+
+    /**
+     * Create an instance of {@link AwardDate }
+     * 
+     */
+    public AwardDate createAwardDate() {
+        return new AwardDate();
+    }
+
+    /**
+     * Create an instance of {@link AwardTime }
+     * 
+     */
+    public AwardTime createAwardTime() {
+        return new AwardTime();
+    }
+
+    /**
+     * Create an instance of {@link ReceivedTenderQuantity }
+     * 
+     */
+    public ReceivedTenderQuantity createReceivedTenderQuantity() {
+        return new ReceivedTenderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link LowerTenderAmount }
+     * 
+     */
+    public LowerTenderAmount createLowerTenderAmount() {
+        return new LowerTenderAmount();
+    }
+
+    /**
+     * Create an instance of {@link HigherTenderAmount }
+     * 
+     */
+    public HigherTenderAmount createHigherTenderAmount() {
+        return new HigherTenderAmount();
+    }
+
+    /**
+     * Create an instance of {@link ReceivedElectronicTenderQuantity }
+     * 
+     */
+    public ReceivedElectronicTenderQuantity createReceivedElectronicTenderQuantity() {
+        return new ReceivedElectronicTenderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link ReceivedForeignTenderQuantity }
+     * 
+     */
+    public ReceivedForeignTenderQuantity createReceivedForeignTenderQuantity() {
+        return new ReceivedForeignTenderQuantity();
+    }
+
+    /**
+     * Create an instance of {@link Rank }
+     * 
+     */
+    public Rank createRank() {
+        return new Rank();
+    }
+
+    /**
+     * Create an instance of {@link PersonalSituation }
+     * 
+     */
+    public PersonalSituation createPersonalSituation() {
+        return new PersonalSituation();
+    }
+
+    /**
+     * Create an instance of {@link OperatingYearsQuantity }
+     * 
+     */
+    public OperatingYearsQuantity createOperatingYearsQuantity() {
+        return new OperatingYearsQuantity();
+    }
+
+    /**
+     * Create an instance of {@link EmployeeQuantity }
+     * 
+     */
+    public EmployeeQuantity createEmployeeQuantity() {
+        return new EmployeeQuantity();
+    }
+
+    /**
+     * Create an instance of {@link OriginalContractingSystemID }
+     * 
+     */
+    public OriginalContractingSystemID createOriginalContractingSystemID() {
+        return new OriginalContractingSystemID();
+    }
+
+    /**
+     * Create an instance of {@link NegotiationDescription }
+     * 
+     */
+    public NegotiationDescription createNegotiationDescription() {
+        return new NegotiationDescription();
+    }
+
+    /**
+     * Create an instance of {@link ProcedureCode }
+     * 
+     */
+    public ProcedureCode createProcedureCode() {
+        return new ProcedureCode();
+    }
+
+    /**
+     * Create an instance of {@link UrgencyCode }
+     * 
+     */
+    public UrgencyCode createUrgencyCode() {
+        return new UrgencyCode();
+    }
+
+    /**
+     * Create an instance of {@link ExpenseCode }
+     * 
+     */
+    public ExpenseCode createExpenseCode() {
+        return new ExpenseCode();
+    }
+
+    /**
+     * Create an instance of {@link PartPresentationCode }
+     * 
+     */
+    public PartPresentationCode createPartPresentationCode() {
+        return new PartPresentationCode();
+    }
+
+    /**
+     * Create an instance of {@link ContractingSystemCode }
+     * 
+     */
+    public ContractingSystemCode createContractingSystemCode() {
+        return new ContractingSystemCode();
+    }
+
+    /**
+     * Create an instance of {@link SubmissionMethodCode }
+     * 
+     */
+    public SubmissionMethodCode createSubmissionMethodCode() {
+        return new SubmissionMethodCode();
+    }
+
+    /**
+     * Create an instance of {@link CandidateReductionConstraintIndicator }
+     * 
+     */
+    public CandidateReductionConstraintIndicator createCandidateReductionConstraintIndicator() {
+        return new CandidateReductionConstraintIndicator();
+    }
+
+    /**
+     * Create an instance of {@link GovernmentAgreementConstraintIndicator }
+     * 
+     */
+    public GovernmentAgreementConstraintIndicator createGovernmentAgreementConstraintIndicator() {
+        return new GovernmentAgreementConstraintIndicator();
+    }
+
+    /**
+     * Create an instance of {@link AwardingMethodTypeCode }
+     * 
+     */
+    public AwardingMethodTypeCode createAwardingMethodTypeCode() {
+        return new AwardingMethodTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link PriceEvaluationCode }
+     * 
+     */
+    public PriceEvaluationCode createPriceEvaluationCode() {
+        return new PriceEvaluationCode();
+    }
+
+    /**
+     * Create an instance of {@link MaximumVariantQuantity }
+     * 
+     */
+    public MaximumVariantQuantity createMaximumVariantQuantity() {
+        return new MaximumVariantQuantity();
+    }
+
+    /**
+     * Create an instance of {@link VariantConstraintIndicator }
+     * 
+     */
+    public VariantConstraintIndicator createVariantConstraintIndicator() {
+        return new VariantConstraintIndicator();
+    }
+
+    /**
+     * Create an instance of {@link AcceptedVariantsDescription }
+     * 
+     */
+    public AcceptedVariantsDescription createAcceptedVariantsDescription() {
+        return new AcceptedVariantsDescription();
+    }
+
+    /**
+     * Create an instance of {@link PriceRevisionFormulaDescription }
+     * 
+     */
+    public PriceRevisionFormulaDescription createPriceRevisionFormulaDescription() {
+        return new PriceRevisionFormulaDescription();
+    }
+
+    /**
+     * Create an instance of {@link FundingProgramCode }
+     * 
+     */
+    public FundingProgramCode createFundingProgramCode() {
+        return new FundingProgramCode();
+    }
+
+    /**
+     * Create an instance of {@link FundingProgram }
+     * 
+     */
+    public FundingProgram createFundingProgram() {
+        return new FundingProgram();
+    }
+
+    /**
+     * Create an instance of {@link MaximumAdvertisementAmount }
+     * 
+     */
+    public MaximumAdvertisementAmount createMaximumAdvertisementAmount() {
+        return new MaximumAdvertisementAmount();
+    }
+
+    /**
+     * Create an instance of {@link PaymentFrequencyCode }
+     * 
+     */
+    public PaymentFrequencyCode createPaymentFrequencyCode() {
+        return new PaymentFrequencyCode();
+    }
+
+    /**
+     * Create an instance of {@link EconomicOperatorRegistryURI }
+     * 
+     */
+    public EconomicOperatorRegistryURI createEconomicOperatorRegistryURI() {
+        return new EconomicOperatorRegistryURI();
+    }
+
+    /**
+     * Create an instance of {@link RequiredCurriculaIndicator }
+     * 
+     */
+    public RequiredCurriculaIndicator createRequiredCurriculaIndicator() {
+        return new RequiredCurriculaIndicator();
+    }
+
+    /**
+     * Create an instance of {@link OtherConditionsIndicator }
+     * 
+     */
+    public OtherConditionsIndicator createOtherConditionsIndicator() {
+        return new OtherConditionsIndicator();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalConditions }
+     * 
+     */
+    public AdditionalConditions createAdditionalConditions() {
+        return new AdditionalConditions();
+    }
+
+    /**
+     * Create an instance of {@link LatestSecurityClearanceDate }
+     * 
+     */
+    public LatestSecurityClearanceDate createLatestSecurityClearanceDate() {
+        return new LatestSecurityClearanceDate();
+    }
+
+    /**
+     * Create an instance of {@link DocumentationFeeAmount }
+     * 
+     */
+    public DocumentationFeeAmount createDocumentationFeeAmount() {
+        return new DocumentationFeeAmount();
+    }
+
+    /**
+     * Create an instance of {@link SealIssuerTypeCode }
+     * 
+     */
+    public SealIssuerTypeCode createSealIssuerTypeCode() {
+        return new SealIssuerTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link Condition }
+     * 
+     */
+    public Condition createCondition() {
+        return new Condition();
+    }
+
+    /**
+     * Create an instance of {@link SealStatusCode }
+     * 
+     */
+    public SealStatusCode createSealStatusCode() {
+        return new SealStatusCode();
+    }
+
+    /**
+     * Create an instance of {@link SealingPartyType }
+     * 
+     */
+    public SealingPartyType createSealingPartyType() {
+        return new SealingPartyType();
+    }
+
+    /**
+     * Create an instance of {@link TransportUserSpecialTerms }
+     * 
+     */
+    public TransportUserSpecialTerms createTransportUserSpecialTerms() {
+        return new TransportUserSpecialTerms();
+    }
+
+    /**
+     * Create an instance of {@link TransportServiceProviderSpecialTerms }
+     * 
+     */
+    public TransportServiceProviderSpecialTerms createTransportServiceProviderSpecialTerms() {
+        return new TransportServiceProviderSpecialTerms();
+    }
+
+    /**
+     * Create an instance of {@link ChangeConditions }
+     * 
+     */
+    public ChangeConditions createChangeConditions() {
+        return new ChangeConditions();
+    }
+
+    /**
+     * Create an instance of {@link ReferenceDate }
+     * 
+     */
+    public ReferenceDate createReferenceDate() {
+        return new ReferenceDate();
+    }
+
+    /**
+     * Create an instance of {@link ReferenceTime }
+     * 
+     */
+    public ReferenceTime createReferenceTime() {
+        return new ReferenceTime();
+    }
+
+    /**
+     * Create an instance of {@link ReliabilityPercent }
+     * 
+     */
+    public ReliabilityPercent createReliabilityPercent() {
+        return new ReliabilityPercent();
+    }
+
+    /**
+     * Create an instance of {@link TransportExecutionPlanReferenceID }
+     * 
+     */
+    public TransportExecutionPlanReferenceID createTransportExecutionPlanReferenceID() {
+        return new TransportExecutionPlanReferenceID();
+    }
+
+    /**
+     * Create an instance of {@link Password }
+     * 
+     */
+    public Password createPassword() {
+        return new Password();
+    }
+
+    /**
+     * Create an instance of {@link Login }
+     * 
+     */
+    public Login createLogin() {
+        return new Login();
+    }
+
+    /**
+     * Create an instance of {@link AcceptedIndicator }
+     * 
+     */
+    public AcceptedIndicator createAcceptedIndicator() {
+        return new AcceptedIndicator();
+    }
+
+    /**
+     * Create an instance of {@link AccountFormatCode }
+     * 
+     */
+    public AccountFormatCode createAccountFormatCode() {
+        return new AccountFormatCode();
+    }
+
+    /**
+     * Create an instance of {@link AccountTypeCode }
+     * 
+     */
+    public AccountTypeCode createAccountTypeCode() {
+        return new AccountTypeCode();
+    }
+
+    /**
+     * Create an instance of {@link ActualDeliveryDate }
+     * 
+     */
+    public ActualDeliveryDate createActualDeliveryDate() {
+        return new ActualDeliveryDate();
+    }
+
+    /**
+     * Create an instance of {@link ActualDeliveryTime }
+     * 
+     */
+    public ActualDeliveryTime createActualDeliveryTime() {
+        return new ActualDeliveryTime();
     }
 
     /**
@@ -205,22 +3677,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AdditionalConditions }
-     * 
-     */
-    public AdditionalConditions createAdditionalConditions() {
-        return new AdditionalConditions();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalInformation }
-     * 
-     */
-    public AdditionalInformation createAdditionalInformation() {
-        return new AdditionalInformation();
-    }
-
-    /**
      * Create an instance of {@link AdditionalStreetName }
      * 
      */
@@ -245,30 +3701,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AdjustmentReasonCode }
-     * 
-     */
-    public AdjustmentReasonCode createAdjustmentReasonCode() {
-        return new AdjustmentReasonCode();
-    }
-
-    /**
-     * Create an instance of {@link AdmissionCode }
-     * 
-     */
-    public AdmissionCode createAdmissionCode() {
-        return new AdmissionCode();
-    }
-
-    /**
-     * Create an instance of {@link AdvertisementAmount }
-     * 
-     */
-    public AdvertisementAmount createAdvertisementAmount() {
-        return new AdvertisementAmount();
-    }
-
-    /**
      * Create an instance of {@link AgencyID }
      * 
      */
@@ -290,14 +3722,6 @@ public class ObjectFactory {
      */
     public AirFlowPercent createAirFlowPercent() {
         return new AirFlowPercent();
-    }
-
-    /**
-     * Create an instance of {@link AircraftID }
-     * 
-     */
-    public AircraftID createAircraftID() {
-        return new AircraftID();
     }
 
     /**
@@ -333,22 +3757,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AltitudeMeasure }
-     * 
-     */
-    public AltitudeMeasure createAltitudeMeasure() {
-        return new AltitudeMeasure();
-    }
-
-    /**
-     * Create an instance of {@link Amount }
-     * 
-     */
-    public Amount createAmount() {
-        return new Amount();
-    }
-
-    /**
      * Create an instance of {@link AmountRate }
      * 
      */
@@ -373,22 +3781,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AnnualAverageAmount }
-     * 
-     */
-    public AnnualAverageAmount createAnnualAverageAmount() {
-        return new AnnualAverageAmount();
-    }
-
-    /**
-     * Create an instance of {@link ApplicationStatusCode }
-     * 
-     */
-    public ApplicationStatusCode createApplicationStatusCode() {
-        return new ApplicationStatusCode();
-    }
-
-    /**
      * Create an instance of {@link ApprovalDate }
      * 
      */
@@ -402,78 +3794,6 @@ public class ObjectFactory {
      */
     public ApprovalStatus createApprovalStatus() {
         return new ApprovalStatus();
-    }
-
-    /**
-     * Create an instance of {@link AttributeID }
-     * 
-     */
-    public AttributeID createAttributeID() {
-        return new AttributeID();
-    }
-
-    /**
-     * Create an instance of {@link AuctionConstraintIndicator }
-     * 
-     */
-    public AuctionConstraintIndicator createAuctionConstraintIndicator() {
-        return new AuctionConstraintIndicator();
-    }
-
-    /**
-     * Create an instance of {@link AuctionURI }
-     * 
-     */
-    public AuctionURI createAuctionURI() {
-        return new AuctionURI();
-    }
-
-    /**
-     * Create an instance of {@link AvailabilityDate }
-     * 
-     */
-    public AvailabilityDate createAvailabilityDate() {
-        return new AvailabilityDate();
-    }
-
-    /**
-     * Create an instance of {@link AvailabilityStatusCode }
-     * 
-     */
-    public AvailabilityStatusCode createAvailabilityStatusCode() {
-        return new AvailabilityStatusCode();
-    }
-
-    /**
-     * Create an instance of {@link AverageAmount }
-     * 
-     */
-    public AverageAmount createAverageAmount() {
-        return new AverageAmount();
-    }
-
-    /**
-     * Create an instance of {@link AverageSubsequentContractAmount }
-     * 
-     */
-    public AverageSubsequentContractAmount createAverageSubsequentContractAmount() {
-        return new AverageSubsequentContractAmount();
-    }
-
-    /**
-     * Create an instance of {@link AwardDate }
-     * 
-     */
-    public AwardDate createAwardDate() {
-        return new AwardDate();
-    }
-
-    /**
-     * Create an instance of {@link AwardTime }
-     * 
-     */
-    public AwardTime createAwardTime() {
-        return new AwardTime();
     }
 
     /**
@@ -501,14 +3821,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AwardingMethodTypeCode }
-     * 
-     */
-    public AwardingMethodTypeCode createAwardingMethodTypeCode() {
-        return new AwardingMethodTypeCode();
-    }
-
-    /**
      * Create an instance of {@link BackOrderAllowedIndicator }
      * 
      */
@@ -530,22 +3842,6 @@ public class ObjectFactory {
      */
     public BackorderReason createBackorderReason() {
         return new BackorderReason();
-    }
-
-    /**
-     * Create an instance of {@link BalanceAmount }
-     * 
-     */
-    public BalanceAmount createBalanceAmount() {
-        return new BalanceAmount();
-    }
-
-    /**
-     * Create an instance of {@link BalanceBroughtForwardIndicator }
-     * 
-     */
-    public BalanceBroughtForwardIndicator createBalanceBroughtForwardIndicator() {
-        return new BalanceBroughtForwardIndicator();
     }
 
     /**
@@ -573,14 +3869,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BaseUnitMeasure }
-     * 
-     */
-    public BaseUnitMeasure createBaseUnitMeasure() {
-        return new BaseUnitMeasure();
-    }
-
-    /**
      * Create an instance of {@link BasedOnConsensusIndicator }
      * 
      */
@@ -589,35 +3877,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BasicConsumedQuantity }
-     * 
-     */
-    public BasicConsumedQuantity createBasicConsumedQuantity() {
-        return new BasicConsumedQuantity();
-    }
-
-    /**
      * Create an instance of {@link BatchQuantity }
      * 
      */
     public BatchQuantity createBatchQuantity() {
         return new BatchQuantity();
-    }
-
-    /**
-     * Create an instance of {@link BestBeforeDate }
-     * 
-     */
-    public BestBeforeDate createBestBeforeDate() {
-        return new BestBeforeDate();
-    }
-
-    /**
-     * Create an instance of {@link BindingOnBuyerIndicator }
-     * 
-     */
-    public BindingOnBuyerIndicator createBindingOnBuyerIndicator() {
-        return new BindingOnBuyerIndicator();
     }
 
     /**
@@ -658,14 +3922,6 @@ public class ObjectFactory {
      */
     public BrokerAssignedID createBrokerAssignedID() {
         return new BrokerAssignedID();
-    }
-
-    /**
-     * Create an instance of {@link BudgetYearNumeric }
-     * 
-     */
-    public BudgetYearNumeric createBudgetYearNumeric() {
-        return new BudgetYearNumeric();
     }
 
     /**
@@ -717,27 +3973,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BuyerProfileURI }
-     * 
-     */
-    public BuyerProfileURI createBuyerProfileURI() {
-        return new BuyerProfileURI();
-    }
-
-    /**
      * Create an instance of {@link BuyerReference }
      * 
      */
     public BuyerReference createBuyerReference() {
         return new BuyerReference();
-    }
-
-    /**
-     * Create an instance of {@link CV2ID }
-     * 
-     */
-    public CV2ID createCV2ID() {
-        return new CV2ID();
     }
 
     /**
@@ -757,59 +3997,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CalculationMethodCode }
-     * 
-     */
-    public CalculationMethodCode createCalculationMethodCode() {
-        return new CalculationMethodCode();
-    }
-
-    /**
      * Create an instance of {@link CalculationRate }
      * 
      */
     public CalculationRate createCalculationRate() {
         return new CalculationRate();
-    }
-
-    /**
-     * Create an instance of {@link CalculationSequenceNumeric }
-     * 
-     */
-    public CalculationSequenceNumeric createCalculationSequenceNumeric() {
-        return new CalculationSequenceNumeric();
-    }
-
-    /**
-     * Create an instance of {@link CallBaseAmount }
-     * 
-     */
-    public CallBaseAmount createCallBaseAmount() {
-        return new CallBaseAmount();
-    }
-
-    /**
-     * Create an instance of {@link CallDate }
-     * 
-     */
-    public CallDate createCallDate() {
-        return new CallDate();
-    }
-
-    /**
-     * Create an instance of {@link CallExtensionAmount }
-     * 
-     */
-    public CallExtensionAmount createCallExtensionAmount() {
-        return new CallExtensionAmount();
-    }
-
-    /**
-     * Create an instance of {@link CallTime }
-     * 
-     */
-    public CallTime createCallTime() {
-        return new CallTime();
     }
 
     /**
@@ -821,14 +4013,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CandidateReductionConstraintIndicator }
-     * 
-     */
-    public CandidateReductionConstraintIndicator createCandidateReductionConstraintIndicator() {
-        return new CandidateReductionConstraintIndicator();
-    }
-
-    /**
      * Create an instance of {@link CandidateStatement }
      * 
      */
@@ -837,35 +4021,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CanonicalizationMethod }
-     * 
-     */
-    public CanonicalizationMethod createCanonicalizationMethod() {
-        return new CanonicalizationMethod();
-    }
-
-    /**
      * Create an instance of {@link CapabilityTypeCode }
      * 
      */
     public CapabilityTypeCode createCapabilityTypeCode() {
         return new CapabilityTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link CardChipCode }
-     * 
-     */
-    public CardChipCode createCardChipCode() {
-        return new CardChipCode();
-    }
-
-    /**
-     * Create an instance of {@link CardTypeCode }
-     * 
-     */
-    public CardTypeCode createCardTypeCode() {
-        return new CardTypeCode();
     }
 
     /**
@@ -901,38 +4061,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CategoryName }
-     * 
-     */
-    public CategoryName createCategoryName() {
-        return new CategoryName();
-    }
-
-    /**
-     * Create an instance of {@link CertificateType }
-     * 
-     */
-    public CertificateType createCertificateType() {
-        return new CertificateType();
-    }
-
-    /**
-     * Create an instance of {@link CertificateTypeCode }
-     * 
-     */
-    public CertificateTypeCode createCertificateTypeCode() {
-        return new CertificateTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ChangeConditions }
-     * 
-     */
-    public ChangeConditions createChangeConditions() {
-        return new ChangeConditions();
-    }
-
-    /**
      * Create an instance of {@link Channel }
      * 
      */
@@ -946,14 +4074,6 @@ public class ObjectFactory {
      */
     public ChannelCode createChannelCode() {
         return new ChannelCode();
-    }
-
-    /**
-     * Create an instance of {@link CharacterSetCode }
-     * 
-     */
-    public CharacterSetCode createCharacterSetCode() {
-        return new CharacterSetCode();
     }
 
     /**
@@ -1005,14 +4125,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ChipApplicationID }
-     * 
-     */
-    public ChipApplicationID createChipApplicationID() {
-        return new ChipApplicationID();
-    }
-
-    /**
      * Create an instance of {@link CityName }
      * 
      */
@@ -1037,22 +4149,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CollaborationPriorityCode }
-     * 
-     */
-    public CollaborationPriorityCode createCollaborationPriorityCode() {
-        return new CollaborationPriorityCode();
-    }
-
-    /**
-     * Create an instance of {@link Comment }
-     * 
-     */
-    public Comment createComment() {
-        return new Comment();
-    }
-
-    /**
      * Create an instance of {@link CommodityCode }
      * 
      */
@@ -1061,91 +4157,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CompanyID }
-     * 
-     */
-    public CompanyID createCompanyID() {
-        return new CompanyID();
-    }
-
-    /**
-     * Create an instance of {@link CompanyLegalForm }
-     * 
-     */
-    public CompanyLegalForm createCompanyLegalForm() {
-        return new CompanyLegalForm();
-    }
-
-    /**
-     * Create an instance of {@link CompanyLegalFormCode }
-     * 
-     */
-    public CompanyLegalFormCode createCompanyLegalFormCode() {
-        return new CompanyLegalFormCode();
-    }
-
-    /**
-     * Create an instance of {@link CompanyLiquidationStatusCode }
-     * 
-     */
-    public CompanyLiquidationStatusCode createCompanyLiquidationStatusCode() {
-        return new CompanyLiquidationStatusCode();
-    }
-
-    /**
-     * Create an instance of {@link ComparedValueMeasure }
-     * 
-     */
-    public ComparedValueMeasure createComparedValueMeasure() {
-        return new ComparedValueMeasure();
-    }
-
-    /**
-     * Create an instance of {@link ComparisonDataCode }
-     * 
-     */
-    public ComparisonDataCode createComparisonDataCode() {
-        return new ComparisonDataCode();
-    }
-
-    /**
-     * Create an instance of {@link ComparisonDataSourceCode }
-     * 
-     */
-    public ComparisonDataSourceCode createComparisonDataSourceCode() {
-        return new ComparisonDataSourceCode();
-    }
-
-    /**
-     * Create an instance of {@link ComparisonForecastIssueDate }
-     * 
-     */
-    public ComparisonForecastIssueDate createComparisonForecastIssueDate() {
-        return new ComparisonForecastIssueDate();
-    }
-
-    /**
-     * Create an instance of {@link ComparisonForecastIssueTime }
-     * 
-     */
-    public ComparisonForecastIssueTime createComparisonForecastIssueTime() {
-        return new ComparisonForecastIssueTime();
-    }
-
-    /**
      * Create an instance of {@link CompletionIndicator }
      * 
      */
     public CompletionIndicator createCompletionIndicator() {
         return new CompletionIndicator();
-    }
-
-    /**
-     * Create an instance of {@link Condition }
-     * 
-     */
-    public Condition createCondition() {
-        return new Condition();
     }
 
     /**
@@ -1162,14 +4178,6 @@ public class ObjectFactory {
      */
     public Conditions createConditions() {
         return new Conditions();
-    }
-
-    /**
-     * Create an instance of {@link ConditionsDescription }
-     * 
-     */
-    public ConditionsDescription createConditionsDescription() {
-        return new ConditionsDescription();
     }
 
     /**
@@ -1213,14 +4221,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConsumerIncentiveTacticTypeCode }
-     * 
-     */
-    public ConsumerIncentiveTacticTypeCode createConsumerIncentiveTacticTypeCode() {
-        return new ConsumerIncentiveTacticTypeCode();
-    }
-
-    /**
      * Create an instance of {@link ConsumerUnitQuantity }
      * 
      */
@@ -1229,75 +4229,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConsumersEnergyLevel }
-     * 
-     */
-    public ConsumersEnergyLevel createConsumersEnergyLevel() {
-        return new ConsumersEnergyLevel();
-    }
-
-    /**
-     * Create an instance of {@link ConsumersEnergyLevelCode }
-     * 
-     */
-    public ConsumersEnergyLevelCode createConsumersEnergyLevelCode() {
-        return new ConsumersEnergyLevelCode();
-    }
-
-    /**
      * Create an instance of {@link ConsumptionEnergyQuantity }
      * 
      */
     public ConsumptionEnergyQuantity createConsumptionEnergyQuantity() {
         return new ConsumptionEnergyQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionID }
-     * 
-     */
-    public ConsumptionID createConsumptionID() {
-        return new ConsumptionID();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionLevel }
-     * 
-     */
-    public ConsumptionLevel createConsumptionLevel() {
-        return new ConsumptionLevel();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionLevelCode }
-     * 
-     */
-    public ConsumptionLevelCode createConsumptionLevelCode() {
-        return new ConsumptionLevelCode();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionReportID }
-     * 
-     */
-    public ConsumptionReportID createConsumptionReportID() {
-        return new ConsumptionReportID();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionType }
-     * 
-     */
-    public ConsumptionType createConsumptionType() {
-        return new ConsumptionType();
-    }
-
-    /**
-     * Create an instance of {@link ConsumptionTypeCode }
-     * 
-     */
-    public ConsumptionTypeCode createConsumptionTypeCode() {
-        return new ConsumptionTypeCode();
     }
 
     /**
@@ -1325,14 +4261,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ContentUnitQuantity }
-     * 
-     */
-    public ContentUnitQuantity createContentUnitQuantity() {
-        return new ContentUnitQuantity();
-    }
-
-    /**
      * Create an instance of {@link ContractFolderID }
      * 
      */
@@ -1346,14 +4274,6 @@ public class ObjectFactory {
      */
     public ContractName createContractName() {
         return new ContractName();
-    }
-
-    /**
-     * Create an instance of {@link ContractSubdivision }
-     * 
-     */
-    public ContractSubdivision createContractSubdivision() {
-        return new ContractSubdivision();
     }
 
     /**
@@ -1378,46 +4298,6 @@ public class ObjectFactory {
      */
     public ContractedCarrierAssignedID createContractedCarrierAssignedID() {
         return new ContractedCarrierAssignedID();
-    }
-
-    /**
-     * Create an instance of {@link ContractingSystemCode }
-     * 
-     */
-    public ContractingSystemCode createContractingSystemCode() {
-        return new ContractingSystemCode();
-    }
-
-    /**
-     * Create an instance of {@link CoordinateSystemCode }
-     * 
-     */
-    public CoordinateSystemCode createCoordinateSystemCode() {
-        return new CoordinateSystemCode();
-    }
-
-    /**
-     * Create an instance of {@link CopyIndicator }
-     * 
-     */
-    public CopyIndicator createCopyIndicator() {
-        return new CopyIndicator();
-    }
-
-    /**
-     * Create an instance of {@link CorporateRegistrationTypeCode }
-     * 
-     */
-    public CorporateRegistrationTypeCode createCorporateRegistrationTypeCode() {
-        return new CorporateRegistrationTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link CorporateStockAmount }
-     * 
-     */
-    public CorporateStockAmount createCorporateStockAmount() {
-        return new CorporateStockAmount();
     }
 
     /**
@@ -1469,14 +4349,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreditLineAmount }
-     * 
-     */
-    public CreditLineAmount createCreditLineAmount() {
-        return new CreditLineAmount();
-    }
-
-    /**
      * Create an instance of {@link CreditNoteTypeCode }
      * 
      */
@@ -1501,43 +4373,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CurrencyCode }
-     * 
-     */
-    public CurrencyCode createCurrencyCode() {
-        return new CurrencyCode();
-    }
-
-    /**
-     * Create an instance of {@link CurrentChargeType }
-     * 
-     */
-    public CurrentChargeType createCurrentChargeType() {
-        return new CurrentChargeType();
-    }
-
-    /**
-     * Create an instance of {@link CurrentChargeTypeCode }
-     * 
-     */
-    public CurrentChargeTypeCode createCurrentChargeTypeCode() {
-        return new CurrentChargeTypeCode();
-    }
-
-    /**
      * Create an instance of {@link CustomerAssignedAccountID }
      * 
      */
     public CustomerAssignedAccountID createCustomerAssignedAccountID() {
         return new CustomerAssignedAccountID();
-    }
-
-    /**
-     * Create an instance of {@link CustomerReference }
-     * 
-     */
-    public CustomerReference createCustomerReference() {
-        return new CustomerReference();
     }
 
     /**
@@ -1605,14 +4445,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DataSourceCode }
-     * 
-     */
-    public DataSourceCode createDataSourceCode() {
-        return new DataSourceCode();
-    }
-
-    /**
      * Create an instance of {@link Date }
      * 
      */
@@ -1621,27 +4453,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DebitLineAmount }
-     * 
-     */
-    public DebitLineAmount createDebitLineAmount() {
-        return new DebitLineAmount();
-    }
-
-    /**
      * Create an instance of {@link DebitedQuantity }
      * 
      */
     public DebitedQuantity createDebitedQuantity() {
         return new DebitedQuantity();
-    }
-
-    /**
-     * Create an instance of {@link DeclarationTypeCode }
-     * 
-     */
-    public DeclarationTypeCode createDeclarationTypeCode() {
-        return new DeclarationTypeCode();
     }
 
     /**
@@ -1677,14 +4493,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeliveredQuantity }
-     * 
-     */
-    public DeliveredQuantity createDeliveredQuantity() {
-        return new DeliveredQuantity();
-    }
-
-    /**
      * Create an instance of {@link DeliveryInstructions }
      * 
      */
@@ -1709,22 +4517,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Description }
-     * 
-     */
-    public Description createDescription() {
-        return new Description();
-    }
-
-    /**
-     * Create an instance of {@link DescriptionCode }
-     * 
-     */
-    public DescriptionCode createDescriptionCode() {
-        return new DescriptionCode();
-    }
-
-    /**
      * Create an instance of {@link DespatchAdviceTypeCode }
      * 
      */
@@ -1746,14 +4538,6 @@ public class ObjectFactory {
      */
     public DirectionCode createDirectionCode() {
         return new DirectionCode();
-    }
-
-    /**
-     * Create an instance of {@link DisplayTacticTypeCode }
-     * 
-     */
-    public DisplayTacticTypeCode createDisplayTacticTypeCode() {
-        return new DisplayTacticTypeCode();
     }
 
     /**
@@ -1786,14 +4570,6 @@ public class ObjectFactory {
      */
     public DocumentDescription createDocumentDescription() {
         return new DocumentDescription();
-    }
-
-    /**
-     * Create an instance of {@link DocumentHash }
-     * 
-     */
-    public DocumentHash createDocumentHash() {
-        return new DocumentHash();
     }
 
     /**
@@ -1845,14 +4621,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DocumentationFeeAmount }
-     * 
-     */
-    public DocumentationFeeAmount createDocumentationFeeAmount() {
-        return new DocumentationFeeAmount();
-    }
-
-    /**
      * Create an instance of {@link DueDate }
      * 
      */
@@ -1885,30 +4653,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EarliestPickupDate }
-     * 
-     */
-    public EarliestPickupDate createEarliestPickupDate() {
-        return new EarliestPickupDate();
-    }
-
-    /**
-     * Create an instance of {@link EarliestPickupTime }
-     * 
-     */
-    public EarliestPickupTime createEarliestPickupTime() {
-        return new EarliestPickupTime();
-    }
-
-    /**
-     * Create an instance of {@link EconomicOperatorRegistryURI }
-     * 
-     */
-    public EconomicOperatorRegistryURI createEconomicOperatorRegistryURI() {
-        return new EconomicOperatorRegistryURI();
-    }
-
-    /**
      * Create an instance of {@link EffectiveDate }
      * 
      */
@@ -1922,14 +4666,6 @@ public class ObjectFactory {
      */
     public EffectiveTime createEffectiveTime() {
         return new EffectiveTime();
-    }
-
-    /**
-     * Create an instance of {@link ElectronicDeviceDescription }
-     * 
-     */
-    public ElectronicDeviceDescription createElectronicDeviceDescription() {
-        return new ElectronicDeviceDescription();
     }
 
     /**
@@ -1949,38 +4685,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EmergencyProceduresCode }
-     * 
-     */
-    public EmergencyProceduresCode createEmergencyProceduresCode() {
-        return new EmergencyProceduresCode();
-    }
-
-    /**
-     * Create an instance of {@link EmployeeQuantity }
-     * 
-     */
-    public EmployeeQuantity createEmployeeQuantity() {
-        return new EmployeeQuantity();
-    }
-
-    /**
-     * Create an instance of {@link EncodingCode }
-     * 
-     */
-    public EncodingCode createEncodingCode() {
-        return new EncodingCode();
-    }
-
-    /**
-     * Create an instance of {@link EndDate }
-     * 
-     */
-    public EndDate createEndDate() {
-        return new EndDate();
-    }
-
-    /**
      * Create an instance of {@link EndTime }
      * 
      */
@@ -1994,14 +4698,6 @@ public class ObjectFactory {
      */
     public EndpointID createEndpointID() {
         return new EndpointID();
-    }
-
-    /**
-     * Create an instance of {@link EnvironmentalEmissionTypeCode }
-     * 
-     */
-    public EnvironmentalEmissionTypeCode createEnvironmentalEmissionTypeCode() {
-        return new EnvironmentalEmissionTypeCode();
     }
 
     /**
@@ -2037,38 +4733,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EstimatedDespatchDate }
-     * 
-     */
-    public EstimatedDespatchDate createEstimatedDespatchDate() {
-        return new EstimatedDespatchDate();
-    }
-
-    /**
-     * Create an instance of {@link EstimatedDespatchTime }
-     * 
-     */
-    public EstimatedDespatchTime createEstimatedDespatchTime() {
-        return new EstimatedDespatchTime();
-    }
-
-    /**
-     * Create an instance of {@link EstimatedOverallContractAmount }
-     * 
-     */
-    public EstimatedOverallContractAmount createEstimatedOverallContractAmount() {
-        return new EstimatedOverallContractAmount();
-    }
-
-    /**
-     * Create an instance of {@link EstimatedOverallContractQuantity }
-     * 
-     */
-    public EstimatedOverallContractQuantity createEstimatedOverallContractQuantity() {
-        return new EstimatedOverallContractQuantity();
-    }
-
-    /**
      * Create an instance of {@link EvaluationCriterionTypeCode }
      * 
      */
@@ -2085,99 +4749,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ExceptionResolutionCode }
-     * 
-     */
-    public ExceptionResolutionCode createExceptionResolutionCode() {
-        return new ExceptionResolutionCode();
-    }
-
-    /**
-     * Create an instance of {@link ExceptionStatusCode }
-     * 
-     */
-    public ExceptionStatusCode createExceptionStatusCode() {
-        return new ExceptionStatusCode();
-    }
-
-    /**
      * Create an instance of {@link ExchangeMarketID }
      * 
      */
     public ExchangeMarketID createExchangeMarketID() {
         return new ExchangeMarketID();
-    }
-
-    /**
-     * Create an instance of {@link ExclusionReason }
-     * 
-     */
-    public ExclusionReason createExclusionReason() {
-        return new ExclusionReason();
-    }
-
-    /**
-     * Create an instance of {@link ExecutionRequirementCode }
-     * 
-     */
-    public ExecutionRequirementCode createExecutionRequirementCode() {
-        return new ExecutionRequirementCode();
-    }
-
-    /**
-     * Create an instance of {@link ExemptionReason }
-     * 
-     */
-    public ExemptionReason createExemptionReason() {
-        return new ExemptionReason();
-    }
-
-    /**
-     * Create an instance of {@link ExemptionReasonCode }
-     * 
-     */
-    public ExemptionReasonCode createExemptionReasonCode() {
-        return new ExemptionReasonCode();
-    }
-
-    /**
-     * Create an instance of {@link ExpectedOperatorQuantity }
-     * 
-     */
-    public ExpectedOperatorQuantity createExpectedOperatorQuantity() {
-        return new ExpectedOperatorQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ExpectedQuantity }
-     * 
-     */
-    public ExpectedQuantity createExpectedQuantity() {
-        return new ExpectedQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ExpenseCode }
-     * 
-     */
-    public ExpenseCode createExpenseCode() {
-        return new ExpenseCode();
-    }
-
-    /**
-     * Create an instance of {@link ExpiryDate }
-     * 
-     */
-    public ExpiryDate createExpiryDate() {
-        return new ExpiryDate();
-    }
-
-    /**
-     * Create an instance of {@link ExpiryTime }
-     * 
-     */
-    public ExpiryTime createExpiryTime() {
-        return new ExpiryTime();
     }
 
     /**
@@ -2205,35 +4781,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Extension }
-     * 
-     */
-    public Extension createExtension() {
-        return new Extension();
-    }
-
-    /**
-     * Create an instance of {@link FaceValueAmount }
-     * 
-     */
-    public FaceValueAmount createFaceValueAmount() {
-        return new FaceValueAmount();
-    }
-
-    /**
      * Create an instance of {@link FamilyName }
      * 
      */
     public FamilyName createFamilyName() {
         return new FamilyName();
-    }
-
-    /**
-     * Create an instance of {@link FeatureTacticTypeCode }
-     * 
-     */
-    public FeatureTacticTypeCode createFeatureTacticTypeCode() {
-        return new FeatureTacticTypeCode();
     }
 
     /**
@@ -2245,30 +4797,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FeeDescription }
-     * 
-     */
-    public FeeDescription createFeeDescription() {
-        return new FeeDescription();
-    }
-
-    /**
-     * Create an instance of {@link FileName }
-     * 
-     */
-    public FileName createFileName() {
-        return new FileName();
-    }
-
-    /**
-     * Create an instance of {@link FinancingInstrumentCode }
-     * 
-     */
-    public FinancingInstrumentCode createFinancingInstrumentCode() {
-        return new FinancingInstrumentCode();
-    }
-
-    /**
      * Create an instance of {@link FirstName }
      * 
      */
@@ -2277,51 +4805,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FirstShipmentAvailibilityDate }
-     * 
-     */
-    public FirstShipmentAvailibilityDate createFirstShipmentAvailibilityDate() {
-        return new FirstShipmentAvailibilityDate();
-    }
-
-    /**
      * Create an instance of {@link Floor }
      * 
      */
     public Floor createFloor() {
         return new Floor();
-    }
-
-    /**
-     * Create an instance of {@link FollowupContractIndicator }
-     * 
-     */
-    public FollowupContractIndicator createFollowupContractIndicator() {
-        return new FollowupContractIndicator();
-    }
-
-    /**
-     * Create an instance of {@link ForecastPurposeCode }
-     * 
-     */
-    public ForecastPurposeCode createForecastPurposeCode() {
-        return new ForecastPurposeCode();
-    }
-
-    /**
-     * Create an instance of {@link ForecastTypeCode }
-     * 
-     */
-    public ForecastTypeCode createForecastTypeCode() {
-        return new ForecastTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link FormatCode }
-     * 
-     */
-    public FormatCode createFormatCode() {
-        return new FormatCode();
     }
 
     /**
@@ -2365,62 +4853,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Frequency }
-     * 
-     */
-    public Frequency createFrequency() {
-        return new Frequency();
-    }
-
-    /**
-     * Create an instance of {@link FrozenDocumentIndicator }
-     * 
-     */
-    public FrozenDocumentIndicator createFrozenDocumentIndicator() {
-        return new FrozenDocumentIndicator();
-    }
-
-    /**
-     * Create an instance of {@link FrozenPeriodDaysNumeric }
-     * 
-     */
-    public FrozenPeriodDaysNumeric createFrozenPeriodDaysNumeric() {
-        return new FrozenPeriodDaysNumeric();
-    }
-
-    /**
-     * Create an instance of {@link FullnessIndicationCode }
-     * 
-     */
-    public FullnessIndicationCode createFullnessIndicationCode() {
-        return new FullnessIndicationCode();
-    }
-
-    /**
-     * Create an instance of {@link FullyPaidSharesIndicator }
-     * 
-     */
-    public FullyPaidSharesIndicator createFullyPaidSharesIndicator() {
-        return new FullyPaidSharesIndicator();
-    }
-
-    /**
-     * Create an instance of {@link FundingProgram }
-     * 
-     */
-    public FundingProgram createFundingProgram() {
-        return new FundingProgram();
-    }
-
-    /**
-     * Create an instance of {@link FundingProgramCode }
-     * 
-     */
-    public FundingProgramCode createFundingProgramCode() {
-        return new FundingProgramCode();
-    }
-
-    /**
      * Create an instance of {@link GasPressureQuantity }
      * 
      */
@@ -2442,22 +4874,6 @@ public class ObjectFactory {
      */
     public GeneralCargoIndicator createGeneralCargoIndicator() {
         return new GeneralCargoIndicator();
-    }
-
-    /**
-     * Create an instance of {@link GovernmentAgreementConstraintIndicator }
-     * 
-     */
-    public GovernmentAgreementConstraintIndicator createGovernmentAgreementConstraintIndicator() {
-        return new GovernmentAgreementConstraintIndicator();
-    }
-
-    /**
-     * Create an instance of {@link GrossTonnageMeasure }
-     * 
-     */
-    public GrossTonnageMeasure createGrossTonnageMeasure() {
-        return new GrossTonnageMeasure();
     }
 
     /**
@@ -2485,22 +4901,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GuaranteedDespatchDate }
-     * 
-     */
-    public GuaranteedDespatchDate createGuaranteedDespatchDate() {
-        return new GuaranteedDespatchDate();
-    }
-
-    /**
-     * Create an instance of {@link GuaranteedDespatchTime }
-     * 
-     */
-    public GuaranteedDespatchTime createGuaranteedDespatchTime() {
-        return new GuaranteedDespatchTime();
-    }
-
-    /**
      * Create an instance of {@link HandlingCode }
      * 
      */
@@ -2517,14 +4917,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link HashAlgorithmMethod }
-     * 
-     */
-    public HashAlgorithmMethod createHashAlgorithmMethod() {
-        return new HashAlgorithmMethod();
-    }
-
-    /**
      * Create an instance of {@link HaulageInstructions }
      * 
      */
@@ -2533,67 +4925,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link HazardClassID }
-     * 
-     */
-    public HazardClassID createHazardClassID() {
-        return new HazardClassID();
-    }
-
-    /**
-     * Create an instance of {@link HazardousCategoryCode }
-     * 
-     */
-    public HazardousCategoryCode createHazardousCategoryCode() {
-        return new HazardousCategoryCode();
-    }
-
-    /**
-     * Create an instance of {@link HazardousRegulationCode }
-     * 
-     */
-    public HazardousRegulationCode createHazardousRegulationCode() {
-        return new HazardousRegulationCode();
-    }
-
-    /**
      * Create an instance of {@link HazardousRiskIndicator }
      * 
      */
     public HazardousRiskIndicator createHazardousRiskIndicator() {
         return new HazardousRiskIndicator();
-    }
-
-    /**
-     * Create an instance of {@link HeatingType }
-     * 
-     */
-    public HeatingType createHeatingType() {
-        return new HeatingType();
-    }
-
-    /**
-     * Create an instance of {@link HeatingTypeCode }
-     * 
-     */
-    public HeatingTypeCode createHeatingTypeCode() {
-        return new HeatingTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link HigherTenderAmount }
-     * 
-     */
-    public HigherTenderAmount createHigherTenderAmount() {
-        return new HigherTenderAmount();
-    }
-
-    /**
-     * Create an instance of {@link HolderName }
-     * 
-     */
-    public HolderName createHolderName() {
-        return new HolderName();
     }
 
     /**
@@ -2637,22 +4973,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ImmobilizationCertificateID }
-     * 
-     */
-    public ImmobilizationCertificateID createImmobilizationCertificateID() {
-        return new ImmobilizationCertificateID();
-    }
-
-    /**
-     * Create an instance of {@link ImportanceCode }
-     * 
-     */
-    public ImportanceCode createImportanceCode() {
-        return new ImportanceCode();
-    }
-
-    /**
      * Create an instance of {@link IndicationIndicator }
      * 
      */
@@ -2685,14 +5005,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InhalationToxicityZoneCode }
-     * 
-     */
-    public InhalationToxicityZoneCode createInhalationToxicityZoneCode() {
-        return new InhalationToxicityZoneCode();
-    }
-
-    /**
      * Create an instance of {@link InhouseMail }
      * 
      */
@@ -2717,30 +5029,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InstructionID }
-     * 
-     */
-    public InstructionID createInstructionID() {
-        return new InstructionID();
-    }
-
-    /**
-     * Create an instance of {@link InstructionNote }
-     * 
-     */
-    public InstructionNote createInstructionNote() {
-        return new InstructionNote();
-    }
-
-    /**
-     * Create an instance of {@link Instructions }
-     * 
-     */
-    public Instructions createInstructions() {
-        return new Instructions();
-    }
-
-    /**
      * Create an instance of {@link InsurancePremiumAmount }
      * 
      */
@@ -2757,67 +5045,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InventoryValueAmount }
-     * 
-     */
-    public InventoryValueAmount createInventoryValueAmount() {
-        return new InventoryValueAmount();
-    }
-
-    /**
      * Create an instance of {@link InvoiceTypeCode }
      * 
      */
     public InvoiceTypeCode createInvoiceTypeCode() {
         return new InvoiceTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link InvoicedQuantity }
-     * 
-     */
-    public InvoicedQuantity createInvoicedQuantity() {
-        return new InvoicedQuantity();
-    }
-
-    /**
-     * Create an instance of {@link InvoicingPartyReference }
-     * 
-     */
-    public InvoicingPartyReference createInvoicingPartyReference() {
-        return new InvoicingPartyReference();
-    }
-
-    /**
-     * Create an instance of {@link IssueDate }
-     * 
-     */
-    public IssueDate createIssueDate() {
-        return new IssueDate();
-    }
-
-    /**
-     * Create an instance of {@link IssueNumberID }
-     * 
-     */
-    public IssueNumberID createIssueNumberID() {
-        return new IssueNumberID();
-    }
-
-    /**
-     * Create an instance of {@link IssueTime }
-     * 
-     */
-    public IssueTime createIssueTime() {
-        return new IssueTime();
-    }
-
-    /**
-     * Create an instance of {@link IssuerID }
-     * 
-     */
-    public IssuerID createIssuerID() {
-        return new IssuerID();
     }
 
     /**
@@ -2850,22 +5082,6 @@ public class ObjectFactory {
      */
     public JourneyID createJourneyID() {
         return new JourneyID();
-    }
-
-    /**
-     * Create an instance of {@link Justification }
-     * 
-     */
-    public Justification createJustification() {
-        return new Justification();
-    }
-
-    /**
-     * Create an instance of {@link JustificationDescription }
-     * 
-     */
-    public JustificationDescription createJustificationDescription() {
-        return new JustificationDescription();
     }
 
     /**
@@ -2917,94 +5133,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LatestMeterQuantity }
-     * 
-     */
-    public LatestMeterQuantity createLatestMeterQuantity() {
-        return new LatestMeterQuantity();
-    }
-
-    /**
-     * Create an instance of {@link LatestMeterReadingDate }
-     * 
-     */
-    public LatestMeterReadingDate createLatestMeterReadingDate() {
-        return new LatestMeterReadingDate();
-    }
-
-    /**
-     * Create an instance of {@link LatestMeterReadingMethod }
-     * 
-     */
-    public LatestMeterReadingMethod createLatestMeterReadingMethod() {
-        return new LatestMeterReadingMethod();
-    }
-
-    /**
-     * Create an instance of {@link LatestMeterReadingMethodCode }
-     * 
-     */
-    public LatestMeterReadingMethodCode createLatestMeterReadingMethodCode() {
-        return new LatestMeterReadingMethodCode();
-    }
-
-    /**
-     * Create an instance of {@link LatestPickupDate }
-     * 
-     */
-    public LatestPickupDate createLatestPickupDate() {
-        return new LatestPickupDate();
-    }
-
-    /**
-     * Create an instance of {@link LatestPickupTime }
-     * 
-     */
-    public LatestPickupTime createLatestPickupTime() {
-        return new LatestPickupTime();
-    }
-
-    /**
-     * Create an instance of {@link LatestProposalAcceptanceDate }
-     * 
-     */
-    public LatestProposalAcceptanceDate createLatestProposalAcceptanceDate() {
-        return new LatestProposalAcceptanceDate();
-    }
-
-    /**
-     * Create an instance of {@link LatestSecurityClearanceDate }
-     * 
-     */
-    public LatestSecurityClearanceDate createLatestSecurityClearanceDate() {
-        return new LatestSecurityClearanceDate();
-    }
-
-    /**
-     * Create an instance of {@link LatitudeDegreesMeasure }
-     * 
-     */
-    public LatitudeDegreesMeasure createLatitudeDegreesMeasure() {
-        return new LatitudeDegreesMeasure();
-    }
-
-    /**
-     * Create an instance of {@link LatitudeDirectionCode }
-     * 
-     */
-    public LatitudeDirectionCode createLatitudeDirectionCode() {
-        return new LatitudeDirectionCode();
-    }
-
-    /**
-     * Create an instance of {@link LatitudeMinutesMeasure }
-     * 
-     */
-    public LatitudeMinutesMeasure createLatitudeMinutesMeasure() {
-        return new LatitudeMinutesMeasure();
-    }
-
-    /**
      * Create an instance of {@link LeadTimeMeasure }
      * 
      */
@@ -3037,75 +5165,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LicensePlateID }
-     * 
-     */
-    public LicensePlateID createLicensePlateID() {
-        return new LicensePlateID();
-    }
-
-    /**
-     * Create an instance of {@link LifeCycleStatusCode }
-     * 
-     */
-    public LifeCycleStatusCode createLifeCycleStatusCode() {
-        return new LifeCycleStatusCode();
-    }
-
-    /**
-     * Create an instance of {@link LimitationDescription }
-     * 
-     */
-    public LimitationDescription createLimitationDescription() {
-        return new LimitationDescription();
-    }
-
-    /**
-     * Create an instance of {@link Line }
-     * 
-     */
-    public Line createLine() {
-        return new Line();
-    }
-
-    /**
      * Create an instance of {@link LineCountNumeric }
      * 
      */
     public LineCountNumeric createLineCountNumeric() {
         return new LineCountNumeric();
-    }
-
-    /**
-     * Create an instance of {@link LineExtensionAmount }
-     * 
-     */
-    public LineExtensionAmount createLineExtensionAmount() {
-        return new LineExtensionAmount();
-    }
-
-    /**
-     * Create an instance of {@link LineID }
-     * 
-     */
-    public LineID createLineID() {
-        return new LineID();
-    }
-
-    /**
-     * Create an instance of {@link LineNumberNumeric }
-     * 
-     */
-    public LineNumberNumeric createLineNumberNumeric() {
-        return new LineNumberNumeric();
-    }
-
-    /**
-     * Create an instance of {@link LineStatusCode }
-     * 
-     */
-    public LineStatusCode createLineStatusCode() {
-        return new LineStatusCode();
     }
 
     /**
@@ -3149,22 +5213,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Location }
-     * 
-     */
-    public Location createLocation() {
-        return new Location();
-    }
-
-    /**
-     * Create an instance of {@link LocationID }
-     * 
-     */
-    public LocationID createLocationID() {
-        return new LocationID();
-    }
-
-    /**
      * Create an instance of {@link LocationTypeCode }
      * 
      */
@@ -3173,115 +5221,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Login }
-     * 
-     */
-    public Login createLogin() {
-        return new Login();
-    }
-
-    /**
      * Create an instance of {@link LogoReferenceID }
      * 
      */
     public LogoReferenceID createLogoReferenceID() {
         return new LogoReferenceID();
-    }
-
-    /**
-     * Create an instance of {@link LongitudeDegreesMeasure }
-     * 
-     */
-    public LongitudeDegreesMeasure createLongitudeDegreesMeasure() {
-        return new LongitudeDegreesMeasure();
-    }
-
-    /**
-     * Create an instance of {@link LongitudeDirectionCode }
-     * 
-     */
-    public LongitudeDirectionCode createLongitudeDirectionCode() {
-        return new LongitudeDirectionCode();
-    }
-
-    /**
-     * Create an instance of {@link LongitudeMinutesMeasure }
-     * 
-     */
-    public LongitudeMinutesMeasure createLongitudeMinutesMeasure() {
-        return new LongitudeMinutesMeasure();
-    }
-
-    /**
-     * Create an instance of {@link LossRisk }
-     * 
-     */
-    public LossRisk createLossRisk() {
-        return new LossRisk();
-    }
-
-    /**
-     * Create an instance of {@link LossRiskResponsibilityCode }
-     * 
-     */
-    public LossRiskResponsibilityCode createLossRiskResponsibilityCode() {
-        return new LossRiskResponsibilityCode();
-    }
-
-    /**
-     * Create an instance of {@link LotNumberID }
-     * 
-     */
-    public LotNumberID createLotNumberID() {
-        return new LotNumberID();
-    }
-
-    /**
-     * Create an instance of {@link LowTendersDescription }
-     * 
-     */
-    public LowTendersDescription createLowTendersDescription() {
-        return new LowTendersDescription();
-    }
-
-    /**
-     * Create an instance of {@link LowerOrangeHazardPlacardID }
-     * 
-     */
-    public LowerOrangeHazardPlacardID createLowerOrangeHazardPlacardID() {
-        return new LowerOrangeHazardPlacardID();
-    }
-
-    /**
-     * Create an instance of {@link LowerTenderAmount }
-     * 
-     */
-    public LowerTenderAmount createLowerTenderAmount() {
-        return new LowerTenderAmount();
-    }
-
-    /**
-     * Create an instance of {@link MandateTypeCode }
-     * 
-     */
-    public MandateTypeCode createMandateTypeCode() {
-        return new MandateTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ManufactureDate }
-     * 
-     */
-    public ManufactureDate createManufactureDate() {
-        return new ManufactureDate();
-    }
-
-    /**
-     * Create an instance of {@link ManufactureTime }
-     * 
-     */
-    public ManufactureTime createManufactureTime() {
-        return new ManufactureTime();
     }
 
     /**
@@ -3317,43 +5261,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MarketValueAmount }
-     * 
-     */
-    public MarketValueAmount createMarketValueAmount() {
-        return new MarketValueAmount();
-    }
-
-    /**
-     * Create an instance of {@link MarkingID }
-     * 
-     */
-    public MarkingID createMarkingID() {
-        return new MarkingID();
-    }
-
-    /**
      * Create an instance of {@link MathematicOperatorCode }
      * 
      */
     public MathematicOperatorCode createMathematicOperatorCode() {
         return new MathematicOperatorCode();
-    }
-
-    /**
-     * Create an instance of {@link MaximumAdvertisementAmount }
-     * 
-     */
-    public MaximumAdvertisementAmount createMaximumAdvertisementAmount() {
-        return new MaximumAdvertisementAmount();
-    }
-
-    /**
-     * Create an instance of {@link MaximumAmount }
-     * 
-     */
-    public MaximumAmount createMaximumAmount() {
-        return new MaximumAmount();
     }
 
     /**
@@ -3365,107 +5277,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MaximumCopiesNumeric }
-     * 
-     */
-    public MaximumCopiesNumeric createMaximumCopiesNumeric() {
-        return new MaximumCopiesNumeric();
-    }
-
-    /**
-     * Create an instance of {@link MaximumMeasure }
-     * 
-     */
-    public MaximumMeasure createMaximumMeasure() {
-        return new MaximumMeasure();
-    }
-
-    /**
-     * Create an instance of {@link MaximumNumberNumeric }
-     * 
-     */
-    public MaximumNumberNumeric createMaximumNumberNumeric() {
-        return new MaximumNumberNumeric();
-    }
-
-    /**
-     * Create an instance of {@link MaximumOperatorQuantity }
-     * 
-     */
-    public MaximumOperatorQuantity createMaximumOperatorQuantity() {
-        return new MaximumOperatorQuantity();
-    }
-
-    /**
-     * Create an instance of {@link MaximumOrderQuantity }
-     * 
-     */
-    public MaximumOrderQuantity createMaximumOrderQuantity() {
-        return new MaximumOrderQuantity();
-    }
-
-    /**
-     * Create an instance of {@link MaximumPaidAmount }
-     * 
-     */
-    public MaximumPaidAmount createMaximumPaidAmount() {
-        return new MaximumPaidAmount();
-    }
-
-    /**
-     * Create an instance of {@link MaximumPaymentInstructionsNumeric }
-     * 
-     */
-    public MaximumPaymentInstructionsNumeric createMaximumPaymentInstructionsNumeric() {
-        return new MaximumPaymentInstructionsNumeric();
-    }
-
-    /**
      * Create an instance of {@link MaximumPercent }
      * 
      */
     public MaximumPercent createMaximumPercent() {
         return new MaximumPercent();
-    }
-
-    /**
-     * Create an instance of {@link MaximumQuantity }
-     * 
-     */
-    public MaximumQuantity createMaximumQuantity() {
-        return new MaximumQuantity();
-    }
-
-    /**
-     * Create an instance of {@link MaximumValue }
-     * 
-     */
-    public MaximumValue createMaximumValue() {
-        return new MaximumValue();
-    }
-
-    /**
-     * Create an instance of {@link MaximumVariantQuantity }
-     * 
-     */
-    public MaximumVariantQuantity createMaximumVariantQuantity() {
-        return new MaximumVariantQuantity();
-    }
-
-    /**
-     * Create an instance of {@link Measure }
-     * 
-     */
-    public Measure createMeasure() {
-        return new Measure();
-    }
-
-    /**
-     * Create an instance of {@link MedicalFirstAidGuideCode }
-     * 
-     */
-    public MedicalFirstAidGuideCode createMedicalFirstAidGuideCode() {
-        return new MedicalFirstAidGuideCode();
     }
 
     /**
@@ -3493,59 +5309,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MeterNumber }
-     * 
-     */
-    public MeterNumber createMeterNumber() {
-        return new MeterNumber();
-    }
-
-    /**
-     * Create an instance of {@link MeterReadingComments }
-     * 
-     */
-    public MeterReadingComments createMeterReadingComments() {
-        return new MeterReadingComments();
-    }
-
-    /**
-     * Create an instance of {@link MeterReadingType }
-     * 
-     */
-    public MeterReadingType createMeterReadingType() {
-        return new MeterReadingType();
-    }
-
-    /**
-     * Create an instance of {@link MeterReadingTypeCode }
-     * 
-     */
-    public MeterReadingTypeCode createMeterReadingTypeCode() {
-        return new MeterReadingTypeCode();
-    }
-
-    /**
      * Create an instance of {@link MiddleName }
      * 
      */
     public MiddleName createMiddleName() {
         return new MiddleName();
-    }
-
-    /**
-     * Create an instance of {@link MimeCode }
-     * 
-     */
-    public MimeCode createMimeCode() {
-        return new MimeCode();
-    }
-
-    /**
-     * Create an instance of {@link MinimumAmount }
-     * 
-     */
-    public MinimumAmount createMinimumAmount() {
-        return new MinimumAmount();
     }
 
     /**
@@ -3565,67 +5333,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MinimumInventoryQuantity }
-     * 
-     */
-    public MinimumInventoryQuantity createMinimumInventoryQuantity() {
-        return new MinimumInventoryQuantity();
-    }
-
-    /**
-     * Create an instance of {@link MinimumMeasure }
-     * 
-     */
-    public MinimumMeasure createMinimumMeasure() {
-        return new MinimumMeasure();
-    }
-
-    /**
-     * Create an instance of {@link MinimumNumberNumeric }
-     * 
-     */
-    public MinimumNumberNumeric createMinimumNumberNumeric() {
-        return new MinimumNumberNumeric();
-    }
-
-    /**
-     * Create an instance of {@link MinimumOrderQuantity }
-     * 
-     */
-    public MinimumOrderQuantity createMinimumOrderQuantity() {
-        return new MinimumOrderQuantity();
-    }
-
-    /**
      * Create an instance of {@link MinimumPercent }
      * 
      */
     public MinimumPercent createMinimumPercent() {
         return new MinimumPercent();
-    }
-
-    /**
-     * Create an instance of {@link MinimumQuantity }
-     * 
-     */
-    public MinimumQuantity createMinimumQuantity() {
-        return new MinimumQuantity();
-    }
-
-    /**
-     * Create an instance of {@link MinimumValue }
-     * 
-     */
-    public MinimumValue createMinimumValue() {
-        return new MinimumValue();
-    }
-
-    /**
-     * Create an instance of {@link MiscellaneousEventTypeCode }
-     * 
-     */
-    public MiscellaneousEventTypeCode createMiscellaneousEventTypeCode() {
-        return new MiscellaneousEventTypeCode();
     }
 
     /**
@@ -3637,43 +5349,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MonetaryScope }
-     * 
-     */
-    public MonetaryScope createMonetaryScope() {
-        return new MonetaryScope();
-    }
-
-    /**
-     * Create an instance of {@link MovieTitle }
-     * 
-     */
-    public MovieTitle createMovieTitle() {
-        return new MovieTitle();
-    }
-
-    /**
-     * Create an instance of {@link MultipleOrderQuantity }
-     * 
-     */
-    public MultipleOrderQuantity createMultipleOrderQuantity() {
-        return new MultipleOrderQuantity();
-    }
-
-    /**
      * Create an instance of {@link MultiplierFactorNumeric }
      * 
      */
     public MultiplierFactorNumeric createMultiplierFactorNumeric() {
         return new MultiplierFactorNumeric();
-    }
-
-    /**
-     * Create an instance of {@link NameCode }
-     * 
-     */
-    public NameCode createNameCode() {
-        return new NameCode();
     }
 
     /**
@@ -3701,51 +5381,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NegotiationDescription }
-     * 
-     */
-    public NegotiationDescription createNegotiationDescription() {
-        return new NegotiationDescription();
-    }
-
-    /**
      * Create an instance of {@link NetNetWeightMeasure }
      * 
      */
     public NetNetWeightMeasure createNetNetWeightMeasure() {
         return new NetNetWeightMeasure();
-    }
-
-    /**
-     * Create an instance of {@link NetTonnageMeasure }
-     * 
-     */
-    public NetTonnageMeasure createNetTonnageMeasure() {
-        return new NetTonnageMeasure();
-    }
-
-    /**
-     * Create an instance of {@link NetVolumeMeasure }
-     * 
-     */
-    public NetVolumeMeasure createNetVolumeMeasure() {
-        return new NetVolumeMeasure();
-    }
-
-    /**
-     * Create an instance of {@link NetWeightMeasure }
-     * 
-     */
-    public NetWeightMeasure createNetWeightMeasure() {
-        return new NetWeightMeasure();
-    }
-
-    /**
-     * Create an instance of {@link NetworkID }
-     * 
-     */
-    public NetworkID createNetworkID() {
-        return new NetworkID();
     }
 
     /**
@@ -3773,22 +5413,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Note }
-     * 
-     */
-    public Note createNote() {
-        return new Note();
-    }
-
-    /**
-     * Create an instance of {@link NotificationTypeCode }
-     * 
-     */
-    public NotificationTypeCode createNotificationTypeCode() {
-        return new NotificationTypeCode();
-    }
-
-    /**
      * Create an instance of {@link OccurrenceDate }
      * 
      */
@@ -3813,22 +5437,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OneTimeChargeType }
-     * 
-     */
-    public OneTimeChargeType createOneTimeChargeType() {
-        return new OneTimeChargeType();
-    }
-
-    /**
-     * Create an instance of {@link OneTimeChargeTypeCode }
-     * 
-     */
-    public OneTimeChargeTypeCode createOneTimeChargeTypeCode() {
-        return new OneTimeChargeTypeCode();
-    }
-
-    /**
      * Create an instance of {@link OntologyURI }
      * 
      */
@@ -3837,83 +5445,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OpenTenderID }
-     * 
-     */
-    public OpenTenderID createOpenTenderID() {
-        return new OpenTenderID();
-    }
-
-    /**
-     * Create an instance of {@link OperatingYearsQuantity }
-     * 
-     */
-    public OperatingYearsQuantity createOperatingYearsQuantity() {
-        return new OperatingYearsQuantity();
-    }
-
-    /**
-     * Create an instance of {@link OptionalLineItemIndicator }
-     * 
-     */
-    public OptionalLineItemIndicator createOptionalLineItemIndicator() {
-        return new OptionalLineItemIndicator();
-    }
-
-    /**
-     * Create an instance of {@link OptionsDescription }
-     * 
-     */
-    public OptionsDescription createOptionsDescription() {
-        return new OptionsDescription();
-    }
-
-    /**
-     * Create an instance of {@link OrderIntervalDaysNumeric }
-     * 
-     */
-    public OrderIntervalDaysNumeric createOrderIntervalDaysNumeric() {
-        return new OrderIntervalDaysNumeric();
-    }
-
-    /**
-     * Create an instance of {@link OrderQuantityIncrementNumeric }
-     * 
-     */
-    public OrderQuantityIncrementNumeric createOrderQuantityIncrementNumeric() {
-        return new OrderQuantityIncrementNumeric();
-    }
-
-    /**
      * Create an instance of {@link OrderResponseCode }
      * 
      */
     public OrderResponseCode createOrderResponseCode() {
         return new OrderResponseCode();
-    }
-
-    /**
-     * Create an instance of {@link OrderTypeCode }
-     * 
-     */
-    public OrderTypeCode createOrderTypeCode() {
-        return new OrderTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link OrderableIndicator }
-     * 
-     */
-    public OrderableIndicator createOrderableIndicator() {
-        return new OrderableIndicator();
-    }
-
-    /**
-     * Create an instance of {@link OrderableUnit }
-     * 
-     */
-    public OrderableUnit createOrderableUnit() {
-        return new OrderableUnit();
     }
 
     /**
@@ -3930,30 +5466,6 @@ public class ObjectFactory {
      */
     public OrganizationDepartment createOrganizationDepartment() {
         return new OrganizationDepartment();
-    }
-
-    /**
-     * Create an instance of {@link OriginalContractingSystemID }
-     * 
-     */
-    public OriginalContractingSystemID createOriginalContractingSystemID() {
-        return new OriginalContractingSystemID();
-    }
-
-    /**
-     * Create an instance of {@link OriginalJobID }
-     * 
-     */
-    public OriginalJobID createOriginalJobID() {
-        return new OriginalJobID();
-    }
-
-    /**
-     * Create an instance of {@link OtherConditionsIndicator }
-     * 
-     */
-    public OtherConditionsIndicator createOtherConditionsIndicator() {
-        return new OtherConditionsIndicator();
     }
 
     /**
@@ -4005,30 +5517,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PackLevelCode }
-     * 
-     */
-    public PackLevelCode createPackLevelCode() {
-        return new PackLevelCode();
-    }
-
-    /**
-     * Create an instance of {@link PackQuantity }
-     * 
-     */
-    public PackQuantity createPackQuantity() {
-        return new PackQuantity();
-    }
-
-    /**
-     * Create an instance of {@link PackSizeNumeric }
-     * 
-     */
-    public PackSizeNumeric createPackSizeNumeric() {
-        return new PackSizeNumeric();
-    }
-
-    /**
      * Create an instance of {@link PackageLevelCode }
      * 
      */
@@ -4042,14 +5530,6 @@ public class ObjectFactory {
      */
     public PackagingTypeCode createPackagingTypeCode() {
         return new PackagingTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link PackingCriteriaCode }
-     * 
-     */
-    public PackingCriteriaCode createPackingCriteriaCode() {
-        return new PackingCriteriaCode();
     }
 
     /**
@@ -4093,14 +5573,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ParentDocumentLineReferenceID }
-     * 
-     */
-    public ParentDocumentLineReferenceID createParentDocumentLineReferenceID() {
-        return new ParentDocumentLineReferenceID();
-    }
-
-    /**
      * Create an instance of {@link ParentDocumentTypeCode }
      * 
      */
@@ -4114,22 +5586,6 @@ public class ObjectFactory {
      */
     public ParentDocumentVersionID createParentDocumentVersionID() {
         return new ParentDocumentVersionID();
-    }
-
-    /**
-     * Create an instance of {@link PartPresentationCode }
-     * 
-     */
-    public PartPresentationCode createPartPresentationCode() {
-        return new PartPresentationCode();
-    }
-
-    /**
-     * Create an instance of {@link PartecipationPercent }
-     * 
-     */
-    public PartecipationPercent createPartecipationPercent() {
-        return new PartecipationPercent();
     }
 
     /**
@@ -4149,51 +5605,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PartyCapacityAmount }
-     * 
-     */
-    public PartyCapacityAmount createPartyCapacityAmount() {
-        return new PartyCapacityAmount();
-    }
-
-    /**
-     * Create an instance of {@link PartyType }
-     * 
-     */
-    public PartyType createPartyType() {
-        return new PartyType();
-    }
-
-    /**
-     * Create an instance of {@link PartyTypeCode }
-     * 
-     */
-    public PartyTypeCode createPartyTypeCode() {
-        return new PartyTypeCode();
-    }
-
-    /**
      * Create an instance of {@link PassengerQuantity }
      * 
      */
     public PassengerQuantity createPassengerQuantity() {
         return new PassengerQuantity();
-    }
-
-    /**
-     * Create an instance of {@link Password }
-     * 
-     */
-    public Password createPassword() {
-        return new Password();
-    }
-
-    /**
-     * Create an instance of {@link PayPerView }
-     * 
-     */
-    public PayPerView createPayPerView() {
-        return new PayPerView();
     }
 
     /**
@@ -4237,59 +5653,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PaymentChannelCode }
-     * 
-     */
-    public PaymentChannelCode createPaymentChannelCode() {
-        return new PaymentChannelCode();
-    }
-
-    /**
      * Create an instance of {@link PaymentCurrencyCode }
      * 
      */
     public PaymentCurrencyCode createPaymentCurrencyCode() {
         return new PaymentCurrencyCode();
-    }
-
-    /**
-     * Create an instance of {@link PaymentDescription }
-     * 
-     */
-    public PaymentDescription createPaymentDescription() {
-        return new PaymentDescription();
-    }
-
-    /**
-     * Create an instance of {@link PaymentDueDate }
-     * 
-     */
-    public PaymentDueDate createPaymentDueDate() {
-        return new PaymentDueDate();
-    }
-
-    /**
-     * Create an instance of {@link PaymentFrequencyCode }
-     * 
-     */
-    public PaymentFrequencyCode createPaymentFrequencyCode() {
-        return new PaymentFrequencyCode();
-    }
-
-    /**
-     * Create an instance of {@link PaymentID }
-     * 
-     */
-    public PaymentID createPaymentID() {
-        return new PaymentID();
-    }
-
-    /**
-     * Create an instance of {@link PaymentMeansCode }
-     * 
-     */
-    public PaymentMeansCode createPaymentMeansCode() {
-        return new PaymentMeansCode();
     }
 
     /**
@@ -4325,14 +5693,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PaymentPurposeCode }
-     * 
-     */
-    public PaymentPurposeCode createPaymentPurposeCode() {
-        return new PaymentPurposeCode();
-    }
-
-    /**
      * Create an instance of {@link PaymentTermsDetailsURI }
      * 
      */
@@ -4349,83 +5709,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PenaltySurchargePercent }
-     * 
-     */
-    public PenaltySurchargePercent createPenaltySurchargePercent() {
-        return new PenaltySurchargePercent();
-    }
-
-    /**
-     * Create an instance of {@link PerUnitAmount }
-     * 
-     */
-    public PerUnitAmount createPerUnitAmount() {
-        return new PerUnitAmount();
-    }
-
-    /**
-     * Create an instance of {@link Percent }
-     * 
-     */
-    public Percent createPercent() {
-        return new Percent();
-    }
-
-    /**
-     * Create an instance of {@link PerformanceMetricTypeCode }
-     * 
-     */
-    public PerformanceMetricTypeCode createPerformanceMetricTypeCode() {
-        return new PerformanceMetricTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link PerformanceValueQuantity }
-     * 
-     */
-    public PerformanceValueQuantity createPerformanceValueQuantity() {
-        return new PerformanceValueQuantity();
-    }
-
-    /**
      * Create an instance of {@link PerformingCarrierAssignedID }
      * 
      */
     public PerformingCarrierAssignedID createPerformingCarrierAssignedID() {
         return new PerformingCarrierAssignedID();
-    }
-
-    /**
-     * Create an instance of {@link PersonalSituation }
-     * 
-     */
-    public PersonalSituation createPersonalSituation() {
-        return new PersonalSituation();
-    }
-
-    /**
-     * Create an instance of {@link PhoneNumber }
-     * 
-     */
-    public PhoneNumber createPhoneNumber() {
-        return new PhoneNumber();
-    }
-
-    /**
-     * Create an instance of {@link PlacardEndorsement }
-     * 
-     */
-    public PlacardEndorsement createPlacardEndorsement() {
-        return new PlacardEndorsement();
-    }
-
-    /**
-     * Create an instance of {@link PlacardNotation }
-     * 
-     */
-    public PlacardNotation createPlacardNotation() {
-        return new PlacardNotation();
     }
 
     /**
@@ -4442,22 +5730,6 @@ public class ObjectFactory {
      */
     public PlotIdentification createPlotIdentification() {
         return new PlotIdentification();
-    }
-
-    /**
-     * Create an instance of {@link PositionCode }
-     * 
-     */
-    public PositionCode createPositionCode() {
-        return new PositionCode();
-    }
-
-    /**
-     * Create an instance of {@link PostEventNotificationDurationMeasure }
-     * 
-     */
-    public PostEventNotificationDurationMeasure createPostEventNotificationDurationMeasure() {
-        return new PostEventNotificationDurationMeasure();
     }
 
     /**
@@ -4493,14 +5765,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PreEventNotificationDurationMeasure }
-     * 
-     */
-    public PreEventNotificationDurationMeasure createPreEventNotificationDurationMeasure() {
-        return new PreEventNotificationDurationMeasure();
-    }
-
-    /**
      * Create an instance of {@link PreferenceCriterionCode }
      * 
      */
@@ -4533,54 +5797,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PreviousCancellationReasonCode }
-     * 
-     */
-    public PreviousCancellationReasonCode createPreviousCancellationReasonCode() {
-        return new PreviousCancellationReasonCode();
-    }
-
-    /**
-     * Create an instance of {@link PreviousJobID }
-     * 
-     */
-    public PreviousJobID createPreviousJobID() {
-        return new PreviousJobID();
-    }
-
-    /**
-     * Create an instance of {@link PreviousMeterQuantity }
-     * 
-     */
-    public PreviousMeterQuantity createPreviousMeterQuantity() {
-        return new PreviousMeterQuantity();
-    }
-
-    /**
-     * Create an instance of {@link PreviousMeterReadingDate }
-     * 
-     */
-    public PreviousMeterReadingDate createPreviousMeterReadingDate() {
-        return new PreviousMeterReadingDate();
-    }
-
-    /**
-     * Create an instance of {@link PreviousMeterReadingMethod }
-     * 
-     */
-    public PreviousMeterReadingMethod createPreviousMeterReadingMethod() {
-        return new PreviousMeterReadingMethod();
-    }
-
-    /**
-     * Create an instance of {@link PreviousMeterReadingMethodCode }
-     * 
-     */
-    public PreviousMeterReadingMethodCode createPreviousMeterReadingMethodCode() {
-        return new PreviousMeterReadingMethodCode();
-    }
-
-    /**
      * Create an instance of {@link PreviousVersionID }
      * 
      */
@@ -4589,35 +5805,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PriceAmount }
-     * 
-     */
-    public PriceAmount createPriceAmount() {
-        return new PriceAmount();
-    }
-
-    /**
      * Create an instance of {@link PriceChangeReason }
      * 
      */
     public PriceChangeReason createPriceChangeReason() {
         return new PriceChangeReason();
-    }
-
-    /**
-     * Create an instance of {@link PriceEvaluationCode }
-     * 
-     */
-    public PriceEvaluationCode createPriceEvaluationCode() {
-        return new PriceEvaluationCode();
-    }
-
-    /**
-     * Create an instance of {@link PriceRevisionFormulaDescription }
-     * 
-     */
-    public PriceRevisionFormulaDescription createPriceRevisionFormulaDescription() {
-        return new PriceRevisionFormulaDescription();
     }
 
     /**
@@ -4653,107 +5845,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PrimaryAccountNumberID }
-     * 
-     */
-    public PrimaryAccountNumberID createPrimaryAccountNumberID() {
-        return new PrimaryAccountNumberID();
-    }
-
-    /**
-     * Create an instance of {@link PrintQualifier }
-     * 
-     */
-    public PrintQualifier createPrintQualifier() {
-        return new PrintQualifier();
-    }
-
-    /**
      * Create an instance of {@link Priority }
      * 
      */
     public Priority createPriority() {
         return new Priority();
-    }
-
-    /**
-     * Create an instance of {@link PrivacyCode }
-     * 
-     */
-    public PrivacyCode createPrivacyCode() {
-        return new PrivacyCode();
-    }
-
-    /**
-     * Create an instance of {@link PrizeDescription }
-     * 
-     */
-    public PrizeDescription createPrizeDescription() {
-        return new PrizeDescription();
-    }
-
-    /**
-     * Create an instance of {@link PrizeIndicator }
-     * 
-     */
-    public PrizeIndicator createPrizeIndicator() {
-        return new PrizeIndicator();
-    }
-
-    /**
-     * Create an instance of {@link ProcedureCode }
-     * 
-     */
-    public ProcedureCode createProcedureCode() {
-        return new ProcedureCode();
-    }
-
-    /**
-     * Create an instance of {@link ProcessDescription }
-     * 
-     */
-    public ProcessDescription createProcessDescription() {
-        return new ProcessDescription();
-    }
-
-    /**
-     * Create an instance of {@link ProcessReason }
-     * 
-     */
-    public ProcessReason createProcessReason() {
-        return new ProcessReason();
-    }
-
-    /**
-     * Create an instance of {@link ProcessReasonCode }
-     * 
-     */
-    public ProcessReasonCode createProcessReasonCode() {
-        return new ProcessReasonCode();
-    }
-
-    /**
-     * Create an instance of {@link ProcurementSubTypeCode }
-     * 
-     */
-    public ProcurementSubTypeCode createProcurementSubTypeCode() {
-        return new ProcurementSubTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ProcurementTypeCode }
-     * 
-     */
-    public ProcurementTypeCode createProcurementTypeCode() {
-        return new ProcurementTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ProductTraceID }
-     * 
-     */
-    public ProductTraceID createProductTraceID() {
-        return new ProductTraceID();
     }
 
     /**
@@ -4778,22 +5874,6 @@ public class ObjectFactory {
      */
     public ProfileStatusCode createProfileStatusCode() {
         return new ProfileStatusCode();
-    }
-
-    /**
-     * Create an instance of {@link ProgressPercent }
-     * 
-     */
-    public ProgressPercent createProgressPercent() {
-        return new ProgressPercent();
-    }
-
-    /**
-     * Create an instance of {@link PromotionalEventTypeCode }
-     * 
-     */
-    public PromotionalEventTypeCode createPromotionalEventTypeCode() {
-        return new PromotionalEventTypeCode();
     }
 
     /**
@@ -4829,51 +5909,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link QualityControlCode }
-     * 
-     */
-    public QualityControlCode createQualityControlCode() {
-        return new QualityControlCode();
-    }
-
-    /**
-     * Create an instance of {@link Quantity }
-     * 
-     */
-    public Quantity createQuantity() {
-        return new Quantity();
-    }
-
-    /**
      * Create an instance of {@link QuantityDiscrepancyCode }
      * 
      */
     public QuantityDiscrepancyCode createQuantityDiscrepancyCode() {
         return new QuantityDiscrepancyCode();
-    }
-
-    /**
-     * Create an instance of {@link RadioCallSignID }
-     * 
-     */
-    public RadioCallSignID createRadioCallSignID() {
-        return new RadioCallSignID();
-    }
-
-    /**
-     * Create an instance of {@link RailCarID }
-     * 
-     */
-    public RailCarID createRailCarID() {
-        return new RailCarID();
-    }
-
-    /**
-     * Create an instance of {@link Rank }
-     * 
-     */
-    public Rank createRank() {
-        return new Rank();
     }
 
     /**
@@ -4901,35 +5941,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReceivedElectronicTenderQuantity }
-     * 
-     */
-    public ReceivedElectronicTenderQuantity createReceivedElectronicTenderQuantity() {
-        return new ReceivedElectronicTenderQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ReceivedForeignTenderQuantity }
-     * 
-     */
-    public ReceivedForeignTenderQuantity createReceivedForeignTenderQuantity() {
-        return new ReceivedForeignTenderQuantity();
-    }
-
-    /**
      * Create an instance of {@link ReceivedQuantity }
      * 
      */
     public ReceivedQuantity createReceivedQuantity() {
         return new ReceivedQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ReceivedTenderQuantity }
-     * 
-     */
-    public ReceivedTenderQuantity createReceivedTenderQuantity() {
-        return new ReceivedTenderQuantity();
     }
 
     /**
@@ -4941,35 +5957,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReferenceDate }
-     * 
-     */
-    public ReferenceDate createReferenceDate() {
-        return new ReferenceDate();
-    }
-
-    /**
      * Create an instance of {@link ReferenceEventCode }
      * 
      */
     public ReferenceEventCode createReferenceEventCode() {
         return new ReferenceEventCode();
-    }
-
-    /**
-     * Create an instance of {@link ReferenceID }
-     * 
-     */
-    public ReferenceID createReferenceID() {
-        return new ReferenceID();
-    }
-
-    /**
-     * Create an instance of {@link ReferenceTime }
-     * 
-     */
-    public ReferenceTime createReferenceTime() {
-        return new ReferenceTime();
     }
 
     /**
@@ -5018,38 +6010,6 @@ public class ObjectFactory {
      */
     public RegisteredTime createRegisteredTime() {
         return new RegisteredTime();
-    }
-
-    /**
-     * Create an instance of {@link RegistrationDate }
-     * 
-     */
-    public RegistrationDate createRegistrationDate() {
-        return new RegistrationDate();
-    }
-
-    /**
-     * Create an instance of {@link RegistrationExpirationDate }
-     * 
-     */
-    public RegistrationExpirationDate createRegistrationExpirationDate() {
-        return new RegistrationExpirationDate();
-    }
-
-    /**
-     * Create an instance of {@link RegistrationID }
-     * 
-     */
-    public RegistrationID createRegistrationID() {
-        return new RegistrationID();
-    }
-
-    /**
-     * Create an instance of {@link RegistrationName }
-     * 
-     */
-    public RegistrationName createRegistrationName() {
-        return new RegistrationName();
     }
 
     /**
@@ -5117,30 +6077,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReleaseID }
-     * 
-     */
-    public ReleaseID createReleaseID() {
-        return new ReleaseID();
-    }
-
-    /**
-     * Create an instance of {@link ReliabilityPercent }
-     * 
-     */
-    public ReliabilityPercent createReliabilityPercent() {
-        return new ReliabilityPercent();
-    }
-
-    /**
-     * Create an instance of {@link Remarks }
-     * 
-     */
-    public Remarks createRemarks() {
-        return new Remarks();
-    }
-
-    /**
      * Create an instance of {@link ReminderSequenceNumeric }
      * 
      */
@@ -5157,46 +6093,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReplenishmentOwnerDescription }
-     * 
-     */
-    public ReplenishmentOwnerDescription createReplenishmentOwnerDescription() {
-        return new ReplenishmentOwnerDescription();
-    }
-
-    /**
-     * Create an instance of {@link RequestForQuotationLineID }
-     * 
-     */
-    public RequestForQuotationLineID createRequestForQuotationLineID() {
-        return new RequestForQuotationLineID();
-    }
-
-    /**
-     * Create an instance of {@link RequestedDeliveryDate }
-     * 
-     */
-    public RequestedDeliveryDate createRequestedDeliveryDate() {
-        return new RequestedDeliveryDate();
-    }
-
-    /**
-     * Create an instance of {@link RequestedDespatchDate }
-     * 
-     */
-    public RequestedDespatchDate createRequestedDespatchDate() {
-        return new RequestedDespatchDate();
-    }
-
-    /**
-     * Create an instance of {@link RequestedDespatchTime }
-     * 
-     */
-    public RequestedDespatchTime createRequestedDespatchTime() {
-        return new RequestedDespatchTime();
-    }
-
-    /**
      * Create an instance of {@link RequestedInvoiceCurrencyCode }
      * 
      */
@@ -5210,14 +6106,6 @@ public class ObjectFactory {
      */
     public RequestedPublicationDate createRequestedPublicationDate() {
         return new RequestedPublicationDate();
-    }
-
-    /**
-     * Create an instance of {@link RequiredCurriculaIndicator }
-     * 
-     */
-    public RequiredCurriculaIndicator createRequiredCurriculaIndicator() {
-        return new RequiredCurriculaIndicator();
     }
 
     /**
@@ -5242,70 +6130,6 @@ public class ObjectFactory {
      */
     public RequiredDeliveryTime createRequiredDeliveryTime() {
         return new RequiredDeliveryTime();
-    }
-
-    /**
-     * Create an instance of {@link RequiredFeeAmount }
-     * 
-     */
-    public RequiredFeeAmount createRequiredFeeAmount() {
-        return new RequiredFeeAmount();
-    }
-
-    /**
-     * Create an instance of {@link ResidenceType }
-     * 
-     */
-    public ResidenceType createResidenceType() {
-        return new ResidenceType();
-    }
-
-    /**
-     * Create an instance of {@link ResidenceTypeCode }
-     * 
-     */
-    public ResidenceTypeCode createResidenceTypeCode() {
-        return new ResidenceTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ResidentOccupantsNumeric }
-     * 
-     */
-    public ResidentOccupantsNumeric createResidentOccupantsNumeric() {
-        return new ResidentOccupantsNumeric();
-    }
-
-    /**
-     * Create an instance of {@link Resolution }
-     * 
-     */
-    public Resolution createResolution() {
-        return new Resolution();
-    }
-
-    /**
-     * Create an instance of {@link ResolutionCode }
-     * 
-     */
-    public ResolutionCode createResolutionCode() {
-        return new ResolutionCode();
-    }
-
-    /**
-     * Create an instance of {@link ResolutionDate }
-     * 
-     */
-    public ResolutionDate createResolutionDate() {
-        return new ResolutionDate();
-    }
-
-    /**
-     * Create an instance of {@link ResolutionTime }
-     * 
-     */
-    public ResolutionTime createResolutionTime() {
-        return new ResolutionTime();
     }
 
     /**
@@ -5373,14 +6197,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RevisedForecastLineID }
-     * 
-     */
-    public RevisedForecastLineID createRevisedForecastLineID() {
-        return new RevisedForecastLineID();
-    }
-
-    /**
      * Create an instance of {@link RevisionDate }
      * 
      */
@@ -5405,30 +6221,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RoamingPartnerName }
-     * 
-     */
-    public RoamingPartnerName createRoamingPartnerName() {
-        return new RoamingPartnerName();
-    }
-
-    /**
-     * Create an instance of {@link RoleCode }
-     * 
-     */
-    public RoleCode createRoleCode() {
-        return new RoleCode();
-    }
-
-    /**
-     * Create an instance of {@link RoleDescription }
-     * 
-     */
-    public RoleDescription createRoleDescription() {
-        return new RoleDescription();
-    }
-
-    /**
      * Create an instance of {@link Room }
      * 
      */
@@ -5445,67 +6237,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SalesOrderID }
-     * 
-     */
-    public SalesOrderID createSalesOrderID() {
-        return new SalesOrderID();
-    }
-
-    /**
-     * Create an instance of {@link SalesOrderLineID }
-     * 
-     */
-    public SalesOrderLineID createSalesOrderLineID() {
-        return new SalesOrderLineID();
-    }
-
-    /**
      * Create an instance of {@link SchemeURI }
      * 
      */
     public SchemeURI createSchemeURI() {
         return new SchemeURI();
-    }
-
-    /**
-     * Create an instance of {@link SealIssuerTypeCode }
-     * 
-     */
-    public SealIssuerTypeCode createSealIssuerTypeCode() {
-        return new SealIssuerTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link SealStatusCode }
-     * 
-     */
-    public SealStatusCode createSealStatusCode() {
-        return new SealStatusCode();
-    }
-
-    /**
-     * Create an instance of {@link SealingPartyType }
-     * 
-     */
-    public SealingPartyType createSealingPartyType() {
-        return new SealingPartyType();
-    }
-
-    /**
-     * Create an instance of {@link SecurityClassificationCode }
-     * 
-     */
-    public SecurityClassificationCode createSecurityClassificationCode() {
-        return new SecurityClassificationCode();
-    }
-
-    /**
-     * Create an instance of {@link SecurityID }
-     * 
-     */
-    public SecurityID createSecurityID() {
-        return new SecurityID();
     }
 
     /**
@@ -5533,22 +6269,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SequenceNumeric }
-     * 
-     */
-    public SequenceNumeric createSequenceNumeric() {
-        return new SequenceNumeric();
-    }
-
-    /**
-     * Create an instance of {@link SerialID }
-     * 
-     */
-    public SerialID createSerialID() {
-        return new SerialID();
-    }
-
-    /**
      * Create an instance of {@link ServiceInformationPreferenceCode }
      * 
      */
@@ -5565,30 +6285,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ServiceNumberCalled }
-     * 
-     */
-    public ServiceNumberCalled createServiceNumberCalled() {
-        return new ServiceNumberCalled();
-    }
-
-    /**
-     * Create an instance of {@link ServiceType }
-     * 
-     */
-    public ServiceType createServiceType() {
-        return new ServiceType();
-    }
-
-    /**
-     * Create an instance of {@link ServiceTypeCode }
-     * 
-     */
-    public ServiceTypeCode createServiceTypeCode() {
-        return new ServiceTypeCode();
-    }
-
-    /**
      * Create an instance of {@link SettlementDiscountAmount }
      * 
      */
@@ -5602,14 +6298,6 @@ public class ObjectFactory {
      */
     public SettlementDiscountPercent createSettlementDiscountPercent() {
         return new SettlementDiscountPercent();
-    }
-
-    /**
-     * Create an instance of {@link SharesNumberQuantity }
-     * 
-     */
-    public SharesNumberQuantity createSharesNumberQuantity() {
-        return new SharesNumberQuantity();
     }
 
     /**
@@ -5637,14 +6325,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ShipsRequirements }
-     * 
-     */
-    public ShipsRequirements createShipsRequirements() {
-        return new ShipsRequirements();
-    }
-
-    /**
      * Create an instance of {@link ShortQuantity }
      * 
      */
@@ -5661,35 +6341,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SignatureID }
-     * 
-     */
-    public SignatureID createSignatureID() {
-        return new SignatureID();
-    }
-
-    /**
-     * Create an instance of {@link SignatureMethod }
-     * 
-     */
-    public SignatureMethod createSignatureMethod() {
-        return new SignatureMethod();
-    }
-
-    /**
      * Create an instance of {@link SizeTypeCode }
      * 
      */
     public SizeTypeCode createSizeTypeCode() {
         return new SizeTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link SoleProprietorshipIndicator }
-     * 
-     */
-    public SoleProprietorshipIndicator createSoleProprietorshipIndicator() {
-        return new SoleProprietorshipIndicator();
     }
 
     /**
@@ -5706,30 +6362,6 @@ public class ObjectFactory {
      */
     public SourceCurrencyCode createSourceCurrencyCode() {
         return new SourceCurrencyCode();
-    }
-
-    /**
-     * Create an instance of {@link SourceForecastIssueDate }
-     * 
-     */
-    public SourceForecastIssueDate createSourceForecastIssueDate() {
-        return new SourceForecastIssueDate();
-    }
-
-    /**
-     * Create an instance of {@link SourceForecastIssueTime }
-     * 
-     */
-    public SourceForecastIssueTime createSourceForecastIssueTime() {
-        return new SourceForecastIssueTime();
-    }
-
-    /**
-     * Create an instance of {@link SourceValueMeasure }
-     * 
-     */
-    public SourceValueMeasure createSourceValueMeasure() {
-        return new SourceValueMeasure();
     }
 
     /**
@@ -5757,14 +6389,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SpecialTerms }
-     * 
-     */
-    public SpecialTerms createSpecialTerms() {
-        return new SpecialTerms();
-    }
-
-    /**
      * Create an instance of {@link SpecialTransportRequirements }
      * 
      */
@@ -5773,35 +6397,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SpecificationID }
-     * 
-     */
-    public SpecificationID createSpecificationID() {
-        return new SpecificationID();
-    }
-
-    /**
-     * Create an instance of {@link SpecificationTypeCode }
-     * 
-     */
-    public SpecificationTypeCode createSpecificationTypeCode() {
-        return new SpecificationTypeCode();
-    }
-
-    /**
      * Create an instance of {@link SplitConsignmentIndicator }
      * 
      */
     public SplitConsignmentIndicator createSplitConsignmentIndicator() {
         return new SplitConsignmentIndicator();
-    }
-
-    /**
-     * Create an instance of {@link StartDate }
-     * 
-     */
-    public StartDate createStartDate() {
-        return new StartDate();
     }
 
     /**
@@ -5869,59 +6469,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SubmissionDate }
-     * 
-     */
-    public SubmissionDate createSubmissionDate() {
-        return new SubmissionDate();
-    }
-
-    /**
      * Create an instance of {@link SubmissionDueDate }
      * 
      */
     public SubmissionDueDate createSubmissionDueDate() {
         return new SubmissionDueDate();
-    }
-
-    /**
-     * Create an instance of {@link SubmissionMethodCode }
-     * 
-     */
-    public SubmissionMethodCode createSubmissionMethodCode() {
-        return new SubmissionMethodCode();
-    }
-
-    /**
-     * Create an instance of {@link SubscriberID }
-     * 
-     */
-    public SubscriberID createSubscriberID() {
-        return new SubscriberID();
-    }
-
-    /**
-     * Create an instance of {@link SubscriberType }
-     * 
-     */
-    public SubscriberType createSubscriberType() {
-        return new SubscriberType();
-    }
-
-    /**
-     * Create an instance of {@link SubscriberTypeCode }
-     * 
-     */
-    public SubscriberTypeCode createSubscriberTypeCode() {
-        return new SubscriberTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link SubstitutionStatusCode }
-     * 
-     */
-    public SubstitutionStatusCode createSubstitutionStatusCode() {
-        return new SubstitutionStatusCode();
     }
 
     /**
@@ -5949,14 +6501,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SupplyChainActivityTypeCode }
-     * 
-     */
-    public SupplyChainActivityTypeCode createSupplyChainActivityTypeCode() {
-        return new SupplyChainActivityTypeCode();
-    }
-
-    /**
      * Create an instance of {@link TareWeightMeasure }
      * 
      */
@@ -5978,22 +6522,6 @@ public class ObjectFactory {
      */
     public TargetCurrencyCode createTargetCurrencyCode() {
         return new TargetCurrencyCode();
-    }
-
-    /**
-     * Create an instance of {@link TargetInventoryQuantity }
-     * 
-     */
-    public TargetInventoryQuantity createTargetInventoryQuantity() {
-        return new TargetInventoryQuantity();
-    }
-
-    /**
-     * Create an instance of {@link TargetServicePercent }
-     * 
-     */
-    public TargetServicePercent createTargetServicePercent() {
-        return new TargetServicePercent();
     }
 
     /**
@@ -6021,43 +6549,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TaxAmount }
-     * 
-     */
-    public TaxAmount createTaxAmount() {
-        return new TaxAmount();
-    }
-
-    /**
      * Create an instance of {@link TaxCurrencyCode }
      * 
      */
     public TaxCurrencyCode createTaxCurrencyCode() {
         return new TaxCurrencyCode();
-    }
-
-    /**
-     * Create an instance of {@link TaxEnergyAmount }
-     * 
-     */
-    public TaxEnergyAmount createTaxEnergyAmount() {
-        return new TaxEnergyAmount();
-    }
-
-    /**
-     * Create an instance of {@link TaxEnergyBalanceAmount }
-     * 
-     */
-    public TaxEnergyBalanceAmount createTaxEnergyBalanceAmount() {
-        return new TaxEnergyBalanceAmount();
-    }
-
-    /**
-     * Create an instance of {@link TaxEnergyOnAccountAmount }
-     * 
-     */
-    public TaxEnergyOnAccountAmount createTaxEnergyOnAccountAmount() {
-        return new TaxEnergyOnAccountAmount();
     }
 
     /**
@@ -6093,14 +6589,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TaxIncludedIndicator }
-     * 
-     */
-    public TaxIncludedIndicator createTaxIncludedIndicator() {
-        return new TaxIncludedIndicator();
-    }
-
-    /**
      * Create an instance of {@link TaxInclusiveAmount }
      * 
      */
@@ -6109,99 +6597,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TaxLevelCode }
-     * 
-     */
-    public TaxLevelCode createTaxLevelCode() {
-        return new TaxLevelCode();
-    }
-
-    /**
      * Create an instance of {@link TaxPointDate }
      * 
      */
     public TaxPointDate createTaxPointDate() {
         return new TaxPointDate();
-    }
-
-    /**
-     * Create an instance of {@link TaxTypeCode }
-     * 
-     */
-    public TaxTypeCode createTaxTypeCode() {
-        return new TaxTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link TaxableAmount }
-     * 
-     */
-    public TaxableAmount createTaxableAmount() {
-        return new TaxableAmount();
-    }
-
-    /**
-     * Create an instance of {@link TechnicalCommitteeDescription }
-     * 
-     */
-    public TechnicalCommitteeDescription createTechnicalCommitteeDescription() {
-        return new TechnicalCommitteeDescription();
-    }
-
-    /**
-     * Create an instance of {@link TechnicalName }
-     * 
-     */
-    public TechnicalName createTechnicalName() {
-        return new TechnicalName();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsServiceCall }
-     * 
-     */
-    public TelecommunicationsServiceCall createTelecommunicationsServiceCall() {
-        return new TelecommunicationsServiceCall();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsServiceCallCode }
-     * 
-     */
-    public TelecommunicationsServiceCallCode createTelecommunicationsServiceCallCode() {
-        return new TelecommunicationsServiceCallCode();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsServiceCategory }
-     * 
-     */
-    public TelecommunicationsServiceCategory createTelecommunicationsServiceCategory() {
-        return new TelecommunicationsServiceCategory();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsServiceCategoryCode }
-     * 
-     */
-    public TelecommunicationsServiceCategoryCode createTelecommunicationsServiceCategoryCode() {
-        return new TelecommunicationsServiceCategoryCode();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsSupplyType }
-     * 
-     */
-    public TelecommunicationsSupplyType createTelecommunicationsSupplyType() {
-        return new TelecommunicationsSupplyType();
-    }
-
-    /**
-     * Create an instance of {@link TelecommunicationsSupplyTypeCode }
-     * 
-     */
-    public TelecommunicationsSupplyTypeCode createTelecommunicationsSupplyTypeCode() {
-        return new TelecommunicationsSupplyTypeCode();
     }
 
     /**
@@ -6218,30 +6618,6 @@ public class ObjectFactory {
      */
     public Telephone createTelephone() {
         return new Telephone();
-    }
-
-    /**
-     * Create an instance of {@link TenderEnvelopeID }
-     * 
-     */
-    public TenderEnvelopeID createTenderEnvelopeID() {
-        return new TenderEnvelopeID();
-    }
-
-    /**
-     * Create an instance of {@link TenderEnvelopeTypeCode }
-     * 
-     */
-    public TenderEnvelopeTypeCode createTenderEnvelopeTypeCode() {
-        return new TenderEnvelopeTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link TenderResultCode }
-     * 
-     */
-    public TenderResultCode createTenderResultCode() {
-        return new TenderResultCode();
     }
 
     /**
@@ -6301,62 +6677,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ThresholdQuantity }
-     * 
-     */
-    public ThresholdQuantity createThresholdQuantity() {
-        return new ThresholdQuantity();
-    }
-
-    /**
-     * Create an instance of {@link ThresholdValueComparisonCode }
-     * 
-     */
-    public ThresholdValueComparisonCode createThresholdValueComparisonCode() {
-        return new ThresholdValueComparisonCode();
-    }
-
-    /**
-     * Create an instance of {@link TierRange }
-     * 
-     */
-    public TierRange createTierRange() {
-        return new TierRange();
-    }
-
-    /**
-     * Create an instance of {@link TierRatePercent }
-     * 
-     */
-    public TierRatePercent createTierRatePercent() {
-        return new TierRatePercent();
-    }
-
-    /**
-     * Create an instance of {@link TimeAmount }
-     * 
-     */
-    public TimeAmount createTimeAmount() {
-        return new TimeAmount();
-    }
-
-    /**
-     * Create an instance of {@link TimeDeltaDaysQuantity }
-     * 
-     */
-    public TimeDeltaDaysQuantity createTimeDeltaDaysQuantity() {
-        return new TimeDeltaDaysQuantity();
-    }
-
-    /**
-     * Create an instance of {@link TimeFrequencyCode }
-     * 
-     */
-    public TimeFrequencyCode createTimeFrequencyCode() {
-        return new TimeFrequencyCode();
-    }
-
-    /**
      * Create an instance of {@link TimezoneOffset }
      * 
      */
@@ -6397,27 +6717,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TotalAmount }
-     * 
-     */
-    public TotalAmount createTotalAmount() {
-        return new TotalAmount();
-    }
-
-    /**
      * Create an instance of {@link TotalBalanceAmount }
      * 
      */
     public TotalBalanceAmount createTotalBalanceAmount() {
         return new TotalBalanceAmount();
-    }
-
-    /**
-     * Create an instance of {@link TotalConsumedQuantity }
-     * 
-     */
-    public TotalConsumedQuantity createTotalConsumedQuantity() {
-        return new TotalConsumedQuantity();
     }
 
     /**
@@ -6461,14 +6765,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TotalMeteredQuantity }
-     * 
-     */
-    public TotalMeteredQuantity createTotalMeteredQuantity() {
-        return new TotalMeteredQuantity();
-    }
-
-    /**
      * Create an instance of {@link TotalPackageQuantity }
      * 
      */
@@ -6490,22 +6786,6 @@ public class ObjectFactory {
      */
     public TotalPaymentAmount createTotalPaymentAmount() {
         return new TotalPaymentAmount();
-    }
-
-    /**
-     * Create an instance of {@link TotalTaskAmount }
-     * 
-     */
-    public TotalTaskAmount createTotalTaskAmount() {
-        return new TotalTaskAmount();
-    }
-
-    /**
-     * Create an instance of {@link TotalTaxAmount }
-     * 
-     */
-    public TotalTaxAmount createTotalTaxAmount() {
-        return new TotalTaxAmount();
     }
 
     /**
@@ -6541,14 +6821,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TradeItemPackingLabelingTypeCode }
-     * 
-     */
-    public TradeItemPackingLabelingTypeCode createTradeItemPackingLabelingTypeCode() {
-        return new TradeItemPackingLabelingTypeCode();
-    }
-
-    /**
      * Create an instance of {@link TradeServiceCode }
      * 
      */
@@ -6565,43 +6837,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TrainID }
-     * 
-     */
-    public TrainID createTrainID() {
-        return new TrainID();
-    }
-
-    /**
-     * Create an instance of {@link TransactionCurrencyTaxAmount }
-     * 
-     */
-    public TransactionCurrencyTaxAmount createTransactionCurrencyTaxAmount() {
-        return new TransactionCurrencyTaxAmount();
-    }
-
-    /**
      * Create an instance of {@link TransitDirectionCode }
      * 
      */
     public TransitDirectionCode createTransitDirectionCode() {
         return new TransitDirectionCode();
-    }
-
-    /**
-     * Create an instance of {@link TransportAuthorizationCode }
-     * 
-     */
-    public TransportAuthorizationCode createTransportAuthorizationCode() {
-        return new TransportAuthorizationCode();
-    }
-
-    /**
-     * Create an instance of {@link TransportEmergencyCardCode }
-     * 
-     */
-    public TransportEmergencyCardCode createTransportEmergencyCardCode() {
-        return new TransportEmergencyCardCode();
     }
 
     /**
@@ -6618,14 +6858,6 @@ public class ObjectFactory {
      */
     public TransportEventTypeCode createTransportEventTypeCode() {
         return new TransportEventTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link TransportExecutionPlanReferenceID }
-     * 
-     */
-    public TransportExecutionPlanReferenceID createTransportExecutionPlanReferenceID() {
-        return new TransportExecutionPlanReferenceID();
     }
 
     /**
@@ -6677,27 +6909,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TransportServiceProviderSpecialTerms }
-     * 
-     */
-    public TransportServiceProviderSpecialTerms createTransportServiceProviderSpecialTerms() {
-        return new TransportServiceProviderSpecialTerms();
-    }
-
-    /**
      * Create an instance of {@link TransportUserRemarks }
      * 
      */
     public TransportUserRemarks createTransportUserRemarks() {
         return new TransportUserRemarks();
-    }
-
-    /**
-     * Create an instance of {@link TransportUserSpecialTerms }
-     * 
-     */
-    public TransportUserSpecialTerms createTransportUserSpecialTerms() {
-        return new TransportUserSpecialTerms();
     }
 
     /**
@@ -6741,179 +6957,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UNDGCode }
-     * 
-     */
-    public UNDGCode createUNDGCode() {
-        return new UNDGCode();
-    }
-
-    /**
-     * Create an instance of {@link URI }
-     * 
-     */
-    public URI createURI() {
-        return new URI();
-    }
-
-    /**
-     * Create an instance of {@link UUID }
-     * 
-     */
-    public UUID createUUID() {
-        return new UUID();
-    }
-
-    /**
      * Create an instance of {@link UnknownPriceIndicator }
      * 
      */
     public UnknownPriceIndicator createUnknownPriceIndicator() {
         return new UnknownPriceIndicator();
-    }
-
-    /**
-     * Create an instance of {@link UpperOrangeHazardPlacardID }
-     * 
-     */
-    public UpperOrangeHazardPlacardID createUpperOrangeHazardPlacardID() {
-        return new UpperOrangeHazardPlacardID();
-    }
-
-    /**
-     * Create an instance of {@link UrgencyCode }
-     * 
-     */
-    public UrgencyCode createUrgencyCode() {
-        return new UrgencyCode();
-    }
-
-    /**
-     * Create an instance of {@link UtilityStatementTypeCode }
-     * 
-     */
-    public UtilityStatementTypeCode createUtilityStatementTypeCode() {
-        return new UtilityStatementTypeCode();
-    }
-
-    /**
-     * Create an instance of {@link ValidateProcess }
-     * 
-     */
-    public ValidateProcess createValidateProcess() {
-        return new ValidateProcess();
-    }
-
-    /**
-     * Create an instance of {@link ValidateTool }
-     * 
-     */
-    public ValidateTool createValidateTool() {
-        return new ValidateTool();
-    }
-
-    /**
-     * Create an instance of {@link ValidateToolVersion }
-     * 
-     */
-    public ValidateToolVersion createValidateToolVersion() {
-        return new ValidateToolVersion();
-    }
-
-    /**
-     * Create an instance of {@link ValidationDate }
-     * 
-     */
-    public ValidationDate createValidationDate() {
-        return new ValidationDate();
-    }
-
-    /**
-     * Create an instance of {@link ValidationResultCode }
-     * 
-     */
-    public ValidationResultCode createValidationResultCode() {
-        return new ValidationResultCode();
-    }
-
-    /**
-     * Create an instance of {@link ValidationTime }
-     * 
-     */
-    public ValidationTime createValidationTime() {
-        return new ValidationTime();
-    }
-
-    /**
-     * Create an instance of {@link ValidatorID }
-     * 
-     */
-    public ValidatorID createValidatorID() {
-        return new ValidatorID();
-    }
-
-    /**
-     * Create an instance of {@link ValidityStartDate }
-     * 
-     */
-    public ValidityStartDate createValidityStartDate() {
-        return new ValidityStartDate();
-    }
-
-    /**
-     * Create an instance of {@link Value }
-     * 
-     */
-    public Value createValue() {
-        return new Value();
-    }
-
-    /**
-     * Create an instance of {@link ValueAmount }
-     * 
-     */
-    public ValueAmount createValueAmount() {
-        return new ValueAmount();
-    }
-
-    /**
-     * Create an instance of {@link ValueMeasure }
-     * 
-     */
-    public ValueMeasure createValueMeasure() {
-        return new ValueMeasure();
-    }
-
-    /**
-     * Create an instance of {@link ValueQualifier }
-     * 
-     */
-    public ValueQualifier createValueQualifier() {
-        return new ValueQualifier();
-    }
-
-    /**
-     * Create an instance of {@link ValueQuantity }
-     * 
-     */
-    public ValueQuantity createValueQuantity() {
-        return new ValueQuantity();
-    }
-
-    /**
-     * Create an instance of {@link VarianceQuantity }
-     * 
-     */
-    public VarianceQuantity createVarianceQuantity() {
-        return new VarianceQuantity();
-    }
-
-    /**
-     * Create an instance of {@link VariantConstraintIndicator }
-     * 
-     */
-    public VariantConstraintIndicator createVariantConstraintIndicator() {
-        return new VariantConstraintIndicator();
     }
 
     /**
@@ -6930,30 +6978,6 @@ public class ObjectFactory {
      */
     public VersionID createVersionID() {
         return new VersionID();
-    }
-
-    /**
-     * Create an instance of {@link VesselID }
-     * 
-     */
-    public VesselID createVesselID() {
-        return new VesselID();
-    }
-
-    /**
-     * Create an instance of {@link VesselName }
-     * 
-     */
-    public VesselName createVesselName() {
-        return new VesselName();
-    }
-
-    /**
-     * Create an instance of {@link WarrantyInformation }
-     * 
-     */
-    public WarrantyInformation createWarrantyInformation() {
-        return new WarrantyInformation();
     }
 
     /**
@@ -6986,30 +7010,6 @@ public class ObjectFactory {
      */
     public WeightNumeric createWeightNumeric() {
         return new WeightNumeric();
-    }
-
-    /**
-     * Create an instance of {@link WeightingAlgorithmCode }
-     * 
-     */
-    public WeightingAlgorithmCode createWeightingAlgorithmCode() {
-        return new WeightingAlgorithmCode();
-    }
-
-    /**
-     * Create an instance of {@link WorkPhase }
-     * 
-     */
-    public WorkPhase createWorkPhase() {
-        return new WorkPhase();
-    }
-
-    /**
-     * Create an instance of {@link WorkPhaseCode }
-     * 
-     */
-    public WorkPhaseCode createWorkPhaseCode() {
-        return new WorkPhaseCode();
     }
 
     /**
