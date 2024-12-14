@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -80,13 +80,13 @@ import com.picoto.jaxb.ubl.common.cbc.ValueMeasure;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="MeasureType">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2>MeasureType">
- *       &lt;attribute name="unitCode" use="required" type="{http://www.w3.org/2001/XMLSchema}normalizedString" />
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="MeasureType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2&gt;MeasureType"&gt;
+ *       &lt;attribute name="unitCode" use="required" type="{http://www.w3.org/2001/XMLSchema}normalizedString" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -94,32 +94,32 @@ import com.picoto.jaxb.ubl.common.cbc.ValueMeasure;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "MeasureType")
 @XmlSeeAlso({
-    GrossVolumeMeasure.class,
     ValueMeasure.class,
-    LeadTimeMeasure.class,
-    NetWeightMeasure.class,
-    SourceValueMeasure.class,
-    LoadingLengthMeasure.class,
-    GrossWeightMeasure.class,
-    MaximumMeasure.class,
-    Measure.class,
     TareWeightMeasure.class,
-    LatitudeDegreesMeasure.class,
-    MinimumMeasure.class,
-    LatitudeMinutesMeasure.class,
-    NetVolumeMeasure.class,
-    AltitudeMeasure.class,
-    DurationMeasure.class,
-    LongitudeMinutesMeasure.class,
-    GrossTonnageMeasure.class,
+    SourceValueMeasure.class,
     PreEventNotificationDurationMeasure.class,
-    LongitudeDegreesMeasure.class,
-    NetNetWeightMeasure.class,
-    BaseUnitMeasure.class,
+    PostEventNotificationDurationMeasure.class,
+    NetWeightMeasure.class,
+    NetVolumeMeasure.class,
     NetTonnageMeasure.class,
-    ChargeableWeightMeasure.class,
+    NetNetWeightMeasure.class,
+    MinimumMeasure.class,
+    Measure.class,
+    MaximumMeasure.class,
+    LongitudeMinutesMeasure.class,
+    LongitudeDegreesMeasure.class,
+    LoadingLengthMeasure.class,
+    LeadTimeMeasure.class,
+    LatitudeMinutesMeasure.class,
+    LatitudeDegreesMeasure.class,
+    GrossWeightMeasure.class,
+    GrossVolumeMeasure.class,
+    GrossTonnageMeasure.class,
+    DurationMeasure.class,
     ComparedValueMeasure.class,
-    PostEventNotificationDurationMeasure.class
+    ChargeableWeightMeasure.class,
+    BaseUnitMeasure.class,
+    AltitudeMeasure.class
 })
 public class MeasureType
     extends com.picoto.jaxb.ubl.common.ccts.MeasureType

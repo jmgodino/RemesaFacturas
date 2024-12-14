@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -45,11 +45,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NumericType }
+     * Create an instance of {@link TextType }
      * 
      */
-    public NumericType createNumericType() {
-        return new NumericType();
+    public TextType createTextType() {
+        return new TextType();
+    }
+
+    /**
+     * Create an instance of {@link CodeType }
+     * 
+     */
+    public CodeType createCodeType() {
+        return new CodeType();
+    }
+
+    /**
+     * Create an instance of {@link AmountType }
+     * 
+     */
+    public AmountType createAmountType() {
+        return new AmountType();
     }
 
     /**
@@ -77,30 +93,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link QuantityType }
-     * 
-     */
-    public QuantityType createQuantityType() {
-        return new QuantityType();
-    }
-
-    /**
-     * Create an instance of {@link AmountType }
-     * 
-     */
-    public AmountType createAmountType() {
-        return new AmountType();
-    }
-
-    /**
-     * Create an instance of {@link CodeType }
-     * 
-     */
-    public CodeType createCodeType() {
-        return new CodeType();
-    }
-
-    /**
      * Create an instance of {@link MeasureType }
      * 
      */
@@ -109,11 +101,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TextType }
+     * Create an instance of {@link NumericType }
      * 
      */
-    public TextType createTextType() {
-        return new TextType();
+    public NumericType createNumericType() {
+        return new NumericType();
+    }
+
+    /**
+     * Create an instance of {@link QuantityType }
+     * 
+     */
+    public QuantityType createQuantityType() {
+        return new QuantityType();
     }
 
 }

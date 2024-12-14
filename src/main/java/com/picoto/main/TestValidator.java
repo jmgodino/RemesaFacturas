@@ -17,9 +17,9 @@ import javax.xml.validation.Validator;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import com.picoto.jaxb.Facturae;
+import com.picoto.jaxb.fe.Facturae;
 
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 
 public class TestValidator extends Temporizado {
 

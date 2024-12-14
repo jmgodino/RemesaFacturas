@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -33,23 +33,23 @@ import org.w3c.dom.Element;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="KeyInfoType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyName"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyValue"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}RetrievalMethod"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}X509Data"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}PGPData"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SPKIData"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}MgmtData"/>
- *         &lt;any processContents='lax' namespace='##other'/>
- *       &lt;/choice>
- *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="KeyInfoType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded"&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyName"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyValue"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}RetrievalMethod"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}X509Data"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}PGPData"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SPKIData"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}MgmtData"/&gt;
+ *         &lt;any processContents='lax' namespace='##other'/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -62,13 +62,13 @@ import org.w3c.dom.Element;
 public class KeyInfo {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "KeyValue", namespace = "http://www.w3.org/2000/09/xmldsig#", type = KeyValue.class, required = false),
-        @XmlElementRef(name = "SPKIData", namespace = "http://www.w3.org/2000/09/xmldsig#", type = SPKIData.class, required = false),
-        @XmlElementRef(name = "X509Data", namespace = "http://www.w3.org/2000/09/xmldsig#", type = X509Data.class, required = false),
         @XmlElementRef(name = "KeyName", namespace = "http://www.w3.org/2000/09/xmldsig#", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "KeyValue", namespace = "http://www.w3.org/2000/09/xmldsig#", type = KeyValue.class, required = false),
+        @XmlElementRef(name = "RetrievalMethod", namespace = "http://www.w3.org/2000/09/xmldsig#", type = RetrievalMethod.class, required = false),
+        @XmlElementRef(name = "X509Data", namespace = "http://www.w3.org/2000/09/xmldsig#", type = X509Data.class, required = false),
         @XmlElementRef(name = "PGPData", namespace = "http://www.w3.org/2000/09/xmldsig#", type = PGPData.class, required = false),
-        @XmlElementRef(name = "MgmtData", namespace = "http://www.w3.org/2000/09/xmldsig#", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "RetrievalMethod", namespace = "http://www.w3.org/2000/09/xmldsig#", type = RetrievalMethod.class, required = false)
+        @XmlElementRef(name = "SPKIData", namespace = "http://www.w3.org/2000/09/xmldsig#", type = SPKIData.class, required = false),
+        @XmlElementRef(name = "MgmtData", namespace = "http://www.w3.org/2000/09/xmldsig#", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     @XmlAnyElement(lax = true)
@@ -97,16 +97,16 @@ public class KeyInfo {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link KeyValue }
-     * {@link SPKIData }
-     * {@link java.lang.Object }
-     * {@link X509Data }
-     * {@link Element }
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link PGPData }
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link String }
      * {@link RetrievalMethod }
+     * {@link X509Data }
+     * {@link PGPData }
+     * {@link SPKIData }
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link Element }
+     * {@link java.lang.Object }
+     * {@link String }
      * 
      * 
      */

@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -84,12 +84,12 @@ import com.picoto.jaxb.ubl.common.cbc.ValidationTime;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="TimeType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>time">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="TimeType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;time"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -99,37 +99,37 @@ import com.picoto.jaxb.ubl.common.cbc.ValidationTime;
     "value"
 })
 @XmlSeeAlso({
-    CallTime.class,
-    LatestDeliveryTime.class,
-    NominationTime.class,
-    LastRevisionTime.class,
-    ReferenceTime.class,
-    EstimatedDespatchTime.class,
-    OccurrenceTime.class,
-    ManufactureTime.class,
-    SourceForecastIssueTime.class,
-    ActualDespatchTime.class,
-    RegisteredTime.class,
-    PaidTime.class,
-    ActualDeliveryTime.class,
-    EstimatedDeliveryTime.class,
-    GuaranteedDespatchTime.class,
-    EffectiveTime.class,
-    ResolutionTime.class,
     ValidationTime.class,
-    RequiredDeliveryTime.class,
-    ActualPickupTime.class,
-    EarliestPickupTime.class,
-    ComparisonForecastIssueTime.class,
     StartTime.class,
+    SourceForecastIssueTime.class,
     RevisionTime.class,
     ResponseTime.class,
-    IssueTime.class,
-    EndTime.class,
-    LatestPickupTime.class,
+    ResolutionTime.class,
+    RequiredDeliveryTime.class,
     RequestedDespatchTime.class,
+    RegisteredTime.class,
+    ReferenceTime.class,
+    PaidTime.class,
+    OccurrenceTime.class,
+    NominationTime.class,
+    ManufactureTime.class,
+    LatestPickupTime.class,
+    LatestDeliveryTime.class,
+    LastRevisionTime.class,
+    IssueTime.class,
+    GuaranteedDespatchTime.class,
     ExpiryTime.class,
-    AwardTime.class
+    EstimatedDespatchTime.class,
+    EstimatedDeliveryTime.class,
+    EndTime.class,
+    EffectiveTime.class,
+    EarliestPickupTime.class,
+    ComparisonForecastIssueTime.class,
+    CallTime.class,
+    AwardTime.class,
+    ActualPickupTime.class,
+    ActualDespatchTime.class,
+    ActualDeliveryTime.class
 })
 public class TimeType {
 

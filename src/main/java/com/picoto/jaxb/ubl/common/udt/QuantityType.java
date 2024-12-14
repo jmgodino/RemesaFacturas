@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -115,12 +115,12 @@ import com.picoto.jaxb.ubl.common.cbc.VarianceQuantity;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="QuantityType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2>QuantityType">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="QuantityType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2&gt;QuantityType"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -128,71 +128,71 @@ import com.picoto.jaxb.ubl.common.cbc.VarianceQuantity;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "QuantityType")
 @XmlSeeAlso({
+    VarianceQuantity.class,
+    ValueQuantity.class,
     TotalTransportHandlingUnitQuantity.class,
-    Quantity.class,
-    BackorderQuantity.class,
+    TotalPackagesQuantity.class,
+    TotalPackageQuantity.class,
+    TotalMeteredQuantity.class,
+    TotalGoodsItemQuantity.class,
+    TotalDeliveredQuantity.class,
+    TotalConsumedQuantity.class,
+    TimeDeltaDaysQuantity.class,
+    ThresholdQuantity.class,
+    TargetInventoryQuantity.class,
+    ShortQuantity.class,
+    SharesNumberQuantity.class,
+    ReturnableQuantity.class,
+    RejectedQuantity.class,
+    ReceivedTenderQuantity.class,
+    ReceivedQuantity.class,
     ReceivedForeignTenderQuantity.class,
+    ReceivedElectronicTenderQuantity.class,
+    Quantity.class,
+    PreviousMeterQuantity.class,
+    PerformanceValueQuantity.class,
+    PassengerQuantity.class,
     PackQuantity.class,
+    OversupplyQuantity.class,
+    OutstandingQuantity.class,
+    OperatingYearsQuantity.class,
+    NormalTemperatureReductionQuantity.class,
+    MultipleOrderQuantity.class,
+    MinimumQuantity.class,
+    MinimumOrderQuantity.class,
+    MinimumInventoryQuantity.class,
+    MinimumBackorderQuantity.class,
+    MaximumVariantQuantity.class,
+    MaximumQuantity.class,
+    MaximumOrderQuantity.class,
+    MaximumOperatorQuantity.class,
+    MaximumBackorderQuantity.class,
+    LatestMeterQuantity.class,
+    InvoicedQuantity.class,
+    GasPressureQuantity.class,
+    ExpectedQuantity.class,
+    ExpectedOperatorQuantity.class,
+    EstimatedOverallContractQuantity.class,
+    EstimatedConsumedQuantity.class,
+    EmployeeQuantity.class,
+    DifferenceTemperatureReductionQuantity.class,
     DeliveredQuantity.class,
     DebitedQuantity.class,
-    ReceivedQuantity.class,
-    MaximumVariantQuantity.class,
-    OversupplyQuantity.class,
-    MinimumOrderQuantity.class,
-    BatchQuantity.class,
-    TotalPackageQuantity.class,
-    TargetInventoryQuantity.class,
-    SharesNumberQuantity.class,
-    ChildConsignmentQuantity.class,
-    LatestMeterQuantity.class,
-    ValueQuantity.class,
-    OutstandingQuantity.class,
-    BasicConsumedQuantity.class,
-    GasPressureQuantity.class,
-    ReceivedElectronicTenderQuantity.class,
-    ConsumerUnitQuantity.class,
-    InvoicedQuantity.class,
-    ActualTemperatureReductionQuantity.class,
     CustomsTariffQuantity.class,
+    CrewQuantity.class,
     CreditedQuantity.class,
-    VarianceQuantity.class,
-    PreviousMeterQuantity.class,
-    TotalGoodsItemQuantity.class,
-    ReturnableQuantity.class,
-    DifferenceTemperatureReductionQuantity.class,
     ContentUnitQuantity.class,
-    TimeDeltaDaysQuantity.class,
     ConsumptionWaterQuantity.class,
-    ShortQuantity.class,
-    PassengerQuantity.class,
-    RejectedQuantity.class,
-    MinimumInventoryQuantity.class,
-    PerformanceValueQuantity.class,
-    TotalDeliveredQuantity.class,
-    BaseQuantity.class,
     ConsumptionEnergyQuantity.class,
-    MaximumOperatorQuantity.class,
-    MultipleOrderQuantity.class,
-    MaximumQuantity.class,
-    ExpectedOperatorQuantity.class,
-    ReceivedTenderQuantity.class,
-    TotalPackagesQuantity.class,
-    ExpectedQuantity.class,
-    ThresholdQuantity.class,
-    MaximumBackorderQuantity.class,
-    MaximumOrderQuantity.class,
-    MinimumBackorderQuantity.class,
-    EstimatedConsumedQuantity.class,
+    ConsumerUnitQuantity.class,
     ConsignmentQuantity.class,
-    EmployeeQuantity.class,
-    MinimumQuantity.class,
+    ChildConsignmentQuantity.class,
     ChargeableQuantity.class,
-    EstimatedOverallContractQuantity.class,
-    NormalTemperatureReductionQuantity.class,
-    TotalMeteredQuantity.class,
-    OperatingYearsQuantity.class,
-    TotalConsumedQuantity.class,
-    CrewQuantity.class
+    BatchQuantity.class,
+    BasicConsumedQuantity.class,
+    BaseQuantity.class,
+    BackorderQuantity.class,
+    ActualTemperatureReductionQuantity.class
 })
 public class QuantityType
     extends com.picoto.jaxb.ubl.common.ccts.QuantityType

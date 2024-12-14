@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -114,13 +114,13 @@ import com.picoto.jaxb.ubl.common.cbc.ValueAmount;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="AmountType">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2>AmountType">
- *       &lt;attribute name="currencyID" use="required" type="{http://www.w3.org/2001/XMLSchema}normalizedString" />
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="AmountType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2&gt;AmountType"&gt;
+ *       &lt;attribute name="currencyID" use="required" type="{http://www.w3.org/2001/XMLSchema}normalizedString" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -128,74 +128,74 @@ import com.picoto.jaxb.ubl.common.cbc.ValueAmount;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AmountType")
 @XmlSeeAlso({
-    DeclaredCustomsValueAmount.class,
-    MarketValueAmount.class,
-    TotalDebitAmount.class,
-    AverageAmount.class,
-    InsuranceValueAmount.class,
-    TaxEnergyBalanceAmount.class,
-    TotalBalanceAmount.class,
-    EstimatedAmount.class,
-    TotalCreditAmount.class,
-    TotalTaskAmount.class,
-    SettlementDiscountAmount.class,
-    FaceValueAmount.class,
-    MinimumAmount.class,
-    DeclaredForCarriageValueAmount.class,
-    AnnualAverageAmount.class,
-    PrepaidAmount.class,
-    CreditLineAmount.class,
-    CallExtensionAmount.class,
-    PerUnitAmount.class,
-    FreeOnBoardValueAmount.class,
-    InsurancePremiumAmount.class,
-    TaxableAmount.class,
-    ThresholdAmount.class,
-    TotalInvoiceAmount.class,
-    PaidAmount.class,
-    AdvertisementAmount.class,
-    RequiredFeeAmount.class,
-    CorporateStockAmount.class,
-    TotalAmount.class,
-    MaximumPaidAmount.class,
-    CallBaseAmount.class,
-    TotalTaxAmount.class,
-    TransactionCurrencyTaxAmount.class,
-    LiabilityAmount.class,
-    AverageSubsequentContractAmount.class,
-    TaxAmount.class,
-    AllowanceTotalAmount.class,
-    BalanceAmount.class,
-    CorrectionUnitAmount.class,
-    LowerTenderAmount.class,
-    PenaltyAmount.class,
-    RoundingAmount.class,
-    PriceAmount.class,
-    CorrectionAmount.class,
     ValueAmount.class,
-    PartyCapacityAmount.class,
-    DebitLineAmount.class,
-    LineExtensionAmount.class,
+    TransactionCurrencyTaxAmount.class,
+    TotalTaxAmount.class,
+    TotalTaskAmount.class,
+    TotalPaymentAmount.class,
+    TotalInvoiceAmount.class,
+    TotalDebitAmount.class,
+    TotalCreditAmount.class,
+    TotalBalanceAmount.class,
+    TotalAmount.class,
+    ThresholdAmount.class,
+    TaxableAmount.class,
     TaxInclusiveAmount.class,
     TaxExclusiveAmount.class,
     TaxEnergyOnAccountAmount.class,
-    TotalPaymentAmount.class,
-    FeeAmount.class,
-    ChargeTotalAmount.class,
-    DeclaredCarriageValueAmount.class,
-    HigherTenderAmount.class,
-    Amount.class,
-    MaximumAmount.class,
-    PayableRoundingAmount.class,
-    DocumentationFeeAmount.class,
-    InventoryValueAmount.class,
-    EstimatedOverallContractAmount.class,
+    TaxEnergyBalanceAmount.class,
     TaxEnergyAmount.class,
-    MaximumAdvertisementAmount.class,
+    TaxAmount.class,
+    SettlementDiscountAmount.class,
+    RoundingAmount.class,
+    RequiredFeeAmount.class,
+    PriceAmount.class,
+    PrepaidAmount.class,
+    PerUnitAmount.class,
+    PenaltyAmount.class,
+    PayableRoundingAmount.class,
     PayableAmount.class,
     PayableAlternativeAmount.class,
+    PartyCapacityAmount.class,
+    PaidAmount.class,
+    MinimumAmount.class,
+    MaximumPaidAmount.class,
+    MaximumAmount.class,
+    MaximumAdvertisementAmount.class,
+    MarketValueAmount.class,
+    LowerTenderAmount.class,
+    LineExtensionAmount.class,
+    LiabilityAmount.class,
+    InventoryValueAmount.class,
+    InsuranceValueAmount.class,
+    InsurancePremiumAmount.class,
+    HigherTenderAmount.class,
+    FreeOnBoardValueAmount.class,
+    FeeAmount.class,
+    FaceValueAmount.class,
+    EstimatedOverallContractAmount.class,
+    EstimatedAmount.class,
+    DocumentationFeeAmount.class,
     DeclaredStatisticsValueAmount.class,
-    BaseAmount.class
+    DeclaredForCarriageValueAmount.class,
+    DeclaredCustomsValueAmount.class,
+    DeclaredCarriageValueAmount.class,
+    DebitLineAmount.class,
+    CreditLineAmount.class,
+    CorrectionUnitAmount.class,
+    CorrectionAmount.class,
+    CorporateStockAmount.class,
+    ChargeTotalAmount.class,
+    CallExtensionAmount.class,
+    CallBaseAmount.class,
+    BaseAmount.class,
+    BalanceAmount.class,
+    AverageSubsequentContractAmount.class,
+    AverageAmount.class,
+    AnnualAverageAmount.class,
+    Amount.class,
+    AllowanceTotalAmount.class,
+    AdvertisementAmount.class
 })
 public class AmountType
     extends com.picoto.jaxb.ubl.common.ccts.AmountType

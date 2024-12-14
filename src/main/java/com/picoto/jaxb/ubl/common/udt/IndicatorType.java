@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
-// Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0.1 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.12.14 a las 02:46:26 PM CET 
+// Generado el: 2024.12.14 a las 02:54:49 PM UTC 
 //
 
 
@@ -111,12 +111,12 @@ import com.picoto.jaxb.ubl.common.cbc.VariantConstraintIndicator;
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="IndicatorType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>boolean">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="IndicatorType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;boolean"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -126,66 +126,66 @@ import com.picoto.jaxb.ubl.common.cbc.VariantConstraintIndicator;
     "value"
 })
 @XmlSeeAlso({
-    BasedOnConsensusIndicator.class,
-    PrepaidIndicator.class,
-    CatalogueIndicator.class,
-    AdValoremIndicator.class,
-    ContainerizedIndicator.class,
-    OnCarriageIndicator.class,
-    PreCarriageIndicator.class,
-    ReturnableMaterialIndicator.class,
-    RefrigeratedIndicator.class,
-    OtherConditionsIndicator.class,
-    ConsolidatableIndicator.class,
-    HumanFoodIndicator.class,
-    GovernmentAgreementConstraintIndicator.class,
-    LivestockIndicator.class,
-    FrozenDocumentIndicator.class,
-    PublishAwardIndicator.class,
-    GeneralCargoIndicator.class,
-    BulkCargoIndicator.class,
-    MarkCareIndicator.class,
-    ChargeIndicator.class,
-    CustomsImportClassifiedIndicator.class,
-    ItemUpdateRequestIndicator.class,
-    TaxIncludedIndicator.class,
-    UnknownPriceIndicator.class,
-    PrizeIndicator.class,
-    HazardousRiskIndicator.class,
-    SplitConsignmentIndicator.class,
-    CopyIndicator.class,
-    OrderableIndicator.class,
-    ReturnabilityIndicator.class,
-    OptionalLineItemIndicator.class,
-    DangerousGoodsApprovedIndicator.class,
-    TaxEvidenceIndicator.class,
-    FollowupContractIndicator.class,
-    SpecialSecurityIndicator.class,
-    FreeOfChargeIndicator.class,
-    AnimalFoodIndicator.class,
-    AcceptedIndicator.class,
-    CompletionIndicator.class,
-    FullyPaidSharesIndicator.class,
-    ThirdPartyPayerIndicator.class,
-    BackOrderAllowedIndicator.class,
-    PricingUpdateRequestIndicator.class,
-    SoleProprietorshipIndicator.class,
-    HumanFoodApprovedIndicator.class,
-    StatusAvailableIndicator.class,
-    CandidateReductionConstraintIndicator.class,
-    AuctionConstraintIndicator.class,
-    BindingOnBuyerIndicator.class,
-    BalanceBroughtForwardIndicator.class,
-    PowerIndicator.class,
-    PartialDeliveryIndicator.class,
-    ToOrderIndicator.class,
-    IndicationIndicator.class,
     VariantConstraintIndicator.class,
+    UnknownPriceIndicator.class,
+    ToOrderIndicator.class,
+    ThirdPartyPayerIndicator.class,
+    TaxIncludedIndicator.class,
+    TaxEvidenceIndicator.class,
+    StatusAvailableIndicator.class,
+    SplitConsignmentIndicator.class,
+    SpecialSecurityIndicator.class,
+    SoleProprietorshipIndicator.class,
+    ReturnableMaterialIndicator.class,
+    ReturnabilityIndicator.class,
     RequiredCurriculaIndicator.class,
     RefrigerationOnIndicator.class,
+    RefrigeratedIndicator.class,
+    PublishAwardIndicator.class,
+    PrizeIndicator.class,
+    PricingUpdateRequestIndicator.class,
+    PrepaidIndicator.class,
+    PreCarriageIndicator.class,
+    PowerIndicator.class,
+    PartialDeliveryIndicator.class,
+    OtherConditionsIndicator.class,
+    OrderableIndicator.class,
+    OptionalLineItemIndicator.class,
+    OnCarriageIndicator.class,
+    MarkCareIndicator.class,
+    MarkAttentionIndicator.class,
+    LivestockIndicator.class,
     LegalStatusIndicator.class,
+    ItemUpdateRequestIndicator.class,
+    IndicationIndicator.class,
+    HumanFoodIndicator.class,
+    HumanFoodApprovedIndicator.class,
+    HazardousRiskIndicator.class,
+    GovernmentAgreementConstraintIndicator.class,
+    GeneralCargoIndicator.class,
+    FullyPaidSharesIndicator.class,
+    FrozenDocumentIndicator.class,
+    FreeOfChargeIndicator.class,
+    FollowupContractIndicator.class,
+    DangerousGoodsApprovedIndicator.class,
+    CustomsImportClassifiedIndicator.class,
+    CopyIndicator.class,
+    ContainerizedIndicator.class,
+    ConsolidatableIndicator.class,
+    CompletionIndicator.class,
+    ChargeIndicator.class,
+    CatalogueIndicator.class,
+    CandidateReductionConstraintIndicator.class,
+    BulkCargoIndicator.class,
+    BindingOnBuyerIndicator.class,
+    BasedOnConsensusIndicator.class,
+    BalanceBroughtForwardIndicator.class,
+    BackOrderAllowedIndicator.class,
+    AuctionConstraintIndicator.class,
+    AnimalFoodIndicator.class,
     AnimalFoodApprovedIndicator.class,
-    MarkAttentionIndicator.class
+    AdValoremIndicator.class,
+    AcceptedIndicator.class
 })
 public class IndicatorType {
 
