@@ -102,7 +102,7 @@
 
 -- Resumen de impuestos
 * Iterar con cada registro/tipo impositivo
-//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxTypeCode  (01: IVA, 02: IPSI, 03: IGIC, ...)
+//fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxTypeCode  (01: IVA, 02: IPSI, 03: IGIC, src/main/resources/schemas/ubl/common.)
 //fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxRate  (tipo impositivo)
 //fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/TaxAmount/TotalAmount  (cuota para este tipo impositivo)
 //fe:Facturae/Invoices/Invoice/TaxesOutputs/Tax/EquivalenceSurcharge (tipo impositivo)
@@ -134,7 +134,7 @@
 * Iterar por cada registro (Items/InvoiceLine):
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/SpecialTaxableEvent (exento o no sujeto si tiene valor)
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/ArticleCode (artículo aplicable)
-//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxTypeCode (01: IVA, 02: IPSI, ...)
+//fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxTypeCode (01: IVA, 02: IPSI, src/main/resources/schemas/ubl/common.)
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/TaxesOutputs/TaxRate
 
 //fe:Facturae/Invoices/Invoice/Items/InvoiceLine/ItemDescription

@@ -51,15 +51,15 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import com.picoto.jaxb.CertIDListType;
-import com.picoto.jaxb.CertIDType;
-import com.picoto.jaxb.DigestAlgAndValueType;
-import com.picoto.jaxb.ObjectFactory;
-import com.picoto.jaxb.QualifyingPropertiesType;
-import com.picoto.jaxb.SignaturePolicyIdentifierType;
-import com.picoto.jaxb.SignedPropertiesType;
-import com.picoto.jaxb.SignedSignaturePropertiesType;
-import com.picoto.jaxb.X509IssuerSerialType;
+import com.picoto.jaxb.fe.CertIDListType;
+import com.picoto.jaxb.fe.CertIDType;
+import com.picoto.jaxb.fe.DigestAlgAndValueType;
+import com.picoto.jaxb.fe.ObjectFactory;
+import com.picoto.jaxb.fe.QualifyingPropertiesType;
+import com.picoto.jaxb.fe.SignaturePolicyIdentifierType;
+import com.picoto.jaxb.fe.SignedPropertiesType;
+import com.picoto.jaxb.fe.SignedSignaturePropertiesType;
+import com.picoto.jaxb.fe.X509IssuerSerialType;
 import com.picoto.main.Utils;
 
 import jakarta.xml.bind.JAXBContext;
@@ -281,7 +281,7 @@ public class XAdESSigner extends XAdESCommon {
 		// In our example we want to specify XML Signature namespace on the
 		// root element of the document. E.g.:
 		//
-		// <docToSign ... xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+		// <docToSign src/main/resources/schemas/ubl/common. xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
 		// <ns2:Signature>
 		//
 		// So, to prefix the signature element with name spaces, we have to
@@ -290,7 +290,7 @@ public class XAdESSigner extends XAdESCommon {
 		// If no default namespace is specified, then the signing algorithm
 		// adds namespace to the signature element itself. E.g.:
 		//
-		// <docToSign ...>
+		// <docToSign src/main/resources/schemas/ubl/common.>
 		// <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
 		domSignContext.setDefaultNamespacePrefix("ds");
 		return domSignContext;

@@ -15,7 +15,7 @@ public class ContextCommon {
 		super();
 		try {
 			if (ctx == null) {
-				ctx = JAXBContext.newInstance("com.picoto.jaxb");
+				ctx = JAXBContext.newInstance("com.picoto.jaxb.fe");
 			} 
 		} catch (Exception e) {
 			throw new RuntimeException("Error al cargar contexto JAX-B");

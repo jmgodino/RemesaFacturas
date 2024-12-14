@@ -1,0 +1,3729 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.12.14 a las 09:52:03 AM CET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:AmountType">
+      <class ref="com.picoto.jaxb.common.AmountType"/>
+    </bindings>
+    <bindings scd="~tns:BinaryObjectType">
+      <class ref="com.picoto.jaxb.common.BinaryObjectType"/>
+    </bindings>
+    <bindings scd="~tns:CodeType">
+      <class ref="com.picoto.jaxb.common.CodeType"/>
+    </bindings>
+    <bindings scd="~tns:DateTimeType">
+      <class ref="com.picoto.jaxb.common.DateTimeType"/>
+    </bindings>
+    <bindings scd="~tns:IdentifierType">
+      <class ref="com.picoto.jaxb.common.IdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:IndicatorType">
+      <class ref="com.picoto.jaxb.common.IndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:MeasureType">
+      <class ref="com.picoto.jaxb.common.MeasureType"/>
+    </bindings>
+    <bindings scd="~tns:NumericType">
+      <class ref="com.picoto.jaxb.common.NumericType"/>
+    </bindings>
+    <bindings scd="~tns:QuantityType">
+      <class ref="com.picoto.jaxb.common.QuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TextType">
+      <class ref="com.picoto.jaxb.common.TextType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:TransportEventType">
+      <class ref="com.picoto.jaxb.common.TransportEventType"/>
+    </bindings>
+    <bindings scd="~tns:RelatedItemType">
+      <class ref="com.picoto.jaxb.common.RelatedItemType"/>
+    </bindings>
+    <bindings scd="~tns:ContactType">
+      <class ref="com.picoto.jaxb.common.ContactType"/>
+    </bindings>
+    <bindings scd="~tns:CustomerPartyType">
+      <class ref="com.picoto.jaxb.common.CustomerPartyType"/>
+    </bindings>
+    <bindings scd="~tns:SupplierPartyType">
+      <class ref="com.picoto.jaxb.common.SupplierPartyType"/>
+    </bindings>
+    <bindings scd="~tns:ActivityDataLineType">
+      <class ref="com.picoto.jaxb.common.ActivityDataLineType"/>
+    </bindings>
+    <bindings scd="~tns:LocationType">
+      <class ref="com.picoto.jaxb.common.LocationType"/>
+    </bindings>
+    <bindings scd="~tns:PeriodType">
+      <class ref="com.picoto.jaxb.common.PeriodType"/>
+    </bindings>
+    <bindings scd="~tns:ActivityPropertyType">
+      <class ref="com.picoto.jaxb.common.ActivityPropertyType"/>
+    </bindings>
+    <bindings scd="~tns:PackageType">
+      <class ref="com.picoto.jaxb.common.PackageType"/>
+    </bindings>
+    <bindings scd="~tns:CommodityClassificationType">
+      <class ref="com.picoto.jaxb.common.CommodityClassificationType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentReferenceType">
+      <class ref="com.picoto.jaxb.common.DocumentReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentResponseType">
+      <class ref="com.picoto.jaxb.common.DocumentResponseType"/>
+    </bindings>
+    <bindings scd="~tns:PartyType">
+      <class ref="com.picoto.jaxb.common.PartyType"/>
+    </bindings>
+    <bindings scd="~tns:ItemIdentificationType">
+      <class ref="com.picoto.jaxb.common.ItemIdentificationType"/>
+    </bindings>
+    <bindings scd="~tns:ItemPropertyType">
+      <class ref="com.picoto.jaxb.common.ItemPropertyType"/>
+    </bindings>
+    <bindings scd="~tns:QualifyingPartyType">
+      <class ref="com.picoto.jaxb.common.QualifyingPartyType"/>
+    </bindings>
+    <bindings scd="~tns:TemperatureType">
+      <class ref="com.picoto.jaxb.common.TemperatureType"/>
+    </bindings>
+    <bindings scd="~tns:TransportationServiceType">
+      <class ref="com.picoto.jaxb.common.TransportationServiceType"/>
+    </bindings>
+    <bindings scd="~tns:AddressType">
+      <class ref="com.picoto.jaxb.common.AddressType"/>
+    </bindings>
+    <bindings scd="~tns:AddressLineType">
+      <class ref="com.picoto.jaxb.common.AddressLineType"/>
+    </bindings>
+    <bindings scd="~tns:AirTransportType">
+      <class ref="com.picoto.jaxb.common.AirTransportType"/>
+    </bindings>
+    <bindings scd="~tns:AllowanceChargeType">
+      <class ref="com.picoto.jaxb.common.AllowanceChargeType"/>
+    </bindings>
+    <bindings scd="~tns:SubcontractTermsType">
+      <class ref="com.picoto.jaxb.common.SubcontractTermsType"/>
+    </bindings>
+    <bindings scd="~tns:PriceType">
+      <class ref="com.picoto.jaxb.common.PriceType"/>
+    </bindings>
+    <bindings scd="~tns:LineItemType">
+      <class ref="com.picoto.jaxb.common.LineItemType"/>
+    </bindings>
+    <bindings scd="~tns:MonetaryTotalType">
+      <class ref="com.picoto.jaxb.common.MonetaryTotalType"/>
+    </bindings>
+    <bindings scd="~tns:AppealTermsType">
+      <class ref="com.picoto.jaxb.common.AppealTermsType"/>
+    </bindings>
+    <bindings scd="~tns:RegulationType">
+      <class ref="com.picoto.jaxb.common.RegulationType"/>
+    </bindings>
+    <bindings scd="~tns:TaxCategoryType">
+      <class ref="com.picoto.jaxb.common.TaxCategoryType"/>
+    </bindings>
+    <bindings scd="~tns:TransportMeansType">
+      <class ref="com.picoto.jaxb.common.TransportMeansType"/>
+    </bindings>
+    <bindings scd="~tns:TransportEquipmentType">
+      <class ref="com.picoto.jaxb.common.TransportEquipmentType"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentType">
+      <class ref="com.picoto.jaxb.common.AttachmentType"/>
+    </bindings>
+    <bindings scd="~tns:AuctionTermsType">
+      <class ref="com.picoto.jaxb.common.AuctionTermsType"/>
+    </bindings>
+    <bindings scd="~tns:TenderedProjectType">
+      <class ref="com.picoto.jaxb.common.TenderedProjectType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingCriterionType">
+      <class ref="com.picoto.jaxb.common.AwardingCriterionType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingCriterionResponseType">
+      <class ref="com.picoto.jaxb.common.AwardingCriterionResponseType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingTermsType">
+      <class ref="com.picoto.jaxb.common.AwardingTermsType"/>
+    </bindings>
+    <bindings scd="~tns:BillingReferenceType">
+      <class ref="com.picoto.jaxb.common.BillingReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:BillingReferenceLineType">
+      <class ref="com.picoto.jaxb.common.BillingReferenceLineType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentTermsType">
+      <class ref="com.picoto.jaxb.common.PaymentTermsType"/>
+    </bindings>
+    <bindings scd="~tns:BranchType">
+      <class ref="com.picoto.jaxb.common.BranchType"/>
+    </bindings>
+    <bindings scd="~tns:BudgetAccountType">
+      <class ref="com.picoto.jaxb.common.BudgetAccountType"/>
+    </bindings>
+    <bindings scd="~tns:BudgetAccountLineType">
+      <class ref="com.picoto.jaxb.common.BudgetAccountLineType"/>
+    </bindings>
+    <bindings scd="~tns:ClassificationSchemeType">
+      <class ref="com.picoto.jaxb.common.ClassificationSchemeType"/>
+    </bindings>
+    <bindings scd="~tns:DutyType">
+      <class ref="com.picoto.jaxb.common.DutyType"/>
+    </bindings>
+    <bindings scd="~tns:LineReferenceType">
+      <class ref="com.picoto.jaxb.common.LineReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CapabilityType">
+      <class ref="com.picoto.jaxb.common.CapabilityType"/>
+    </bindings>
+    <bindings scd="~tns:CardAccountType">
+      <class ref="com.picoto.jaxb.common.CardAccountType"/>
+    </bindings>
+    <bindings scd="~tns:CatalogueItemSpecificationUpdateLineType">
+      <class ref="com.picoto.jaxb.common.CatalogueItemSpecificationUpdateLineType"/>
+    </bindings>
+    <bindings scd="~tns:CatalogueLineType">
+      <class ref="com.picoto.jaxb.common.CatalogueLineType"/>
+    </bindings>
+    <bindings scd="~tns:CataloguePricingUpdateLineType">
+      <class ref="com.picoto.jaxb.common.CataloguePricingUpdateLineType"/>
+    </bindings>
+    <bindings scd="~tns:CatalogueReferenceType">
+      <class ref="com.picoto.jaxb.common.CatalogueReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CatalogueRequestLineType">
+      <class ref="com.picoto.jaxb.common.CatalogueRequestLineType"/>
+    </bindings>
+    <bindings scd="~tns:ClassificationCategoryType">
+      <class ref="com.picoto.jaxb.common.ClassificationCategoryType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateType">
+      <class ref="com.picoto.jaxb.common.CertificateType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateOfOriginApplicationType">
+      <class ref="com.picoto.jaxb.common.CertificateOfOriginApplicationType"/>
+    </bindings>
+    <bindings scd="~tns:ConsignmentType">
+      <class ref="com.picoto.jaxb.common.ConsignmentType"/>
+    </bindings>
+    <bindings scd="~tns:ClauseType">
+      <class ref="com.picoto.jaxb.common.ClauseType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentType">
+      <class ref="com.picoto.jaxb.common.PaymentType"/>
+    </bindings>
+    <bindings scd="~tns:CommunicationType">
+      <class ref="com.picoto.jaxb.common.CommunicationType"/>
+    </bindings>
+    <bindings scd="~tns:CompletedTaskType">
+      <class ref="com.picoto.jaxb.common.CompletedTaskType"/>
+    </bindings>
+    <bindings scd="~tns:ConditionType">
+      <class ref="com.picoto.jaxb.common.ConditionType"/>
+    </bindings>
+    <bindings scd="~tns:ShipmentType">
+      <class ref="com.picoto.jaxb.common.ShipmentType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionType">
+      <class ref="com.picoto.jaxb.common.ConsumptionType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionAverageType">
+      <class ref="com.picoto.jaxb.common.ConsumptionAverageType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionCorrectionType">
+      <class ref="com.picoto.jaxb.common.ConsumptionCorrectionType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionHistoryType">
+      <class ref="com.picoto.jaxb.common.ConsumptionHistoryType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionLineType">
+      <class ref="com.picoto.jaxb.common.ConsumptionLineType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionPointType">
+      <class ref="com.picoto.jaxb.common.ConsumptionPointType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionReportType">
+      <class ref="com.picoto.jaxb.common.ConsumptionReportType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionReportReferenceType">
+      <class ref="com.picoto.jaxb.common.ConsumptionReportReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:GoodsItemType">
+      <class ref="com.picoto.jaxb.common.GoodsItemType"/>
+    </bindings>
+    <bindings scd="~tns:ContractType">
+      <class ref="com.picoto.jaxb.common.ContractType"/>
+    </bindings>
+    <bindings scd="~tns:ContractExecutionRequirementType">
+      <class ref="com.picoto.jaxb.common.ContractExecutionRequirementType"/>
+    </bindings>
+    <bindings scd="~tns:ContractExtensionType">
+      <class ref="com.picoto.jaxb.common.ContractExtensionType"/>
+    </bindings>
+    <bindings scd="~tns:ContractingActivityType">
+      <class ref="com.picoto.jaxb.common.ContractingActivityType"/>
+    </bindings>
+    <bindings scd="~tns:ContractingPartyType">
+      <class ref="com.picoto.jaxb.common.ContractingPartyType"/>
+    </bindings>
+    <bindings scd="~tns:ContractingPartyTypeType">
+      <class ref="com.picoto.jaxb.common.ContractingPartyTypeType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryType">
+      <class ref="com.picoto.jaxb.common.DeliveryType"/>
+    </bindings>
+    <bindings scd="~tns:CorporateRegistrationSchemeType">
+      <class ref="com.picoto.jaxb.common.CorporateRegistrationSchemeType"/>
+    </bindings>
+    <bindings scd="~tns:CountryType">
+      <class ref="com.picoto.jaxb.common.CountryType"/>
+    </bindings>
+    <bindings scd="~tns:CreditAccountType">
+      <class ref="com.picoto.jaxb.common.CreditAccountType"/>
+    </bindings>
+    <bindings scd="~tns:CreditNoteLineType">
+      <class ref="com.picoto.jaxb.common.CreditNoteLineType"/>
+    </bindings>
+    <bindings scd="~tns:PersonType">
+      <class ref="com.picoto.jaxb.common.PersonType"/>
+    </bindings>
+    <bindings scd="~tns:StatusType">
+      <class ref="com.picoto.jaxb.common.StatusType"/>
+    </bindings>
+    <bindings scd="~tns:CustomsDeclarationType">
+      <class ref="com.picoto.jaxb.common.CustomsDeclarationType"/>
+    </bindings>
+    <bindings scd="~tns:DebitNoteLineType">
+      <class ref="com.picoto.jaxb.common.DebitNoteLineType"/>
+    </bindings>
+    <bindings scd="~tns:DeclarationType">
+      <class ref="com.picoto.jaxb.common.DeclarationType"/>
+    </bindings>
+    <bindings scd="~tns:LanguageType">
+      <class ref="com.picoto.jaxb.common.LanguageType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryTermsType">
+      <class ref="com.picoto.jaxb.common.DeliveryTermsType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryUnitType">
+      <class ref="com.picoto.jaxb.common.DeliveryUnitType"/>
+    </bindings>
+    <bindings scd="~tns:DependentPriceReferenceType">
+      <class ref="com.picoto.jaxb.common.DependentPriceReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:DespatchType">
+      <class ref="com.picoto.jaxb.common.DespatchType"/>
+    </bindings>
+    <bindings scd="~tns:DespatchLineType">
+      <class ref="com.picoto.jaxb.common.DespatchLineType"/>
+    </bindings>
+    <bindings scd="~tns:DimensionType">
+      <class ref="com.picoto.jaxb.common.DimensionType"/>
+    </bindings>
+    <bindings scd="~tns:ResponseType">
+      <class ref="com.picoto.jaxb.common.ResponseType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentDistributionType">
+      <class ref="com.picoto.jaxb.common.DocumentDistributionType"/>
+    </bindings>
+    <bindings scd="~tns:TenderRequirementType">
+      <class ref="com.picoto.jaxb.common.TenderRequirementType"/>
+    </bindings>
+    <bindings scd="~tns:EconomicOperatorRoleType">
+      <class ref="com.picoto.jaxb.common.EconomicOperatorRoleType"/>
+    </bindings>
+    <bindings scd="~tns:EconomicOperatorShortListType">
+      <class ref="com.picoto.jaxb.common.EconomicOperatorShortListType"/>
+    </bindings>
+    <bindings scd="~tns:EndorsementType">
+      <class ref="com.picoto.jaxb.common.EndorsementType"/>
+    </bindings>
+    <bindings scd="~tns:EmissionCalculationMethodType">
+      <class ref="com.picoto.jaxb.common.EmissionCalculationMethodType"/>
+    </bindings>
+    <bindings scd="~tns:EndorserPartyType">
+      <class ref="com.picoto.jaxb.common.EndorserPartyType"/>
+    </bindings>
+    <bindings scd="~tns:EnergyTaxReportType">
+      <class ref="com.picoto.jaxb.common.EnergyTaxReportType"/>
+    </bindings>
+    <bindings scd="~tns:EnergyWaterSupplyType">
+      <class ref="com.picoto.jaxb.common.EnergyWaterSupplyType"/>
+    </bindings>
+    <bindings scd="~tns:EnvironmentalEmissionType">
+      <class ref="com.picoto.jaxb.common.EnvironmentalEmissionType"/>
+    </bindings>
+    <bindings scd="~tns:EvaluationCriterionType">
+      <class ref="com.picoto.jaxb.common.EvaluationCriterionType"/>
+    </bindings>
+    <bindings scd="~tns:EventType">
+      <class ref="com.picoto.jaxb.common.EventType"/>
+    </bindings>
+    <bindings scd="~tns:EventCommentType">
+      <class ref="com.picoto.jaxb.common.EventCommentType"/>
+    </bindings>
+    <bindings scd="~tns:EventLineItemType">
+      <class ref="com.picoto.jaxb.common.EventLineItemType"/>
+    </bindings>
+    <bindings scd="~tns:EventTacticType">
+      <class ref="com.picoto.jaxb.common.EventTacticType"/>
+    </bindings>
+    <bindings scd="~tns:EventTacticEnumerationType">
+      <class ref="com.picoto.jaxb.common.EventTacticEnumerationType"/>
+    </bindings>
+    <bindings scd="~tns:EvidenceType">
+      <class ref="com.picoto.jaxb.common.EvidenceType"/>
+    </bindings>
+    <bindings scd="~tns:EvidenceSuppliedType">
+      <class ref="com.picoto.jaxb.common.EvidenceSuppliedType"/>
+    </bindings>
+    <bindings scd="~tns:ExceptionCriteriaLineType">
+      <class ref="com.picoto.jaxb.common.ExceptionCriteriaLineType"/>
+    </bindings>
+    <bindings scd="~tns:ExceptionNotificationLineType">
+      <class ref="com.picoto.jaxb.common.ExceptionNotificationLineType"/>
+    </bindings>
+    <bindings scd="~tns:ExchangeRateType">
+      <class ref="com.picoto.jaxb.common.ExchangeRateType"/>
+    </bindings>
+    <bindings scd="~tns:ExternalReferenceType">
+      <class ref="com.picoto.jaxb.common.ExternalReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:FinancialGuaranteeType">
+      <class ref="com.picoto.jaxb.common.FinancialGuaranteeType"/>
+    </bindings>
+    <bindings scd="~tns:FinancialAccountType">
+      <class ref="com.picoto.jaxb.common.FinancialAccountType"/>
+    </bindings>
+    <bindings scd="~tns:FinancialInstitutionType">
+      <class ref="com.picoto.jaxb.common.FinancialInstitutionType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastExceptionType">
+      <class ref="com.picoto.jaxb.common.ForecastExceptionType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastExceptionCriterionLineType">
+      <class ref="com.picoto.jaxb.common.ForecastExceptionCriterionLineType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastLineType">
+      <class ref="com.picoto.jaxb.common.ForecastLineType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastRevisionLineType">
+      <class ref="com.picoto.jaxb.common.ForecastRevisionLineType"/>
+    </bindings>
+    <bindings scd="~tns:FrameworkAgreementType">
+      <class ref="com.picoto.jaxb.common.FrameworkAgreementType"/>
+    </bindings>
+    <bindings scd="~tns:GoodsItemContainerType">
+      <class ref="com.picoto.jaxb.common.GoodsItemContainerType"/>
+    </bindings>
+    <bindings scd="~tns:TradingTermsType">
+      <class ref="com.picoto.jaxb.common.TradingTermsType"/>
+    </bindings>
+    <bindings scd="~tns:HazardousGoodsTransitType">
+      <class ref="com.picoto.jaxb.common.HazardousGoodsTransitType"/>
+    </bindings>
+    <bindings scd="~tns:HazardousItemType">
+      <class ref="com.picoto.jaxb.common.HazardousItemType"/>
+    </bindings>
+    <bindings scd="~tns:ImmobilizedSecurityType">
+      <class ref="com.picoto.jaxb.common.ImmobilizedSecurityType"/>
+    </bindings>
+    <bindings scd="~tns:InstructionForReturnsLineType">
+      <class ref="com.picoto.jaxb.common.InstructionForReturnsLineType"/>
+    </bindings>
+    <bindings scd="~tns:ProcurementProjectLotType">
+      <class ref="com.picoto.jaxb.common.ProcurementProjectLotType"/>
+    </bindings>
+    <bindings scd="~tns:InventoryReportLineType">
+      <class ref="com.picoto.jaxb.common.InventoryReportLineType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceLineType">
+      <class ref="com.picoto.jaxb.common.InvoiceLineType"/>
+    </bindings>
+    <bindings scd="~tns:ItemType">
+      <class ref="com.picoto.jaxb.common.ItemType"/>
+    </bindings>
+    <bindings scd="~tns:ItemComparisonType">
+      <class ref="com.picoto.jaxb.common.ItemComparisonType"/>
+    </bindings>
+    <bindings scd="~tns:ItemInformationRequestLineType">
+      <class ref="com.picoto.jaxb.common.ItemInformationRequestLineType"/>
+    </bindings>
+    <bindings scd="~tns:ItemInstanceType">
+      <class ref="com.picoto.jaxb.common.ItemInstanceType"/>
+    </bindings>
+    <bindings scd="~tns:ItemLocationQuantityType">
+      <class ref="com.picoto.jaxb.common.ItemLocationQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ItemManagementProfileType">
+      <class ref="com.picoto.jaxb.common.ItemManagementProfileType"/>
+    </bindings>
+    <bindings scd="~tns:PriceExtensionType">
+      <class ref="com.picoto.jaxb.common.PriceExtensionType"/>
+    </bindings>
+    <bindings scd="~tns:ItemPropertyGroupType">
+      <class ref="com.picoto.jaxb.common.ItemPropertyGroupType"/>
+    </bindings>
+    <bindings scd="~tns:ItemPropertyRangeType">
+      <class ref="com.picoto.jaxb.common.ItemPropertyRangeType"/>
+    </bindings>
+    <bindings scd="~tns:LineResponseType">
+      <class ref="com.picoto.jaxb.common.LineResponseType"/>
+    </bindings>
+    <bindings scd="~tns:LocationCoordinateType">
+      <class ref="com.picoto.jaxb.common.LocationCoordinateType"/>
+    </bindings>
+    <bindings scd="~tns:LotIdentificationType">
+      <class ref="com.picoto.jaxb.common.LotIdentificationType"/>
+    </bindings>
+    <bindings scd="~tns:ShipmentStageType">
+      <class ref="com.picoto.jaxb.common.ShipmentStageType"/>
+    </bindings>
+    <bindings scd="~tns:OnAccountPaymentType">
+      <class ref="com.picoto.jaxb.common.OnAccountPaymentType"/>
+    </bindings>
+    <bindings scd="~tns:MaritimeTransportType">
+      <class ref="com.picoto.jaxb.common.MaritimeTransportType"/>
+    </bindings>
+    <bindings scd="~tns:MeterType">
+      <class ref="com.picoto.jaxb.common.MeterType"/>
+    </bindings>
+    <bindings scd="~tns:MeterPropertyType">
+      <class ref="com.picoto.jaxb.common.MeterPropertyType"/>
+    </bindings>
+    <bindings scd="~tns:MeterReadingType">
+      <class ref="com.picoto.jaxb.common.MeterReadingType"/>
+    </bindings>
+    <bindings scd="~tns:MiscellaneousEventType">
+      <class ref="com.picoto.jaxb.common.MiscellaneousEventType"/>
+    </bindings>
+    <bindings scd="~tns:NotificationRequirementType">
+      <class ref="com.picoto.jaxb.common.NotificationRequirementType"/>
+    </bindings>
+    <bindings scd="~tns:OrderLineType">
+      <class ref="com.picoto.jaxb.common.OrderLineType"/>
+    </bindings>
+    <bindings scd="~tns:OrderLineReferenceType">
+      <class ref="com.picoto.jaxb.common.OrderLineReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:OrderReferenceType">
+      <class ref="com.picoto.jaxb.common.OrderReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:OrderedShipmentType">
+      <class ref="com.picoto.jaxb.common.OrderedShipmentType"/>
+    </bindings>
+    <bindings scd="~tns:TransportHandlingUnitType">
+      <class ref="com.picoto.jaxb.common.TransportHandlingUnitType"/>
+    </bindings>
+    <bindings scd="~tns:PartyIdentificationType">
+      <class ref="com.picoto.jaxb.common.PartyIdentificationType"/>
+    </bindings>
+    <bindings scd="~tns:PartyLegalEntityType">
+      <class ref="com.picoto.jaxb.common.PartyLegalEntityType"/>
+    </bindings>
+    <bindings scd="~tns:PartyNameType">
+      <class ref="com.picoto.jaxb.common.PartyNameType"/>
+    </bindings>
+    <bindings scd="~tns:PartyTaxSchemeType">
+      <class ref="com.picoto.jaxb.common.PartyTaxSchemeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentMandateType">
+      <class ref="com.picoto.jaxb.common.PaymentMandateType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentMeansType">
+      <class ref="com.picoto.jaxb.common.PaymentMeansType"/>
+    </bindings>
+    <bindings scd="~tns:PerformanceDataLineType">
+      <class ref="com.picoto.jaxb.common.PerformanceDataLineType"/>
+    </bindings>
+    <bindings scd="~tns:PhysicalAttributeType">
+      <class ref="com.picoto.jaxb.common.PhysicalAttributeType"/>
+    </bindings>
+    <bindings scd="~tns:PickupType">
+      <class ref="com.picoto.jaxb.common.PickupType"/>
+    </bindings>
+    <bindings scd="~tns:PowerOfAttorneyType">
+      <class ref="com.picoto.jaxb.common.PowerOfAttorneyType"/>
+    </bindings>
+    <bindings scd="~tns:PriceListType">
+      <class ref="com.picoto.jaxb.common.PriceListType"/>
+    </bindings>
+    <bindings scd="~tns:PricingReferenceType">
+      <class ref="com.picoto.jaxb.common.PricingReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:ProcessJustificationType">
+      <class ref="com.picoto.jaxb.common.ProcessJustificationType"/>
+    </bindings>
+    <bindings scd="~tns:ProcurementProjectType">
+      <class ref="com.picoto.jaxb.common.ProcurementProjectType"/>
+    </bindings>
+    <bindings scd="~tns:ProjectReferenceType">
+      <class ref="com.picoto.jaxb.common.ProjectReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:PromotionalEventType">
+      <class ref="com.picoto.jaxb.common.PromotionalEventType"/>
+    </bindings>
+    <bindings scd="~tns:PromotionalEventLineItemType">
+      <class ref="com.picoto.jaxb.common.PromotionalEventLineItemType"/>
+    </bindings>
+    <bindings scd="~tns:PromotionalSpecificationType">
+      <class ref="com.picoto.jaxb.common.PromotionalSpecificationType"/>
+    </bindings>
+    <bindings scd="~tns:QualificationResolutionType">
+      <class ref="com.picoto.jaxb.common.QualificationResolutionType"/>
+    </bindings>
+    <bindings scd="~tns:QuotationLineType">
+      <class ref="com.picoto.jaxb.common.QuotationLineType"/>
+    </bindings>
+    <bindings scd="~tns:RailTransportType">
+      <class ref="com.picoto.jaxb.common.RailTransportType"/>
+    </bindings>
+    <bindings scd="~tns:ReceiptLineType">
+      <class ref="com.picoto.jaxb.common.ReceiptLineType"/>
+    </bindings>
+    <bindings scd="~tns:ReminderLineType">
+      <class ref="com.picoto.jaxb.common.ReminderLineType"/>
+    </bindings>
+    <bindings scd="~tns:RemittanceAdviceLineType">
+      <class ref="com.picoto.jaxb.common.RemittanceAdviceLineType"/>
+    </bindings>
+    <bindings scd="~tns:RenewalType">
+      <class ref="com.picoto.jaxb.common.RenewalType"/>
+    </bindings>
+    <bindings scd="~tns:RequestForQuotationLineType">
+      <class ref="com.picoto.jaxb.common.RequestForQuotationLineType"/>
+    </bindings>
+    <bindings scd="~tns:RequestForTenderLineType">
+      <class ref="com.picoto.jaxb.common.RequestForTenderLineType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedTenderTotalType">
+      <class ref="com.picoto.jaxb.common.RequestedTenderTotalType"/>
+    </bindings>
+    <bindings scd="~tns:ResultOfVerificationType">
+      <class ref="com.picoto.jaxb.common.ResultOfVerificationType"/>
+    </bindings>
+    <bindings scd="~tns:RetailPlannedImpactType">
+      <class ref="com.picoto.jaxb.common.RetailPlannedImpactType"/>
+    </bindings>
+    <bindings scd="~tns:RoadTransportType">
+      <class ref="com.picoto.jaxb.common.RoadTransportType"/>
+    </bindings>
+    <bindings scd="~tns:SalesItemType">
+      <class ref="com.picoto.jaxb.common.SalesItemType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceFrequencyType">
+      <class ref="com.picoto.jaxb.common.ServiceFrequencyType"/>
+    </bindings>
+    <bindings scd="~tns:SecondaryHazardType">
+      <class ref="com.picoto.jaxb.common.SecondaryHazardType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceProviderPartyType">
+      <class ref="com.picoto.jaxb.common.ServiceProviderPartyType"/>
+    </bindings>
+    <bindings scd="~tns:ShareholderPartyType">
+      <class ref="com.picoto.jaxb.common.ShareholderPartyType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureType">
+      <class ref="com.picoto.jaxb.common.SignatureType"/>
+    </bindings>
+    <bindings scd="~tns:TendererRequirementType">
+      <class ref="com.picoto.jaxb.common.TendererRequirementType"/>
+    </bindings>
+    <bindings scd="~tns:StatementLineType">
+      <class ref="com.picoto.jaxb.common.StatementLineType"/>
+    </bindings>
+    <bindings scd="~tns:StockAvailabilityReportLineType">
+      <class ref="com.picoto.jaxb.common.StockAvailabilityReportLineType"/>
+    </bindings>
+    <bindings scd="~tns:StowageType">
+      <class ref="com.picoto.jaxb.common.StowageType"/>
+    </bindings>
+    <bindings scd="~tns:TenderLineType">
+      <class ref="com.picoto.jaxb.common.TenderLineType"/>
+    </bindings>
+    <bindings scd="~tns:SubscriberConsumptionType">
+      <class ref="com.picoto.jaxb.common.SubscriberConsumptionType"/>
+    </bindings>
+    <bindings scd="~tns:SupplierConsumptionType">
+      <class ref="com.picoto.jaxb.common.SupplierConsumptionType"/>
+    </bindings>
+    <bindings scd="~tns:TaxSchemeType">
+      <class ref="com.picoto.jaxb.common.TaxSchemeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxSubtotalType">
+      <class ref="com.picoto.jaxb.common.TaxSubtotalType"/>
+    </bindings>
+    <bindings scd="~tns:TaxTotalType">
+      <class ref="com.picoto.jaxb.common.TaxTotalType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsServiceType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsServiceType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsSupplyType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsSupplyType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsSupplyLineType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsSupplyLineType"/>
+    </bindings>
+    <bindings scd="~tns:TenderPreparationType">
+      <class ref="com.picoto.jaxb.common.TenderPreparationType"/>
+    </bindings>
+    <bindings scd="~tns:TenderResultType">
+      <class ref="com.picoto.jaxb.common.TenderResultType"/>
+    </bindings>
+    <bindings scd="~tns:TendererPartyQualificationType">
+      <class ref="com.picoto.jaxb.common.TendererPartyQualificationType"/>
+    </bindings>
+    <bindings scd="~tns:TendererQualificationRequestType">
+      <class ref="com.picoto.jaxb.common.TendererQualificationRequestType"/>
+    </bindings>
+    <bindings scd="~tns:TenderingProcessType">
+      <class ref="com.picoto.jaxb.common.TenderingProcessType"/>
+    </bindings>
+    <bindings scd="~tns:TenderingTermsType">
+      <class ref="com.picoto.jaxb.common.TenderingTermsType"/>
+    </bindings>
+    <bindings scd="~tns:TradeFinancingType">
+      <class ref="com.picoto.jaxb.common.TradeFinancingType"/>
+    </bindings>
+    <bindings scd="~tns:TransactionConditionsType">
+      <class ref="com.picoto.jaxb.common.TransactionConditionsType"/>
+    </bindings>
+    <bindings scd="~tns:TransportEquipmentSealType">
+      <class ref="com.picoto.jaxb.common.TransportEquipmentSealType"/>
+    </bindings>
+    <bindings scd="~tns:TransportExecutionTermsType">
+      <class ref="com.picoto.jaxb.common.TransportExecutionTermsType"/>
+    </bindings>
+    <bindings scd="~tns:TransportScheduleType">
+      <class ref="com.picoto.jaxb.common.TransportScheduleType"/>
+    </bindings>
+    <bindings scd="~tns:TransportationSegmentType">
+      <class ref="com.picoto.jaxb.common.TransportationSegmentType"/>
+    </bindings>
+    <bindings scd="~tns:UnstructuredPriceType">
+      <class ref="com.picoto.jaxb.common.UnstructuredPriceType"/>
+    </bindings>
+    <bindings scd="~tns:UtilityItemType">
+      <class ref="com.picoto.jaxb.common.UtilityItemType"/>
+    </bindings>
+    <bindings scd="~tns:WebSiteAccessType">
+      <class ref="com.picoto.jaxb.common.WebSiteAccessType"/>
+    </bindings>
+    <bindings scd="~tns:WinningPartyType">
+      <class ref="com.picoto.jaxb.common.WinningPartyType"/>
+    </bindings>
+    <bindings scd="~tns:WorkPhaseReferenceType">
+      <class ref="com.picoto.jaxb.common.WorkPhaseReferenceType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:AcceptedIndicatorType">
+      <class ref="com.picoto.jaxb.common.AcceptedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:AcceptedVariantsDescriptionType">
+      <class ref="com.picoto.jaxb.common.AcceptedVariantsDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:AccountFormatCodeType">
+      <class ref="com.picoto.jaxb.common.AccountFormatCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AccountIDType">
+      <class ref="com.picoto.jaxb.common.AccountIDType"/>
+    </bindings>
+    <bindings scd="~tns:AccountTypeCodeType">
+      <class ref="com.picoto.jaxb.common.AccountTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AccountingCostType">
+      <class ref="com.picoto.jaxb.common.AccountingCostType"/>
+    </bindings>
+    <bindings scd="~tns:AccountingCostCodeType">
+      <class ref="com.picoto.jaxb.common.AccountingCostCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ActionCodeType">
+      <class ref="com.picoto.jaxb.common.ActionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ActivityTypeType">
+      <class ref="com.picoto.jaxb.common.ActivityTypeType"/>
+    </bindings>
+    <bindings scd="~tns:ActivityTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ActivityTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ActualDeliveryDateType">
+      <class ref="com.picoto.jaxb.common.ActualDeliveryDateType"/>
+    </bindings>
+    <bindings scd="~tns:ActualDeliveryTimeType">
+      <class ref="com.picoto.jaxb.common.ActualDeliveryTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ActualDespatchDateType">
+      <class ref="com.picoto.jaxb.common.ActualDespatchDateType"/>
+    </bindings>
+    <bindings scd="~tns:ActualDespatchTimeType">
+      <class ref="com.picoto.jaxb.common.ActualDespatchTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ActualPickupDateType">
+      <class ref="com.picoto.jaxb.common.ActualPickupDateType"/>
+    </bindings>
+    <bindings scd="~tns:ActualPickupTimeType">
+      <class ref="com.picoto.jaxb.common.ActualPickupTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ActualTemperatureReductionQuantityType">
+      <class ref="com.picoto.jaxb.common.ActualTemperatureReductionQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:AdValoremIndicatorType">
+      <class ref="com.picoto.jaxb.common.AdValoremIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalAccountIDType">
+      <class ref="com.picoto.jaxb.common.AdditionalAccountIDType"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalConditionsType">
+      <class ref="com.picoto.jaxb.common.AdditionalConditionsType"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalInformationType">
+      <class ref="com.picoto.jaxb.common.AdditionalInformationType"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalStreetNameType">
+      <class ref="com.picoto.jaxb.common.AdditionalStreetNameType"/>
+    </bindings>
+    <bindings scd="~tns:AddressFormatCodeType">
+      <class ref="com.picoto.jaxb.common.AddressFormatCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AddressTypeCodeType">
+      <class ref="com.picoto.jaxb.common.AddressTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AdjustmentReasonCodeType">
+      <class ref="com.picoto.jaxb.common.AdjustmentReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AdmissionCodeType">
+      <class ref="com.picoto.jaxb.common.AdmissionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AdvertisementAmountType">
+      <class ref="com.picoto.jaxb.common.AdvertisementAmountType"/>
+    </bindings>
+    <bindings scd="~tns:AgencyIDType">
+      <class ref="com.picoto.jaxb.common.AgencyIDType"/>
+    </bindings>
+    <bindings scd="~tns:AgencyNameType">
+      <class ref="com.picoto.jaxb.common.AgencyNameType"/>
+    </bindings>
+    <bindings scd="~tns:AirFlowPercentType">
+      <class ref="com.picoto.jaxb.common.AirFlowPercentType"/>
+    </bindings>
+    <bindings scd="~tns:AircraftIDType">
+      <class ref="com.picoto.jaxb.common.AircraftIDType"/>
+    </bindings>
+    <bindings scd="~tns:AliasNameType">
+      <class ref="com.picoto.jaxb.common.AliasNameType"/>
+    </bindings>
+    <bindings scd="~tns:AllowanceChargeReasonType">
+      <class ref="com.picoto.jaxb.common.AllowanceChargeReasonType"/>
+    </bindings>
+    <bindings scd="~tns:AllowanceChargeReasonCodeType">
+      <class ref="com.picoto.jaxb.common.AllowanceChargeReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AllowanceTotalAmountType">
+      <class ref="com.picoto.jaxb.common.AllowanceTotalAmountType"/>
+    </bindings>
+    <bindings scd="~tns:AltitudeMeasureType">
+      <class ref="com.picoto.jaxb.common.AltitudeMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:AmountType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$0"/>
+    </bindings>
+    <bindings scd="~tns:AmountRateType">
+      <class ref="com.picoto.jaxb.common.AmountRateType"/>
+    </bindings>
+    <bindings scd="~tns:AnimalFoodApprovedIndicatorType">
+      <class ref="com.picoto.jaxb.common.AnimalFoodApprovedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:AnimalFoodIndicatorType">
+      <class ref="com.picoto.jaxb.common.AnimalFoodIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:AnnualAverageAmountType">
+      <class ref="com.picoto.jaxb.common.AnnualAverageAmountType"/>
+    </bindings>
+    <bindings scd="~tns:ApplicationStatusCodeType">
+      <class ref="com.picoto.jaxb.common.ApplicationStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ApprovalDateType">
+      <class ref="com.picoto.jaxb.common.ApprovalDateType"/>
+    </bindings>
+    <bindings scd="~tns:ApprovalStatusType">
+      <class ref="com.picoto.jaxb.common.ApprovalStatusType"/>
+    </bindings>
+    <bindings scd="~tns:AttributeIDType">
+      <class ref="com.picoto.jaxb.common.AttributeIDType"/>
+    </bindings>
+    <bindings scd="~tns:AuctionConstraintIndicatorType">
+      <class ref="com.picoto.jaxb.common.AuctionConstraintIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:AuctionURIType">
+      <class ref="com.picoto.jaxb.common.AuctionURIType"/>
+    </bindings>
+    <bindings scd="~tns:AvailabilityDateType">
+      <class ref="com.picoto.jaxb.common.AvailabilityDateType"/>
+    </bindings>
+    <bindings scd="~tns:AvailabilityStatusCodeType">
+      <class ref="com.picoto.jaxb.common.AvailabilityStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AverageAmountType">
+      <class ref="com.picoto.jaxb.common.AverageAmountType"/>
+    </bindings>
+    <bindings scd="~tns:AverageSubsequentContractAmountType">
+      <class ref="com.picoto.jaxb.common.AverageSubsequentContractAmountType"/>
+    </bindings>
+    <bindings scd="~tns:AwardDateType">
+      <class ref="com.picoto.jaxb.common.AwardDateType"/>
+    </bindings>
+    <bindings scd="~tns:AwardTimeType">
+      <class ref="com.picoto.jaxb.common.AwardTimeType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingCriterionDescriptionType">
+      <class ref="com.picoto.jaxb.common.AwardingCriterionDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingCriterionIDType">
+      <class ref="com.picoto.jaxb.common.AwardingCriterionIDType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingCriterionTypeCodeType">
+      <class ref="com.picoto.jaxb.common.AwardingCriterionTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:AwardingMethodTypeCodeType">
+      <class ref="com.picoto.jaxb.common.AwardingMethodTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:BackOrderAllowedIndicatorType">
+      <class ref="com.picoto.jaxb.common.BackOrderAllowedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:BackorderQuantityType">
+      <class ref="com.picoto.jaxb.common.BackorderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:BackorderReasonType">
+      <class ref="com.picoto.jaxb.common.BackorderReasonType"/>
+    </bindings>
+    <bindings scd="~tns:BalanceAmountType">
+      <class ref="com.picoto.jaxb.common.BalanceAmountType"/>
+    </bindings>
+    <bindings scd="~tns:BalanceBroughtForwardIndicatorType">
+      <class ref="com.picoto.jaxb.common.BalanceBroughtForwardIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:BarcodeSymbologyIDType">
+      <class ref="com.picoto.jaxb.common.BarcodeSymbologyIDType"/>
+    </bindings>
+    <bindings scd="~tns:BaseAmountType">
+      <class ref="com.picoto.jaxb.common.BaseAmountType"/>
+    </bindings>
+    <bindings scd="~tns:BaseQuantityType">
+      <class ref="com.picoto.jaxb.common.BaseQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:BaseUnitMeasureType">
+      <class ref="com.picoto.jaxb.common.BaseUnitMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:BasedOnConsensusIndicatorType">
+      <class ref="com.picoto.jaxb.common.BasedOnConsensusIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:BasicConsumedQuantityType">
+      <class ref="com.picoto.jaxb.common.BasicConsumedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:BatchQuantityType">
+      <class ref="com.picoto.jaxb.common.BatchQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:BestBeforeDateType">
+      <class ref="com.picoto.jaxb.common.BestBeforeDateType"/>
+    </bindings>
+    <bindings scd="~tns:BindingOnBuyerIndicatorType">
+      <class ref="com.picoto.jaxb.common.BindingOnBuyerIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:BirthDateType">
+      <class ref="com.picoto.jaxb.common.BirthDateType"/>
+    </bindings>
+    <bindings scd="~tns:BirthplaceNameType">
+      <class ref="com.picoto.jaxb.common.BirthplaceNameType"/>
+    </bindings>
+    <bindings scd="~tns:BlockNameType">
+      <class ref="com.picoto.jaxb.common.BlockNameType"/>
+    </bindings>
+    <bindings scd="~tns:BrandNameType">
+      <class ref="com.picoto.jaxb.common.BrandNameType"/>
+    </bindings>
+    <bindings scd="~tns:BrokerAssignedIDType">
+      <class ref="com.picoto.jaxb.common.BrokerAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:BudgetYearNumericType">
+      <class ref="com.picoto.jaxb.common.BudgetYearNumericType"/>
+    </bindings>
+    <bindings scd="~tns:BuildingNameType">
+      <class ref="com.picoto.jaxb.common.BuildingNameType"/>
+    </bindings>
+    <bindings scd="~tns:BuildingNumberType">
+      <class ref="com.picoto.jaxb.common.BuildingNumberType"/>
+    </bindings>
+    <bindings scd="~tns:BulkCargoIndicatorType">
+      <class ref="com.picoto.jaxb.common.BulkCargoIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:BusinessClassificationEvidenceIDType">
+      <class ref="com.picoto.jaxb.common.BusinessClassificationEvidenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:BusinessIdentityEvidenceIDType">
+      <class ref="com.picoto.jaxb.common.BusinessIdentityEvidenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:BuyerEventIDType">
+      <class ref="com.picoto.jaxb.common.BuyerEventIDType"/>
+    </bindings>
+    <bindings scd="~tns:BuyerProfileURIType">
+      <class ref="com.picoto.jaxb.common.BuyerProfileURIType"/>
+    </bindings>
+    <bindings scd="~tns:BuyerReferenceType">
+      <class ref="com.picoto.jaxb.common.BuyerReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CV2IDType">
+      <class ref="com.picoto.jaxb.common.CV2IDType"/>
+    </bindings>
+    <bindings scd="~tns:CalculationExpressionType">
+      <class ref="com.picoto.jaxb.common.CalculationExpressionType"/>
+    </bindings>
+    <bindings scd="~tns:CalculationExpressionCodeType">
+      <class ref="com.picoto.jaxb.common.CalculationExpressionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CalculationMethodCodeType">
+      <class ref="com.picoto.jaxb.common.CalculationMethodCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CalculationRateType">
+      <class ref="com.picoto.jaxb.common.CalculationRateType"/>
+    </bindings>
+    <bindings scd="~tns:CalculationSequenceNumericType">
+      <class ref="com.picoto.jaxb.common.CalculationSequenceNumericType"/>
+    </bindings>
+    <bindings scd="~tns:CallBaseAmountType">
+      <class ref="com.picoto.jaxb.common.CallBaseAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CallDateType">
+      <class ref="com.picoto.jaxb.common.CallDateType"/>
+    </bindings>
+    <bindings scd="~tns:CallExtensionAmountType">
+      <class ref="com.picoto.jaxb.common.CallExtensionAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CallTimeType">
+      <class ref="com.picoto.jaxb.common.CallTimeType"/>
+    </bindings>
+    <bindings scd="~tns:CancellationNoteType">
+      <class ref="com.picoto.jaxb.common.CancellationNoteType"/>
+    </bindings>
+    <bindings scd="~tns:CandidateReductionConstraintIndicatorType">
+      <class ref="com.picoto.jaxb.common.CandidateReductionConstraintIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:CandidateStatementType">
+      <class ref="com.picoto.jaxb.common.CandidateStatementType"/>
+    </bindings>
+    <bindings scd="~tns:CanonicalizationMethodType">
+      <class ref="com.picoto.jaxb.common.CanonicalizationMethodType"/>
+    </bindings>
+    <bindings scd="~tns:CapabilityTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CapabilityTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CardChipCodeType">
+      <class ref="com.picoto.jaxb.common.CardChipCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CardTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CardTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CargoTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CargoTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CarrierAssignedIDType">
+      <class ref="com.picoto.jaxb.common.CarrierAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:CarrierServiceInstructionsType">
+      <class ref="com.picoto.jaxb.common.CarrierServiceInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:CatalogueIndicatorType">
+      <class ref="com.picoto.jaxb.common.CatalogueIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:CategoryNameType">
+      <class ref="com.picoto.jaxb.common.CategoryNameType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateTypeType">
+      <class ref="com.picoto.jaxb.common.CertificateTypeType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CertificateTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ChangeConditionsType">
+      <class ref="com.picoto.jaxb.common.ChangeConditionsType"/>
+    </bindings>
+    <bindings scd="~tns:ChannelType">
+      <class ref="com.picoto.jaxb.common.ChannelType"/>
+    </bindings>
+    <bindings scd="~tns:ChannelCodeType">
+      <class ref="com.picoto.jaxb.common.ChannelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CharacterSetCodeType">
+      <class ref="com.picoto.jaxb.common.CharacterSetCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CharacteristicsType">
+      <class ref="com.picoto.jaxb.common.CharacteristicsType"/>
+    </bindings>
+    <bindings scd="~tns:ChargeIndicatorType">
+      <class ref="com.picoto.jaxb.common.ChargeIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ChargeTotalAmountType">
+      <class ref="com.picoto.jaxb.common.ChargeTotalAmountType"/>
+    </bindings>
+    <bindings scd="~tns:ChargeableQuantityType">
+      <class ref="com.picoto.jaxb.common.ChargeableQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ChargeableWeightMeasureType">
+      <class ref="com.picoto.jaxb.common.ChargeableWeightMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:ChildConsignmentQuantityType">
+      <class ref="com.picoto.jaxb.common.ChildConsignmentQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ChipApplicationIDType">
+      <class ref="com.picoto.jaxb.common.ChipApplicationIDType"/>
+    </bindings>
+    <bindings scd="~tns:CityNameType">
+      <class ref="com.picoto.jaxb.common.CityNameType"/>
+    </bindings>
+    <bindings scd="~tns:CitySubdivisionNameType">
+      <class ref="com.picoto.jaxb.common.CitySubdivisionNameType"/>
+    </bindings>
+    <bindings scd="~tns:CodeValueType">
+      <class ref="com.picoto.jaxb.common.CodeValueType"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationPriorityCodeType">
+      <class ref="com.picoto.jaxb.common.CollaborationPriorityCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CommentType">
+      <class ref="com.picoto.jaxb.common.CommentType"/>
+    </bindings>
+    <bindings scd="~tns:CommodityCodeType">
+      <class ref="com.picoto.jaxb.common.CommodityCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CompanyIDType">
+      <class ref="com.picoto.jaxb.common.CompanyIDType"/>
+    </bindings>
+    <bindings scd="~tns:CompanyLegalFormType">
+      <class ref="com.picoto.jaxb.common.CompanyLegalFormType"/>
+    </bindings>
+    <bindings scd="~tns:CompanyLegalFormCodeType">
+      <class ref="com.picoto.jaxb.common.CompanyLegalFormCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CompanyLiquidationStatusCodeType">
+      <class ref="com.picoto.jaxb.common.CompanyLiquidationStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ComparedValueMeasureType">
+      <class ref="com.picoto.jaxb.common.ComparedValueMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:ComparisonDataCodeType">
+      <class ref="com.picoto.jaxb.common.ComparisonDataCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ComparisonDataSourceCodeType">
+      <class ref="com.picoto.jaxb.common.ComparisonDataSourceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ComparisonForecastIssueDateType">
+      <class ref="com.picoto.jaxb.common.ComparisonForecastIssueDateType"/>
+    </bindings>
+    <bindings scd="~tns:ComparisonForecastIssueTimeType">
+      <class ref="com.picoto.jaxb.common.ComparisonForecastIssueTimeType"/>
+    </bindings>
+    <bindings scd="~tns:CompletionIndicatorType">
+      <class ref="com.picoto.jaxb.common.CompletionIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ConditionType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$1"/>
+    </bindings>
+    <bindings scd="~tns:ConditionCodeType">
+      <class ref="com.picoto.jaxb.common.ConditionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConditionsType">
+      <class ref="com.picoto.jaxb.common.ConditionsType"/>
+    </bindings>
+    <bindings scd="~tns:ConditionsDescriptionType">
+      <class ref="com.picoto.jaxb.common.ConditionsDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:ConsigneeAssignedIDType">
+      <class ref="com.picoto.jaxb.common.ConsigneeAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:ConsignmentQuantityType">
+      <class ref="com.picoto.jaxb.common.ConsignmentQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ConsignorAssignedIDType">
+      <class ref="com.picoto.jaxb.common.ConsignorAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:ConsolidatableIndicatorType">
+      <class ref="com.picoto.jaxb.common.ConsolidatableIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ConstitutionCodeType">
+      <class ref="com.picoto.jaxb.common.ConstitutionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumerIncentiveTacticTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ConsumerIncentiveTacticTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumerUnitQuantityType">
+      <class ref="com.picoto.jaxb.common.ConsumerUnitQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumersEnergyLevelType">
+      <class ref="com.picoto.jaxb.common.ConsumersEnergyLevelType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumersEnergyLevelCodeType">
+      <class ref="com.picoto.jaxb.common.ConsumersEnergyLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionEnergyQuantityType">
+      <class ref="com.picoto.jaxb.common.ConsumptionEnergyQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionIDType">
+      <class ref="com.picoto.jaxb.common.ConsumptionIDType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionLevelType">
+      <class ref="com.picoto.jaxb.common.ConsumptionLevelType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionLevelCodeType">
+      <class ref="com.picoto.jaxb.common.ConsumptionLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionReportIDType">
+      <class ref="com.picoto.jaxb.common.ConsumptionReportIDType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionTypeType">
+      <class ref="com.picoto.jaxb.common.ConsumptionTypeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ConsumptionTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionWaterQuantityType">
+      <class ref="com.picoto.jaxb.common.ConsumptionWaterQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ContainerizedIndicatorType">
+      <class ref="com.picoto.jaxb.common.ContainerizedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ContentType">
+      <class ref="com.picoto.jaxb.common.ContentType"/>
+    </bindings>
+    <bindings scd="~tns:ContentUnitQuantityType">
+      <class ref="com.picoto.jaxb.common.ContentUnitQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ContractFolderIDType">
+      <class ref="com.picoto.jaxb.common.ContractFolderIDType"/>
+    </bindings>
+    <bindings scd="~tns:ContractNameType">
+      <class ref="com.picoto.jaxb.common.ContractNameType"/>
+    </bindings>
+    <bindings scd="~tns:ContractSubdivisionType">
+      <class ref="com.picoto.jaxb.common.ContractSubdivisionType"/>
+    </bindings>
+    <bindings scd="~tns:ContractTypeType">
+      <class ref="com.picoto.jaxb.common.ContractTypeType"/>
+    </bindings>
+    <bindings scd="~tns:ContractTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ContractTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ContractedCarrierAssignedIDType">
+      <class ref="com.picoto.jaxb.common.ContractedCarrierAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:ContractingSystemCodeType">
+      <class ref="com.picoto.jaxb.common.ContractingSystemCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CoordinateSystemCodeType">
+      <class ref="com.picoto.jaxb.common.CoordinateSystemCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CopyIndicatorType">
+      <class ref="com.picoto.jaxb.common.CopyIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:CorporateRegistrationTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CorporateRegistrationTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CorporateStockAmountType">
+      <class ref="com.picoto.jaxb.common.CorporateStockAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectionAmountType">
+      <class ref="com.picoto.jaxb.common.CorrectionAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectionTypeType">
+      <class ref="com.picoto.jaxb.common.CorrectionTypeType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectionTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CorrectionTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CorrectionUnitAmountType">
+      <class ref="com.picoto.jaxb.common.CorrectionUnitAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CountrySubentityType">
+      <class ref="com.picoto.jaxb.common.CountrySubentityType"/>
+    </bindings>
+    <bindings scd="~tns:CountrySubentityCodeType">
+      <class ref="com.picoto.jaxb.common.CountrySubentityCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CreditLineAmountType">
+      <class ref="com.picoto.jaxb.common.CreditLineAmountType"/>
+    </bindings>
+    <bindings scd="~tns:CreditNoteTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CreditNoteTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CreditedQuantityType">
+      <class ref="com.picoto.jaxb.common.CreditedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:CrewQuantityType">
+      <class ref="com.picoto.jaxb.common.CrewQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:CurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.CurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CurrentChargeTypeType">
+      <class ref="com.picoto.jaxb.common.CurrentChargeTypeType"/>
+    </bindings>
+    <bindings scd="~tns:CurrentChargeTypeCodeType">
+      <class ref="com.picoto.jaxb.common.CurrentChargeTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CustomerAssignedAccountIDType">
+      <class ref="com.picoto.jaxb.common.CustomerAssignedAccountIDType"/>
+    </bindings>
+    <bindings scd="~tns:CustomerReferenceType">
+      <class ref="com.picoto.jaxb.common.CustomerReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CustomizationIDType">
+      <class ref="com.picoto.jaxb.common.CustomizationIDType"/>
+    </bindings>
+    <bindings scd="~tns:CustomsClearanceServiceInstructionsType">
+      <class ref="com.picoto.jaxb.common.CustomsClearanceServiceInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:CustomsImportClassifiedIndicatorType">
+      <class ref="com.picoto.jaxb.common.CustomsImportClassifiedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:CustomsStatusCodeType">
+      <class ref="com.picoto.jaxb.common.CustomsStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:CustomsTariffQuantityType">
+      <class ref="com.picoto.jaxb.common.CustomsTariffQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:DamageRemarksType">
+      <class ref="com.picoto.jaxb.common.DamageRemarksType"/>
+    </bindings>
+    <bindings scd="~tns:DangerousGoodsApprovedIndicatorType">
+      <class ref="com.picoto.jaxb.common.DangerousGoodsApprovedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:DataSendingCapabilityType">
+      <class ref="com.picoto.jaxb.common.DataSendingCapabilityType"/>
+    </bindings>
+    <bindings scd="~tns:DataSourceCodeType">
+      <class ref="com.picoto.jaxb.common.DataSourceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DateType">
+      <class ref="com.picoto.jaxb.common.DateType"/>
+    </bindings>
+    <bindings scd="~tns:DebitLineAmountType">
+      <class ref="com.picoto.jaxb.common.DebitLineAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DebitedQuantityType">
+      <class ref="com.picoto.jaxb.common.DebitedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:DeclarationTypeCodeType">
+      <class ref="com.picoto.jaxb.common.DeclarationTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DeclaredCarriageValueAmountType">
+      <class ref="com.picoto.jaxb.common.DeclaredCarriageValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DeclaredCustomsValueAmountType">
+      <class ref="com.picoto.jaxb.common.DeclaredCustomsValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DeclaredForCarriageValueAmountType">
+      <class ref="com.picoto.jaxb.common.DeclaredForCarriageValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DeclaredStatisticsValueAmountType">
+      <class ref="com.picoto.jaxb.common.DeclaredStatisticsValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveredQuantityType">
+      <class ref="com.picoto.jaxb.common.DeliveredQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:DeliveryInstructionsType">
+      <class ref="com.picoto.jaxb.common.DeliveryInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:DemurrageInstructionsType">
+      <class ref="com.picoto.jaxb.common.DemurrageInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:DepartmentType">
+      <class ref="com.picoto.jaxb.common.DepartmentType"/>
+    </bindings>
+    <bindings scd="~tns:DescriptionType">
+      <class ref="com.picoto.jaxb.common.DescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:DescriptionCodeType">
+      <class ref="com.picoto.jaxb.common.DescriptionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DespatchAdviceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.DespatchAdviceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DifferenceTemperatureReductionQuantityType">
+      <class ref="com.picoto.jaxb.common.DifferenceTemperatureReductionQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:DirectionCodeType">
+      <class ref="com.picoto.jaxb.common.DirectionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DisplayTacticTypeCodeType">
+      <class ref="com.picoto.jaxb.common.DisplayTacticTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DispositionCodeType">
+      <class ref="com.picoto.jaxb.common.DispositionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DistrictType">
+      <class ref="com.picoto.jaxb.common.DistrictType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.DocumentCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentDescriptionType">
+      <class ref="com.picoto.jaxb.common.DocumentDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentHashType">
+      <class ref="com.picoto.jaxb.common.DocumentHashType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentIDType">
+      <class ref="com.picoto.jaxb.common.DocumentIDType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentStatusCodeType">
+      <class ref="com.picoto.jaxb.common.DocumentStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentStatusReasonCodeType">
+      <class ref="com.picoto.jaxb.common.DocumentStatusReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentStatusReasonDescriptionType">
+      <class ref="com.picoto.jaxb.common.DocumentStatusReasonDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentTypeType">
+      <class ref="com.picoto.jaxb.common.DocumentTypeType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentTypeCodeType">
+      <class ref="com.picoto.jaxb.common.DocumentTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:DocumentationFeeAmountType">
+      <class ref="com.picoto.jaxb.common.DocumentationFeeAmountType"/>
+    </bindings>
+    <bindings scd="~tns:DueDateType">
+      <class ref="com.picoto.jaxb.common.DueDateType"/>
+    </bindings>
+    <bindings scd="~tns:DurationMeasureType">
+      <class ref="com.picoto.jaxb.common.DurationMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:DutyType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$2"/>
+    </bindings>
+    <bindings scd="~tns:DutyCodeType">
+      <class ref="com.picoto.jaxb.common.DutyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:EarliestPickupDateType">
+      <class ref="com.picoto.jaxb.common.EarliestPickupDateType"/>
+    </bindings>
+    <bindings scd="~tns:EarliestPickupTimeType">
+      <class ref="com.picoto.jaxb.common.EarliestPickupTimeType"/>
+    </bindings>
+    <bindings scd="~tns:EconomicOperatorRegistryURIType">
+      <class ref="com.picoto.jaxb.common.EconomicOperatorRegistryURIType"/>
+    </bindings>
+    <bindings scd="~tns:EffectiveDateType">
+      <class ref="com.picoto.jaxb.common.EffectiveDateType"/>
+    </bindings>
+    <bindings scd="~tns:EffectiveTimeType">
+      <class ref="com.picoto.jaxb.common.EffectiveTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ElectronicDeviceDescriptionType">
+      <class ref="com.picoto.jaxb.common.ElectronicDeviceDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:ElectronicMailType">
+      <class ref="com.picoto.jaxb.common.ElectronicMailType"/>
+    </bindings>
+    <bindings scd="~tns:EmbeddedDocumentBinaryObjectType">
+      <class ref="com.picoto.jaxb.common.EmbeddedDocumentBinaryObjectType"/>
+    </bindings>
+    <bindings scd="~tns:EmergencyProceduresCodeType">
+      <class ref="com.picoto.jaxb.common.EmergencyProceduresCodeType"/>
+    </bindings>
+    <bindings scd="~tns:EmployeeQuantityType">
+      <class ref="com.picoto.jaxb.common.EmployeeQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:EncodingCodeType">
+      <class ref="com.picoto.jaxb.common.EncodingCodeType"/>
+    </bindings>
+    <bindings scd="~tns:EndDateType">
+      <class ref="com.picoto.jaxb.common.EndDateType"/>
+    </bindings>
+    <bindings scd="~tns:EndTimeType">
+      <class ref="com.picoto.jaxb.common.EndTimeType"/>
+    </bindings>
+    <bindings scd="~tns:EndpointIDType">
+      <class ref="com.picoto.jaxb.common.EndpointIDType"/>
+    </bindings>
+    <bindings scd="~tns:EnvironmentalEmissionTypeCodeType">
+      <class ref="com.picoto.jaxb.common.EnvironmentalEmissionTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedAmountType">
+      <class ref="com.picoto.jaxb.common.EstimatedAmountType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedConsumedQuantityType">
+      <class ref="com.picoto.jaxb.common.EstimatedConsumedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedDeliveryDateType">
+      <class ref="com.picoto.jaxb.common.EstimatedDeliveryDateType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedDeliveryTimeType">
+      <class ref="com.picoto.jaxb.common.EstimatedDeliveryTimeType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedDespatchDateType">
+      <class ref="com.picoto.jaxb.common.EstimatedDespatchDateType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedDespatchTimeType">
+      <class ref="com.picoto.jaxb.common.EstimatedDespatchTimeType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedOverallContractAmountType">
+      <class ref="com.picoto.jaxb.common.EstimatedOverallContractAmountType"/>
+    </bindings>
+    <bindings scd="~tns:EstimatedOverallContractQuantityType">
+      <class ref="com.picoto.jaxb.common.EstimatedOverallContractQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:EvaluationCriterionTypeCodeType">
+      <class ref="com.picoto.jaxb.common.EvaluationCriterionTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:EvidenceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.EvidenceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExceptionResolutionCodeType">
+      <class ref="com.picoto.jaxb.common.ExceptionResolutionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExceptionStatusCodeType">
+      <class ref="com.picoto.jaxb.common.ExceptionStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExchangeMarketIDType">
+      <class ref="com.picoto.jaxb.common.ExchangeMarketIDType"/>
+    </bindings>
+    <bindings scd="~tns:ExclusionReasonType">
+      <class ref="com.picoto.jaxb.common.ExclusionReasonType"/>
+    </bindings>
+    <bindings scd="~tns:ExecutionRequirementCodeType">
+      <class ref="com.picoto.jaxb.common.ExecutionRequirementCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExemptionReasonType">
+      <class ref="com.picoto.jaxb.common.ExemptionReasonType"/>
+    </bindings>
+    <bindings scd="~tns:ExemptionReasonCodeType">
+      <class ref="com.picoto.jaxb.common.ExemptionReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExpectedOperatorQuantityType">
+      <class ref="com.picoto.jaxb.common.ExpectedOperatorQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ExpectedQuantityType">
+      <class ref="com.picoto.jaxb.common.ExpectedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ExpenseCodeType">
+      <class ref="com.picoto.jaxb.common.ExpenseCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExpiryDateType">
+      <class ref="com.picoto.jaxb.common.ExpiryDateType"/>
+    </bindings>
+    <bindings scd="~tns:ExpiryTimeType">
+      <class ref="com.picoto.jaxb.common.ExpiryTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ExpressionType">
+      <class ref="com.picoto.jaxb.common.ExpressionType"/>
+    </bindings>
+    <bindings scd="~tns:ExpressionCodeType">
+      <class ref="com.picoto.jaxb.common.ExpressionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExtendedIDType">
+      <class ref="com.picoto.jaxb.common.ExtendedIDType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionType">
+      <class ref="com.picoto.jaxb.common.ExtensionType"/>
+    </bindings>
+    <bindings scd="~tns:FaceValueAmountType">
+      <class ref="com.picoto.jaxb.common.FaceValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:FamilyNameType">
+      <class ref="com.picoto.jaxb.common.FamilyNameType"/>
+    </bindings>
+    <bindings scd="~tns:FeatureTacticTypeCodeType">
+      <class ref="com.picoto.jaxb.common.FeatureTacticTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:FeeAmountType">
+      <class ref="com.picoto.jaxb.common.FeeAmountType"/>
+    </bindings>
+    <bindings scd="~tns:FeeDescriptionType">
+      <class ref="com.picoto.jaxb.common.FeeDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:FileNameType">
+      <class ref="com.picoto.jaxb.common.FileNameType"/>
+    </bindings>
+    <bindings scd="~tns:FinancingInstrumentCodeType">
+      <class ref="com.picoto.jaxb.common.FinancingInstrumentCodeType"/>
+    </bindings>
+    <bindings scd="~tns:FirstNameType">
+      <class ref="com.picoto.jaxb.common.FirstNameType"/>
+    </bindings>
+    <bindings scd="~tns:FirstShipmentAvailibilityDateType">
+      <class ref="com.picoto.jaxb.common.FirstShipmentAvailibilityDateType"/>
+    </bindings>
+    <bindings scd="~tns:FloorType">
+      <class ref="com.picoto.jaxb.common.FloorType"/>
+    </bindings>
+    <bindings scd="~tns:FollowupContractIndicatorType">
+      <class ref="com.picoto.jaxb.common.FollowupContractIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastPurposeCodeType">
+      <class ref="com.picoto.jaxb.common.ForecastPurposeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ForecastTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ForecastTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:FormatCodeType">
+      <class ref="com.picoto.jaxb.common.FormatCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ForwarderServiceInstructionsType">
+      <class ref="com.picoto.jaxb.common.ForwarderServiceInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:FreeOfChargeIndicatorType">
+      <class ref="com.picoto.jaxb.common.FreeOfChargeIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:FreeOnBoardValueAmountType">
+      <class ref="com.picoto.jaxb.common.FreeOnBoardValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:FreightForwarderAssignedIDType">
+      <class ref="com.picoto.jaxb.common.FreightForwarderAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:FreightRateClassCodeType">
+      <class ref="com.picoto.jaxb.common.FreightRateClassCodeType"/>
+    </bindings>
+    <bindings scd="~tns:FrequencyType">
+      <class ref="com.picoto.jaxb.common.FrequencyType"/>
+    </bindings>
+    <bindings scd="~tns:FrozenDocumentIndicatorType">
+      <class ref="com.picoto.jaxb.common.FrozenDocumentIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:FrozenPeriodDaysNumericType">
+      <class ref="com.picoto.jaxb.common.FrozenPeriodDaysNumericType"/>
+    </bindings>
+    <bindings scd="~tns:FullnessIndicationCodeType">
+      <class ref="com.picoto.jaxb.common.FullnessIndicationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:FullyPaidSharesIndicatorType">
+      <class ref="com.picoto.jaxb.common.FullyPaidSharesIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:FundingProgramType">
+      <class ref="com.picoto.jaxb.common.FundingProgramType"/>
+    </bindings>
+    <bindings scd="~tns:FundingProgramCodeType">
+      <class ref="com.picoto.jaxb.common.FundingProgramCodeType"/>
+    </bindings>
+    <bindings scd="~tns:GasPressureQuantityType">
+      <class ref="com.picoto.jaxb.common.GasPressureQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:GenderCodeType">
+      <class ref="com.picoto.jaxb.common.GenderCodeType"/>
+    </bindings>
+    <bindings scd="~tns:GeneralCargoIndicatorType">
+      <class ref="com.picoto.jaxb.common.GeneralCargoIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:GovernmentAgreementConstraintIndicatorType">
+      <class ref="com.picoto.jaxb.common.GovernmentAgreementConstraintIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:GrossTonnageMeasureType">
+      <class ref="com.picoto.jaxb.common.GrossTonnageMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:GrossVolumeMeasureType">
+      <class ref="com.picoto.jaxb.common.GrossVolumeMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:GrossWeightMeasureType">
+      <class ref="com.picoto.jaxb.common.GrossWeightMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:GuaranteeTypeCodeType">
+      <class ref="com.picoto.jaxb.common.GuaranteeTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:GuaranteedDespatchDateType">
+      <class ref="com.picoto.jaxb.common.GuaranteedDespatchDateType"/>
+    </bindings>
+    <bindings scd="~tns:GuaranteedDespatchTimeType">
+      <class ref="com.picoto.jaxb.common.GuaranteedDespatchTimeType"/>
+    </bindings>
+    <bindings scd="~tns:HandlingCodeType">
+      <class ref="com.picoto.jaxb.common.HandlingCodeType"/>
+    </bindings>
+    <bindings scd="~tns:HandlingInstructionsType">
+      <class ref="com.picoto.jaxb.common.HandlingInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:HashAlgorithmMethodType">
+      <class ref="com.picoto.jaxb.common.HashAlgorithmMethodType"/>
+    </bindings>
+    <bindings scd="~tns:HaulageInstructionsType">
+      <class ref="com.picoto.jaxb.common.HaulageInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:HazardClassIDType">
+      <class ref="com.picoto.jaxb.common.HazardClassIDType"/>
+    </bindings>
+    <bindings scd="~tns:HazardousCategoryCodeType">
+      <class ref="com.picoto.jaxb.common.HazardousCategoryCodeType"/>
+    </bindings>
+    <bindings scd="~tns:HazardousRegulationCodeType">
+      <class ref="com.picoto.jaxb.common.HazardousRegulationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:HazardousRiskIndicatorType">
+      <class ref="com.picoto.jaxb.common.HazardousRiskIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:HeatingTypeType">
+      <class ref="com.picoto.jaxb.common.HeatingTypeType"/>
+    </bindings>
+    <bindings scd="~tns:HeatingTypeCodeType">
+      <class ref="com.picoto.jaxb.common.HeatingTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:HigherTenderAmountType">
+      <class ref="com.picoto.jaxb.common.HigherTenderAmountType"/>
+    </bindings>
+    <bindings scd="~tns:HolderNameType">
+      <class ref="com.picoto.jaxb.common.HolderNameType"/>
+    </bindings>
+    <bindings scd="~tns:HumanFoodApprovedIndicatorType">
+      <class ref="com.picoto.jaxb.common.HumanFoodApprovedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:HumanFoodIndicatorType">
+      <class ref="com.picoto.jaxb.common.HumanFoodIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:HumidityPercentType">
+      <class ref="com.picoto.jaxb.common.HumidityPercentType"/>
+    </bindings>
+    <bindings scd="~tns:IDType">
+      <class ref="com.picoto.jaxb.common.IDType"/>
+    </bindings>
+    <bindings scd="~tns:IdentificationCodeType">
+      <class ref="com.picoto.jaxb.common.IdentificationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:IdentificationIDType">
+      <class ref="com.picoto.jaxb.common.IdentificationIDType"/>
+    </bindings>
+    <bindings scd="~tns:ImmobilizationCertificateIDType">
+      <class ref="com.picoto.jaxb.common.ImmobilizationCertificateIDType"/>
+    </bindings>
+    <bindings scd="~tns:ImportanceCodeType">
+      <class ref="com.picoto.jaxb.common.ImportanceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:IndicationIndicatorType">
+      <class ref="com.picoto.jaxb.common.IndicationIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:IndustryClassificationCodeType">
+      <class ref="com.picoto.jaxb.common.IndustryClassificationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:InformationType">
+      <class ref="com.picoto.jaxb.common.InformationType"/>
+    </bindings>
+    <bindings scd="~tns:InformationURIType">
+      <class ref="com.picoto.jaxb.common.InformationURIType"/>
+    </bindings>
+    <bindings scd="~tns:InhalationToxicityZoneCodeType">
+      <class ref="com.picoto.jaxb.common.InhalationToxicityZoneCodeType"/>
+    </bindings>
+    <bindings scd="~tns:InhouseMailType">
+      <class ref="com.picoto.jaxb.common.InhouseMailType"/>
+    </bindings>
+    <bindings scd="~tns:InspectionMethodCodeType">
+      <class ref="com.picoto.jaxb.common.InspectionMethodCodeType"/>
+    </bindings>
+    <bindings scd="~tns:InstallmentDueDateType">
+      <class ref="com.picoto.jaxb.common.InstallmentDueDateType"/>
+    </bindings>
+    <bindings scd="~tns:InstructionIDType">
+      <class ref="com.picoto.jaxb.common.InstructionIDType"/>
+    </bindings>
+    <bindings scd="~tns:InstructionNoteType">
+      <class ref="com.picoto.jaxb.common.InstructionNoteType"/>
+    </bindings>
+    <bindings scd="~tns:InstructionsType">
+      <class ref="com.picoto.jaxb.common.InstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:InsurancePremiumAmountType">
+      <class ref="com.picoto.jaxb.common.InsurancePremiumAmountType"/>
+    </bindings>
+    <bindings scd="~tns:InsuranceValueAmountType">
+      <class ref="com.picoto.jaxb.common.InsuranceValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:InventoryValueAmountType">
+      <class ref="com.picoto.jaxb.common.InventoryValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:InvoiceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.InvoiceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:InvoicedQuantityType">
+      <class ref="com.picoto.jaxb.common.InvoicedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:InvoicingPartyReferenceType">
+      <class ref="com.picoto.jaxb.common.InvoicingPartyReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:IssueDateType">
+      <class ref="com.picoto.jaxb.common.IssueDateType"/>
+    </bindings>
+    <bindings scd="~tns:IssueNumberIDType">
+      <class ref="com.picoto.jaxb.common.IssueNumberIDType"/>
+    </bindings>
+    <bindings scd="~tns:IssueTimeType">
+      <class ref="com.picoto.jaxb.common.IssueTimeType"/>
+    </bindings>
+    <bindings scd="~tns:IssuerIDType">
+      <class ref="com.picoto.jaxb.common.IssuerIDType"/>
+    </bindings>
+    <bindings scd="~tns:ItemClassificationCodeType">
+      <class ref="com.picoto.jaxb.common.ItemClassificationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ItemUpdateRequestIndicatorType">
+      <class ref="com.picoto.jaxb.common.ItemUpdateRequestIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:JobTitleType">
+      <class ref="com.picoto.jaxb.common.JobTitleType"/>
+    </bindings>
+    <bindings scd="~tns:JourneyIDType">
+      <class ref="com.picoto.jaxb.common.JourneyIDType"/>
+    </bindings>
+    <bindings scd="~tns:JustificationType">
+      <class ref="com.picoto.jaxb.common.JustificationType"/>
+    </bindings>
+    <bindings scd="~tns:JustificationDescriptionType">
+      <class ref="com.picoto.jaxb.common.JustificationDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:KeywordType">
+      <class ref="com.picoto.jaxb.common.KeywordType"/>
+    </bindings>
+    <bindings scd="~tns:LanguageIDType">
+      <class ref="com.picoto.jaxb.common.LanguageIDType"/>
+    </bindings>
+    <bindings scd="~tns:LastRevisionDateType">
+      <class ref="com.picoto.jaxb.common.LastRevisionDateType"/>
+    </bindings>
+    <bindings scd="~tns:LastRevisionTimeType">
+      <class ref="com.picoto.jaxb.common.LastRevisionTimeType"/>
+    </bindings>
+    <bindings scd="~tns:LatestDeliveryDateType">
+      <class ref="com.picoto.jaxb.common.LatestDeliveryDateType"/>
+    </bindings>
+    <bindings scd="~tns:LatestDeliveryTimeType">
+      <class ref="com.picoto.jaxb.common.LatestDeliveryTimeType"/>
+    </bindings>
+    <bindings scd="~tns:LatestMeterQuantityType">
+      <class ref="com.picoto.jaxb.common.LatestMeterQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:LatestMeterReadingDateType">
+      <class ref="com.picoto.jaxb.common.LatestMeterReadingDateType"/>
+    </bindings>
+    <bindings scd="~tns:LatestMeterReadingMethodType">
+      <class ref="com.picoto.jaxb.common.LatestMeterReadingMethodType"/>
+    </bindings>
+    <bindings scd="~tns:LatestMeterReadingMethodCodeType">
+      <class ref="com.picoto.jaxb.common.LatestMeterReadingMethodCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LatestPickupDateType">
+      <class ref="com.picoto.jaxb.common.LatestPickupDateType"/>
+    </bindings>
+    <bindings scd="~tns:LatestPickupTimeType">
+      <class ref="com.picoto.jaxb.common.LatestPickupTimeType"/>
+    </bindings>
+    <bindings scd="~tns:LatestProposalAcceptanceDateType">
+      <class ref="com.picoto.jaxb.common.LatestProposalAcceptanceDateType"/>
+    </bindings>
+    <bindings scd="~tns:LatestSecurityClearanceDateType">
+      <class ref="com.picoto.jaxb.common.LatestSecurityClearanceDateType"/>
+    </bindings>
+    <bindings scd="~tns:LatitudeDegreesMeasureType">
+      <class ref="com.picoto.jaxb.common.LatitudeDegreesMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LatitudeDirectionCodeType">
+      <class ref="com.picoto.jaxb.common.LatitudeDirectionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LatitudeMinutesMeasureType">
+      <class ref="com.picoto.jaxb.common.LatitudeMinutesMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LeadTimeMeasureType">
+      <class ref="com.picoto.jaxb.common.LeadTimeMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LegalReferenceType">
+      <class ref="com.picoto.jaxb.common.LegalReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:LegalStatusIndicatorType">
+      <class ref="com.picoto.jaxb.common.LegalStatusIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:LiabilityAmountType">
+      <class ref="com.picoto.jaxb.common.LiabilityAmountType"/>
+    </bindings>
+    <bindings scd="~tns:LicensePlateIDType">
+      <class ref="com.picoto.jaxb.common.LicensePlateIDType"/>
+    </bindings>
+    <bindings scd="~tns:LifeCycleStatusCodeType">
+      <class ref="com.picoto.jaxb.common.LifeCycleStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LimitationDescriptionType">
+      <class ref="com.picoto.jaxb.common.LimitationDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:LineType">
+      <class ref="com.picoto.jaxb.common.LineType"/>
+    </bindings>
+    <bindings scd="~tns:LineCountNumericType">
+      <class ref="com.picoto.jaxb.common.LineCountNumericType"/>
+    </bindings>
+    <bindings scd="~tns:LineExtensionAmountType">
+      <class ref="com.picoto.jaxb.common.LineExtensionAmountType"/>
+    </bindings>
+    <bindings scd="~tns:LineIDType">
+      <class ref="com.picoto.jaxb.common.LineIDType"/>
+    </bindings>
+    <bindings scd="~tns:LineNumberNumericType">
+      <class ref="com.picoto.jaxb.common.LineNumberNumericType"/>
+    </bindings>
+    <bindings scd="~tns:LineStatusCodeType">
+      <class ref="com.picoto.jaxb.common.LineStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ListValueType">
+      <class ref="com.picoto.jaxb.common.ListValueType"/>
+    </bindings>
+    <bindings scd="~tns:LivestockIndicatorType">
+      <class ref="com.picoto.jaxb.common.LivestockIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:LoadingLengthMeasureType">
+      <class ref="com.picoto.jaxb.common.LoadingLengthMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LoadingSequenceIDType">
+      <class ref="com.picoto.jaxb.common.LoadingSequenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:LocaleCodeType">
+      <class ref="com.picoto.jaxb.common.LocaleCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LocationType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$3"/>
+    </bindings>
+    <bindings scd="~tns:LocationIDType">
+      <class ref="com.picoto.jaxb.common.LocationIDType"/>
+    </bindings>
+    <bindings scd="~tns:LocationTypeCodeType">
+      <class ref="com.picoto.jaxb.common.LocationTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LoginType">
+      <class ref="com.picoto.jaxb.common.LoginType"/>
+    </bindings>
+    <bindings scd="~tns:LogoReferenceIDType">
+      <class ref="com.picoto.jaxb.common.LogoReferenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:LongitudeDegreesMeasureType">
+      <class ref="com.picoto.jaxb.common.LongitudeDegreesMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LongitudeDirectionCodeType">
+      <class ref="com.picoto.jaxb.common.LongitudeDirectionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LongitudeMinutesMeasureType">
+      <class ref="com.picoto.jaxb.common.LongitudeMinutesMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:LossRiskType">
+      <class ref="com.picoto.jaxb.common.LossRiskType"/>
+    </bindings>
+    <bindings scd="~tns:LossRiskResponsibilityCodeType">
+      <class ref="com.picoto.jaxb.common.LossRiskResponsibilityCodeType"/>
+    </bindings>
+    <bindings scd="~tns:LotNumberIDType">
+      <class ref="com.picoto.jaxb.common.LotNumberIDType"/>
+    </bindings>
+    <bindings scd="~tns:LowTendersDescriptionType">
+      <class ref="com.picoto.jaxb.common.LowTendersDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:LowerOrangeHazardPlacardIDType">
+      <class ref="com.picoto.jaxb.common.LowerOrangeHazardPlacardIDType"/>
+    </bindings>
+    <bindings scd="~tns:LowerTenderAmountType">
+      <class ref="com.picoto.jaxb.common.LowerTenderAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MandateTypeCodeType">
+      <class ref="com.picoto.jaxb.common.MandateTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ManufactureDateType">
+      <class ref="com.picoto.jaxb.common.ManufactureDateType"/>
+    </bindings>
+    <bindings scd="~tns:ManufactureTimeType">
+      <class ref="com.picoto.jaxb.common.ManufactureTimeType"/>
+    </bindings>
+    <bindings scd="~tns:MarkAttentionType">
+      <class ref="com.picoto.jaxb.common.MarkAttentionType"/>
+    </bindings>
+    <bindings scd="~tns:MarkAttentionIndicatorType">
+      <class ref="com.picoto.jaxb.common.MarkAttentionIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:MarkCareType">
+      <class ref="com.picoto.jaxb.common.MarkCareType"/>
+    </bindings>
+    <bindings scd="~tns:MarkCareIndicatorType">
+      <class ref="com.picoto.jaxb.common.MarkCareIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:MarketValueAmountType">
+      <class ref="com.picoto.jaxb.common.MarketValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MarkingIDType">
+      <class ref="com.picoto.jaxb.common.MarkingIDType"/>
+    </bindings>
+    <bindings scd="~tns:MathematicOperatorCodeType">
+      <class ref="com.picoto.jaxb.common.MathematicOperatorCodeType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumAdvertisementAmountType">
+      <class ref="com.picoto.jaxb.common.MaximumAdvertisementAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumAmountType">
+      <class ref="com.picoto.jaxb.common.MaximumAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumBackorderQuantityType">
+      <class ref="com.picoto.jaxb.common.MaximumBackorderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumCopiesNumericType">
+      <class ref="com.picoto.jaxb.common.MaximumCopiesNumericType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumMeasureType">
+      <class ref="com.picoto.jaxb.common.MaximumMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumNumberNumericType">
+      <class ref="com.picoto.jaxb.common.MaximumNumberNumericType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumOperatorQuantityType">
+      <class ref="com.picoto.jaxb.common.MaximumOperatorQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumOrderQuantityType">
+      <class ref="com.picoto.jaxb.common.MaximumOrderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumPaidAmountType">
+      <class ref="com.picoto.jaxb.common.MaximumPaidAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumPaymentInstructionsNumericType">
+      <class ref="com.picoto.jaxb.common.MaximumPaymentInstructionsNumericType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumPercentType">
+      <class ref="com.picoto.jaxb.common.MaximumPercentType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumQuantityType">
+      <class ref="com.picoto.jaxb.common.MaximumQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumValueType">
+      <class ref="com.picoto.jaxb.common.MaximumValueType"/>
+    </bindings>
+    <bindings scd="~tns:MaximumVariantQuantityType">
+      <class ref="com.picoto.jaxb.common.MaximumVariantQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MeasureType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$4"/>
+    </bindings>
+    <bindings scd="~tns:MedicalFirstAidGuideCodeType">
+      <class ref="com.picoto.jaxb.common.MedicalFirstAidGuideCodeType"/>
+    </bindings>
+    <bindings scd="~tns:MeterConstantType">
+      <class ref="com.picoto.jaxb.common.MeterConstantType"/>
+    </bindings>
+    <bindings scd="~tns:MeterConstantCodeType">
+      <class ref="com.picoto.jaxb.common.MeterConstantCodeType"/>
+    </bindings>
+    <bindings scd="~tns:MeterNameType">
+      <class ref="com.picoto.jaxb.common.MeterNameType"/>
+    </bindings>
+    <bindings scd="~tns:MeterNumberType">
+      <class ref="com.picoto.jaxb.common.MeterNumberType"/>
+    </bindings>
+    <bindings scd="~tns:MeterReadingCommentsType">
+      <class ref="com.picoto.jaxb.common.MeterReadingCommentsType"/>
+    </bindings>
+    <bindings scd="~tns:MeterReadingTypeType">
+      <class ref="com.picoto.jaxb.common.MeterReadingTypeType"/>
+    </bindings>
+    <bindings scd="~tns:MeterReadingTypeCodeType">
+      <class ref="com.picoto.jaxb.common.MeterReadingTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:MiddleNameType">
+      <class ref="com.picoto.jaxb.common.MiddleNameType"/>
+    </bindings>
+    <bindings scd="~tns:MimeCodeType">
+      <class ref="com.picoto.jaxb.common.MimeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumAmountType">
+      <class ref="com.picoto.jaxb.common.MinimumAmountType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumBackorderQuantityType">
+      <class ref="com.picoto.jaxb.common.MinimumBackorderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumImprovementBidType">
+      <class ref="com.picoto.jaxb.common.MinimumImprovementBidType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumInventoryQuantityType">
+      <class ref="com.picoto.jaxb.common.MinimumInventoryQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumMeasureType">
+      <class ref="com.picoto.jaxb.common.MinimumMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumNumberNumericType">
+      <class ref="com.picoto.jaxb.common.MinimumNumberNumericType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumOrderQuantityType">
+      <class ref="com.picoto.jaxb.common.MinimumOrderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumPercentType">
+      <class ref="com.picoto.jaxb.common.MinimumPercentType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumQuantityType">
+      <class ref="com.picoto.jaxb.common.MinimumQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MinimumValueType">
+      <class ref="com.picoto.jaxb.common.MinimumValueType"/>
+    </bindings>
+    <bindings scd="~tns:MiscellaneousEventTypeCodeType">
+      <class ref="com.picoto.jaxb.common.MiscellaneousEventTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ModelNameType">
+      <class ref="com.picoto.jaxb.common.ModelNameType"/>
+    </bindings>
+    <bindings scd="~tns:MonetaryScopeType">
+      <class ref="com.picoto.jaxb.common.MonetaryScopeType"/>
+    </bindings>
+    <bindings scd="~tns:MovieTitleType">
+      <class ref="com.picoto.jaxb.common.MovieTitleType"/>
+    </bindings>
+    <bindings scd="~tns:MultipleOrderQuantityType">
+      <class ref="com.picoto.jaxb.common.MultipleOrderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:MultiplierFactorNumericType">
+      <class ref="com.picoto.jaxb.common.MultiplierFactorNumericType"/>
+    </bindings>
+    <bindings scd="~tns:NameType">
+      <class ref="com.picoto.jaxb.common.NameType"/>
+    </bindings>
+    <bindings scd="~tns:NameCodeType">
+      <class ref="com.picoto.jaxb.common.NameCodeType"/>
+    </bindings>
+    <bindings scd="~tns:NameSuffixType">
+      <class ref="com.picoto.jaxb.common.NameSuffixType"/>
+    </bindings>
+    <bindings scd="~tns:NationalityIDType">
+      <class ref="com.picoto.jaxb.common.NationalityIDType"/>
+    </bindings>
+    <bindings scd="~tns:NatureCodeType">
+      <class ref="com.picoto.jaxb.common.NatureCodeType"/>
+    </bindings>
+    <bindings scd="~tns:NegotiationDescriptionType">
+      <class ref="com.picoto.jaxb.common.NegotiationDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:NetNetWeightMeasureType">
+      <class ref="com.picoto.jaxb.common.NetNetWeightMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:NetTonnageMeasureType">
+      <class ref="com.picoto.jaxb.common.NetTonnageMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:NetVolumeMeasureType">
+      <class ref="com.picoto.jaxb.common.NetVolumeMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:NetWeightMeasureType">
+      <class ref="com.picoto.jaxb.common.NetWeightMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:NetworkIDType">
+      <class ref="com.picoto.jaxb.common.NetworkIDType"/>
+    </bindings>
+    <bindings scd="~tns:NominationDateType">
+      <class ref="com.picoto.jaxb.common.NominationDateType"/>
+    </bindings>
+    <bindings scd="~tns:NominationTimeType">
+      <class ref="com.picoto.jaxb.common.NominationTimeType"/>
+    </bindings>
+    <bindings scd="~tns:NormalTemperatureReductionQuantityType">
+      <class ref="com.picoto.jaxb.common.NormalTemperatureReductionQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:NoteType">
+      <class ref="com.picoto.jaxb.common.NoteType"/>
+    </bindings>
+    <bindings scd="~tns:NotificationTypeCodeType">
+      <class ref="com.picoto.jaxb.common.NotificationTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:OccurrenceDateType">
+      <class ref="com.picoto.jaxb.common.OccurrenceDateType"/>
+    </bindings>
+    <bindings scd="~tns:OccurrenceTimeType">
+      <class ref="com.picoto.jaxb.common.OccurrenceTimeType"/>
+    </bindings>
+    <bindings scd="~tns:OnCarriageIndicatorType">
+      <class ref="com.picoto.jaxb.common.OnCarriageIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:OneTimeChargeTypeType">
+      <class ref="com.picoto.jaxb.common.OneTimeChargeTypeType"/>
+    </bindings>
+    <bindings scd="~tns:OneTimeChargeTypeCodeType">
+      <class ref="com.picoto.jaxb.common.OneTimeChargeTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:OntologyURIType">
+      <class ref="com.picoto.jaxb.common.OntologyURIType"/>
+    </bindings>
+    <bindings scd="~tns:OpenTenderIDType">
+      <class ref="com.picoto.jaxb.common.OpenTenderIDType"/>
+    </bindings>
+    <bindings scd="~tns:OperatingYearsQuantityType">
+      <class ref="com.picoto.jaxb.common.OperatingYearsQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:OptionalLineItemIndicatorType">
+      <class ref="com.picoto.jaxb.common.OptionalLineItemIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:OptionsDescriptionType">
+      <class ref="com.picoto.jaxb.common.OptionsDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:OrderIntervalDaysNumericType">
+      <class ref="com.picoto.jaxb.common.OrderIntervalDaysNumericType"/>
+    </bindings>
+    <bindings scd="~tns:OrderQuantityIncrementNumericType">
+      <class ref="com.picoto.jaxb.common.OrderQuantityIncrementNumericType"/>
+    </bindings>
+    <bindings scd="~tns:OrderResponseCodeType">
+      <class ref="com.picoto.jaxb.common.OrderResponseCodeType"/>
+    </bindings>
+    <bindings scd="~tns:OrderTypeCodeType">
+      <class ref="com.picoto.jaxb.common.OrderTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:OrderableIndicatorType">
+      <class ref="com.picoto.jaxb.common.OrderableIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:OrderableUnitType">
+      <class ref="com.picoto.jaxb.common.OrderableUnitType"/>
+    </bindings>
+    <bindings scd="~tns:OrderableUnitFactorRateType">
+      <class ref="com.picoto.jaxb.common.OrderableUnitFactorRateType"/>
+    </bindings>
+    <bindings scd="~tns:OrganizationDepartmentType">
+      <class ref="com.picoto.jaxb.common.OrganizationDepartmentType"/>
+    </bindings>
+    <bindings scd="~tns:OriginalContractingSystemIDType">
+      <class ref="com.picoto.jaxb.common.OriginalContractingSystemIDType"/>
+    </bindings>
+    <bindings scd="~tns:OriginalJobIDType">
+      <class ref="com.picoto.jaxb.common.OriginalJobIDType"/>
+    </bindings>
+    <bindings scd="~tns:OtherConditionsIndicatorType">
+      <class ref="com.picoto.jaxb.common.OtherConditionsIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:OtherInstructionType">
+      <class ref="com.picoto.jaxb.common.OtherInstructionType"/>
+    </bindings>
+    <bindings scd="~tns:OtherNameType">
+      <class ref="com.picoto.jaxb.common.OtherNameType"/>
+    </bindings>
+    <bindings scd="~tns:OutstandingQuantityType">
+      <class ref="com.picoto.jaxb.common.OutstandingQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:OutstandingReasonType">
+      <class ref="com.picoto.jaxb.common.OutstandingReasonType"/>
+    </bindings>
+    <bindings scd="~tns:OversupplyQuantityType">
+      <class ref="com.picoto.jaxb.common.OversupplyQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:OwnerTypeCodeType">
+      <class ref="com.picoto.jaxb.common.OwnerTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PackLevelCodeType">
+      <class ref="com.picoto.jaxb.common.PackLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PackQuantityType">
+      <class ref="com.picoto.jaxb.common.PackQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:PackSizeNumericType">
+      <class ref="com.picoto.jaxb.common.PackSizeNumericType"/>
+    </bindings>
+    <bindings scd="~tns:PackageLevelCodeType">
+      <class ref="com.picoto.jaxb.common.PackageLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PackagingTypeCodeType">
+      <class ref="com.picoto.jaxb.common.PackagingTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PackingCriteriaCodeType">
+      <class ref="com.picoto.jaxb.common.PackingCriteriaCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PackingMaterialType">
+      <class ref="com.picoto.jaxb.common.PackingMaterialType"/>
+    </bindings>
+    <bindings scd="~tns:PaidAmountType">
+      <class ref="com.picoto.jaxb.common.PaidAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PaidDateType">
+      <class ref="com.picoto.jaxb.common.PaidDateType"/>
+    </bindings>
+    <bindings scd="~tns:PaidTimeType">
+      <class ref="com.picoto.jaxb.common.PaidTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ParentDocumentIDType">
+      <class ref="com.picoto.jaxb.common.ParentDocumentIDType"/>
+    </bindings>
+    <bindings scd="~tns:ParentDocumentLineReferenceIDType">
+      <class ref="com.picoto.jaxb.common.ParentDocumentLineReferenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:ParentDocumentTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ParentDocumentTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ParentDocumentVersionIDType">
+      <class ref="com.picoto.jaxb.common.ParentDocumentVersionIDType"/>
+    </bindings>
+    <bindings scd="~tns:PartPresentationCodeType">
+      <class ref="com.picoto.jaxb.common.PartPresentationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PartecipationPercentType">
+      <class ref="com.picoto.jaxb.common.PartecipationPercentType"/>
+    </bindings>
+    <bindings scd="~tns:PartialDeliveryIndicatorType">
+      <class ref="com.picoto.jaxb.common.PartialDeliveryIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ParticipationPercentType">
+      <class ref="com.picoto.jaxb.common.ParticipationPercentType"/>
+    </bindings>
+    <bindings scd="~tns:PartyCapacityAmountType">
+      <class ref="com.picoto.jaxb.common.PartyCapacityAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PartyTypeType">
+      <class ref="com.picoto.jaxb.common.PartyTypeType"/>
+    </bindings>
+    <bindings scd="~tns:PartyTypeCodeType">
+      <class ref="com.picoto.jaxb.common.PartyTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PassengerQuantityType">
+      <class ref="com.picoto.jaxb.common.PassengerQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:PasswordType">
+      <class ref="com.picoto.jaxb.common.PasswordType"/>
+    </bindings>
+    <bindings scd="~tns:PayPerViewType">
+      <class ref="com.picoto.jaxb.common.PayPerViewType"/>
+    </bindings>
+    <bindings scd="~tns:PayableAlternativeAmountType">
+      <class ref="com.picoto.jaxb.common.PayableAlternativeAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PayableAmountType">
+      <class ref="com.picoto.jaxb.common.PayableAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PayableRoundingAmountType">
+      <class ref="com.picoto.jaxb.common.PayableRoundingAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PayerReferenceType">
+      <class ref="com.picoto.jaxb.common.PayerReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentAlternativeCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentAlternativeCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentChannelCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentChannelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentDescriptionType">
+      <class ref="com.picoto.jaxb.common.PaymentDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentDueDateType">
+      <class ref="com.picoto.jaxb.common.PaymentDueDateType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentFrequencyCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentFrequencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentIDType">
+      <class ref="com.picoto.jaxb.common.PaymentIDType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentMeansCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentMeansCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentMeansIDType">
+      <class ref="com.picoto.jaxb.common.PaymentMeansIDType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentNoteType">
+      <class ref="com.picoto.jaxb.common.PaymentNoteType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentOrderReferenceType">
+      <class ref="com.picoto.jaxb.common.PaymentOrderReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentPercentType">
+      <class ref="com.picoto.jaxb.common.PaymentPercentType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentPurposeCodeType">
+      <class ref="com.picoto.jaxb.common.PaymentPurposeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PaymentTermsDetailsURIType">
+      <class ref="com.picoto.jaxb.common.PaymentTermsDetailsURIType"/>
+    </bindings>
+    <bindings scd="~tns:PenaltyAmountType">
+      <class ref="com.picoto.jaxb.common.PenaltyAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PenaltySurchargePercentType">
+      <class ref="com.picoto.jaxb.common.PenaltySurchargePercentType"/>
+    </bindings>
+    <bindings scd="~tns:PerUnitAmountType">
+      <class ref="com.picoto.jaxb.common.PerUnitAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PercentType">
+      <class ref="com.picoto.jaxb.common.PercentType"/>
+    </bindings>
+    <bindings scd="~tns:PerformanceMetricTypeCodeType">
+      <class ref="com.picoto.jaxb.common.PerformanceMetricTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PerformanceValueQuantityType">
+      <class ref="com.picoto.jaxb.common.PerformanceValueQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:PerformingCarrierAssignedIDType">
+      <class ref="com.picoto.jaxb.common.PerformingCarrierAssignedIDType"/>
+    </bindings>
+    <bindings scd="~tns:PersonalSituationType">
+      <class ref="com.picoto.jaxb.common.PersonalSituationType"/>
+    </bindings>
+    <bindings scd="~tns:PhoneNumberType">
+      <class ref="com.picoto.jaxb.common.PhoneNumberType"/>
+    </bindings>
+    <bindings scd="~tns:PlacardEndorsementType">
+      <class ref="com.picoto.jaxb.common.PlacardEndorsementType"/>
+    </bindings>
+    <bindings scd="~tns:PlacardNotationType">
+      <class ref="com.picoto.jaxb.common.PlacardNotationType"/>
+    </bindings>
+    <bindings scd="~tns:PlannedDateType">
+      <class ref="com.picoto.jaxb.common.PlannedDateType"/>
+    </bindings>
+    <bindings scd="~tns:PlotIdentificationType">
+      <class ref="com.picoto.jaxb.common.PlotIdentificationType"/>
+    </bindings>
+    <bindings scd="~tns:PositionCodeType">
+      <class ref="com.picoto.jaxb.common.PositionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PostEventNotificationDurationMeasureType">
+      <class ref="com.picoto.jaxb.common.PostEventNotificationDurationMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:PostalZoneType">
+      <class ref="com.picoto.jaxb.common.PostalZoneType"/>
+    </bindings>
+    <bindings scd="~tns:PostboxType">
+      <class ref="com.picoto.jaxb.common.PostboxType"/>
+    </bindings>
+    <bindings scd="~tns:PowerIndicatorType">
+      <class ref="com.picoto.jaxb.common.PowerIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:PreCarriageIndicatorType">
+      <class ref="com.picoto.jaxb.common.PreCarriageIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:PreEventNotificationDurationMeasureType">
+      <class ref="com.picoto.jaxb.common.PreEventNotificationDurationMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:PreferenceCriterionCodeType">
+      <class ref="com.picoto.jaxb.common.PreferenceCriterionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PrepaidAmountType">
+      <class ref="com.picoto.jaxb.common.PrepaidAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PrepaidIndicatorType">
+      <class ref="com.picoto.jaxb.common.PrepaidIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:PrepaidPaymentReferenceIDType">
+      <class ref="com.picoto.jaxb.common.PrepaidPaymentReferenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousCancellationReasonCodeType">
+      <class ref="com.picoto.jaxb.common.PreviousCancellationReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousJobIDType">
+      <class ref="com.picoto.jaxb.common.PreviousJobIDType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousMeterQuantityType">
+      <class ref="com.picoto.jaxb.common.PreviousMeterQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousMeterReadingDateType">
+      <class ref="com.picoto.jaxb.common.PreviousMeterReadingDateType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousMeterReadingMethodType">
+      <class ref="com.picoto.jaxb.common.PreviousMeterReadingMethodType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousMeterReadingMethodCodeType">
+      <class ref="com.picoto.jaxb.common.PreviousMeterReadingMethodCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PreviousVersionIDType">
+      <class ref="com.picoto.jaxb.common.PreviousVersionIDType"/>
+    </bindings>
+    <bindings scd="~tns:PriceAmountType">
+      <class ref="com.picoto.jaxb.common.PriceAmountType"/>
+    </bindings>
+    <bindings scd="~tns:PriceChangeReasonType">
+      <class ref="com.picoto.jaxb.common.PriceChangeReasonType"/>
+    </bindings>
+    <bindings scd="~tns:PriceEvaluationCodeType">
+      <class ref="com.picoto.jaxb.common.PriceEvaluationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PriceRevisionFormulaDescriptionType">
+      <class ref="com.picoto.jaxb.common.PriceRevisionFormulaDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:PriceTypeType">
+      <class ref="com.picoto.jaxb.common.PriceTypeType"/>
+    </bindings>
+    <bindings scd="~tns:PriceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.PriceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PricingCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.PricingCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PricingUpdateRequestIndicatorType">
+      <class ref="com.picoto.jaxb.common.PricingUpdateRequestIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:PrimaryAccountNumberIDType">
+      <class ref="com.picoto.jaxb.common.PrimaryAccountNumberIDType"/>
+    </bindings>
+    <bindings scd="~tns:PrintQualifierType">
+      <class ref="com.picoto.jaxb.common.PrintQualifierType"/>
+    </bindings>
+    <bindings scd="~tns:PriorityType">
+      <class ref="com.picoto.jaxb.common.PriorityType"/>
+    </bindings>
+    <bindings scd="~tns:PrivacyCodeType">
+      <class ref="com.picoto.jaxb.common.PrivacyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PrizeDescriptionType">
+      <class ref="com.picoto.jaxb.common.PrizeDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:PrizeIndicatorType">
+      <class ref="com.picoto.jaxb.common.PrizeIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ProcedureCodeType">
+      <class ref="com.picoto.jaxb.common.ProcedureCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProcessDescriptionType">
+      <class ref="com.picoto.jaxb.common.ProcessDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:ProcessReasonType">
+      <class ref="com.picoto.jaxb.common.ProcessReasonType"/>
+    </bindings>
+    <bindings scd="~tns:ProcessReasonCodeType">
+      <class ref="com.picoto.jaxb.common.ProcessReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProcurementSubTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ProcurementSubTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProcurementTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ProcurementTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProductTraceIDType">
+      <class ref="com.picoto.jaxb.common.ProductTraceIDType"/>
+    </bindings>
+    <bindings scd="~tns:ProfileExecutionIDType">
+      <class ref="com.picoto.jaxb.common.ProfileExecutionIDType"/>
+    </bindings>
+    <bindings scd="~tns:ProfileIDType">
+      <class ref="com.picoto.jaxb.common.ProfileIDType"/>
+    </bindings>
+    <bindings scd="~tns:ProfileStatusCodeType">
+      <class ref="com.picoto.jaxb.common.ProfileStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProgressPercentType">
+      <class ref="com.picoto.jaxb.common.ProgressPercentType"/>
+    </bindings>
+    <bindings scd="~tns:PromotionalEventTypeCodeType">
+      <class ref="com.picoto.jaxb.common.PromotionalEventTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ProviderTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ProviderTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:PublishAwardIndicatorType">
+      <class ref="com.picoto.jaxb.common.PublishAwardIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:PurposeType">
+      <class ref="com.picoto.jaxb.common.PurposeType"/>
+    </bindings>
+    <bindings scd="~tns:PurposeCodeType">
+      <class ref="com.picoto.jaxb.common.PurposeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:QualityControlCodeType">
+      <class ref="com.picoto.jaxb.common.QualityControlCodeType"/>
+    </bindings>
+    <bindings scd="~tns:QuantityType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$5"/>
+    </bindings>
+    <bindings scd="~tns:QuantityDiscrepancyCodeType">
+      <class ref="com.picoto.jaxb.common.QuantityDiscrepancyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RadioCallSignIDType">
+      <class ref="com.picoto.jaxb.common.RadioCallSignIDType"/>
+    </bindings>
+    <bindings scd="~tns:RailCarIDType">
+      <class ref="com.picoto.jaxb.common.RailCarIDType"/>
+    </bindings>
+    <bindings scd="~tns:RankType">
+      <class ref="com.picoto.jaxb.common.RankType"/>
+    </bindings>
+    <bindings scd="~tns:RateType">
+      <class ref="com.picoto.jaxb.common.RateType"/>
+    </bindings>
+    <bindings scd="~tns:ReceiptAdviceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ReceiptAdviceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ReceivedDateType">
+      <class ref="com.picoto.jaxb.common.ReceivedDateType"/>
+    </bindings>
+    <bindings scd="~tns:ReceivedElectronicTenderQuantityType">
+      <class ref="com.picoto.jaxb.common.ReceivedElectronicTenderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ReceivedForeignTenderQuantityType">
+      <class ref="com.picoto.jaxb.common.ReceivedForeignTenderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ReceivedQuantityType">
+      <class ref="com.picoto.jaxb.common.ReceivedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ReceivedTenderQuantityType">
+      <class ref="com.picoto.jaxb.common.ReceivedTenderQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceType">
+      <class ref="com.picoto.jaxb.common.ReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceDateType">
+      <class ref="com.picoto.jaxb.common.ReferenceDateType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceEventCodeType">
+      <class ref="com.picoto.jaxb.common.ReferenceEventCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceIDType">
+      <class ref="com.picoto.jaxb.common.ReferenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceTimeType">
+      <class ref="com.picoto.jaxb.common.ReferenceTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ReferencedConsignmentIDType">
+      <class ref="com.picoto.jaxb.common.ReferencedConsignmentIDType"/>
+    </bindings>
+    <bindings scd="~tns:RefrigeratedIndicatorType">
+      <class ref="com.picoto.jaxb.common.RefrigeratedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:RefrigerationOnIndicatorType">
+      <class ref="com.picoto.jaxb.common.RefrigerationOnIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:RegionType">
+      <class ref="com.picoto.jaxb.common.RegionType"/>
+    </bindings>
+    <bindings scd="~tns:RegisteredDateType">
+      <class ref="com.picoto.jaxb.common.RegisteredDateType"/>
+    </bindings>
+    <bindings scd="~tns:RegisteredTimeType">
+      <class ref="com.picoto.jaxb.common.RegisteredTimeType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationDateType">
+      <class ref="com.picoto.jaxb.common.RegistrationDateType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationExpirationDateType">
+      <class ref="com.picoto.jaxb.common.RegistrationExpirationDateType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationIDType">
+      <class ref="com.picoto.jaxb.common.RegistrationIDType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationNameType">
+      <class ref="com.picoto.jaxb.common.RegistrationNameType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationNationalityType">
+      <class ref="com.picoto.jaxb.common.RegistrationNationalityType"/>
+    </bindings>
+    <bindings scd="~tns:RegistrationNationalityIDType">
+      <class ref="com.picoto.jaxb.common.RegistrationNationalityIDType"/>
+    </bindings>
+    <bindings scd="~tns:RegulatoryDomainType">
+      <class ref="com.picoto.jaxb.common.RegulatoryDomainType"/>
+    </bindings>
+    <bindings scd="~tns:RejectActionCodeType">
+      <class ref="com.picoto.jaxb.common.RejectActionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RejectReasonType">
+      <class ref="com.picoto.jaxb.common.RejectReasonType"/>
+    </bindings>
+    <bindings scd="~tns:RejectReasonCodeType">
+      <class ref="com.picoto.jaxb.common.RejectReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RejectedQuantityType">
+      <class ref="com.picoto.jaxb.common.RejectedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:RejectionNoteType">
+      <class ref="com.picoto.jaxb.common.RejectionNoteType"/>
+    </bindings>
+    <bindings scd="~tns:ReleaseIDType">
+      <class ref="com.picoto.jaxb.common.ReleaseIDType"/>
+    </bindings>
+    <bindings scd="~tns:ReliabilityPercentType">
+      <class ref="com.picoto.jaxb.common.ReliabilityPercentType"/>
+    </bindings>
+    <bindings scd="~tns:RemarksType">
+      <class ref="com.picoto.jaxb.common.RemarksType"/>
+    </bindings>
+    <bindings scd="~tns:ReminderSequenceNumericType">
+      <class ref="com.picoto.jaxb.common.ReminderSequenceNumericType"/>
+    </bindings>
+    <bindings scd="~tns:ReminderTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ReminderTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ReplenishmentOwnerDescriptionType">
+      <class ref="com.picoto.jaxb.common.ReplenishmentOwnerDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:RequestForQuotationLineIDType">
+      <class ref="com.picoto.jaxb.common.RequestForQuotationLineIDType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedDeliveryDateType">
+      <class ref="com.picoto.jaxb.common.RequestedDeliveryDateType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedDespatchDateType">
+      <class ref="com.picoto.jaxb.common.RequestedDespatchDateType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedDespatchTimeType">
+      <class ref="com.picoto.jaxb.common.RequestedDespatchTimeType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedInvoiceCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.RequestedInvoiceCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RequestedPublicationDateType">
+      <class ref="com.picoto.jaxb.common.RequestedPublicationDateType"/>
+    </bindings>
+    <bindings scd="~tns:RequiredCurriculaIndicatorType">
+      <class ref="com.picoto.jaxb.common.RequiredCurriculaIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:RequiredCustomsIDType">
+      <class ref="com.picoto.jaxb.common.RequiredCustomsIDType"/>
+    </bindings>
+    <bindings scd="~tns:RequiredDeliveryDateType">
+      <class ref="com.picoto.jaxb.common.RequiredDeliveryDateType"/>
+    </bindings>
+    <bindings scd="~tns:RequiredDeliveryTimeType">
+      <class ref="com.picoto.jaxb.common.RequiredDeliveryTimeType"/>
+    </bindings>
+    <bindings scd="~tns:RequiredFeeAmountType">
+      <class ref="com.picoto.jaxb.common.RequiredFeeAmountType"/>
+    </bindings>
+    <bindings scd="~tns:ResidenceTypeType">
+      <class ref="com.picoto.jaxb.common.ResidenceTypeType"/>
+    </bindings>
+    <bindings scd="~tns:ResidenceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ResidenceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ResidentOccupantsNumericType">
+      <class ref="com.picoto.jaxb.common.ResidentOccupantsNumericType"/>
+    </bindings>
+    <bindings scd="~tns:ResolutionType">
+      <class ref="com.picoto.jaxb.common.ResolutionType"/>
+    </bindings>
+    <bindings scd="~tns:ResolutionCodeType">
+      <class ref="com.picoto.jaxb.common.ResolutionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ResolutionDateType">
+      <class ref="com.picoto.jaxb.common.ResolutionDateType"/>
+    </bindings>
+    <bindings scd="~tns:ResolutionTimeType">
+      <class ref="com.picoto.jaxb.common.ResolutionTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ResponseCodeType">
+      <class ref="com.picoto.jaxb.common.ResponseCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ResponseDateType">
+      <class ref="com.picoto.jaxb.common.ResponseDateType"/>
+    </bindings>
+    <bindings scd="~tns:ResponseTimeType">
+      <class ref="com.picoto.jaxb.common.ResponseTimeType"/>
+    </bindings>
+    <bindings scd="~tns:RetailEventNameType">
+      <class ref="com.picoto.jaxb.common.RetailEventNameType"/>
+    </bindings>
+    <bindings scd="~tns:RetailEventStatusCodeType">
+      <class ref="com.picoto.jaxb.common.RetailEventStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ReturnabilityIndicatorType">
+      <class ref="com.picoto.jaxb.common.ReturnabilityIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ReturnableMaterialIndicatorType">
+      <class ref="com.picoto.jaxb.common.ReturnableMaterialIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ReturnableQuantityType">
+      <class ref="com.picoto.jaxb.common.ReturnableQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:RevisedForecastLineIDType">
+      <class ref="com.picoto.jaxb.common.RevisedForecastLineIDType"/>
+    </bindings>
+    <bindings scd="~tns:RevisionDateType">
+      <class ref="com.picoto.jaxb.common.RevisionDateType"/>
+    </bindings>
+    <bindings scd="~tns:RevisionStatusCodeType">
+      <class ref="com.picoto.jaxb.common.RevisionStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RevisionTimeType">
+      <class ref="com.picoto.jaxb.common.RevisionTimeType"/>
+    </bindings>
+    <bindings scd="~tns:RoamingPartnerNameType">
+      <class ref="com.picoto.jaxb.common.RoamingPartnerNameType"/>
+    </bindings>
+    <bindings scd="~tns:RoleCodeType">
+      <class ref="com.picoto.jaxb.common.RoleCodeType"/>
+    </bindings>
+    <bindings scd="~tns:RoleDescriptionType">
+      <class ref="com.picoto.jaxb.common.RoleDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:RoomType">
+      <class ref="com.picoto.jaxb.common.RoomType"/>
+    </bindings>
+    <bindings scd="~tns:RoundingAmountType">
+      <class ref="com.picoto.jaxb.common.RoundingAmountType"/>
+    </bindings>
+    <bindings scd="~tns:SalesOrderIDType">
+      <class ref="com.picoto.jaxb.common.SalesOrderIDType"/>
+    </bindings>
+    <bindings scd="~tns:SalesOrderLineIDType">
+      <class ref="com.picoto.jaxb.common.SalesOrderLineIDType"/>
+    </bindings>
+    <bindings scd="~tns:SchemeURIType">
+      <class ref="com.picoto.jaxb.common.SchemeURIType"/>
+    </bindings>
+    <bindings scd="~tns:SealIssuerTypeCodeType">
+      <class ref="com.picoto.jaxb.common.SealIssuerTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SealStatusCodeType">
+      <class ref="com.picoto.jaxb.common.SealStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SealingPartyTypeType">
+      <class ref="com.picoto.jaxb.common.SealingPartyTypeType"/>
+    </bindings>
+    <bindings scd="~tns:SecurityClassificationCodeType">
+      <class ref="com.picoto.jaxb.common.SecurityClassificationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SecurityIDType">
+      <class ref="com.picoto.jaxb.common.SecurityIDType"/>
+    </bindings>
+    <bindings scd="~tns:SellerEventIDType">
+      <class ref="com.picoto.jaxb.common.SellerEventIDType"/>
+    </bindings>
+    <bindings scd="~tns:SequenceIDType">
+      <class ref="com.picoto.jaxb.common.SequenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:SequenceNumberIDType">
+      <class ref="com.picoto.jaxb.common.SequenceNumberIDType"/>
+    </bindings>
+    <bindings scd="~tns:SequenceNumericType">
+      <class ref="com.picoto.jaxb.common.SequenceNumericType"/>
+    </bindings>
+    <bindings scd="~tns:SerialIDType">
+      <class ref="com.picoto.jaxb.common.SerialIDType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceInformationPreferenceCodeType">
+      <class ref="com.picoto.jaxb.common.ServiceInformationPreferenceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceNameType">
+      <class ref="com.picoto.jaxb.common.ServiceNameType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceNumberCalledType">
+      <class ref="com.picoto.jaxb.common.ServiceNumberCalledType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceTypeType">
+      <class ref="com.picoto.jaxb.common.ServiceTypeType"/>
+    </bindings>
+    <bindings scd="~tns:ServiceTypeCodeType">
+      <class ref="com.picoto.jaxb.common.ServiceTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SettlementDiscountAmountType">
+      <class ref="com.picoto.jaxb.common.SettlementDiscountAmountType"/>
+    </bindings>
+    <bindings scd="~tns:SettlementDiscountPercentType">
+      <class ref="com.picoto.jaxb.common.SettlementDiscountPercentType"/>
+    </bindings>
+    <bindings scd="~tns:SharesNumberQuantityType">
+      <class ref="com.picoto.jaxb.common.SharesNumberQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ShippingMarksType">
+      <class ref="com.picoto.jaxb.common.ShippingMarksType"/>
+    </bindings>
+    <bindings scd="~tns:ShippingOrderIDType">
+      <class ref="com.picoto.jaxb.common.ShippingOrderIDType"/>
+    </bindings>
+    <bindings scd="~tns:ShippingPriorityLevelCodeType">
+      <class ref="com.picoto.jaxb.common.ShippingPriorityLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ShipsRequirementsType">
+      <class ref="com.picoto.jaxb.common.ShipsRequirementsType"/>
+    </bindings>
+    <bindings scd="~tns:ShortQuantityType">
+      <class ref="com.picoto.jaxb.common.ShortQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ShortageActionCodeType">
+      <class ref="com.picoto.jaxb.common.ShortageActionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureIDType">
+      <class ref="com.picoto.jaxb.common.SignatureIDType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureMethodType">
+      <class ref="com.picoto.jaxb.common.SignatureMethodType"/>
+    </bindings>
+    <bindings scd="~tns:SizeTypeCodeType">
+      <class ref="com.picoto.jaxb.common.SizeTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SoleProprietorshipIndicatorType">
+      <class ref="com.picoto.jaxb.common.SoleProprietorshipIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:SourceCurrencyBaseRateType">
+      <class ref="com.picoto.jaxb.common.SourceCurrencyBaseRateType"/>
+    </bindings>
+    <bindings scd="~tns:SourceCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.SourceCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SourceForecastIssueDateType">
+      <class ref="com.picoto.jaxb.common.SourceForecastIssueDateType"/>
+    </bindings>
+    <bindings scd="~tns:SourceForecastIssueTimeType">
+      <class ref="com.picoto.jaxb.common.SourceForecastIssueTimeType"/>
+    </bindings>
+    <bindings scd="~tns:SourceValueMeasureType">
+      <class ref="com.picoto.jaxb.common.SourceValueMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialInstructionsType">
+      <class ref="com.picoto.jaxb.common.SpecialInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialSecurityIndicatorType">
+      <class ref="com.picoto.jaxb.common.SpecialSecurityIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialServiceInstructionsType">
+      <class ref="com.picoto.jaxb.common.SpecialServiceInstructionsType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialTermsType">
+      <class ref="com.picoto.jaxb.common.SpecialTermsType"/>
+    </bindings>
+    <bindings scd="~tns:SpecialTransportRequirementsType">
+      <class ref="com.picoto.jaxb.common.SpecialTransportRequirementsType"/>
+    </bindings>
+    <bindings scd="~tns:SpecificationIDType">
+      <class ref="com.picoto.jaxb.common.SpecificationIDType"/>
+    </bindings>
+    <bindings scd="~tns:SpecificationTypeCodeType">
+      <class ref="com.picoto.jaxb.common.SpecificationTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SplitConsignmentIndicatorType">
+      <class ref="com.picoto.jaxb.common.SplitConsignmentIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:StartDateType">
+      <class ref="com.picoto.jaxb.common.StartDateType"/>
+    </bindings>
+    <bindings scd="~tns:StartTimeType">
+      <class ref="com.picoto.jaxb.common.StartTimeType"/>
+    </bindings>
+    <bindings scd="~tns:StatementTypeCodeType">
+      <class ref="com.picoto.jaxb.common.StatementTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:StatusAvailableIndicatorType">
+      <class ref="com.picoto.jaxb.common.StatusAvailableIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:StatusCodeType">
+      <class ref="com.picoto.jaxb.common.StatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:StatusReasonType">
+      <class ref="com.picoto.jaxb.common.StatusReasonType"/>
+    </bindings>
+    <bindings scd="~tns:StatusReasonCodeType">
+      <class ref="com.picoto.jaxb.common.StatusReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:StreetNameType">
+      <class ref="com.picoto.jaxb.common.StreetNameType"/>
+    </bindings>
+    <bindings scd="~tns:SubcontractingConditionsCodeType">
+      <class ref="com.picoto.jaxb.common.SubcontractingConditionsCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SubmissionDateType">
+      <class ref="com.picoto.jaxb.common.SubmissionDateType"/>
+    </bindings>
+    <bindings scd="~tns:SubmissionDueDateType">
+      <class ref="com.picoto.jaxb.common.SubmissionDueDateType"/>
+    </bindings>
+    <bindings scd="~tns:SubmissionMethodCodeType">
+      <class ref="com.picoto.jaxb.common.SubmissionMethodCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SubscriberIDType">
+      <class ref="com.picoto.jaxb.common.SubscriberIDType"/>
+    </bindings>
+    <bindings scd="~tns:SubscriberTypeType">
+      <class ref="com.picoto.jaxb.common.SubscriberTypeType"/>
+    </bindings>
+    <bindings scd="~tns:SubscriberTypeCodeType">
+      <class ref="com.picoto.jaxb.common.SubscriberTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SubstitutionStatusCodeType">
+      <class ref="com.picoto.jaxb.common.SubstitutionStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:SuccessiveSequenceIDType">
+      <class ref="com.picoto.jaxb.common.SuccessiveSequenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:SummaryDescriptionType">
+      <class ref="com.picoto.jaxb.common.SummaryDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:SupplierAssignedAccountIDType">
+      <class ref="com.picoto.jaxb.common.SupplierAssignedAccountIDType"/>
+    </bindings>
+    <bindings scd="~tns:SupplyChainActivityTypeCodeType">
+      <class ref="com.picoto.jaxb.common.SupplyChainActivityTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TareWeightMeasureType">
+      <class ref="com.picoto.jaxb.common.TareWeightMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:TargetCurrencyBaseRateType">
+      <class ref="com.picoto.jaxb.common.TargetCurrencyBaseRateType"/>
+    </bindings>
+    <bindings scd="~tns:TargetCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.TargetCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TargetInventoryQuantityType">
+      <class ref="com.picoto.jaxb.common.TargetInventoryQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TargetServicePercentType">
+      <class ref="com.picoto.jaxb.common.TargetServicePercentType"/>
+    </bindings>
+    <bindings scd="~tns:TariffClassCodeType">
+      <class ref="com.picoto.jaxb.common.TariffClassCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TariffCodeType">
+      <class ref="com.picoto.jaxb.common.TariffCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TariffDescriptionType">
+      <class ref="com.picoto.jaxb.common.TariffDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:TaxAmountType">
+      <class ref="com.picoto.jaxb.common.TaxAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxCurrencyCodeType">
+      <class ref="com.picoto.jaxb.common.TaxCurrencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxEnergyAmountType">
+      <class ref="com.picoto.jaxb.common.TaxEnergyAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxEnergyBalanceAmountType">
+      <class ref="com.picoto.jaxb.common.TaxEnergyBalanceAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxEnergyOnAccountAmountType">
+      <class ref="com.picoto.jaxb.common.TaxEnergyOnAccountAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxEvidenceIndicatorType">
+      <class ref="com.picoto.jaxb.common.TaxEvidenceIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:TaxExclusiveAmountType">
+      <class ref="com.picoto.jaxb.common.TaxExclusiveAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxExemptionReasonType">
+      <class ref="com.picoto.jaxb.common.TaxExemptionReasonType"/>
+    </bindings>
+    <bindings scd="~tns:TaxExemptionReasonCodeType">
+      <class ref="com.picoto.jaxb.common.TaxExemptionReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxIncludedIndicatorType">
+      <class ref="com.picoto.jaxb.common.TaxIncludedIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:TaxInclusiveAmountType">
+      <class ref="com.picoto.jaxb.common.TaxInclusiveAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TaxLevelCodeType">
+      <class ref="com.picoto.jaxb.common.TaxLevelCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxPointDateType">
+      <class ref="com.picoto.jaxb.common.TaxPointDateType"/>
+    </bindings>
+    <bindings scd="~tns:TaxTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TaxTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TaxableAmountType">
+      <class ref="com.picoto.jaxb.common.TaxableAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TechnicalCommitteeDescriptionType">
+      <class ref="com.picoto.jaxb.common.TechnicalCommitteeDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:TechnicalNameType">
+      <class ref="com.picoto.jaxb.common.TechnicalNameType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsServiceCallType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsServiceCallType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsServiceCallCodeType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsServiceCallCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsServiceCategoryType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsServiceCategoryType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsServiceCategoryCodeType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsServiceCategoryCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsSupplyTypeType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsSupplyTypeType"/>
+    </bindings>
+    <bindings scd="~tns:TelecommunicationsSupplyTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TelecommunicationsSupplyTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TelefaxType">
+      <class ref="com.picoto.jaxb.common.TelefaxType"/>
+    </bindings>
+    <bindings scd="~tns:TelephoneType">
+      <class ref="com.picoto.jaxb.common.TelephoneType"/>
+    </bindings>
+    <bindings scd="~tns:TenderEnvelopeIDType">
+      <class ref="com.picoto.jaxb.common.TenderEnvelopeIDType"/>
+    </bindings>
+    <bindings scd="~tns:TenderEnvelopeTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TenderEnvelopeTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TenderResultCodeType">
+      <class ref="com.picoto.jaxb.common.TenderResultCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TenderTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TenderTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TendererRequirementTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TendererRequirementTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TendererRoleCodeType">
+      <class ref="com.picoto.jaxb.common.TendererRoleCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TestMethodType">
+      <class ref="com.picoto.jaxb.common.TestMethodType"/>
+    </bindings>
+    <bindings scd="~tns:TextType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$6"/>
+    </bindings>
+    <bindings scd="~tns:ThirdPartyPayerIndicatorType">
+      <class ref="com.picoto.jaxb.common.ThirdPartyPayerIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:ThresholdAmountType">
+      <class ref="com.picoto.jaxb.common.ThresholdAmountType"/>
+    </bindings>
+    <bindings scd="~tns:ThresholdQuantityType">
+      <class ref="com.picoto.jaxb.common.ThresholdQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:ThresholdValueComparisonCodeType">
+      <class ref="com.picoto.jaxb.common.ThresholdValueComparisonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TierRangeType">
+      <class ref="com.picoto.jaxb.common.TierRangeType"/>
+    </bindings>
+    <bindings scd="~tns:TierRatePercentType">
+      <class ref="com.picoto.jaxb.common.TierRatePercentType"/>
+    </bindings>
+    <bindings scd="~tns:TimeAmountType">
+      <class ref="com.picoto.jaxb.common.TimeAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TimeDeltaDaysQuantityType">
+      <class ref="com.picoto.jaxb.common.TimeDeltaDaysQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TimeFrequencyCodeType">
+      <class ref="com.picoto.jaxb.common.TimeFrequencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TimezoneOffsetType">
+      <class ref="com.picoto.jaxb.common.TimezoneOffsetType"/>
+    </bindings>
+    <bindings scd="~tns:TimingComplaintType">
+      <class ref="com.picoto.jaxb.common.TimingComplaintType"/>
+    </bindings>
+    <bindings scd="~tns:TimingComplaintCodeType">
+      <class ref="com.picoto.jaxb.common.TimingComplaintCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TitleType">
+      <class ref="com.picoto.jaxb.common.TitleType"/>
+    </bindings>
+    <bindings scd="~tns:ToOrderIndicatorType">
+      <class ref="com.picoto.jaxb.common.ToOrderIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:TotalAmountType">
+      <class ref="com.picoto.jaxb.common.TotalAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalBalanceAmountType">
+      <class ref="com.picoto.jaxb.common.TotalBalanceAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalConsumedQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalConsumedQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalCreditAmountType">
+      <class ref="com.picoto.jaxb.common.TotalCreditAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalDebitAmountType">
+      <class ref="com.picoto.jaxb.common.TotalDebitAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalDeliveredQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalDeliveredQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalGoodsItemQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalGoodsItemQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalInvoiceAmountType">
+      <class ref="com.picoto.jaxb.common.TotalInvoiceAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalMeteredQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalMeteredQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalPackageQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalPackageQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalPackagesQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalPackagesQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TotalPaymentAmountType">
+      <class ref="com.picoto.jaxb.common.TotalPaymentAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalTaskAmountType">
+      <class ref="com.picoto.jaxb.common.TotalTaskAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalTaxAmountType">
+      <class ref="com.picoto.jaxb.common.TotalTaxAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TotalTransportHandlingUnitQuantityType">
+      <class ref="com.picoto.jaxb.common.TotalTransportHandlingUnitQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:TraceIDType">
+      <class ref="com.picoto.jaxb.common.TraceIDType"/>
+    </bindings>
+    <bindings scd="~tns:TrackingDeviceCodeType">
+      <class ref="com.picoto.jaxb.common.TrackingDeviceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TrackingIDType">
+      <class ref="com.picoto.jaxb.common.TrackingIDType"/>
+    </bindings>
+    <bindings scd="~tns:TradeItemPackingLabelingTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TradeItemPackingLabelingTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TradeServiceCodeType">
+      <class ref="com.picoto.jaxb.common.TradeServiceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TradingRestrictionsType">
+      <class ref="com.picoto.jaxb.common.TradingRestrictionsType"/>
+    </bindings>
+    <bindings scd="~tns:TrainIDType">
+      <class ref="com.picoto.jaxb.common.TrainIDType"/>
+    </bindings>
+    <bindings scd="~tns:TransactionCurrencyTaxAmountType">
+      <class ref="com.picoto.jaxb.common.TransactionCurrencyTaxAmountType"/>
+    </bindings>
+    <bindings scd="~tns:TransitDirectionCodeType">
+      <class ref="com.picoto.jaxb.common.TransitDirectionCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportAuthorizationCodeType">
+      <class ref="com.picoto.jaxb.common.TransportAuthorizationCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportEmergencyCardCodeType">
+      <class ref="com.picoto.jaxb.common.TransportEmergencyCardCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportEquipmentTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportEquipmentTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportEventTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportEventTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportExecutionPlanReferenceIDType">
+      <class ref="com.picoto.jaxb.common.TransportExecutionPlanReferenceIDType"/>
+    </bindings>
+    <bindings scd="~tns:TransportExecutionStatusCodeType">
+      <class ref="com.picoto.jaxb.common.TransportExecutionStatusCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportHandlingUnitTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportHandlingUnitTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportMeansTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportMeansTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportModeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportModeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportServiceCodeType">
+      <class ref="com.picoto.jaxb.common.TransportServiceCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TransportServiceProviderRemarksType">
+      <class ref="com.picoto.jaxb.common.TransportServiceProviderRemarksType"/>
+    </bindings>
+    <bindings scd="~tns:TransportServiceProviderSpecialTermsType">
+      <class ref="com.picoto.jaxb.common.TransportServiceProviderSpecialTermsType"/>
+    </bindings>
+    <bindings scd="~tns:TransportUserRemarksType">
+      <class ref="com.picoto.jaxb.common.TransportUserRemarksType"/>
+    </bindings>
+    <bindings scd="~tns:TransportUserSpecialTermsType">
+      <class ref="com.picoto.jaxb.common.TransportUserSpecialTermsType"/>
+    </bindings>
+    <bindings scd="~tns:TransportationServiceDescriptionType">
+      <class ref="com.picoto.jaxb.common.TransportationServiceDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:TransportationServiceDetailsURIType">
+      <class ref="com.picoto.jaxb.common.TransportationServiceDetailsURIType"/>
+    </bindings>
+    <bindings scd="~tns:TransportationStatusTypeCodeType">
+      <class ref="com.picoto.jaxb.common.TransportationStatusTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:TypeCodeType">
+      <class ref="com.picoto.jaxb.common.TypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:UBLVersionIDType">
+      <class ref="com.picoto.jaxb.common.UBLVersionIDType"/>
+    </bindings>
+    <bindings scd="~tns:UNDGCodeType">
+      <class ref="com.picoto.jaxb.common.UNDGCodeType"/>
+    </bindings>
+    <bindings scd="~tns:URIType">
+      <class ref="com.picoto.jaxb.common.URIType"/>
+    </bindings>
+    <bindings scd="~tns:UUIDType">
+      <class ref="com.picoto.jaxb.common.UUIDType"/>
+    </bindings>
+    <bindings scd="~tns:UnknownPriceIndicatorType">
+      <class ref="com.picoto.jaxb.common.UnknownPriceIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:UpperOrangeHazardPlacardIDType">
+      <class ref="com.picoto.jaxb.common.UpperOrangeHazardPlacardIDType"/>
+    </bindings>
+    <bindings scd="~tns:UrgencyCodeType">
+      <class ref="com.picoto.jaxb.common.UrgencyCodeType"/>
+    </bindings>
+    <bindings scd="~tns:UtilityStatementTypeCodeType">
+      <class ref="com.picoto.jaxb.common.UtilityStatementTypeCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ValidateProcessType">
+      <class ref="com.picoto.jaxb.common.ValidateProcessType"/>
+    </bindings>
+    <bindings scd="~tns:ValidateToolType">
+      <class ref="com.picoto.jaxb.common.ValidateToolType"/>
+    </bindings>
+    <bindings scd="~tns:ValidateToolVersionType">
+      <class ref="com.picoto.jaxb.common.ValidateToolVersionType"/>
+    </bindings>
+    <bindings scd="~tns:ValidationDateType">
+      <class ref="com.picoto.jaxb.common.ValidationDateType"/>
+    </bindings>
+    <bindings scd="~tns:ValidationResultCodeType">
+      <class ref="com.picoto.jaxb.common.ValidationResultCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ValidationTimeType">
+      <class ref="com.picoto.jaxb.common.ValidationTimeType"/>
+    </bindings>
+    <bindings scd="~tns:ValidatorIDType">
+      <class ref="com.picoto.jaxb.common.ValidatorIDType"/>
+    </bindings>
+    <bindings scd="~tns:ValidityStartDateType">
+      <class ref="com.picoto.jaxb.common.ValidityStartDateType"/>
+    </bindings>
+    <bindings scd="~tns:ValueType">
+      <class ref="com.picoto.jaxb.common.ValueType"/>
+    </bindings>
+    <bindings scd="~tns:ValueAmountType">
+      <class ref="com.picoto.jaxb.common.ValueAmountType"/>
+    </bindings>
+    <bindings scd="~tns:ValueMeasureType">
+      <class ref="com.picoto.jaxb.common.ValueMeasureType"/>
+    </bindings>
+    <bindings scd="~tns:ValueQualifierType">
+      <class ref="com.picoto.jaxb.common.ValueQualifierType"/>
+    </bindings>
+    <bindings scd="~tns:ValueQuantityType">
+      <class ref="com.picoto.jaxb.common.ValueQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:VarianceQuantityType">
+      <class ref="com.picoto.jaxb.common.VarianceQuantityType"/>
+    </bindings>
+    <bindings scd="~tns:VariantConstraintIndicatorType">
+      <class ref="com.picoto.jaxb.common.VariantConstraintIndicatorType"/>
+    </bindings>
+    <bindings scd="~tns:VariantIDType">
+      <class ref="com.picoto.jaxb.common.VariantIDType"/>
+    </bindings>
+    <bindings scd="~tns:VersionIDType">
+      <class ref="com.picoto.jaxb.common.VersionIDType"/>
+    </bindings>
+    <bindings scd="~tns:VesselIDType">
+      <class ref="com.picoto.jaxb.common.VesselIDType"/>
+    </bindings>
+    <bindings scd="~tns:VesselNameType">
+      <class ref="com.picoto.jaxb.common.VesselNameType"/>
+    </bindings>
+    <bindings scd="~tns:WarrantyInformationType">
+      <class ref="com.picoto.jaxb.common.WarrantyInformationType"/>
+    </bindings>
+    <bindings scd="~tns:WebsiteURIType">
+      <class ref="com.picoto.jaxb.common.WebsiteURIType"/>
+    </bindings>
+    <bindings scd="~tns:WeekDayCodeType">
+      <class ref="com.picoto.jaxb.common.WeekDayCodeType"/>
+    </bindings>
+    <bindings scd="~tns:WeightType">
+      <class ref="com.picoto.jaxb.common.WeightType"/>
+    </bindings>
+    <bindings scd="~tns:WeightNumericType">
+      <class ref="com.picoto.jaxb.common.WeightNumericType"/>
+    </bindings>
+    <bindings scd="~tns:WeightingAlgorithmCodeType">
+      <class ref="com.picoto.jaxb.common.WeightingAlgorithmCodeType"/>
+    </bindings>
+    <bindings scd="~tns:WorkPhaseType">
+      <class ref="com.picoto.jaxb.common.WorkPhaseType"/>
+    </bindings>
+    <bindings scd="~tns:WorkPhaseCodeType">
+      <class ref="com.picoto.jaxb.common.WorkPhaseCodeType"/>
+    </bindings>
+    <bindings scd="~tns:XPathType">
+      <class ref="com.picoto.jaxb.common.XPathType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:AmountType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$7"/>
+    </bindings>
+    <bindings scd="~tns:BinaryObjectType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$8"/>
+    </bindings>
+    <bindings scd="~tns:GraphicType">
+      <class ref="com.picoto.jaxb.common.GraphicType"/>
+    </bindings>
+    <bindings scd="~tns:PictureType">
+      <class ref="com.picoto.jaxb.common.PictureType"/>
+    </bindings>
+    <bindings scd="~tns:SoundType">
+      <class ref="com.picoto.jaxb.common.SoundType"/>
+    </bindings>
+    <bindings scd="~tns:VideoType">
+      <class ref="com.picoto.jaxb.common.VideoType"/>
+    </bindings>
+    <bindings scd="~tns:CodeType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$9"/>
+    </bindings>
+    <bindings scd="~tns:DateTimeType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$10"/>
+    </bindings>
+    <bindings scd="~tns:DateType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$11"/>
+    </bindings>
+    <bindings scd="~tns:TimeType">
+      <class ref="com.picoto.jaxb.common.TimeType"/>
+    </bindings>
+    <bindings scd="~tns:IdentifierType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$12"/>
+    </bindings>
+    <bindings scd="~tns:IndicatorType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$13"/>
+    </bindings>
+    <bindings scd="~tns:MeasureType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$14"/>
+    </bindings>
+    <bindings scd="~tns:NumericType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$15"/>
+    </bindings>
+    <bindings scd="~tns:ValueType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$16"/>
+    </bindings>
+    <bindings scd="~tns:PercentType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$17"/>
+    </bindings>
+    <bindings scd="~tns:RateType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$18"/>
+    </bindings>
+    <bindings scd="~tns:QuantityType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$19"/>
+    </bindings>
+    <bindings scd="~tns:TextType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$20"/>
+    </bindings>
+    <bindings scd="~tns:NameType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$21"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:UBLExtensionsType">
+      <class ref="com.picoto.jaxb.common.UBLExtensionsType"/>
+    </bindings>
+    <bindings scd="~tns:UBLExtensionType">
+      <class ref="com.picoto.jaxb.common.UBLExtensionType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionAgencyIDType">
+      <class ref="com.picoto.jaxb.common.ExtensionAgencyIDType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionAgencyNameType">
+      <class ref="com.picoto.jaxb.common.ExtensionAgencyNameType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionAgencyURIType">
+      <class ref="com.picoto.jaxb.common.ExtensionAgencyURIType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionContentType">
+      <class ref="com.picoto.jaxb.common.ExtensionContentType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionReasonType">
+      <class ref="com.picoto.jaxb.common.ExtensionReasonType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionReasonCodeType">
+      <class ref="com.picoto.jaxb.common.ExtensionReasonCodeType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionURIType">
+      <class ref="com.picoto.jaxb.common.ExtensionURIType"/>
+    </bindings>
+    <bindings scd="~tns:ExtensionVersionIDType">
+      <class ref="com.picoto.jaxb.common.ExtensionVersionIDType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:UBLDocumentSignaturesType">
+      <class ref="com.picoto.jaxb.common.UBLDocumentSignaturesType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:SignatureInformationType">
+      <class ref="com.picoto.jaxb.common.SignatureInformationType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:ReferencedSignatureIDType">
+      <class ref="com.picoto.jaxb.common.ReferencedSignatureIDType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.w3.org/2000/09/xmldsig#">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:SignatureType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$22"/>
+    </bindings>
+    <bindings scd="~tns:SignatureValueType">
+      <class ref="com.picoto.jaxb.common.SignatureValueType"/>
+    </bindings>
+    <bindings scd="~tns:SignedInfoType">
+      <class ref="com.picoto.jaxb.common.SignedInfoType"/>
+    </bindings>
+    <bindings scd="~tns:CanonicalizationMethodType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$23"/>
+    </bindings>
+    <bindings scd="~tns:SignatureMethodType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$24"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$25"/>
+    </bindings>
+    <bindings scd="~tns:TransformsType">
+      <class ref="com.picoto.jaxb.common.TransformsType"/>
+    </bindings>
+    <bindings scd="~tns:TransformType">
+      <class ref="com.picoto.jaxb.common.TransformType"/>
+    </bindings>
+    <bindings scd="~tns:DigestMethodType">
+      <class ref="com.picoto.jaxb.common.DigestMethodType"/>
+    </bindings>
+    <bindings scd="~tns:KeyInfoType">
+      <class ref="com.picoto.jaxb.common.KeyInfoType"/>
+    </bindings>
+    <bindings scd="~tns:KeyValueType">
+      <class ref="com.picoto.jaxb.common.KeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:RetrievalMethodType">
+      <class ref="com.picoto.jaxb.common.RetrievalMethodType"/>
+    </bindings>
+    <bindings scd="~tns:X509DataType">
+      <class ref="com.picoto.jaxb.common.X509DataType"/>
+    </bindings>
+    <bindings scd="~tns:PGPDataType">
+      <class ref="com.picoto.jaxb.common.PGPDataType"/>
+    </bindings>
+    <bindings scd="~tns:SPKIDataType">
+      <class ref="com.picoto.jaxb.common.SPKIDataType"/>
+    </bindings>
+    <bindings scd="~tns:ObjectType">
+      <class ref="com.picoto.jaxb.common.ObjectType"/>
+    </bindings>
+    <bindings scd="~tns:ManifestType">
+      <class ref="com.picoto.jaxb.common.ManifestType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePropertiesType">
+      <class ref="com.picoto.jaxb.common.SignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePropertyType">
+      <class ref="com.picoto.jaxb.common.SignaturePropertyType"/>
+    </bindings>
+    <bindings scd="~tns:DSAKeyValueType">
+      <class ref="com.picoto.jaxb.common.DSAKeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:RSAKeyValueType">
+      <class ref="com.picoto.jaxb.common.RSAKeyValueType"/>
+    </bindings>
+    <bindings scd="~tns:X509IssuerSerialType">
+      <class ref="com.picoto.jaxb.common.X509IssuerSerialType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://uri.etsi.org/01903/v1.3.2#">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:AnyType">
+      <class ref="com.picoto.jaxb.common.AnyType"/>
+    </bindings>
+    <bindings scd="~tns:ObjectIdentifierType">
+      <class ref="com.picoto.jaxb.common.ObjectIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:EncapsulatedPKIDataType">
+      <class ref="com.picoto.jaxb.common.EncapsulatedPKIDataType"/>
+    </bindings>
+    <bindings scd="~tns:IncludeType">
+      <class ref="com.picoto.jaxb.common.IncludeType"/>
+    </bindings>
+    <bindings scd="~tns:ReferenceInfoType">
+      <class ref="com.picoto.jaxb.common.ReferenceInfoType"/>
+    </bindings>
+    <bindings scd="~tns:XAdESTimeStampType">
+      <class ref="com.picoto.jaxb.common.XAdESTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:OtherTimeStampType">
+      <class ref="com.picoto.jaxb.common.OtherTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:QualifyingPropertiesType">
+      <class ref="com.picoto.jaxb.common.QualifyingPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedPropertiesType">
+      <class ref="com.picoto.jaxb.common.SignedPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedPropertiesType">
+      <class ref="com.picoto.jaxb.common.UnsignedPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedSignaturePropertiesType">
+      <class ref="com.picoto.jaxb.common.SignedSignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:SignedDataObjectPropertiesType">
+      <class ref="com.picoto.jaxb.common.SignedDataObjectPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedSignaturePropertiesType">
+      <class ref="com.picoto.jaxb.common.UnsignedSignaturePropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:UnsignedDataObjectPropertiesType">
+      <class ref="com.picoto.jaxb.common.UnsignedDataObjectPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:QualifyingPropertiesReferenceType">
+      <class ref="com.picoto.jaxb.common.QualifyingPropertiesReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDListType">
+      <class ref="com.picoto.jaxb.common.CertIDListType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePolicyIdentifierType">
+      <class ref="com.picoto.jaxb.common.SignaturePolicyIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:SPUserNoticeType">
+      <class ref="com.picoto.jaxb.common.SPUserNoticeType"/>
+    </bindings>
+    <bindings scd="~tns:CounterSignatureType">
+      <class ref="com.picoto.jaxb.common.CounterSignatureType"/>
+    </bindings>
+    <bindings scd="~tns:DataObjectFormatType">
+      <class ref="com.picoto.jaxb.common.DataObjectFormatType"/>
+    </bindings>
+    <bindings scd="~tns:CommitmentTypeIndicationType">
+      <class ref="com.picoto.jaxb.common.CommitmentTypeIndicationType"/>
+    </bindings>
+    <bindings scd="~tns:SignatureProductionPlaceType">
+      <class ref="com.picoto.jaxb.common.SignatureProductionPlaceType"/>
+    </bindings>
+    <bindings scd="~tns:SignerRoleType">
+      <class ref="com.picoto.jaxb.common.SignerRoleType"/>
+    </bindings>
+    <bindings scd="~tns:CompleteCertificateRefsType">
+      <class ref="com.picoto.jaxb.common.CompleteCertificateRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CompleteRevocationRefsType">
+      <class ref="com.picoto.jaxb.common.CompleteRevocationRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CertificateValuesType">
+      <class ref="com.picoto.jaxb.common.CertificateValuesType"/>
+    </bindings>
+    <bindings scd="~tns:RevocationValuesType">
+      <class ref="com.picoto.jaxb.common.RevocationValuesType"/>
+    </bindings>
+    <bindings scd="~tns:IdentifierType">
+      <class ref="com.picoto.jaxb.common.$$$garbage$$$26"/>
+    </bindings>
+    <bindings scd="~tns:DocumentationReferencesType">
+      <class ref="com.picoto.jaxb.common.DocumentationReferencesType"/>
+    </bindings>
+    <bindings scd="~tns:GenericTimeStampType">
+      <class ref="com.picoto.jaxb.common.GenericTimeStampType"/>
+    </bindings>
+    <bindings scd="~tns:CertIDType">
+      <class ref="com.picoto.jaxb.common.CertIDType"/>
+    </bindings>
+    <bindings scd="~tns:DigestAlgAndValueType">
+      <class ref="com.picoto.jaxb.common.DigestAlgAndValueType"/>
+    </bindings>
+    <bindings scd="~tns:SignaturePolicyIdType">
+      <class ref="com.picoto.jaxb.common.SignaturePolicyIdType"/>
+    </bindings>
+    <bindings scd="~tns:SigPolicyQualifiersListType">
+      <class ref="com.picoto.jaxb.common.SigPolicyQualifiersListType"/>
+    </bindings>
+    <bindings scd="~tns:NoticeReferenceType">
+      <class ref="com.picoto.jaxb.common.NoticeReferenceType"/>
+    </bindings>
+    <bindings scd="~tns:IntegerListType">
+      <class ref="com.picoto.jaxb.common.IntegerListType"/>
+    </bindings>
+    <bindings scd="~tns:CommitmentTypeQualifiersListType">
+      <class ref="com.picoto.jaxb.common.CommitmentTypeQualifiersListType"/>
+    </bindings>
+    <bindings scd="~tns:ClaimedRolesListType">
+      <class ref="com.picoto.jaxb.common.ClaimedRolesListType"/>
+    </bindings>
+    <bindings scd="~tns:CertifiedRolesListType">
+      <class ref="com.picoto.jaxb.common.CertifiedRolesListType"/>
+    </bindings>
+    <bindings scd="~tns:CRLRefsType">
+      <class ref="com.picoto.jaxb.common.CRLRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CRLRefType">
+      <class ref="com.picoto.jaxb.common.CRLRefType"/>
+    </bindings>
+    <bindings scd="~tns:CRLIdentifierType">
+      <class ref="com.picoto.jaxb.common.CRLIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPRefsType">
+      <class ref="com.picoto.jaxb.common.OCSPRefsType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPRefType">
+      <class ref="com.picoto.jaxb.common.OCSPRefType"/>
+    </bindings>
+    <bindings scd="~tns:ResponderIDType">
+      <class ref="com.picoto.jaxb.common.ResponderIDType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPIdentifierType">
+      <class ref="com.picoto.jaxb.common.OCSPIdentifierType"/>
+    </bindings>
+    <bindings scd="~tns:OtherCertStatusRefsType">
+      <class ref="com.picoto.jaxb.common.OtherCertStatusRefsType"/>
+    </bindings>
+    <bindings scd="~tns:CRLValuesType">
+      <class ref="com.picoto.jaxb.common.CRLValuesType"/>
+    </bindings>
+    <bindings scd="~tns:OCSPValuesType">
+      <class ref="com.picoto.jaxb.common.OCSPValuesType"/>
+    </bindings>
+    <bindings scd="~tns:OtherCertStatusValuesType">
+      <class ref="com.picoto.jaxb.common.OtherCertStatusValuesType"/>
+    </bindings>
+    <bindings scd="~tns:QualifierType">
+      <typesafeEnumClass ref="com.picoto.jaxb.common.QualifierType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://uri.etsi.org/01903/v1.4.1#">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:ValidationDataType">
+      <class ref="com.picoto.jaxb.common.ValidationDataType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+    <schemaBindings map="false">
+      <package name="com.picoto.jaxb.common"/>
+    </schemaBindings>
+    <bindings scd="~tns:InvoiceType">
+      <class ref="com.picoto.jaxb.common.InvoiceType"/>
+    </bindings>
+  </bindings>
+</bindings>
+
