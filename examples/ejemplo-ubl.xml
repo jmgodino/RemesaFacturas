@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+
+	<cbc:CustomizationID>2.1</cbc:CustomizationID>
+	<cbc:ProfileID>Invoice</cbc:ProfileID>
+	<cbc:ID>INV-1001</cbc:ID>
+	<cbc:IssueDate>2024-12-14</cbc:IssueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>USD</cbc:DocumentCurrencyCode>
+
+	<!-- Datos del emisor -->
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:Name>Empresa Emisora</cbc:Name>
+			<cac:PostalAddress>
+				<cbc:StreetName>Calle Principal 123</cbc:StreetName>
+				<cbc:CityName>Ciudad Emisora</cbc:CityName>
+				<cbc:CountrySubentity>Estado</cbc:CountrySubentity>
+				<cbc:Country>MX</cbc:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>EMISORA123</cbc:CompanyID>
+				<cbc:TaxScheme>IVA</cbc:TaxScheme>
+			</cac:PartyTaxScheme>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<!-- Datos del receptor -->
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:Name>Empresa Receptora</cbc:Name>
+			<cac:PostalAddress>
+				<cbc:StreetName>Calle Secundaria 456</cbc:StreetName>
+				<cbc:CityName>Ciudad Receptora</cbc:CityName>
+				<cbc:CountrySubentity>Estado</cbc:CountrySubentity>
+				<cbc:Country>MX</cbc:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>RECEPTORA456</cbc:CompanyID>
+				<cbc:TaxScheme>IVA</cbc:TaxScheme>
+			</cac:PartyTaxScheme>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<!-- Líneas de la factura -->
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">5</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="USD">50.00</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Description>Producto Gravado</cbc:Description>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="USD">10.00</cbc:PriceAmount>
+		</cac:Price>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="USD">8.00</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="USD">50.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="USD">8.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:Percent>16</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">5</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="USD">50.00</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Description>Producto Exento</cbc:Description>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="USD">10.00</cbc:PriceAmount>
+		</cac:Price>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="USD">0.00</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="USD">50.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="USD">0.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:Percent>0</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+	</cac:InvoiceLine>
+
+	<!-- Totales -->
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="USD">8.00</cbc:TaxAmount>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="USD">100.00</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="USD">100.00</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="USD">108.00</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="USD">108.00</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+</Invoice>
