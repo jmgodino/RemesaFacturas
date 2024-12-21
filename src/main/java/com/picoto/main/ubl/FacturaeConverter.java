@@ -60,6 +60,9 @@ import com.picoto.jaxb.ubl.maindoc.invoice.Invoice;
 
 public class FacturaeConverter {
 
+	private static final String IVA = "IVA";
+	private static final String EURO = "EUR";
+
 	public static void main(String[] args) {
 		String facturaeInvoiceStr = "examples/invoice-face.xml";
 		String ublInvoiceStrDest = "examples/invoice-ubl.xml";
@@ -116,7 +119,7 @@ public class FacturaeConverter {
 		ublInvoice.setProfileID(profileId);
 
 		DocumentCurrencyCode currency = new DocumentCurrencyCode();
-		currency.setValue("EUR");
+		currency.setValue(EURO);
 		ublInvoice.setDocumentCurrencyCode(currency);
 
 		IssueDate date = new IssueDate();
@@ -188,7 +191,7 @@ public class FacturaeConverter {
 			partyTaxScheme.setCompanyID(companyId);
 			TaxScheme taxScheme = new TaxScheme();
 			TaxTypeCode taxTypeCode = new TaxTypeCode();
-			taxTypeCode.setValue("IVA");
+			taxTypeCode.setValue(IVA);
 			taxScheme.setTaxTypeCode(taxTypeCode);
 			partyTaxScheme.setTaxScheme(taxScheme);
 			party.getPartyTaxSchemes().add(partyTaxScheme);
@@ -225,7 +228,7 @@ public class FacturaeConverter {
 			partyTaxScheme.setCompanyID(companyId);
 			TaxScheme taxScheme = new TaxScheme();
 			TaxTypeCode taxTypeCode = new TaxTypeCode();
-			taxTypeCode.setValue("IVA");
+			taxTypeCode.setValue(IVA);
 			taxScheme.setTaxTypeCode(taxTypeCode);
 			partyTaxScheme.setTaxScheme(taxScheme);
 			party.getPartyTaxSchemes().add(partyTaxScheme);
@@ -239,21 +242,21 @@ public class FacturaeConverter {
 
 		LineExtensionAmount leAmount = new LineExtensionAmount();
 		legalMonetaryTotal.setLineExtensionAmount(leAmount);
-		leAmount.setCurrencyID("EUR");
+		leAmount.setCurrencyID(EURO);
 		leAmount.setValue(getBigDecimalRedondeado(impuestosTotales.getTotalGrossAmount()));
 
 		TaxExclusiveAmount teAmount = new TaxExclusiveAmount();
-		teAmount.setCurrencyID("EUR");
+		teAmount.setCurrencyID(EURO);
 		teAmount.setValue(getBigDecimalRedondeado(impuestosTotales.getTotalGrossAmountBeforeTaxes()));
 		legalMonetaryTotal.setTaxExclusiveAmount(teAmount);
 
 		TaxInclusiveAmount tiAmount = new TaxInclusiveAmount();
-		tiAmount.setCurrencyID("EUR");
+		tiAmount.setCurrencyID(EURO);
 		tiAmount.setValue(getBigDecimalRedondeado(impuestosTotales.getTotalOutstandingAmount()));
 		legalMonetaryTotal.setTaxInclusiveAmount(tiAmount);
 
 		PayableAmount pAmount = new PayableAmount();
-		pAmount.setCurrencyID("EUR");
+		pAmount.setCurrencyID(EURO);
 		pAmount.setValue(getBigDecimalRedondeado(impuestosTotales.getTotalExecutableAmount()));
 		legalMonetaryTotal.setPayableAmount(pAmount);
 
@@ -266,7 +269,7 @@ public class FacturaeConverter {
 		TaxAmount taxAmount = new TaxAmount();
 		taxAmount.setValue(getBigDecimalRedondeado(taxTotals.getTotalTaxOutputs()));
 		taxTotal.setTaxAmount(taxAmount);
-		taxAmount.setCurrencyID("EUR");
+		taxAmount.setCurrencyID(EURO);
 		return taxTotal;
 	}
 
@@ -283,13 +286,13 @@ public class FacturaeConverter {
 
 		LineExtensionAmount lea = new LineExtensionAmount();
 		lea.setValue(getBigDecimalRedondeado(facturaeLinea.getTotalCost()));
-		lea.setCurrencyID("EUR");
+		lea.setCurrencyID(EURO);
 		ublLine.setLineExtensionAmount(lea);
 
 		PriceType unitPrice = new PriceType();
 		PriceAmount unitPriceAmount = new PriceAmount();
 		unitPriceAmount.setValue(getBigDecimalRedondeado(facturaeLinea.getUnitPriceWithoutTax()));
-		unitPriceAmount.setCurrencyID("EUR");
+		unitPriceAmount.setCurrencyID(EURO);
 		unitPrice.setPriceAmount(unitPriceAmount);
 		ublLine.setPrice(unitPrice);
 
@@ -300,7 +303,7 @@ public class FacturaeConverter {
 
 		TaxTotalType taxTotal = new TaxTotalType();
 		TaxAmount taxAmount = new TaxAmount();
-		taxAmount.setCurrencyID("EUR");
+		taxAmount.setCurrencyID(EURO);
 		taxAmount.setValue(getBigDecimalRedondeado(impuestoTratar.getTaxAmount().getTotalAmount()));
 		taxTotal.setTaxAmount(taxAmount);
 		ublLine.getTaxTotals().add(taxTotal);
@@ -308,7 +311,7 @@ public class FacturaeConverter {
 		TaxCategoryType tasaItem = new TaxCategoryType();
 		TaxScheme taxScheme = new TaxScheme();
 		taxScheme.setID(getId("VAT"));
-		taxScheme.setName(getName("IVA"));
+		taxScheme.setName(getName(IVA));
 
 		tasaItem.setTaxScheme(taxScheme);
 
@@ -325,15 +328,6 @@ public class FacturaeConverter {
 		ublLine.getAllowanceCharges().add(crearDescuento(descuentoTratar));
 		ublLine.getAllowanceCharges().add(crearCargo(cargoTratar));
 
-		/*
-		 * <cac:AllowanceCharge> <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-		 * <cbc:AllowanceChargeReason>Damage</cbc:AllowanceChargeReason> <cbc:Amount
-		 * currencyID="EUR">12</cbc:Amount> </cac:AllowanceCharge> <cac:AllowanceCharge>
-		 * <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-		 * <cbc:AllowanceChargeReason>Testing</cbc:AllowanceChargeReason> <cbc:Amount
-		 * currencyID="EUR">10</cbc:Amount> </cac:AllowanceCharge>
-		 */
-
 		return ublLine;
 	}
 
@@ -346,7 +340,7 @@ public class FacturaeConverter {
 		Amount desAmount = new Amount();
 		desAmount.setValue(getBigDecimalRedondeado(cargoTratar.getChargeAmount()));
 		suplido.setAmount(desAmount);
-		desAmount.setCurrencyID("EUR");
+		desAmount.setCurrencyID(EURO);
 		AllowanceChargeReasonCode motivoDescuento = new AllowanceChargeReasonCode();
 		motivoDescuento.setValue(null);
 		suplido.setAllowanceChargeReasonCode(motivoDescuento);
@@ -364,7 +358,7 @@ public class FacturaeConverter {
 		Amount desAmount = new Amount();
 		desAmount.setValue(getBigDecimalRedondeado(faceCharge.getDiscountAmount()));
 		descuento.setAmount(desAmount);
-		desAmount.setCurrencyID("EUR");
+		desAmount.setCurrencyID(EURO);
 		AllowanceChargeReasonCode motivoDescuento = new AllowanceChargeReasonCode();
 		motivoDescuento.setValue(null);
 		descuento.setAllowanceChargeReasonCode(motivoDescuento);
