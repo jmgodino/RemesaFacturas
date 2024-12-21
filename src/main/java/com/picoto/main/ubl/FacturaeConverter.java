@@ -274,6 +274,7 @@ public class FacturaeConverter {
 
 		LineExtensionAmount lea = new LineExtensionAmount();
 		lea.setValue(getBigDecimalRedondeado(facturaeLinea.getTotalCost()));
+		lea.setCurrencyID("EUR");
 		ublLine.setLineExtensionAmount(lea);
 
 		PriceType unitPrice = new PriceType();
@@ -336,6 +337,7 @@ public class FacturaeConverter {
 		Amount desAmount = new Amount();
 		desAmount.setValue(getBigDecimalRedondeado(cargoTratar.getChargeAmount()));
 		suplido.setAmount(desAmount);
+		desAmount.setCurrencyID("EUR");
 		AllowanceChargeReasonCode motivoDescuento = new AllowanceChargeReasonCode();
 		motivoDescuento.setValue(null);
 		suplido.setAllowanceChargeReasonCode(motivoDescuento);
@@ -353,6 +355,7 @@ public class FacturaeConverter {
 		Amount desAmount = new Amount();
 		desAmount.setValue(getBigDecimalRedondeado(faceCharge.getDiscountAmount()));
 		descuento.setAmount(desAmount);
+		desAmount.setCurrencyID("EUR");
 		AllowanceChargeReasonCode motivoDescuento = new AllowanceChargeReasonCode();
 		motivoDescuento.setValue(null);
 		descuento.setAllowanceChargeReasonCode(motivoDescuento);

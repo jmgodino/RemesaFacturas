@@ -61,16 +61,16 @@
     <ns3:InvoiceLine>
         <ID/>
         <InvoicedQuantity>5.00</InvoicedQuantity>
-        <LineExtensionAmount>1000.00</LineExtensionAmount>
+        <LineExtensionAmount currencyID="EUR">1000.00</LineExtensionAmount>
         <ns3:AllowanceCharge>
             <ChargeIndicator>false</ChargeIndicator>
             <AllowanceChargeReasonCode/>
-            <Amount>100.00</Amount>
+            <Amount currencyID="EUR">100.00</Amount>
         </ns3:AllowanceCharge>
         <ns3:AllowanceCharge>
             <ChargeIndicator>true</ChargeIndicator>
             <AllowanceChargeReasonCode/>
-            <Amount>50.00</Amount>
+            <Amount currencyID="EUR">50.00</Amount>
         </ns3:AllowanceCharge>
         <ns3:TaxTotal>
             <TaxAmount currencyID="EUR">239.90</TaxAmount>
@@ -92,16 +92,16 @@
     <ns3:InvoiceLine>
         <ID/>
         <InvoicedQuantity>2.00</InvoicedQuantity>
-        <LineExtensionAmount>400.00</LineExtensionAmount>
+        <LineExtensionAmount currencyID="EUR">400.00</LineExtensionAmount>
         <ns3:AllowanceCharge>
             <ChargeIndicator>false</ChargeIndicator>
             <AllowanceChargeReasonCode/>
-            <Amount>4.00</Amount>
+            <Amount currencyID="EUR">4.00</Amount>
         </ns3:AllowanceCharge>
         <ns3:AllowanceCharge>
             <ChargeIndicator>true</ChargeIndicator>
             <AllowanceChargeReasonCode/>
-            <Amount>8.00</Amount>
+            <Amount currencyID="EUR">8.00</Amount>
         </ns3:AllowanceCharge>
         <ns3:TaxTotal>
             <TaxAmount currencyID="EUR">40.40</TaxAmount>
