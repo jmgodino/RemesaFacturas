@@ -62,13 +62,18 @@ public class FacturaeConverter {
 
 	public static void main(String[] args) {
 		String facturaeInvoiceStr = "examples/invoice-face.xml";
-		String ublInvoiceStr = "examples/invoice-ubl.xml";
+		String ublInvoiceStrDest = "examples/invoice-ubl.xml";
+		String ublInvoiceStrSimp = "examples/invoice-ubl-simplificada.xml";
 
 		Facturae facturae = parseFacturaeInvoice(facturaeInvoiceStr);
 
-		Invoice ublInvoice = mapFacturaeToUBL(facturae);
+		Invoice ublInvoice = mapFacturaeToUBL(facturae, false);
 
-		writeUBLInvoice(ublInvoice, ublInvoiceStr);
+		writeUBLInvoice(ublInvoice, ublInvoiceStrDest);
+		
+		Invoice ublInvoiceSimpl = mapFacturaeToUBL(facturae, true);
+
+		writeUBLInvoice(ublInvoiceSimpl, ublInvoiceStrSimp);
 	}
 
 	public static Facturae parseFacturaeInvoice(String facturaePath) {
@@ -93,7 +98,7 @@ public class FacturaeConverter {
 		}
 	}
 
-	public static Invoice mapFacturaeToUBL(Facturae facturae) {
+	public static Invoice mapFacturaeToUBL(Facturae facturae, boolean simplificada) {
 		Invoice ublInvoice = new Invoice();
 
 		// Solo tratamos la primera factura del fichero
@@ -125,9 +130,12 @@ public class FacturaeConverter {
 		ublInvoice.setAccountingSupplierParty(suplParty);
 
 		CustomerPartyType custParty = new CustomerPartyType();
-		PartyType party2 = new PartyType();
-		custParty.setParty(party2);
-		fillParty(party2, facturae.getParties().getBuyerParty());
+		// Simplificada: No se rellena el Party, pero el nodo es necesario
+		if (!simplificada) {
+			PartyType party2 = new PartyType();
+			custParty.setParty(party2);
+			fillParty(party2, facturae.getParties().getBuyerParty());
+		}
 		ublInvoice.setAccountingCustomerParty(custParty);
 
 		ublInvoice.setLegalMonetaryTotal(getLegalMonetaryTotal(facturaTratar.getInvoiceTotals()));
@@ -143,6 +151,7 @@ public class FacturaeConverter {
 		return ublInvoice;
 	}
 
+	
 	private static void fillParty(PartyType party, BusinessType faceParty) {
 		PartyName pName = new PartyName();
 		if (faceParty.getTaxIdentification().getPersonTypeCode().compareTo(PersonTypeCodeType.F) == 0) {

@@ -1,0 +1,3 @@
+Se puede validar la factura generada en:
+
+https://ecosio.com/en/peppol-and-xml-document-validator/
