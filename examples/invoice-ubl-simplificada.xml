@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns4:Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ns4="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2">
-    <CustomizationID>2.1</CustomizationID>
+    <CustomizationID>ORIGINAL</CustomizationID>
     <ProfileID>Invoice</ProfileID>
     <ID>G0001-00000001</ID>
     <IssueDate>2024-01-17</IssueDate>
+    <InvoiceTypeCode>381</InvoiceTypeCode>
+    <Note>ORGINAL</Note>
     <DocumentCurrencyCode>EUR</DocumentCurrencyCode>
     <ns3:AccountingSupplierParty>
         <ns3:Party>
@@ -28,6 +30,20 @@
         </ns3:Party>
     </ns3:AccountingSupplierParty>
     <ns3:AccountingCustomerParty/>
+    <ns3:PaymentMeans>
+        <PaymentMeansCode>31</PaymentMeansCode>
+        <ns3:PayeeFinancialAccount>
+            <ID schemeID="IBAN">ES9900001111223333333333</ID>
+            <ns3:FinancialInstitutionBranch>
+                <ID>BLOCES</ID>
+                <Name>Banco Local</Name>
+            </ns3:FinancialInstitutionBranch>
+        </ns3:PayeeFinancialAccount>
+    </ns3:PaymentMeans>
+    <ns3:PaymentTerms>
+        <Note>Pago en 30 días</Note>
+        <PaymentDueDate>2025-01-22</PaymentDueDate>
+    </ns3:PaymentTerms>
     <ns3:TaxTotal>
         <TaxAmount currencyID="EUR">239.90</TaxAmount>
     </ns3:TaxTotal>
@@ -57,9 +73,11 @@
         <ns3:Item>
             <Name>Descripcion de factura de mesas</Name>
             <ns3:ClassifiedTaxCategory>
+                <ID>01</ID>
                 <Percent>21.00</Percent>
+                <TaxExemptionReasonCode>E1</TaxExemptionReasonCode>
                 <ns3:TaxScheme>
-                    <ID>VAT</ID>
+                    <ID>IVA</ID>
                     <Name>IVA</Name>
                 </ns3:TaxScheme>
             </ns3:ClassifiedTaxCategory>
@@ -88,9 +106,11 @@
         <ns3:Item>
             <Name>Descripcion de factura de sillas</Name>
             <ns3:ClassifiedTaxCategory>
+                <ID>01</ID>
                 <Percent>10.00</Percent>
+                <TaxExemptionReasonCode>E1</TaxExemptionReasonCode>
                 <ns3:TaxScheme>
-                    <ID>VAT</ID>
+                    <ID>IVA</ID>
                     <Name>IVA</Name>
                 </ns3:TaxScheme>
             </ns3:ClassifiedTaxCategory>

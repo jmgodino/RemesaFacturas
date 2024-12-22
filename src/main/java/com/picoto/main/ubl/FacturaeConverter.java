@@ -3,12 +3,16 @@ package com.picoto.main.ubl;
 import java.io.File;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 import com.picoto.jaxb.fe.BusinessType;
 import com.picoto.jaxb.fe.ChargeType;
@@ -20,14 +24,18 @@ import com.picoto.jaxb.fe.InvoiceType;
 import com.picoto.jaxb.fe.PersonTypeCodeType;
 import com.picoto.jaxb.ubl.common.cac.AddressType;
 import com.picoto.jaxb.ubl.common.cac.AllowanceChargeType;
+import com.picoto.jaxb.ubl.common.cac.BranchType;
 import com.picoto.jaxb.ubl.common.cac.CountryType;
 import com.picoto.jaxb.ubl.common.cac.CustomerPartyType;
+import com.picoto.jaxb.ubl.common.cac.FinancialAccountType;
 import com.picoto.jaxb.ubl.common.cac.InvoiceLineType;
 import com.picoto.jaxb.ubl.common.cac.ItemType;
 import com.picoto.jaxb.ubl.common.cac.MonetaryTotalType;
 import com.picoto.jaxb.ubl.common.cac.PartyName;
 import com.picoto.jaxb.ubl.common.cac.PartyTaxScheme;
 import com.picoto.jaxb.ubl.common.cac.PartyType;
+import com.picoto.jaxb.ubl.common.cac.PaymentMeans;
+import com.picoto.jaxb.ubl.common.cac.PaymentTermsType;
 import com.picoto.jaxb.ubl.common.cac.PriceType;
 import com.picoto.jaxb.ubl.common.cac.SupplierPartyType;
 import com.picoto.jaxb.ubl.common.cac.TaxCategoryType;
@@ -43,25 +51,35 @@ import com.picoto.jaxb.ubl.common.cbc.CustomizationID;
 import com.picoto.jaxb.ubl.common.cbc.DocumentCurrencyCode;
 import com.picoto.jaxb.ubl.common.cbc.ID;
 import com.picoto.jaxb.ubl.common.cbc.IdentificationCode;
+import com.picoto.jaxb.ubl.common.cbc.InvoiceTypeCode;
 import com.picoto.jaxb.ubl.common.cbc.InvoicedQuantity;
 import com.picoto.jaxb.ubl.common.cbc.IssueDate;
 import com.picoto.jaxb.ubl.common.cbc.LineExtensionAmount;
 import com.picoto.jaxb.ubl.common.cbc.Name;
+import com.picoto.jaxb.ubl.common.cbc.Note;
 import com.picoto.jaxb.ubl.common.cbc.PayableAmount;
+import com.picoto.jaxb.ubl.common.cbc.PaymentDueDate;
+import com.picoto.jaxb.ubl.common.cbc.PaymentMeansCode;
 import com.picoto.jaxb.ubl.common.cbc.Percent;
 import com.picoto.jaxb.ubl.common.cbc.PriceAmount;
 import com.picoto.jaxb.ubl.common.cbc.ProfileID;
 import com.picoto.jaxb.ubl.common.cbc.StreetName;
 import com.picoto.jaxb.ubl.common.cbc.TaxAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxExclusiveAmount;
+import com.picoto.jaxb.ubl.common.cbc.TaxExemptionReasonCode;
 import com.picoto.jaxb.ubl.common.cbc.TaxInclusiveAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxTypeCode;
 import com.picoto.jaxb.ubl.maindoc.invoice.Invoice;
 
 public class FacturaeConverter {
 
+	private static final String TRANSFERENCIA_BANCARIA = "31";
+	private static final String REGIMEN_GENERAL = "01";
 	private static final String IVA = "IVA";
 	private static final String EURO = "EUR";
+	private static final String ORDINARIA = "380";
+	private static final String SIMPLIFICADA = "381";
+	private static final String RECTIFICATIVA = "382";
 
 	public static void main(String[] args) {
 		String facturaeInvoiceStr = "examples/invoice-face.xml";
@@ -73,7 +91,7 @@ public class FacturaeConverter {
 		Invoice ublInvoice = mapFacturaeToUBL(facturae, false);
 
 		writeUBLInvoice(ublInvoice, ublInvoiceStrDest);
-		
+
 		Invoice ublInvoiceSimpl = mapFacturaeToUBL(facturae, true);
 
 		writeUBLInvoice(ublInvoiceSimpl, ublInvoiceStrSimp);
@@ -111,7 +129,8 @@ public class FacturaeConverter {
 				+ facturaTratar.getInvoiceHeader().getInvoiceNumber()));
 
 		CustomizationID version = new CustomizationID();
-		version.setValue("2.1");
+		version.setValue("ORIGINAL");
+		// version.setValue("COPIA");
 		ublInvoice.setCustomizationID(version);
 
 		ProfileID profileId = new ProfileID();
@@ -125,6 +144,16 @@ public class FacturaeConverter {
 		IssueDate date = new IssueDate();
 		date.setValue(facturaTratar.getInvoiceIssueData().getIssueDate());
 		ublInvoice.setIssueDate(date);
+
+		// Factura ordinaria
+		InvoiceTypeCode tipoFactura = new InvoiceTypeCode();
+		tipoFactura.setValue(simplificada ? SIMPLIFICADA : ORDINARIA);
+		ublInvoice.setInvoiceTypeCode(tipoFactura);
+
+		Note note = new Note();
+		note.setValue("ORGINAL");
+		// note.setValue("COPIA");
+		ublInvoice.getNotes().add(note);
 
 		SupplierPartyType suplParty = new SupplierPartyType();
 		PartyType party = new PartyType();
@@ -151,10 +180,43 @@ public class FacturaeConverter {
 
 		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar.getInvoiceTotals()));
 
+		// La forma de pago la añado de momento, no la convierto.
+		addFormaPago(ublInvoice);
+
 		return ublInvoice;
 	}
 
-	
+	private static void addFormaPago(Invoice ublInvoice) {
+		PaymentMeans formaPago = new PaymentMeans();
+		ublInvoice.getPaymentMeans().add(formaPago);
+		PaymentMeansCode codigoPago = new PaymentMeansCode();
+		codigoPago.setValue(TRANSFERENCIA_BANCARIA);
+		formaPago.setPaymentMeansCode(codigoPago);
+		FinancialAccountType cuentaPago = new FinancialAccountType();
+		formaPago.setPayeeFinancialAccount(cuentaPago);
+		
+		cuentaPago.setID(getIdWithScheme("IBAN", "ES9900001111223333333333"));
+		BranchType entidad = new BranchType();
+		entidad.setID(getId("BLOCES"));
+		entidad.setName(getName("Banco Local"));
+		cuentaPago.setFinancialInstitutionBranch(entidad);
+		
+		
+		PaymentTermsType terminosPago = new PaymentTermsType();
+		ublInvoice.getPaymentTerms().add(terminosPago);
+		PaymentDueDate fechaLimite = new PaymentDueDate();
+
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.add(Calendar.MONTH, 1);
+		fechaLimite.setValue(getCalendar(cal));
+		terminosPago.setPaymentDueDate(fechaLimite); 
+		
+		Note notaFecha = new Note();
+		notaFecha.setValue("Pago en 30 días");
+		terminosPago.getNotes().add(notaFecha);
+
+	}
+
 	private static void fillParty(PartyType party, BusinessType faceParty) {
 		PartyName pName = new PartyName();
 		if (faceParty.getTaxIdentification().getPersonTypeCode().compareTo(PersonTypeCodeType.F) == 0) {
@@ -309,16 +371,25 @@ public class FacturaeConverter {
 		ublLine.getTaxTotals().add(taxTotal);
 
 		TaxCategoryType tasaItem = new TaxCategoryType();
+		// Regimen de la operacion
+		tasaItem.setID(getId(REGIMEN_GENERAL));
 		TaxScheme taxScheme = new TaxScheme();
-		taxScheme.setID(getId("VAT"));
+		taxScheme.setID(getId("IVA"));
 		taxScheme.setName(getName(IVA));
 
 		tasaItem.setTaxScheme(taxScheme);
 
+		// En operaciones no sujetas, el porcentaje será 0. No tenemos el dato en
+		// Factura-e a nivel del item.
 		Percent percent = new Percent();
 		percent.setValue(getBigDecimalRedondeado(impuestoTratar.getTaxRate()));
 		tasaItem.setPercent(percent);
 		item.getClassifiedTaxCategories().add(tasaItem);
+
+		// En operaciones exentas, se indica el motivo de exencion
+		TaxExemptionReasonCode motivoExencion = new TaxExemptionReasonCode();
+		motivoExencion.setValue("E1");
+		tasaItem.setTaxExemptionReasonCode(motivoExencion);
 
 		// Descuentos
 
@@ -380,6 +451,27 @@ public class FacturaeConverter {
 		ID id = new ID();
 		id.setValue(nameStr);
 		return id;
+	}
+	
+	private static ID getIdWithScheme(String scheme, String nameStr) {
+		ID id = new ID();
+		id.setSchemeID(scheme);
+		id.setValue(nameStr);
+		return id;
+	}
+
+	private static XMLGregorianCalendar getCalendar(Calendar cal) {
+		try {
+			DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
+			XMLGregorianCalendar customDate = datatypeFactory.newXMLGregorianCalendar();
+			customDate.setYear(cal.get(Calendar.YEAR));
+			customDate.setMonth(cal.get(Calendar.MONTH)+1);
+			customDate.setDay(cal.get(Calendar.DAY_OF_MONTH));
+
+			return customDate;
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 }
