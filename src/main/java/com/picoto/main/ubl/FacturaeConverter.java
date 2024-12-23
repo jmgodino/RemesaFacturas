@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Optional;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -23,6 +24,7 @@ import com.picoto.jaxb.fe.InvoiceLineType.TaxesOutputs.Tax;
 import com.picoto.jaxb.fe.InvoiceTotalsType;
 import com.picoto.jaxb.fe.InvoiceType;
 import com.picoto.jaxb.fe.PersonTypeCodeType;
+import com.picoto.jaxb.fe.SpecialTaxableEventType;
 import com.picoto.jaxb.ubl.common.cac.AddressType;
 import com.picoto.jaxb.ubl.common.cac.AllowanceChargeType;
 import com.picoto.jaxb.ubl.common.cac.BranchType;
@@ -74,6 +76,9 @@ import com.picoto.jaxb.ubl.maindoc.invoice.Invoice;
 
 public class FacturaeConverter {
 
+	private static final String VAT = "VAT";
+	private static final String NO_SUJETA = "01";
+	private static final String EXENTA = "02";
 	private static final String TRANSFERENCIA_BANCARIA = "31";
 	private static final String REGIMEN_GENERAL = "01";
 	private static final String IVA = "IVA";
@@ -174,7 +179,7 @@ public class FacturaeConverter {
 		ublInvoice.setLegalMonetaryTotal(getLegalMonetaryTotal(facturaTratar.getInvoiceTotals()));
 
 		List<com.picoto.jaxb.fe.InvoiceLineType> facturaeLineas = facturaTratar.getItems().getInvoiceLines();
-		int i=1;
+		int i = 1;
 		for (com.picoto.jaxb.fe.InvoiceLineType facturaeLine : facturaeLineas) {
 			InvoiceLineType ublLine = mapInvoiceLine(facturaeLine, i++);
 			ublInvoice.getInvoiceLines().add(ublLine);
@@ -384,32 +389,88 @@ public class FacturaeConverter {
 		// Regimen de la operacion
 		tasaItem.setID(getId(REGIMEN_GENERAL));
 		TaxScheme taxScheme = new TaxScheme();
-		taxScheme.setID(getId("IVA"));
+		taxScheme.setID(getId(VAT));
 		taxScheme.setName(getName(IVA));
 
 		tasaItem.setTaxScheme(taxScheme);
 
-		// En operaciones no sujetas, el porcentaje será 0. No tenemos el dato en
-		// Factura-e a nivel del item.
-		Percent percent = new Percent();
-		percent.setValue(getBigDecimalRedondeado(impuestoTratar.getTaxRate()));
-		tasaItem.setPercent(percent);
-		item.getClassifiedTaxCategories().add(tasaItem);
+		if (isExenta(facturaeLinea)) {
+			// En operaciones exentas, se indica el motivo de exencion
+			TaxExemptionReasonCode motivoExencion = new TaxExemptionReasonCode();
+			motivoExencion.setValue("E1");
+			tasaItem.setTaxExemptionReasonCode(motivoExencion);
 
-		// En operaciones exentas, se indica el motivo de exencion
-		TaxExemptionReasonCode motivoExencion = new TaxExemptionReasonCode();
-		motivoExencion.setValue("E1");
-		tasaItem.setTaxExemptionReasonCode(motivoExencion);
+			Percent percent = new Percent();
+			percent.setValue(BigDecimal.ZERO);
+			tasaItem.setPercent(percent);
+
+		} else if (isNoSujeta(facturaeLinea)) {
+			Percent percent = new Percent();
+			percent.setValue(BigDecimal.ZERO);
+			tasaItem.setPercent(percent);
+		} else {
+			Percent percent = new Percent();
+			percent.setValue(getBigDecimalRedondeado(impuestoTratar.getTaxRate()));
+			tasaItem.setPercent(percent);
+		}
+
+		item.getClassifiedTaxCategories().add(tasaItem);
 
 		// Descuentos
 
-		DiscountType descuentoTratar = facturaeLinea.getDiscountsAndRebates().getDiscounts().get(0);
-		ChargeType cargoTratar = facturaeLinea.getCharges().getCharges().get(0);
+		Optional<DiscountType> descuentoTratar = tieneDescuentos(facturaeLinea);
+		if (descuentoTratar.isPresent()) {
+			ublLine.getAllowanceCharges().add(crearDescuento(descuentoTratar.get()));
+		}
 
-		ublLine.getAllowanceCharges().add(crearDescuento(descuentoTratar));
-		ublLine.getAllowanceCharges().add(crearCargo(cargoTratar));
+		Optional<ChargeType> cargoTratar = tieneCargos(facturaeLinea);
+		if (cargoTratar.isPresent()) {
+			ublLine.getAllowanceCharges().add(crearCargo(cargoTratar.get()));
+		}
 
 		return ublLine;
+	}
+
+	private static Optional<DiscountType> tieneDescuentos(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea) {
+		if (facturaeLinea.getDiscountsAndRebates() == null) {
+			return Optional.empty();
+		}
+		List<DiscountType> descuentos = facturaeLinea.getDiscountsAndRebates().getDiscounts();
+		if (descuentos != null && descuentos.size() > 0) {
+			return Optional.ofNullable(descuentos.get(0));
+		} else {
+			return Optional.empty();
+		}
+	}
+
+	private static Optional<ChargeType> tieneCargos(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea) {
+		if (facturaeLinea.getCharges() == null) {
+			return Optional.empty();
+		}
+		List<ChargeType> cargos = facturaeLinea.getCharges().getCharges();
+		if (cargos != null && cargos.size() > 0) {
+			return Optional.ofNullable(cargos.get(0));
+		} else {
+			return Optional.empty();
+		}
+	}
+
+	private static boolean isNoSujeta(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea) {
+		SpecialTaxableEventType eventoExenta = facturaeLinea.getSpecialTaxableEvent();
+		if (eventoExenta != null) {
+			return NO_SUJETA.equals(eventoExenta.getSpecialTaxableEventCode());
+		} else {
+			return false;
+		}
+	}
+
+	private static boolean isExenta(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea) {
+		SpecialTaxableEventType eventoExenta = facturaeLinea.getSpecialTaxableEvent();
+		if (eventoExenta != null) {
+			return EXENTA.equals(eventoExenta.getSpecialTaxableEventCode());
+		} else {
+			return false;
+		}
 	}
 
 	private static AllowanceChargeType crearCargo(ChargeType cargoTratar) {

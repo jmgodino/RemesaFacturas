@@ -186,6 +186,66 @@
 					</TaxesOutputs>
 					<AdditionalLineItemInformation>Sillas</AdditionalLineItemInformation>
 				</InvoiceLine>
+				
+				<InvoiceLine>
+					<ItemDescription>Descripcion de factura de pizarras</ItemDescription>
+					<Quantity>1.0</Quantity>
+					<UnitOfMeasure>01</UnitOfMeasure>
+					<UnitPriceWithoutTax>500.00</UnitPriceWithoutTax>
+					<TotalCost>500.00</TotalCost>
+					<GrossAmount>500.00</GrossAmount>
+					<TaxesOutputs>
+						<Tax>
+							<TaxTypeCode>01</TaxTypeCode>
+							<TaxRate>0</TaxRate>
+							<TaxableBase>
+								<TotalAmount>500.00</TotalAmount>
+							</TaxableBase>
+							<TaxAmount>
+								<TotalAmount>0.00</TotalAmount>
+							</TaxAmount>
+							<EquivalenceSurcharge>0.00</EquivalenceSurcharge>
+							<EquivalenceSurchargeAmount>
+								<TotalAmount>0.00</TotalAmount>
+							</EquivalenceSurchargeAmount>
+						</Tax>
+					</TaxesOutputs>
+					<AdditionalLineItemInformation>Pizarra con IVA no soportado</AdditionalLineItemInformation>
+					<SpecialTaxableEvent>
+						<SpecialTaxableEventCode>02</SpecialTaxableEventCode>
+						<SpecialTaxableEventReason>No soportado</SpecialTaxableEventReason>
+					</SpecialTaxableEvent>
+				</InvoiceLine>				
+
+				<InvoiceLine>
+					<ItemDescription>Descripcion de factura de tizas</ItemDescription>
+					<Quantity>100.0</Quantity>
+					<UnitOfMeasure>01</UnitOfMeasure>
+					<UnitPriceWithoutTax>1.00</UnitPriceWithoutTax>
+					<TotalCost>100.00</TotalCost>
+					<GrossAmount>100.00</GrossAmount>
+					<TaxesOutputs>
+						<Tax>
+							<TaxTypeCode>01</TaxTypeCode>
+							<TaxRate>0</TaxRate>
+							<TaxableBase>
+								<TotalAmount>100.00</TotalAmount>
+							</TaxableBase>
+							<TaxAmount>
+								<TotalAmount>0.00</TotalAmount>
+							</TaxAmount>
+							<EquivalenceSurcharge>0.00</EquivalenceSurcharge>
+							<EquivalenceSurchargeAmount>
+								<TotalAmount>0.00</TotalAmount>
+							</EquivalenceSurchargeAmount>
+						</Tax>
+					</TaxesOutputs>
+					<AdditionalLineItemInformation>Tizas exentas de IVA</AdditionalLineItemInformation>
+					<SpecialTaxableEvent>
+						<SpecialTaxableEventCode>01</SpecialTaxableEventCode>
+						<SpecialTaxableEventReason>Exenta</SpecialTaxableEventReason>
+					</SpecialTaxableEvent>
+				</InvoiceLine>				
 			</Items>
 			<PaymentDetails>
 				<Installment>

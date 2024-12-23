@@ -96,9 +96,8 @@
             <ns3:ClassifiedTaxCategory>
                 <ID>01</ID>
                 <Percent>21.00</Percent>
-                <TaxExemptionReasonCode>E1</TaxExemptionReasonCode>
                 <ns3:TaxScheme>
-                    <ID>IVA</ID>
+                    <ID>VAT</ID>
                     <Name>IVA</Name>
                 </ns3:TaxScheme>
             </ns3:ClassifiedTaxCategory>
@@ -129,15 +128,59 @@
             <ns3:ClassifiedTaxCategory>
                 <ID>01</ID>
                 <Percent>10.00</Percent>
-                <TaxExemptionReasonCode>E1</TaxExemptionReasonCode>
                 <ns3:TaxScheme>
-                    <ID>IVA</ID>
+                    <ID>VAT</ID>
                     <Name>IVA</Name>
                 </ns3:TaxScheme>
             </ns3:ClassifiedTaxCategory>
         </ns3:Item>
         <ns3:Price>
             <PriceAmount currencyID="EUR">200.00</PriceAmount>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ID>3</ID>
+        <InvoicedQuantity>1.00</InvoicedQuantity>
+        <LineExtensionAmount currencyID="EUR">500.00</LineExtensionAmount>
+        <ns3:TaxTotal>
+            <TaxAmount currencyID="EUR">0.00</TaxAmount>
+        </ns3:TaxTotal>
+        <ns3:Item>
+            <Name>Descripcion de factura de pizarras</Name>
+            <ns3:ClassifiedTaxCategory>
+                <ID>01</ID>
+                <Percent>0</Percent>
+                <TaxExemptionReasonCode>E1</TaxExemptionReasonCode>
+                <ns3:TaxScheme>
+                    <ID>VAT</ID>
+                    <Name>IVA</Name>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <PriceAmount currencyID="EUR">500.00</PriceAmount>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ID>4</ID>
+        <InvoicedQuantity>100.00</InvoicedQuantity>
+        <LineExtensionAmount currencyID="EUR">100.00</LineExtensionAmount>
+        <ns3:TaxTotal>
+            <TaxAmount currencyID="EUR">0.00</TaxAmount>
+        </ns3:TaxTotal>
+        <ns3:Item>
+            <Name>Descripcion de factura de tizas</Name>
+            <ns3:ClassifiedTaxCategory>
+                <ID>01</ID>
+                <Percent>0</Percent>
+                <ns3:TaxScheme>
+                    <ID>VAT</ID>
+                    <Name>IVA</Name>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <PriceAmount currencyID="EUR">1.00</PriceAmount>
         </ns3:Price>
     </ns3:InvoiceLine>
 </ns4:Invoice>
