@@ -4,7 +4,6 @@ import java.io.File;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.List;
 
 import javax.xml.bind.JAXBContext;
@@ -18,6 +17,8 @@ import com.picoto.jaxb.fe.BusinessType;
 import com.picoto.jaxb.fe.ChargeType;
 import com.picoto.jaxb.fe.DiscountType;
 import com.picoto.jaxb.fe.Facturae;
+import com.picoto.jaxb.fe.InstallmentType;
+import com.picoto.jaxb.fe.InstallmentsType;
 import com.picoto.jaxb.fe.InvoiceLineType.TaxesOutputs.Tax;
 import com.picoto.jaxb.fe.InvoiceTotalsType;
 import com.picoto.jaxb.fe.InvoiceType;
@@ -181,38 +182,46 @@ public class FacturaeConverter {
 		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar.getInvoiceTotals()));
 
 		// La forma de pago la añado de momento, no la convierto.
-		addFormaPago(ublInvoice);
+		setFormaPago(ublInvoice, facturaTratar.getPaymentDetails());
 
 		return ublInvoice;
 	}
 
-	private static void addFormaPago(Invoice ublInvoice) {
+	private static void setFormaPago(Invoice ublInvoice, InstallmentsType facturaePago) {
 		PaymentMeans formaPago = new PaymentMeans();
 		ublInvoice.getPaymentMeans().add(formaPago);
+
+		// Solo tratamos el primer medio de pago
+		InstallmentType medioPagoTratar = facturaePago.getInstallments().get(0);
+
 		PaymentMeansCode codigoPago = new PaymentMeansCode();
 		codigoPago.setValue(TRANSFERENCIA_BANCARIA);
 		formaPago.setPaymentMeansCode(codigoPago);
-		FinancialAccountType cuentaPago = new FinancialAccountType();
-		formaPago.setPayeeFinancialAccount(cuentaPago);
-		
-		cuentaPago.setID(getIdWithScheme("IBAN", "ES9900001111223333333333"));
-		BranchType entidad = new BranchType();
-		entidad.setID(getId("BLOCES"));
-		entidad.setName(getName("Banco Local"));
-		cuentaPago.setFinancialInstitutionBranch(entidad);
-		
-		
+
+		// Solo para transferencia bancaria
+		if ("04".equals(medioPagoTratar.getPaymentMeans())) {
+
+			FinancialAccountType cuentaPago = new FinancialAccountType();
+			formaPago.setPayeeFinancialAccount(cuentaPago);
+			cuentaPago.setID(getIdWithScheme("IBAN", medioPagoTratar.getAccountToBeCredited().getIBAN()));
+
+			BranchType entidad = new BranchType();
+			entidad.setID(getId(medioPagoTratar.getAccountToBeCredited().getBIC()));
+			entidad.setName(getName(
+					medioPagoTratar.getAccountToBeCredited().getOverseasBranchAddress().getCountryCode().value()));
+			cuentaPago.setFinancialInstitutionBranch(entidad);
+
+		}
+
 		PaymentTermsType terminosPago = new PaymentTermsType();
 		ublInvoice.getPaymentTerms().add(terminosPago);
 		PaymentDueDate fechaLimite = new PaymentDueDate();
 
-		GregorianCalendar cal = new GregorianCalendar();
-		cal.add(Calendar.MONTH, 1);
-		fechaLimite.setValue(getCalendar(cal));
-		terminosPago.setPaymentDueDate(fechaLimite); 
-		
+		fechaLimite.setValue(medioPagoTratar.getInstallmentDueDate());
+		terminosPago.setPaymentDueDate(fechaLimite);
+
 		Note notaFecha = new Note();
-		notaFecha.setValue("Pago en 30 días");
+		notaFecha.setValue("A pagar antes de 30 días desde la emisión de la factura");
 		terminosPago.getNotes().add(notaFecha);
 
 	}
@@ -443,7 +452,9 @@ public class FacturaeConverter {
 
 	private static Name getName(String nameStr) {
 		Name name = new Name();
-		name.setValue(nameStr);
+		if (nameStr != null) {
+			name.setValue(nameStr);
+		}
 		return name;
 	}
 
@@ -452,7 +463,7 @@ public class FacturaeConverter {
 		id.setValue(nameStr);
 		return id;
 	}
-	
+
 	private static ID getIdWithScheme(String scheme, String nameStr) {
 		ID id = new ID();
 		id.setSchemeID(scheme);
@@ -465,7 +476,7 @@ public class FacturaeConverter {
 			DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
 			XMLGregorianCalendar customDate = datatypeFactory.newXMLGregorianCalendar();
 			customDate.setYear(cal.get(Calendar.YEAR));
-			customDate.setMonth(cal.get(Calendar.MONTH)+1);
+			customDate.setMonth(cal.get(Calendar.MONTH) + 1);
 			customDate.setDay(cal.get(Calendar.DAY_OF_MONTH));
 
 			return customDate;

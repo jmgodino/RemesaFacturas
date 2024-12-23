@@ -33,16 +33,16 @@
     <ns3:PaymentMeans>
         <PaymentMeansCode>31</PaymentMeansCode>
         <ns3:PayeeFinancialAccount>
-            <ID schemeID="IBAN">ES9900001111223333333333</ID>
+            <ID schemeID="IBAN">ES9121000418450200051332</ID>
             <ns3:FinancialInstitutionBranch>
-                <ID>BLOCES</ID>
-                <Name>Banco Local</Name>
+                <ID>OPENESXXXXX</ID>
+                <Name>SLV</Name>
             </ns3:FinancialInstitutionBranch>
         </ns3:PayeeFinancialAccount>
     </ns3:PaymentMeans>
     <ns3:PaymentTerms>
-        <Note>Pago en 30 días</Note>
-        <PaymentDueDate>2025-01-22</PaymentDueDate>
+        <Note>A pagar antes de 30 días desde la emisión de la factura</Note>
+        <PaymentDueDate>2024-12-29</PaymentDueDate>
     </ns3:PaymentTerms>
     <ns3:TaxTotal>
         <TaxAmount currencyID="EUR">239.90</TaxAmount>

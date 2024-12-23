@@ -187,6 +187,23 @@
 					<AdditionalLineItemInformation>Sillas</AdditionalLineItemInformation>
 				</InvoiceLine>
 			</Items>
+			<PaymentDetails>
+				<Installment>
+					<InstallmentDueDate>2024-12-29</InstallmentDueDate>
+					<InstallmentAmount>1323.10</InstallmentAmount>
+					<PaymentMeans>04</PaymentMeans>
+					<AccountToBeCredited>
+						<IBAN>ES9121000418450200051332</IBAN>
+						<OverseasBranchAddress>
+							<Address>AAA</Address>
+							<PostCodeAndTown>BBBB</PostCodeAndTown>
+							<Province>CCCC</Province>
+							<CountryCode>SLV</CountryCode>
+						</OverseasBranchAddress>
+						<BIC>OPENESXXXXX</BIC>
+					</AccountToBeCredited>
+				</Installment>
+			</PaymentDetails>
 		</Invoice>
 	</Invoices>
 </fe:Facturae>
