@@ -75,7 +75,7 @@
         <PayableAmount currencyID="EUR">1323.10</PayableAmount>
     </ns3:LegalMonetaryTotal>
     <ns3:InvoiceLine>
-        <ID/>
+        <ID>1</ID>
         <InvoicedQuantity>5.00</InvoicedQuantity>
         <LineExtensionAmount currencyID="EUR">1000.00</LineExtensionAmount>
         <ns3:AllowanceCharge>
@@ -108,7 +108,7 @@
         </ns3:Price>
     </ns3:InvoiceLine>
     <ns3:InvoiceLine>
-        <ID/>
+        <ID>2</ID>
         <InvoicedQuantity>2.00</InvoicedQuantity>
         <LineExtensionAmount currencyID="EUR">400.00</LineExtensionAmount>
         <ns3:AllowanceCharge>

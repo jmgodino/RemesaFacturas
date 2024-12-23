@@ -174,8 +174,9 @@ public class FacturaeConverter {
 		ublInvoice.setLegalMonetaryTotal(getLegalMonetaryTotal(facturaTratar.getInvoiceTotals()));
 
 		List<com.picoto.jaxb.fe.InvoiceLineType> facturaeLineas = facturaTratar.getItems().getInvoiceLines();
+		int i=1;
 		for (com.picoto.jaxb.fe.InvoiceLineType facturaeLine : facturaeLineas) {
-			InvoiceLineType ublLine = mapInvoiceLine(facturaeLine);
+			InvoiceLineType ublLine = mapInvoiceLine(facturaeLine, i++);
 			ublInvoice.getInvoiceLines().add(ublLine);
 		}
 
@@ -344,12 +345,12 @@ public class FacturaeConverter {
 		return taxTotal;
 	}
 
-	private static InvoiceLineType mapInvoiceLine(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea) {
+	private static InvoiceLineType mapInvoiceLine(com.picoto.jaxb.fe.InvoiceLineType facturaeLinea, int i) {
 		InvoiceLineType ublLine = new InvoiceLineType();
 
 		Tax impuestoTratar = facturaeLinea.getTaxesOutputs().getTaxes().get(0);
 
-		ublLine.setID(getId(facturaeLinea.getArticleCode()));
+		ublLine.setID(getId(String.valueOf(i)));
 
 		InvoicedQuantity ic = new InvoicedQuantity();
 		ic.setValue(getBigDecimalRedondeado(facturaeLinea.getQuantity()));
