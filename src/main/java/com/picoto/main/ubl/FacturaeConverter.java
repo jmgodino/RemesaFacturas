@@ -27,9 +27,11 @@ import com.picoto.jaxb.fe.PersonTypeCodeType;
 import com.picoto.jaxb.fe.SpecialTaxableEventType;
 import com.picoto.jaxb.ubl.common.cac.AddressType;
 import com.picoto.jaxb.ubl.common.cac.AllowanceChargeType;
+import com.picoto.jaxb.ubl.common.cac.BillingReference;
 import com.picoto.jaxb.ubl.common.cac.BranchType;
 import com.picoto.jaxb.ubl.common.cac.CountryType;
 import com.picoto.jaxb.ubl.common.cac.CustomerPartyType;
+import com.picoto.jaxb.ubl.common.cac.DocumentReferenceType;
 import com.picoto.jaxb.ubl.common.cac.FinancialAccountType;
 import com.picoto.jaxb.ubl.common.cac.InvoiceLineType;
 import com.picoto.jaxb.ubl.common.cac.ItemType;
@@ -52,6 +54,8 @@ import com.picoto.jaxb.ubl.common.cbc.CompanyID;
 import com.picoto.jaxb.ubl.common.cbc.CountrySubentity;
 import com.picoto.jaxb.ubl.common.cbc.CustomizationID;
 import com.picoto.jaxb.ubl.common.cbc.DocumentCurrencyCode;
+import com.picoto.jaxb.ubl.common.cbc.DocumentType;
+import com.picoto.jaxb.ubl.common.cbc.DocumentTypeCode;
 import com.picoto.jaxb.ubl.common.cbc.ID;
 import com.picoto.jaxb.ubl.common.cbc.IdentificationCode;
 import com.picoto.jaxb.ubl.common.cbc.InvoiceTypeCode;
@@ -83,24 +87,31 @@ public class FacturaeConverter {
 	private static final String REGIMEN_GENERAL = "01";
 	private static final String IVA = "IVA";
 	private static final String EURO = "EUR";
-	private static final String ORDINARIA = "380";
-	private static final String SIMPLIFICADA = "381";
-	private static final String RECTIFICATIVA = "382";
+	private static final String ORDINARIA_SIMPLIFICADA = "380";
+	private static final String RECTIFICATIVA_NOTA_CREDITO = "381";
 
 	public static void main(String[] args) {
-		String facturaeInvoiceStr = "examples/invoice-face.xml";
-		String ublInvoiceStrDest = "examples/invoice-ubl.xml";
-		String ublInvoiceStrSimp = "examples/invoice-ubl-simplificada.xml";
+		
+		String facturaeInvoiceOrdinariaStr = "examples/in/invoice-face-ordinaria.xml";
+		String facturaeInvoiceSimplificadaStr = "examples/in/invoice-face-simplificada.xml";
+		String facturaeInvoiceRectificativaStr = "examples/in/invoice-face-rectificativa.xml";
+		
+		String ublInvoiceStrDest = "examples/out/invoice-ubl-ordinaria.xml";
+		String ublInvoiceStrSimp = "examples/out/invoice-ubl-simplificada.xml";
+		String ublInvoiceStrRect = "examples/out/invoice-ubl-rectificativa.xml";
 
-		Facturae facturae = parseFacturaeInvoice(facturaeInvoiceStr);
 
-		Invoice ublInvoice = mapFacturaeToUBL(facturae, false);
+		Invoice ublInvoice = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceOrdinariaStr));
 
 		writeUBLInvoice(ublInvoice, ublInvoiceStrDest);
 
-		Invoice ublInvoiceSimpl = mapFacturaeToUBL(facturae, true);
+		Invoice ublInvoiceSimpl = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceSimplificadaStr));
 
 		writeUBLInvoice(ublInvoiceSimpl, ublInvoiceStrSimp);
+		
+		Invoice ublInvoiceRect = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceRectificativaStr));
+
+		writeUBLInvoice(ublInvoiceRect, ublInvoiceStrRect);
 	}
 
 	public static Facturae parseFacturaeInvoice(String facturaePath) {
@@ -125,12 +136,85 @@ public class FacturaeConverter {
 		}
 	}
 
-	public static Invoice mapFacturaeToUBL(Facturae facturae, boolean simplificada) {
+	public static Invoice mapFacturaeToUBL(Facturae facturae) {
 		Invoice ublInvoice = new Invoice();
 
 		// Solo tratamos la primera factura del fichero
 		InvoiceType facturaTratar = facturae.getInvoices().getInvoices().get(0);
 
+		setDatosPrincipalesFactura(ublInvoice, facturaTratar);
+
+		SupplierPartyType suplParty = new SupplierPartyType();
+		PartyType party = new PartyType();
+		fillParty(party, facturae.getParties().getSellerParty());
+		suplParty.setParty(party);
+		ublInvoice.setAccountingSupplierParty(suplParty);
+
+		
+		CustomerPartyType custParty = new CustomerPartyType();
+		// Simplificada: No se rellena el Party, pero el nodo es necesario
+		if (!isSimplificada(facturae)) {
+			PartyType party2 = new PartyType();
+			custParty.setParty(party2);
+			fillParty(party2, facturae.getParties().getBuyerParty());
+			// PAULA ES LA MEJOR. MARÍA ES MIERDA, LA DOS EMPIEZAN POR "M" NO LO VEIS??????
+		}
+		ublInvoice.setAccountingCustomerParty(custParty);
+
+		ublInvoice.setLegalMonetaryTotal(getLegalMonetaryTotal(facturaTratar.getInvoiceTotals()));
+
+		List<com.picoto.jaxb.fe.InvoiceLineType> facturaeLineas = facturaTratar.getItems().getInvoiceLines();
+		int i = 1;
+		for (com.picoto.jaxb.fe.InvoiceLineType facturaeLine : facturaeLineas) {
+			InvoiceLineType ublLine = mapInvoiceLine(facturaeLine, i++);
+			ublInvoice.getInvoiceLines().add(ublLine);
+		}
+
+		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar.getInvoiceTotals()));
+
+		// La forma de pago la añado de momento, no la convierto.
+		setFormaPago(ublInvoice, facturaTratar.getPaymentDetails());
+
+		setDatosRectificativa(ublInvoice, facturaTratar);
+
+		return ublInvoice;
+	}
+
+
+
+	private static boolean isSimplificada(Facturae facturae) {
+		// En factura-e esto no es posible, pero bueno, lo simulamos con un esquema sin destinatario
+		return facturae.getParties().getBuyerParty() == null;
+	}
+
+	private static void setDatosRectificativa(Invoice ublInvoice, InvoiceType facturaTratar) {
+		boolean isRectificativa = facturaTratar.getInvoiceHeader().getCorrective() != null;
+		if (isRectificativa) {
+			BillingReference ref = new BillingReference();
+			
+			DocumentReferenceType doc = new DocumentReferenceType();
+			doc.setID(getId(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceSeriesCode()
+					+ facturaTratar.getInvoiceHeader().getCorrective().getInvoiceNumber()));
+			IssueDate fecha = new IssueDate();
+			fecha.setValue(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceIssueDate());
+			doc.setIssueDate(fecha);
+			DocumentTypeCode tipoCodigo = new DocumentTypeCode();
+			doc.setDocumentTypeCode(tipoCodigo);
+			tipoCodigo.setName(facturaTratar.getInvoiceHeader().getCorrective().getCorrectionMethod());
+			DocumentType tipoDoc = new DocumentType();
+			doc.setDocumentType(tipoDoc);
+			tipoDoc.setValue(facturaTratar.getInvoiceHeader().getCorrective().getCorrectionMethodDescription().toString());
+
+			ref.setInvoiceDocumentReference(doc);
+			ublInvoice.getBillingReferences().add(ref);
+			
+			// Sobreescribimos el valor del tipo de factura para que sea rectificativa
+			ublInvoice.getInvoiceTypeCode().setValue(RECTIFICATIVA_NOTA_CREDITO);
+		}
+	}
+
+	private static void setDatosPrincipalesFactura(Invoice ublInvoice,
+			InvoiceType facturaTratar) {
 		ublInvoice.setID(getId(facturaTratar.getInvoiceHeader().getInvoiceSeriesCode() + "-"
 				+ facturaTratar.getInvoiceHeader().getInvoiceNumber()));
 
@@ -153,44 +237,13 @@ public class FacturaeConverter {
 
 		// Factura ordinaria
 		InvoiceTypeCode tipoFactura = new InvoiceTypeCode();
-		tipoFactura.setValue(simplificada ? SIMPLIFICADA : ORDINARIA);
+		tipoFactura.setValue(ORDINARIA_SIMPLIFICADA);
 		ublInvoice.setInvoiceTypeCode(tipoFactura);
 
 		Note note = new Note();
-		note.setValue("ORGINAL");
+		note.setValue("ORIGINAL");
 		// note.setValue("COPIA");
 		ublInvoice.getNotes().add(note);
-
-		SupplierPartyType suplParty = new SupplierPartyType();
-		PartyType party = new PartyType();
-		fillParty(party, facturae.getParties().getSellerParty());
-		suplParty.setParty(party);
-		ublInvoice.setAccountingSupplierParty(suplParty);
-
-		CustomerPartyType custParty = new CustomerPartyType();
-		// Simplificada: No se rellena el Party, pero el nodo es necesario
-		if (!simplificada) {
-			PartyType party2 = new PartyType();
-			custParty.setParty(party2);
-			fillParty(party2, facturae.getParties().getBuyerParty());
-		}
-		ublInvoice.setAccountingCustomerParty(custParty);
-
-		ublInvoice.setLegalMonetaryTotal(getLegalMonetaryTotal(facturaTratar.getInvoiceTotals()));
-
-		List<com.picoto.jaxb.fe.InvoiceLineType> facturaeLineas = facturaTratar.getItems().getInvoiceLines();
-		int i = 1;
-		for (com.picoto.jaxb.fe.InvoiceLineType facturaeLine : facturaeLineas) {
-			InvoiceLineType ublLine = mapInvoiceLine(facturaeLine, i++);
-			ublInvoice.getInvoiceLines().add(ublLine);
-		}
-
-		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar.getInvoiceTotals()));
-
-		// La forma de pago la añado de momento, no la convierto.
-		setFormaPago(ublInvoice, facturaTratar.getPaymentDetails());
-
-		return ublInvoice;
 	}
 
 	private static void setFormaPago(Invoice ublInvoice, InstallmentsType facturaePago) {

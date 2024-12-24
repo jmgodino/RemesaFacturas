@@ -2,10 +2,10 @@
 <ns4:Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ns4="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2">
     <CustomizationID>ORIGINAL</CustomizationID>
     <ProfileID>Invoice</ProfileID>
-    <ID>G0001-00000001</ID>
+    <ID>G0001-00000002</ID>
     <IssueDate>2024-01-17</IssueDate>
-    <InvoiceTypeCode>381</InvoiceTypeCode>
-    <Note>ORGINAL</Note>
+    <InvoiceTypeCode>380</InvoiceTypeCode>
+    <Note>ORIGINAL</Note>
     <DocumentCurrencyCode>EUR</DocumentCurrencyCode>
     <ns3:AccountingSupplierParty>
         <ns3:Party>

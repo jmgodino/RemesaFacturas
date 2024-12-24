@@ -74,31 +74,31 @@
 	<sum1:FechaHoraHusoGenRegistro>2024-02-07T12:30:00+02:00</sum1:FechaHoraHusoGenRegistro>
 	<sum1:TipoHuella>01</sum1:TipoHuella>
 	<sum1:Huella>5C56AC56F13DB2A25E0031BD2B7ED5C9AF4AF1EF5EBBA700350DE3EEF12C2D35</sum1:Huella>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787">
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<ds:Reference Id="xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787-ref0" URI="">
+<ds:Reference Id="xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699-ref0" URI="">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
 <ds:DigestValue>tvhJSkSx7f7wccHZ5t3wheEzLzLjJJgNIxg9e9CGy3w=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787-signedprops">
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699-signedprops">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>XZghLR9JtwNgWRZDZF12CEWsbetOcv8loZkfFB2Moro=</ds:DigestValue>
+<ds:DigestValue>jVAOIKubfBKLGYt6mYDWJ3kZq+xr8e1yfmv4oh36yuA=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787-sigvalue">
-GGE8Eddcc51ZQ7uInbKZY7WW+euDtsbBQxcP6aRJJAL1e0e/O42GgGm7k3MUNc7lRJBt41LJtOe/&#13;
-eBrEFWCZvjVURDePDflSQiciuX1BRGIrmnILLtutMniIi2QZR9u9hVtQu+63J2NAIV59EuqVevGz&#13;
-CQvvnr/7wKjiXZcvL8gQAYPj554YHfjuDYX5QRVe2BeV6fR8sa6Ji9aKvB9NReF7/jsPEKprHOZK&#13;
-FA3Wqt2x2izbgmA0E7oopM5RAds0eFCG6U5UA2MzEO9BQgLLT4Y2Gs01X+VjQTV1sOvV8eRXxQgE&#13;
-SbfeYYBIZCPbV1tIh5QdGdPYfnGc5bwBVaGqfw==
+<ds:SignatureValue Id="xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699-sigvalue">
+OROkTY3qD/f/vOuHAoWRU5PtHLNGlRyx/MS2oFUW6uXGqPRukbGevtAEhgdfLkhfO1DbcL2n/A76&#13;
+v8q7FTD9vo73QdAH866uh1zVZy2D6/DT5H0kx+xmSiTDDOB7GJLcTKN/+XY+B+j+punFt6GDD8Y+&#13;
+WoaV2jj1hbdfYU1xvVJBFCIGIpHsx/+mZTFR9q2I6ZwCw02bPQDEoN51Ce+lXrJmRsJ3YG9yi6W2&#13;
+XfAnlP2Q2pNt5pzTp1Pv7R2eQNOnV51O5BA3mfX6OpmShz1fr2Y0Mm8PqLxdwOFYLyYiX9UOYLAg&#13;
+sTFndSOVxXiSkp/LLg2Sa96lwwDtAiOOJFyuAQ==
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:X509Data>
@@ -133,5 +133,5 @@ pFM4ji3DEwUHNDhqr2SZ4gV42qwzbeivIvvtoQ==</ds:Modulus>
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787"><xades:SignedProperties Id="xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-12-14T16:02:35.546+01:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>m+wwZ/juE/y5xblNu7eK7aMkzaU=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=Facturacion,ou=IT,o=FirmaFactura,l=Madrid,st=MAD,c=ES</ds:X509IssuerName><ds:X509SerialNumber>576482270728543507966757905488730867767223102950</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>urn:oid:2.16.724.1.3.1.1.2.1.9</xades:Identifier><xades:Description/></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>G7roucf600+f03r/o0bAOQ6WAs0=</ds:DigestValue></xades:SigPolicyHash><xades:SigPolicyQualifiers><xades:SigPolicyQualifier><xades:SPURI>https://sede.administracion.gob.es/politica_de_firma_anexo_1.pdf</xades:SPURI></xades:SigPolicyQualifier></xades:SigPolicyQualifiers></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xmldsig-6d2f8caa-c51f-4798-a170-62b6c07af787-ref0"><xades:ObjectIdentifier><xades:Identifier>urn:oid:1.2.840.10003.5.109.10</xades:Identifier><xades:Description/></xades:ObjectIdentifier><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699"><xades:SignedProperties Id="xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-12-24T09:18:09.047+01:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>m+wwZ/juE/y5xblNu7eK7aMkzaU=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=Facturacion,ou=IT,o=FirmaFactura,l=Madrid,st=MAD,c=ES</ds:X509IssuerName><ds:X509SerialNumber>576482270728543507966757905488730867767223102950</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>urn:oid:2.16.724.1.3.1.1.2.1.9</xades:Identifier><xades:Description/></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>G7roucf600+f03r/o0bAOQ6WAs0=</ds:DigestValue></xades:SigPolicyHash><xades:SigPolicyQualifiers><xades:SigPolicyQualifier><xades:SPURI>https://sede.administracion.gob.es/politica_de_firma_anexo_1.pdf</xades:SPURI></xades:SigPolicyQualifier></xades:SigPolicyQualifiers></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xmldsig-f9474149-3de5-4df7-9fb2-a30b28f21699-ref0"><xades:ObjectIdentifier><xades:Identifier>urn:oid:1.2.840.10003.5.109.10</xades:Identifier><xades:Description/></xades:ObjectIdentifier><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
 </ds:Signature></sum:RegistroAlta>

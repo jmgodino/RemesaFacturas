@@ -29,30 +29,13 @@
 				</AddressInSpain>
 			</Individual>
 		</SellerParty>
-		<BuyerParty>
-			<TaxIdentification>
-				<PersonTypeCode>J</PersonTypeCode>
-				<ResidenceTypeCode>R</ResidenceTypeCode>
-				<TaxIdentificationNumber>B12345674</TaxIdentificationNumber>
-			</TaxIdentification>
-			<LegalEntity>
-				<CorporateName>Comercial Josete SA</CorporateName>
-				<TradeName>Comercial Josete</TradeName>
-				<AddressInSpain>
-					<Address>Calle Secundaria</Address>
-					<PostCode>28001</PostCode>
-					<Town>La Puebla de Montalban</Town>
-					<Province>Toledo</Province>
-					<CountryCode>ESP</CountryCode>
-				</AddressInSpain>
-			</LegalEntity>
-		</BuyerParty>
+		<!-- Omitimos el destinatario -->
 		<!-- Omitimos sección AdministrativeCentres -->
 	</Parties>
 	<Invoices>
 		<Invoice>
 			<InvoiceHeader>
-				<InvoiceNumber>00000001</InvoiceNumber>
+				<InvoiceNumber>00000002</InvoiceNumber>
 				<InvoiceSeriesCode>G0001</InvoiceSeriesCode>
 				<InvoiceDocumentType>FC</InvoiceDocumentType>
 				<InvoiceClass>OO</InvoiceClass>
@@ -186,7 +169,7 @@
 					</TaxesOutputs>
 					<AdditionalLineItemInformation>Sillas</AdditionalLineItemInformation>
 				</InvoiceLine>
-				
+
 				<InvoiceLine>
 					<ItemDescription>Descripcion de factura de pizarras</ItemDescription>
 					<Quantity>1.0</Quantity>
@@ -215,7 +198,7 @@
 						<SpecialTaxableEventCode>02</SpecialTaxableEventCode>
 						<SpecialTaxableEventReason>No soportado</SpecialTaxableEventReason>
 					</SpecialTaxableEvent>
-				</InvoiceLine>				
+				</InvoiceLine>
 
 				<InvoiceLine>
 					<ItemDescription>Descripcion de factura de tizas</ItemDescription>
@@ -245,7 +228,7 @@
 						<SpecialTaxableEventCode>01</SpecialTaxableEventCode>
 						<SpecialTaxableEventReason>Exenta</SpecialTaxableEventReason>
 					</SpecialTaxableEvent>
-				</InvoiceLine>				
+				</InvoiceLine>
 			</Items>
 			<PaymentDetails>
 				<Installment>
