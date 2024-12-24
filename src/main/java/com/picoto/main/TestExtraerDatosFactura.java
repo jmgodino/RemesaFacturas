@@ -42,7 +42,7 @@ public class TestExtraerDatosFactura {
 	};
 
 	public static void main(String[] args) throws Exception {
-		String strDoc = IOUtils.toString(Utils.getFile("examples/ejemploExtraccionDatos.xml"), Charset.defaultCharset());
+		String strDoc = IOUtils.toString(Utils.getFile("examples/extraccion/ejemploExtraccionDatos.xml"), Charset.defaultCharset());
 		Document doc = Utils.parseDocument(strDoc);
 		String prefix = "fe";
 		String ns = "http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml";

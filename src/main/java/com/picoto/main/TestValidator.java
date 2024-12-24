@@ -28,15 +28,15 @@ public class TestValidator extends Temporizado {
 	}
 
 	public void validarPorBloques() throws XMLStreamException, SAXException, IOException, TransformerException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
-		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/rendimiento/remesa-evaluar-rendimiento.xml"));
+		Validator validator = Utils.getValidator(Facturae.class, "/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "STR", reader, (r) -> {
 			try {
 				String nodo = Utils.getStringCompleto(reader);
 				validator.validate(Utils.getStaxSource(nodo));
 
-				Pattern p = Pattern.compile("<InvoiceTotal>(.*)</InvoiceTotal>");
+				Pattern p = Pattern.compile("<InvoiceTotals>(.*)</InvoiceTotals>");
 				Matcher m = p.matcher(nodo);
 				if (m.find()) {
 					Utils.debug("     Valor de Regex: " + m.group(1));
@@ -49,8 +49,8 @@ public class TestValidator extends Temporizado {
 
 	public void validarPorBloquesConDomAuxiliar(boolean canonical)
 			throws XMLStreamException, SAXException, IOException, TransformerException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
-		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/rendimiento/remesa-evaluar-rendimiento.xml"));
+		Validator validator = Utils.getValidator(Facturae.class, "/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "DOM canonical(" + canonical + ")", reader, (r) -> {
 			try {
@@ -74,8 +74,8 @@ public class TestValidator extends Temporizado {
 
 	public void validarPorBloquesConJaxbAuxiliar()
 			throws XMLStreamException, SAXException, IOException, TransformerException, JAXBException {
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
-		Schema schema = Utils.getSchema(Facturae.class, "/schemas/Remesas.xsd");
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/rendimiento/remesa-evaluar-rendimiento.xml"));
+		Schema schema = Utils.getSchema(Facturae.class, "/Remesas.xsd");
 
 		this.procesarNodos("Facturae", "JAXB", reader, (r) -> {
 			try {
@@ -91,8 +91,8 @@ public class TestValidator extends Temporizado {
 
 	public void validarCompleto() throws XMLStreamException, SAXException, IOException {
 
-		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/firma.xml"));
-		Validator validator = Utils.getValidator(Facturae.class, "/schemas/Remesas.xsd");
+		XMLStreamReader reader = Utils.getStaxReader(Utils.getFile("examples/rendimiento/remesa-evaluar-rendimiento.xml"));
+		Validator validator = Utils.getValidator(Facturae.class, "/Remesas.xsd");
 
 		initTimeCalculation("COMPLETO");
 		validator.validate(new StAXSource(reader));
@@ -121,7 +121,7 @@ public class TestValidator extends Temporizado {
 					tv.validarCompleto();
 					tv.validarPorBloques();
 					tv.validarPorBloquesConDomAuxiliar(false);
-					tv.validarPorBloquesConDomAuxiliar(true);
+					//tv.validarPorBloquesConDomAuxiliar(true);
 					tv.validarPorBloquesConJaxbAuxiliar();
 				} catch (Exception e) {
 					e.printStackTrace();

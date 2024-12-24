@@ -14,7 +14,7 @@ import xades4j.production.XadesSigner;
 public class SignerTest extends SignerBase {
 
 	public static void main(String args[]) throws Exception {
-		Document doc = getDocument("./examples/ejemploRegistroFirmar.xml");
+		Document doc = getDocument("./examples/firma/ejemploRegistroFirmar.xml");
 		Element elemToSign = doc.getDocumentElement();
 
 		XadesSigner signer = new XadesEpesSigningProfile(keyingProviderMy, policyInfoProviderMy)
@@ -27,7 +27,7 @@ public class SignerTest extends SignerBase {
 				.newSigner();
 
 		new Enveloped(signer).sign(elemToSign);
-		outputDocument(doc, "./examples/ejemploRegistro-firmado-epes-xades4j.xml");
+		outputDocument(doc, "./examples/out/ejemploRegistro-firmado-epes-xades4j.xml");
 	}
 
 }

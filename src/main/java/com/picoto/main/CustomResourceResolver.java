@@ -27,7 +27,7 @@ public class CustomResourceResolver implements LSResourceResolver {
 
 	class Input implements LSInput {
 
-		private static final String PREFIX = "schemas/";
+		private static final String PREFIX = "";
 		private String publicId;
 		private String systemId;
 
