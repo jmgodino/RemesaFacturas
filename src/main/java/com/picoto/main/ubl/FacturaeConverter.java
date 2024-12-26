@@ -25,6 +25,7 @@ import com.picoto.jaxb.fe.InvoiceTotalsType;
 import com.picoto.jaxb.fe.InvoiceType;
 import com.picoto.jaxb.fe.PersonTypeCodeType;
 import com.picoto.jaxb.fe.SpecialTaxableEventType;
+import com.picoto.jaxb.fe.TaxOutputType;
 import com.picoto.jaxb.ubl.common.cac.AddressType;
 import com.picoto.jaxb.ubl.common.cac.AllowanceChargeType;
 import com.picoto.jaxb.ubl.common.cac.BillingReference;
@@ -49,6 +50,7 @@ import com.picoto.jaxb.ubl.common.cac.PriceType;
 import com.picoto.jaxb.ubl.common.cac.SupplierPartyType;
 import com.picoto.jaxb.ubl.common.cac.TaxCategoryType;
 import com.picoto.jaxb.ubl.common.cac.TaxScheme;
+import com.picoto.jaxb.ubl.common.cac.TaxSubtotal;
 import com.picoto.jaxb.ubl.common.cac.TaxTotalType;
 import com.picoto.jaxb.ubl.common.cbc.AllowanceChargeReasonCode;
 import com.picoto.jaxb.ubl.common.cbc.Amount;
@@ -84,6 +86,7 @@ import com.picoto.jaxb.ubl.common.cbc.TaxExclusiveAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxExemptionReasonCode;
 import com.picoto.jaxb.ubl.common.cbc.TaxInclusiveAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxTypeCode;
+import com.picoto.jaxb.ubl.common.cbc.TaxableAmount;
 import com.picoto.jaxb.ubl.common.cbc.Telephone;
 import com.picoto.jaxb.ubl.maindoc.invoice.Invoice;
 
@@ -100,15 +103,14 @@ public class FacturaeConverter {
 	private static final String RECTIFICATIVA_NOTA_CREDITO = "381";
 
 	public static void main(String[] args) {
-		
+
 		String facturaeInvoiceOrdinariaStr = "examples/in/invoice-face-ordinaria.xml";
 		String facturaeInvoiceSimplificadaStr = "examples/in/invoice-face-simplificada.xml";
 		String facturaeInvoiceRectificativaStr = "examples/in/invoice-face-rectificativa.xml";
-		
+
 		String ublInvoiceStrDest = "examples/out/invoice-ubl-ordinaria.xml";
 		String ublInvoiceStrSimp = "examples/out/invoice-ubl-simplificada.xml";
 		String ublInvoiceStrRect = "examples/out/invoice-ubl-rectificativa.xml";
-
 
 		Invoice ublInvoice = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceOrdinariaStr));
 
@@ -117,7 +119,7 @@ public class FacturaeConverter {
 		Invoice ublInvoiceSimpl = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceSimplificadaStr));
 
 		writeUBLInvoice(ublInvoiceSimpl, ublInvoiceStrSimp);
-		
+
 		Invoice ublInvoiceRect = mapFacturaeToUBL(parseFacturaeInvoice(facturaeInvoiceRectificativaStr));
 
 		writeUBLInvoice(ublInvoiceRect, ublInvoiceStrRect);
@@ -159,7 +161,6 @@ public class FacturaeConverter {
 		suplParty.setParty(party);
 		ublInvoice.setAccountingSupplierParty(suplParty);
 
-		
 		CustomerPartyType custParty = new CustomerPartyType();
 		// Simplificada: No se rellena el Party, pero el nodo es necesario
 		if (!isSimplificada(facturae)) {
@@ -179,7 +180,7 @@ public class FacturaeConverter {
 			ublInvoice.getInvoiceLines().add(ublLine);
 		}
 
-		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar.getInvoiceTotals()));
+		ublInvoice.getTaxTotals().add(getTaxTotal(facturaTratar));
 
 		// La forma de pago la añado de momento, no la convierto.
 		setFormaPago(ublInvoice, facturaTratar.getPaymentDetails());
@@ -189,10 +190,9 @@ public class FacturaeConverter {
 		return ublInvoice;
 	}
 
-
-
 	private static boolean isSimplificada(Facturae facturae) {
-		// En factura-e esto no es posible, pero bueno, lo simulamos con un esquema sin destinatario
+		// En factura-e esto no es posible, pero bueno, lo simulamos con un esquema sin
+		// destinatario
 		return facturae.getParties().getBuyerParty() == null;
 	}
 
@@ -200,10 +200,10 @@ public class FacturaeConverter {
 		boolean isRectificativa = facturaTratar.getInvoiceHeader().getCorrective() != null;
 		if (isRectificativa) {
 			BillingReference ref = new BillingReference();
-			
+
 			DocumentReferenceType doc = new DocumentReferenceType();
-			doc.setID(getId(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceSeriesCode()
-					+ "-" + facturaTratar.getInvoiceHeader().getCorrective().getInvoiceNumber()));
+			doc.setID(getId(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceSeriesCode() + "-"
+					+ facturaTratar.getInvoiceHeader().getCorrective().getInvoiceNumber()));
 			IssueDate fecha = new IssueDate();
 			fecha.setValue(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceIssueDate());
 			doc.setIssueDate(fecha);
@@ -212,18 +212,18 @@ public class FacturaeConverter {
 			tipoCodigo.setName(facturaTratar.getInvoiceHeader().getCorrective().getCorrectionMethod());
 			DocumentType tipoDoc = new DocumentType();
 			doc.setDocumentType(tipoDoc);
-			tipoDoc.setValue(facturaTratar.getInvoiceHeader().getCorrective().getCorrectionMethodDescription().toString());
+			tipoDoc.setValue(
+					facturaTratar.getInvoiceHeader().getCorrective().getCorrectionMethodDescription().toString());
 
 			ref.setInvoiceDocumentReference(doc);
 			ublInvoice.getBillingReferences().add(ref);
-			
+
 			// Sobreescribimos el valor del tipo de factura para que sea rectificativa
 			ublInvoice.getInvoiceTypeCode().setValue(RECTIFICATIVA_NOTA_CREDITO);
 		}
 	}
 
-	private static void setDatosPrincipalesFactura(Invoice ublInvoice,
-			InvoiceType facturaTratar) {
+	private static void setDatosPrincipalesFactura(Invoice ublInvoice, InvoiceType facturaTratar) {
 		ublInvoice.setID(getId(facturaTratar.getInvoiceHeader().getInvoiceSeriesCode() + "-"
 				+ facturaTratar.getInvoiceHeader().getInvoiceNumber()));
 
@@ -299,19 +299,20 @@ public class FacturaeConverter {
 		PartyIdentification idn = new PartyIdentification();
 		idn.setID(getIdWithScheme("NIF", faceParty.getTaxIdentification().getTaxIdentificationNumber()));
 		party.getPartyIdentifications().add(idn);
-		
+
 		if (faceParty.getTaxIdentification().getPersonTypeCode().compareTo(PersonTypeCodeType.F) == 0) {
 			pName.setName(
 					getName(faceParty.getIndividual().getName() + " " + faceParty.getIndividual().getFirstSurname()
 							+ " " + faceParty.getIndividual().getSecondSurname()));
 			party.getPartyNames().add(pName);
-			
+
 			PersonType personaF = new PersonType();
 			FirstName nombre = new FirstName();
 			nombre.setValue(faceParty.getIndividual().getName());
 			personaF.setFirstName(nombre);
 			FamilyName apellidos = new FamilyName();
-			apellidos.setValue(faceParty.getIndividual().getFirstSurname()+ " "+faceParty.getIndividual().getSecondSurname());
+			apellidos.setValue(
+					faceParty.getIndividual().getFirstSurname() + " " + faceParty.getIndividual().getSecondSurname());
 			personaF.setFamilyName(apellidos);
 			party.getPersons().add(personaF);
 
@@ -323,7 +324,7 @@ public class FacturaeConverter {
 			telefono.setValue(faceParty.getIndividual().getContactDetails().getTelephone());
 			contacto.setTelephone(telefono);
 			party.setContact(contacto);
-			
+
 			AddressType pAddress = new AddressType();
 			party.setPostalAddress(pAddress);
 
@@ -369,7 +370,7 @@ public class FacturaeConverter {
 			CompanyID cif = new CompanyID();
 			cif.setValue(faceParty.getTaxIdentification().getTaxIdentificationNumber());
 			entidadLegal.setCompanyID(cif);
-						
+
 			AddressType pAddress = new AddressType();
 			party.setPostalAddress(pAddress);
 
@@ -402,7 +403,7 @@ public class FacturaeConverter {
 			taxScheme.setTaxTypeCode(taxTypeCode);
 			partyTaxScheme.setTaxScheme(taxScheme);
 			party.getPartyTaxSchemes().add(partyTaxScheme);
-			
+
 			ContactType contacto = new ContactType();
 			ElectronicMail email = new ElectronicMail();
 			email.setValue(faceParty.getLegalEntity().getContactDetails().getElectronicMail());
@@ -443,12 +444,47 @@ public class FacturaeConverter {
 
 	}
 
-	private static TaxTotalType getTaxTotal(InvoiceTotalsType taxTotals) {
+	private static TaxTotalType getTaxTotal(InvoiceType facturaTratar) {
 		TaxTotalType taxTotal = new TaxTotalType();
 		TaxAmount taxAmount = new TaxAmount();
-		taxAmount.setValue(getBigDecimalRedondeado(taxTotals.getTotalTaxOutputs()));
+		taxAmount.setValue(getBigDecimalRedondeado(facturaTratar.getInvoiceTotals().getTotalTaxOutputs()));
 		taxTotal.setTaxAmount(taxAmount);
 		taxAmount.setCurrencyID(EURO);
+
+		for (TaxOutputType feSubtotal : facturaTratar.getTaxesOutputs().getTaxes()) {
+			TaxSubtotal subtotal = new TaxSubtotal();
+
+			// subtotal de impuestos
+			TaxAmount taxSubamount = new TaxAmount();
+			taxSubamount.setCurrencyID(EURO);
+			taxSubamount.setValue(getBigDecimalRedondeado(feSubtotal.getTaxAmount().getTotalAmount()));
+
+			subtotal.setTaxAmount(taxSubamount);
+
+			// subtotal de base imponible
+			TaxableAmount baseImponibleSubtotal = new TaxableAmount();
+			baseImponibleSubtotal.setValue(getBigDecimalRedondeado(feSubtotal.getTaxableBase().getTotalAmount()));
+			baseImponibleSubtotal.setCurrencyID(EURO);
+
+			subtotal.setTaxableAmount(baseImponibleSubtotal);
+
+			// Tipo impositivo
+			TaxCategoryType categoria = new TaxCategoryType();
+			categoria.setID(getId(REGIMEN_GENERAL));
+			TaxScheme taxScheme = new TaxScheme();
+			taxScheme.setID(getId(VAT));
+			taxScheme.setName(getName(IVA));
+
+			Percent percent = new Percent();
+			percent.setValue(getBigDecimalRedondeado(feSubtotal.getTaxRate()));
+			categoria.setPercent(percent);
+
+			subtotal.setTaxCategory(categoria);
+
+			taxTotal.getTaxSubtotals().add(subtotal);
+
+		}
+
 		return taxTotal;
 	}
 

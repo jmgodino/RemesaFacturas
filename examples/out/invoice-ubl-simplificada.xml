@@ -57,6 +57,22 @@
     </ns3:PaymentTerms>
     <ns3:TaxTotal>
         <TaxAmount currencyID="EUR">239.90</TaxAmount>
+        <ns3:TaxSubtotal>
+            <TaxableAmount currencyID="EUR">950.00</TaxableAmount>
+            <TaxAmount currencyID="EUR">199.50</TaxAmount>
+            <ns3:TaxCategory>
+                <ID>01</ID>
+                <Percent>21.00</Percent>
+            </ns3:TaxCategory>
+        </ns3:TaxSubtotal>
+        <ns3:TaxSubtotal>
+            <TaxableAmount currencyID="EUR">404.00</TaxableAmount>
+            <TaxAmount currencyID="EUR">40.40</TaxAmount>
+            <ns3:TaxCategory>
+                <ID>01</ID>
+                <Percent>10.00</Percent>
+            </ns3:TaxCategory>
+        </ns3:TaxSubtotal>
     </ns3:TaxTotal>
     <ns3:LegalMonetaryTotal>
         <LineExtensionAmount currencyID="EUR">1354.00</LineExtensionAmount>
