@@ -27,6 +27,10 @@
 					<Province>MADRID</Province>
 					<CountryCode>ESP</CountryCode>
 				</AddressInSpain>
+				<ContactDetails>
+					<Telephone>666666666</Telephone>
+					<ElectronicMail>666666666@mymail.com</ElectronicMail>
+				</ContactDetails>
 			</Individual>
 		</SellerParty>
 		<BuyerParty>
@@ -45,6 +49,10 @@
 					<Province>Toledo</Province>
 					<CountryCode>ESP</CountryCode>
 				</AddressInSpain>
+				<ContactDetails>
+					<Telephone>77777777</Telephone>
+					<ElectronicMail>777777777@mymail.com</ElectronicMail>
+				</ContactDetails>				
 			</LegalEntity>
 		</BuyerParty>
 		<!-- Omitimos sección AdministrativeCentres -->

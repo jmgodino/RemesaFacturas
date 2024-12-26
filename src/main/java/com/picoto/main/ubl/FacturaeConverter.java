@@ -29,6 +29,7 @@ import com.picoto.jaxb.ubl.common.cac.AddressType;
 import com.picoto.jaxb.ubl.common.cac.AllowanceChargeType;
 import com.picoto.jaxb.ubl.common.cac.BillingReference;
 import com.picoto.jaxb.ubl.common.cac.BranchType;
+import com.picoto.jaxb.ubl.common.cac.ContactType;
 import com.picoto.jaxb.ubl.common.cac.CountryType;
 import com.picoto.jaxb.ubl.common.cac.CustomerPartyType;
 import com.picoto.jaxb.ubl.common.cac.DocumentReferenceType;
@@ -36,11 +37,14 @@ import com.picoto.jaxb.ubl.common.cac.FinancialAccountType;
 import com.picoto.jaxb.ubl.common.cac.InvoiceLineType;
 import com.picoto.jaxb.ubl.common.cac.ItemType;
 import com.picoto.jaxb.ubl.common.cac.MonetaryTotalType;
+import com.picoto.jaxb.ubl.common.cac.PartyIdentification;
+import com.picoto.jaxb.ubl.common.cac.PartyLegalEntity;
 import com.picoto.jaxb.ubl.common.cac.PartyName;
 import com.picoto.jaxb.ubl.common.cac.PartyTaxScheme;
 import com.picoto.jaxb.ubl.common.cac.PartyType;
 import com.picoto.jaxb.ubl.common.cac.PaymentMeans;
 import com.picoto.jaxb.ubl.common.cac.PaymentTermsType;
+import com.picoto.jaxb.ubl.common.cac.PersonType;
 import com.picoto.jaxb.ubl.common.cac.PriceType;
 import com.picoto.jaxb.ubl.common.cac.SupplierPartyType;
 import com.picoto.jaxb.ubl.common.cac.TaxCategoryType;
@@ -56,6 +60,9 @@ import com.picoto.jaxb.ubl.common.cbc.CustomizationID;
 import com.picoto.jaxb.ubl.common.cbc.DocumentCurrencyCode;
 import com.picoto.jaxb.ubl.common.cbc.DocumentType;
 import com.picoto.jaxb.ubl.common.cbc.DocumentTypeCode;
+import com.picoto.jaxb.ubl.common.cbc.ElectronicMail;
+import com.picoto.jaxb.ubl.common.cbc.FamilyName;
+import com.picoto.jaxb.ubl.common.cbc.FirstName;
 import com.picoto.jaxb.ubl.common.cbc.ID;
 import com.picoto.jaxb.ubl.common.cbc.IdentificationCode;
 import com.picoto.jaxb.ubl.common.cbc.InvoiceTypeCode;
@@ -70,12 +77,14 @@ import com.picoto.jaxb.ubl.common.cbc.PaymentMeansCode;
 import com.picoto.jaxb.ubl.common.cbc.Percent;
 import com.picoto.jaxb.ubl.common.cbc.PriceAmount;
 import com.picoto.jaxb.ubl.common.cbc.ProfileID;
+import com.picoto.jaxb.ubl.common.cbc.RegistrationName;
 import com.picoto.jaxb.ubl.common.cbc.StreetName;
 import com.picoto.jaxb.ubl.common.cbc.TaxAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxExclusiveAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxExemptionReasonCode;
 import com.picoto.jaxb.ubl.common.cbc.TaxInclusiveAmount;
 import com.picoto.jaxb.ubl.common.cbc.TaxTypeCode;
+import com.picoto.jaxb.ubl.common.cbc.Telephone;
 import com.picoto.jaxb.ubl.maindoc.invoice.Invoice;
 
 public class FacturaeConverter {
@@ -194,7 +203,7 @@ public class FacturaeConverter {
 			
 			DocumentReferenceType doc = new DocumentReferenceType();
 			doc.setID(getId(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceSeriesCode()
-					+ facturaTratar.getInvoiceHeader().getCorrective().getInvoiceNumber()));
+					+ "-" + facturaTratar.getInvoiceHeader().getCorrective().getInvoiceNumber()));
 			IssueDate fecha = new IssueDate();
 			fecha.setValue(facturaTratar.getInvoiceHeader().getCorrective().getInvoiceIssueDate());
 			doc.setIssueDate(fecha);
@@ -287,12 +296,34 @@ public class FacturaeConverter {
 
 	private static void fillParty(PartyType party, BusinessType faceParty) {
 		PartyName pName = new PartyName();
+		PartyIdentification idn = new PartyIdentification();
+		idn.setID(getIdWithScheme("NIF", faceParty.getTaxIdentification().getTaxIdentificationNumber()));
+		party.getPartyIdentifications().add(idn);
+		
 		if (faceParty.getTaxIdentification().getPersonTypeCode().compareTo(PersonTypeCodeType.F) == 0) {
 			pName.setName(
 					getName(faceParty.getIndividual().getName() + " " + faceParty.getIndividual().getFirstSurname()
 							+ " " + faceParty.getIndividual().getSecondSurname()));
 			party.getPartyNames().add(pName);
+			
+			PersonType personaF = new PersonType();
+			FirstName nombre = new FirstName();
+			nombre.setValue(faceParty.getIndividual().getName());
+			personaF.setFirstName(nombre);
+			FamilyName apellidos = new FamilyName();
+			apellidos.setValue(faceParty.getIndividual().getFirstSurname()+ " "+faceParty.getIndividual().getSecondSurname());
+			personaF.setFamilyName(apellidos);
+			party.getPersons().add(personaF);
 
+			ContactType contacto = new ContactType();
+			ElectronicMail email = new ElectronicMail();
+			email.setValue(faceParty.getIndividual().getContactDetails().getElectronicMail());
+			contacto.setElectronicMail(email);
+			Telephone telefono = new Telephone();
+			telefono.setValue(faceParty.getIndividual().getContactDetails().getTelephone());
+			contacto.setTelephone(telefono);
+			party.setContact(contacto);
+			
 			AddressType pAddress = new AddressType();
 			party.setPostalAddress(pAddress);
 
@@ -330,6 +361,15 @@ public class FacturaeConverter {
 			pName.setName(getName(faceParty.getLegalEntity().getTradeName()));
 			party.getPartyNames().add(pName);
 
+			PartyLegalEntity entidadLegal = new PartyLegalEntity();
+			party.getPartyLegalEntities().add(entidadLegal);
+			RegistrationName nombre = new RegistrationName();
+			nombre.setValue(faceParty.getLegalEntity().getCorporateName());
+			entidadLegal.setRegistrationName(nombre);
+			CompanyID cif = new CompanyID();
+			cif.setValue(faceParty.getTaxIdentification().getTaxIdentificationNumber());
+			entidadLegal.setCompanyID(cif);
+						
 			AddressType pAddress = new AddressType();
 			party.setPostalAddress(pAddress);
 
@@ -362,6 +402,15 @@ public class FacturaeConverter {
 			taxScheme.setTaxTypeCode(taxTypeCode);
 			partyTaxScheme.setTaxScheme(taxScheme);
 			party.getPartyTaxSchemes().add(partyTaxScheme);
+			
+			ContactType contacto = new ContactType();
+			ElectronicMail email = new ElectronicMail();
+			email.setValue(faceParty.getLegalEntity().getContactDetails().getElectronicMail());
+			contacto.setElectronicMail(email);
+			Telephone telefono = new Telephone();
+			telefono.setValue(faceParty.getLegalEntity().getContactDetails().getTelephone());
+			contacto.setTelephone(telefono);
+			party.setContact(contacto);
 
 		}
 

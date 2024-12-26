@@ -9,6 +9,9 @@
     <DocumentCurrencyCode>EUR</DocumentCurrencyCode>
     <ns3:AccountingSupplierParty>
         <ns3:Party>
+            <ns3:PartyIdentification>
+                <ID schemeID="NIF">12345678Z</ID>
+            </ns3:PartyIdentification>
             <ns3:PartyName>
                 <Name>Jose God Mun</Name>
             </ns3:PartyName>
@@ -27,6 +30,14 @@
                     <TaxTypeCode>IVA</TaxTypeCode>
                 </ns3:TaxScheme>
             </ns3:PartyTaxScheme>
+            <ns3:Contact>
+                <Telephone>666666666</Telephone>
+                <ElectronicMail>666666666@mymail.com</ElectronicMail>
+            </ns3:Contact>
+            <ns3:Person>
+                <FirstName>Jose</FirstName>
+                <FamilyName>God Mun</FamilyName>
+            </ns3:Person>
         </ns3:Party>
     </ns3:AccountingSupplierParty>
     <ns3:AccountingCustomerParty/>

@@ -27,6 +27,10 @@
 					<Province>MADRID</Province>
 					<CountryCode>ESP</CountryCode>
 				</AddressInSpain>
+				<ContactDetails>
+					<Telephone>666666666</Telephone>
+					<ElectronicMail>666666666@mymail.com</ElectronicMail>
+				</ContactDetails>
 			</Individual>
 		</SellerParty>
 		<!-- Omitimos el destinatario -->
