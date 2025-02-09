@@ -1,0 +1,447 @@
+{
+  "customizationID" : {
+    "value" : "ORIGINAL"
+  },
+  "profileID" : {
+    "value" : "Invoice"
+  },
+  "id" : {
+    "value" : "G0001-00000002"
+  },
+  "issueDate" : {
+    "value" : 1705446000000
+  },
+  "invoiceTypeCode" : {
+    "value" : "380"
+  },
+  "notes" : [ {
+    "value" : "ORIGINAL"
+  } ],
+  "documentCurrencyCode" : {
+    "value" : "EUR"
+  },
+  "accountingSupplierParty" : {
+    "party" : {
+      "partyIdentifications" : [ {
+        "id" : {
+          "value" : "12345678Z",
+          "schemeID" : "NIF"
+        }
+      } ],
+      "partyNames" : [ {
+        "name" : {
+          "value" : "Jose God Mun"
+        }
+      } ],
+      "postalAddress" : {
+        "streetName" : {
+          "value" : "Calle Principal"
+        },
+        "cityName" : {
+          "value" : "Madrid"
+        },
+        "countrySubentity" : {
+          "value" : "MADRID"
+        },
+        "country" : {
+          "identificationCode" : {
+            "value" : "ESP"
+          },
+          "name" : {
+            "value" : "ESP"
+          }
+        }
+      },
+      "partyTaxSchemes" : [ {
+        "companyID" : {
+          "value" : "12345678Z"
+        },
+        "taxScheme" : {
+          "taxTypeCode" : {
+            "value" : "IVA"
+          }
+        }
+      } ],
+      "contact" : {
+        "telephone" : {
+          "value" : "666666666"
+        },
+        "electronicMail" : {
+          "value" : "666666666@mymail.com"
+        }
+      },
+      "persons" : [ {
+        "firstName" : {
+          "value" : "Jose"
+        },
+        "familyName" : {
+          "value" : "God Mun"
+        }
+      } ]
+    }
+  },
+  "accountingCustomerParty" : {
+    "party" : {
+      "partyIdentifications" : [ {
+        "id" : {
+          "value" : "B12345674",
+          "schemeID" : "NIF"
+        }
+      } ],
+      "partyNames" : [ {
+        "name" : {
+          "value" : "Comercial Josete"
+        }
+      } ],
+      "postalAddress" : {
+        "streetName" : {
+          "value" : "Calle Secundaria"
+        },
+        "cityName" : {
+          "value" : "La Puebla de Montalban"
+        },
+        "countrySubentity" : {
+          "value" : "Toledo"
+        },
+        "country" : {
+          "identificationCode" : {
+            "value" : "ESP"
+          },
+          "name" : {
+            "value" : "ESP"
+          }
+        }
+      },
+      "partyTaxSchemes" : [ {
+        "companyID" : {
+          "value" : "B12345674"
+        },
+        "taxScheme" : {
+          "taxTypeCode" : {
+            "value" : "IVA"
+          }
+        }
+      } ],
+      "partyLegalEntities" : [ {
+        "registrationName" : {
+          "value" : "Comercial Josete SA"
+        },
+        "companyID" : {
+          "value" : "B12345674"
+        }
+      } ],
+      "contact" : {
+        "telephone" : {
+          "value" : "77777777"
+        },
+        "electronicMail" : {
+          "value" : "777777777@mymail.com"
+        }
+      }
+    }
+  },
+  "paymentMeans" : [ {
+    "paymentMeansCode" : {
+      "value" : "31"
+    },
+    "payeeFinancialAccount" : {
+      "id" : {
+        "value" : "ES9121000418450200051332",
+        "schemeID" : "IBAN"
+      },
+      "financialInstitutionBranch" : {
+        "id" : {
+          "value" : "OPENESXXXXX"
+        },
+        "name" : {
+          "value" : "SLV"
+        }
+      }
+    }
+  } ],
+  "paymentTerms" : [ {
+    "notes" : [ {
+      "value" : "A pagar antes de 30 días desde la emisión de la factura"
+    } ],
+    "paymentDueDate" : {
+      "value" : 1735426800000
+    }
+  } ],
+  "taxTotals" : [ {
+    "taxAmount" : {
+      "value" : 239.90,
+      "currencyID" : "EUR"
+    },
+    "taxSubtotals" : [ {
+      "taxableAmount" : {
+        "value" : 950.00,
+        "currencyID" : "EUR"
+      },
+      "taxAmount" : {
+        "value" : 199.50,
+        "currencyID" : "EUR"
+      },
+      "taxCategory" : {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 21.00
+        }
+      }
+    }, {
+      "taxableAmount" : {
+        "value" : 404.00,
+        "currencyID" : "EUR"
+      },
+      "taxAmount" : {
+        "value" : 40.40,
+        "currencyID" : "EUR"
+      },
+      "taxCategory" : {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 10.00
+        }
+      }
+    } ]
+  } ],
+  "legalMonetaryTotal" : {
+    "lineExtensionAmount" : {
+      "value" : 1354.00,
+      "currencyID" : "EUR"
+    },
+    "taxExclusiveAmount" : {
+      "value" : 1083.20,
+      "currencyID" : "EUR"
+    },
+    "taxInclusiveAmount" : {
+      "value" : 1323.10,
+      "currencyID" : "EUR"
+    },
+    "payableAmount" : {
+      "value" : 1323.10,
+      "currencyID" : "EUR"
+    }
+  },
+  "invoiceLines" : [ {
+    "id" : {
+      "value" : "1"
+    },
+    "invoicedQuantity" : {
+      "value" : 5.00
+    },
+    "lineExtensionAmount" : {
+      "value" : 1000.00,
+      "currencyID" : "EUR"
+    },
+    "allowanceCharges" : [ {
+      "chargeIndicator" : {
+        "value" : false
+      },
+      "allowanceChargeReasonCode" : { },
+      "amount" : {
+        "value" : 100.00,
+        "currencyID" : "EUR"
+      }
+    }, {
+      "chargeIndicator" : {
+        "value" : true
+      },
+      "allowanceChargeReasonCode" : { },
+      "amount" : {
+        "value" : 50.00,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "taxTotals" : [ {
+      "taxAmount" : {
+        "value" : 239.90,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "item" : {
+      "name" : {
+        "value" : "Descripcion de factura de mesas"
+      },
+      "classifiedTaxCategories" : [ {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 21.00
+        },
+        "taxScheme" : {
+          "id" : {
+            "value" : "VAT"
+          },
+          "name" : {
+            "value" : "IVA"
+          }
+        }
+      } ]
+    },
+    "price" : {
+      "priceAmount" : {
+        "value" : 200.00,
+        "currencyID" : "EUR"
+      }
+    }
+  }, {
+    "id" : {
+      "value" : "2"
+    },
+    "invoicedQuantity" : {
+      "value" : 2.00
+    },
+    "lineExtensionAmount" : {
+      "value" : 400.00,
+      "currencyID" : "EUR"
+    },
+    "allowanceCharges" : [ {
+      "chargeIndicator" : {
+        "value" : false
+      },
+      "allowanceChargeReasonCode" : { },
+      "amount" : {
+        "value" : 4.00,
+        "currencyID" : "EUR"
+      }
+    }, {
+      "chargeIndicator" : {
+        "value" : true
+      },
+      "allowanceChargeReasonCode" : { },
+      "amount" : {
+        "value" : 8.00,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "taxTotals" : [ {
+      "taxAmount" : {
+        "value" : 40.40,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "item" : {
+      "name" : {
+        "value" : "Descripcion de factura de sillas"
+      },
+      "classifiedTaxCategories" : [ {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 10.00
+        },
+        "taxScheme" : {
+          "id" : {
+            "value" : "VAT"
+          },
+          "name" : {
+            "value" : "IVA"
+          }
+        }
+      } ]
+    },
+    "price" : {
+      "priceAmount" : {
+        "value" : 200.00,
+        "currencyID" : "EUR"
+      }
+    }
+  }, {
+    "id" : {
+      "value" : "3"
+    },
+    "invoicedQuantity" : {
+      "value" : 1.00
+    },
+    "lineExtensionAmount" : {
+      "value" : 500.00,
+      "currencyID" : "EUR"
+    },
+    "taxTotals" : [ {
+      "taxAmount" : {
+        "value" : 0.00,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "item" : {
+      "name" : {
+        "value" : "Descripcion de factura de pizarras"
+      },
+      "classifiedTaxCategories" : [ {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 0
+        },
+        "taxExemptionReasonCode" : {
+          "value" : "E1"
+        },
+        "taxScheme" : {
+          "id" : {
+            "value" : "VAT"
+          },
+          "name" : {
+            "value" : "IVA"
+          }
+        }
+      } ]
+    },
+    "price" : {
+      "priceAmount" : {
+        "value" : 500.00,
+        "currencyID" : "EUR"
+      }
+    }
+  }, {
+    "id" : {
+      "value" : "4"
+    },
+    "invoicedQuantity" : {
+      "value" : 100.00
+    },
+    "lineExtensionAmount" : {
+      "value" : 100.00,
+      "currencyID" : "EUR"
+    },
+    "taxTotals" : [ {
+      "taxAmount" : {
+        "value" : 0.00,
+        "currencyID" : "EUR"
+      }
+    } ],
+    "item" : {
+      "name" : {
+        "value" : "Descripcion de factura de tizas"
+      },
+      "classifiedTaxCategories" : [ {
+        "id" : {
+          "value" : "01"
+        },
+        "percent" : {
+          "value" : 0
+        },
+        "taxScheme" : {
+          "id" : {
+            "value" : "VAT"
+          },
+          "name" : {
+            "value" : "IVA"
+          }
+        }
+      } ]
+    },
+    "price" : {
+      "priceAmount" : {
+        "value" : 1.00,
+        "currencyID" : "EUR"
+      }
+    }
+  } ]
+}

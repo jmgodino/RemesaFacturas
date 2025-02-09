@@ -1,0 +1,288 @@
+{"ns4:Invoice": {
+    "ProfileID": "Invoice",
+    "ns3:AccountingSupplierParty": {"ns3:Party": {
+        "ns3:PartyTaxScheme": {
+            "ns3:TaxScheme": {"TaxTypeCode": "IVA"},
+            "CompanyID": "12345678Z"
+        },
+        "ns3:PartyIdentification": {"ID": {
+            "schemeID": "NIF",
+            "content": "12345678Z"
+        }},
+        "ns3:Person": {
+            "FamilyName": "God Mun",
+            "FirstName": "Jose"
+        },
+        "ns3:Contact": {
+            "Telephone": 666666666,
+            "ElectronicMail": "666666666@mymail.com"
+        },
+        "ns3:PartyName": {"Name": "Jose God Mun"},
+        "ns3:PostalAddress": {
+            "StreetName": "Calle Principal",
+            "ns3:Country": {
+                "IdentificationCode": "ESP",
+                "Name": "ESP"
+            },
+            "CityName": "Madrid",
+            "CountrySubentity": "MADRID"
+        }
+    }},
+    "xmlns:ns5": "urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2",
+    "DocumentCurrencyCode": "EUR",
+    "IssueDate": "2024-01-17",
+    "ns3:TaxTotal": {
+        "TaxAmount": {
+            "currencyID": "EUR",
+            "content": 239.9
+        },
+        "ns3:TaxSubtotal": [
+            {
+                "TaxAmount": {
+                    "currencyID": "EUR",
+                    "content": 199.5
+                },
+                "TaxableAmount": {
+                    "currencyID": "EUR",
+                    "content": 950
+                },
+                "ns3:TaxCategory": {
+                    "Percent": 21,
+                    "ID": "01"
+                }
+            },
+            {
+                "TaxAmount": {
+                    "currencyID": "EUR",
+                    "content": 40.4
+                },
+                "TaxableAmount": {
+                    "currencyID": "EUR",
+                    "content": 404
+                },
+                "ns3:TaxCategory": {
+                    "Percent": 10,
+                    "ID": "01"
+                }
+            }
+        ]
+    },
+    "xmlns:ns3": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+    "ns3:AccountingCustomerParty": {"ns3:Party": {
+        "ns3:PartyLegalEntity": {
+            "CompanyID": "B12345674",
+            "RegistrationName": "Comercial Josete SA"
+        },
+        "ns3:PartyTaxScheme": {
+            "ns3:TaxScheme": {"TaxTypeCode": "IVA"},
+            "CompanyID": "B12345674"
+        },
+        "ns3:PartyIdentification": {"ID": {
+            "schemeID": "NIF",
+            "content": "B12345674"
+        }},
+        "ns3:Contact": {
+            "Telephone": 77777777,
+            "ElectronicMail": "777777777@mymail.com"
+        },
+        "ns3:PartyName": {"Name": "Comercial Josete"},
+        "ns3:PostalAddress": {
+            "StreetName": "Calle Secundaria",
+            "ns3:Country": {
+                "IdentificationCode": "ESP",
+                "Name": "ESP"
+            },
+            "CityName": "La Puebla de Montalban",
+            "CountrySubentity": "Toledo"
+        }
+    }},
+    "ns3:PaymentTerms": {
+        "Note": "A pagar antes de 30 días desde la emisión de la factura",
+        "PaymentDueDate": "2024-12-29"
+    },
+    "xmlns:ns4": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2",
+    "CustomizationID": "ORIGINAL",
+    "ns3:PaymentMeans": {
+        "PaymentMeansCode": 31,
+        "ns3:PayeeFinancialAccount": {
+            "ns3:FinancialInstitutionBranch": {
+                "ID": "OPENESXXXXX",
+                "Name": "SLV"
+            },
+            "ID": {
+                "schemeID": "IBAN",
+                "content": "ES9121000418450200051332"
+            }
+        }
+    },
+    "xmlns": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+    "ns3:InvoiceLine": [
+        {
+            "InvoicedQuantity": 5,
+            "LineExtensionAmount": {
+                "currencyID": "EUR",
+                "content": 1000
+            },
+            "ns3:Item": {
+                "ns3:ClassifiedTaxCategory": {
+                    "ns3:TaxScheme": {
+                        "ID": "VAT",
+                        "Name": "IVA"
+                    },
+                    "Percent": 21,
+                    "ID": "01"
+                },
+                "Name": "Descripcion de factura de mesas"
+            },
+            "ns3:AllowanceCharge": [
+                {
+                    "AllowanceChargeReasonCode": "",
+                    "Amount": {
+                        "currencyID": "EUR",
+                        "content": 100
+                    },
+                    "ChargeIndicator": false
+                },
+                {
+                    "AllowanceChargeReasonCode": "",
+                    "Amount": {
+                        "currencyID": "EUR",
+                        "content": 50
+                    },
+                    "ChargeIndicator": true
+                }
+            ],
+            "ns3:TaxTotal": {"TaxAmount": {
+                "currencyID": "EUR",
+                "content": 239.9
+            }},
+            "ID": 1,
+            "ns3:Price": {"PriceAmount": {
+                "currencyID": "EUR",
+                "content": 200
+            }}
+        },
+        {
+            "InvoicedQuantity": 2,
+            "LineExtensionAmount": {
+                "currencyID": "EUR",
+                "content": 400
+            },
+            "ns3:Item": {
+                "ns3:ClassifiedTaxCategory": {
+                    "ns3:TaxScheme": {
+                        "ID": "VAT",
+                        "Name": "IVA"
+                    },
+                    "Percent": 10,
+                    "ID": "01"
+                },
+                "Name": "Descripcion de factura de sillas"
+            },
+            "ns3:AllowanceCharge": [
+                {
+                    "AllowanceChargeReasonCode": "",
+                    "Amount": {
+                        "currencyID": "EUR",
+                        "content": 4
+                    },
+                    "ChargeIndicator": false
+                },
+                {
+                    "AllowanceChargeReasonCode": "",
+                    "Amount": {
+                        "currencyID": "EUR",
+                        "content": 8
+                    },
+                    "ChargeIndicator": true
+                }
+            ],
+            "ns3:TaxTotal": {"TaxAmount": {
+                "currencyID": "EUR",
+                "content": 40.4
+            }},
+            "ID": 2,
+            "ns3:Price": {"PriceAmount": {
+                "currencyID": "EUR",
+                "content": 200
+            }}
+        },
+        {
+            "InvoicedQuantity": 1,
+            "LineExtensionAmount": {
+                "currencyID": "EUR",
+                "content": 500
+            },
+            "ns3:Item": {
+                "ns3:ClassifiedTaxCategory": {
+                    "ns3:TaxScheme": {
+                        "ID": "VAT",
+                        "Name": "IVA"
+                    },
+                    "Percent": 0,
+                    "ID": "01",
+                    "TaxExemptionReasonCode": "E1"
+                },
+                "Name": "Descripcion de factura de pizarras"
+            },
+            "ns3:TaxTotal": {"TaxAmount": {
+                "currencyID": "EUR",
+                "content": 0
+            }},
+            "ID": 3,
+            "ns3:Price": {"PriceAmount": {
+                "currencyID": "EUR",
+                "content": 500
+            }}
+        },
+        {
+            "InvoicedQuantity": 100,
+            "LineExtensionAmount": {
+                "currencyID": "EUR",
+                "content": 100
+            },
+            "ns3:Item": {
+                "ns3:ClassifiedTaxCategory": {
+                    "ns3:TaxScheme": {
+                        "ID": "VAT",
+                        "Name": "IVA"
+                    },
+                    "Percent": 0,
+                    "ID": "01"
+                },
+                "Name": "Descripcion de factura de tizas"
+            },
+            "ns3:TaxTotal": {"TaxAmount": {
+                "currencyID": "EUR",
+                "content": 0
+            }},
+            "ID": 4,
+            "ns3:Price": {"PriceAmount": {
+                "currencyID": "EUR",
+                "content": 1
+            }}
+        }
+    ],
+    "InvoiceTypeCode": 380,
+    "xmlns:ns2": "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2",
+    "Note": "ORIGINAL",
+    "ns3:LegalMonetaryTotal": {
+        "TaxInclusiveAmount": {
+            "currencyID": "EUR",
+            "content": 1323.1
+        },
+        "LineExtensionAmount": {
+            "currencyID": "EUR",
+            "content": 1354
+        },
+        "TaxExclusiveAmount": {
+            "currencyID": "EUR",
+            "content": 1083.2
+        },
+        "PayableAmount": {
+            "currencyID": "EUR",
+            "content": 1323.1
+        }
+    },
+    "ID": "G0001-00000002"
+}}

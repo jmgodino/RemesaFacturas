@@ -2,8 +2,8 @@
 	<sum1:IDVersion>1.0</sum1:IDVersion>
 	<sum1:IDFactura>
 		<sum1:IDEmisorFactura>89890001K</sum1:IDEmisorFactura>
-		<sum1:NumSerieFactura>12345678-G33</sum1:NumSerieFactura>
-		<sum1:FechaExpedicionFactura>10-05-2024</sum1:FechaExpedicionFactura>
+		<sum1:NumSerieFactura>12345678-G66</sum1:NumSerieFactura>
+		<sum1:FechaExpedicionFactura>03-02-2025</sum1:FechaExpedicionFactura>
 	</sum1:IDFactura>
 	<sum1:NombreRazonEmisor>certificado uno telematicas</sum1:NombreRazonEmisor>
 	<sum1:Subsanacion>N</sum1:Subsanacion>
@@ -13,11 +13,11 @@
 	<sum1:FacturasRectificadas>
 		<sum1:IDFacturaRectificada>
 			<sum1:IDEmisorFactura>89890001K</sum1:IDEmisorFactura>
-			<sum1:NumSerieFactura>12345600-G33</sum1:NumSerieFactura>
+			<sum1:NumSerieFactura>12345600-G66</sum1:NumSerieFactura>
 			<sum1:FechaExpedicionFactura>01-04-2024</sum1:FechaExpedicionFactura>
 		</sum1:IDFacturaRectificada>
 	</sum1:FacturasRectificadas>
-	<sum1:FechaOperacion>01-05-2024</sum1:FechaOperacion>
+	<sum1:FechaOperacion>03-02-2025</sum1:FechaOperacion>
 	<sum1:DescripcionOperacion>fecha entrega</sum1:DescripcionOperacion>
 	<sum1:Destinatarios>
 		<sum1:IDDestinatario>
@@ -69,7 +69,7 @@
 		<sum1:TipoUsoPosibleMultiOT>N</sum1:TipoUsoPosibleMultiOT>
 		<sum1:IndicadorMultiplesOT>N</sum1:IndicadorMultiplesOT>
 	</sum1:SistemaInformatico>
-	<sum1:FechaHoraHusoGenRegistro>2024-05-10T12:30:00+02:00</sum1:FechaHoraHusoGenRegistro>
+	<sum1:FechaHoraHusoGenRegistro>2025-02-03T14:30:00+01:00</sum1:FechaHoraHusoGenRegistro>
 	<sum1:TipoHuella>01</sum1:TipoHuella>
-	<sum1:Huella>5C56AC56F13DB2A25E0031BD2B7ED5C9AF4AF1EF5EBBA700350DE3EEF12C2D35</sum1:Huella>
+	<sum1:Huella>FF954378B64ED331A9B2366AD317D86E9DEC1716B12DD0ACCB172A6DC4C105AA</sum1:Huella>
 </sum1:RegistroAlta>
